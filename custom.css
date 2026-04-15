@@ -673,7 +673,7 @@ p {
 
 .event-feature-media-single {
   grid-template-columns: 1fr;
-  max-width: 300px;
+  max-width: 240px;
   width: 100%;
   justify-self: center;
 }
