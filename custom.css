@@ -247,7 +247,7 @@ p {
 #quarto-content {
   max-width: 1240px;
   margin: 0 auto;
-  padding: 80px 22px 40px;
+  padding: 58px 22px 40px;
 }
 
 .content.column-page {
@@ -1377,7 +1377,7 @@ p {
 
 @media (max-width: 991px) {
   #quarto-content {
-    padding-top: 70px;
+    padding-top: 54px;
     padding-left: 14px;
     padding-right: 14px;
   }
