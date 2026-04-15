@@ -455,10 +455,32 @@ p {
   display: block;
   height: 100%;
   color: inherit;
+  cursor: pointer;
 }
 
 .person-card-link:hover {
   color: inherit;
+}
+
+.person-card-link .person-card {
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    border-color 180ms ease;
+}
+
+.person-card-link:hover .person-card,
+.person-card-link:focus-visible .person-card {
+  transform: translateY(-6px);
+  border-color: rgba(116, 201, 255, 0.56);
+  box-shadow:
+    0 22px 42px rgba(12, 39, 69, 0.16),
+    0 0 0 1px rgba(130, 213, 255, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.92);
+}
+
+.person-card-link:focus-visible {
+  outline: none;
 }
 
 .about-copy ul {
