@@ -62,6 +62,133 @@ p {
   color: #f4f8fb !important;
 }
 
+.navbar .navbar-brand {
+  display: inline-flex;
+  align-items: center;
+}
+
+.navbar-collapse {
+  align-items: center;
+  gap: 1rem;
+}
+
+.brand-mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.16rem;
+}
+
+.brand-rainbow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.01em;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+}
+
+.brand-rainbow span:nth-child(1) {
+  color: #ff6b6b;
+}
+
+.brand-rainbow span:nth-child(2) {
+  color: #ff9f43;
+}
+
+.brand-rainbow span:nth-child(3) {
+  color: #ffd93d;
+}
+
+.brand-rainbow span:nth-child(4) {
+  color: #4cd7a5;
+}
+
+.brand-rainbow span:nth-child(5) {
+  color: #5ab6ff;
+}
+
+.brand-rainbow span:nth-child(6) {
+  color: #b388ff;
+}
+
+.brand-lab {
+  color: #f4f8fb;
+}
+
+.site-search {
+  position: relative;
+  width: min(100%, 250px);
+  flex: 0 0 auto;
+}
+
+.site-search-input {
+  width: 100%;
+  padding: 0.58rem 0.95rem;
+  border-radius: 999px;
+  border: 1px solid rgba(173, 220, 255, 0.22);
+  color: #eef8ff;
+  background: rgba(7, 28, 48, 0.34);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    0 8px 22px rgba(7, 23, 41, 0.12);
+}
+
+.site-search-input::placeholder {
+  color: rgba(226, 240, 250, 0.68);
+}
+
+.site-search-input:focus {
+  outline: none;
+  border-color: rgba(151, 222, 255, 0.48);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    0 0 0 3px rgba(120, 214, 255, 0.12);
+}
+
+.site-search-results {
+  position: absolute;
+  top: calc(100% + 0.55rem);
+  right: 0;
+  left: 0;
+  z-index: 30;
+  padding: 0.45rem;
+  border-radius: 16px;
+  border: 1px solid rgba(141, 196, 233, 0.28);
+  background: rgba(252, 254, 255, 0.98);
+  box-shadow: 0 22px 44px rgba(8, 28, 50, 0.2);
+}
+
+.site-search-result {
+  display: block;
+  padding: 0.72rem 0.78rem;
+  border-radius: 12px;
+  color: #26435e;
+}
+
+.site-search-result:hover {
+  color: #17324c;
+  background: rgba(229, 241, 251, 0.88);
+}
+
+.site-search-result-title {
+  display: block;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.site-search-result-meta {
+  display: block;
+  margin-top: 0.18rem;
+  color: #63778a;
+  font-size: 0.84rem;
+  line-height: 1.45;
+}
+
+.site-search-empty {
+  padding: 0.78rem 0.82rem;
+  color: #617688;
+  font-size: 0.9rem;
+}
+
 .navbar .nav-link {
   opacity: 0.88;
 }
@@ -1147,6 +1274,16 @@ p {
 
   .hero-button-row {
     text-align: center;
+  }
+
+  .navbar-collapse {
+    align-items: stretch;
+  }
+
+  .site-search {
+    width: 100%;
+    max-width: none;
+    margin-top: 0.55rem;
   }
 
   .news-card-grid {
