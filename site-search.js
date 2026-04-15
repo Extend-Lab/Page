@@ -1,85 +1,85 @@
 const SITE_SEARCH_INDEX = [
   {
     title: "About EXTEND Lab",
-    url: "./about.html",
+    url: "about/",
     category: "About",
     text: "mission values break boundaries unlock possibilities reinforcement learning multi-agent systems robotics embodied intelligence"
   },
   {
     title: "News: IEEE T-ITS Paper Accepted",
-    url: "./news.html#news-publication-latest",
+    url: "news/#news-publication-latest",
     category: "News",
     text: "hao xiong ieee transactions on intelligent transportation systems latency freshness vehicular edge computing digital twin accepted paper"
   },
   {
     title: "News: Multi-Agent Communication Paper Revision",
-    url: "./news.html",
+    url: "news/",
     category: "News",
     text: "xinren zhang machine learning in communications and networking major revision multi-agent communication protocols"
   },
   {
     title: "News: IEEE TMC Paper Accepted",
-    url: "./news.html",
+    url: "news/",
     category: "News",
     text: "jianing zheng ieee transactions on mobile computing multimodal federated learning accepted paper"
   },
   {
     title: "News: Media Coverage",
-    url: "./news.html#news-media-latest",
+    url: "news/#news-media-latest",
     category: "News",
     text: "dr jiadong yu diandong joint laboratory media coverage data center heterogeneous computing resources"
   },
   {
     title: "Events: OpenClaw and AI Agent",
-    url: "./events.html#event-latest",
+    url: "events/#event-latest",
     category: "Events",
     text: "extend sharing openclaw ai agent jiale li tools claude code internal sharing session"
   },
   {
     title: "Research: Multi-Agent Systems",
-    url: "./research.html",
+    url: "research/",
     category: "Research",
     text: "multi-agent systems collaborative competitive intelligence cyber-physical tasks"
   },
   {
     title: "Research: Robotic/Embodied AI",
-    url: "./research.html",
+    url: "research/",
     category: "Research",
     text: "robotic embodied ai perception adaptation dynamic environments"
   },
   {
     title: "Research: Simulation-to-Reality RL",
-    url: "./research.html",
+    url: "research/",
     category: "Research",
     text: "simulation to reality reinforcement learning physical deployment training environments"
   },
   {
     title: "Research: Edge Intelligence and Wireless Systems",
-    url: "./research.html",
+    url: "research/",
     category: "Research",
     text: "edge intelligence wireless systems resource allocation communications intelligent infrastructure"
   },
   {
     title: "Projects",
-    url: "./projects.html",
+    url: "projects/",
     category: "Projects",
     text: "funded projects grants sponsored collaborations bristol guangdong diandong blockchain smart factories"
   },
   {
     title: "People",
-    url: "./people.html",
+    url: "people/",
     category: "People",
     text: "jiadong yu hao xiong xinren zhang jianing zheng yulong zhang guangzhi zhu nianfu wang phd mphil visiting students"
   },
   {
     title: "Publications",
-    url: "./publications.html",
+    url: "publications/",
     category: "Publications",
     text: "journal articles conference papers ieee twc tmc tits wireless communications internet of things"
   },
   {
     title: "Support",
-    url: "./support.html",
+    url: "support/",
     category: "Support",
     text: "collaboration funding partners graduate students undergraduate students visiting phd scholars application materials"
   }
@@ -168,7 +168,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (event.key === "Enter") {
         const firstResult = results.querySelector(".site-search-result");
         if (firstResult) {
-          window.location.href = firstResult.getAttribute("href");
+          window.location.href = firstResult.href;
         }
       }
     });
