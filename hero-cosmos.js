@@ -60,12 +60,12 @@ function initHeroCosmos() {
     const pointerX = (pointer.x - 0.5) * width;
     const pointerY = (pointer.y - 0.5) * height;
 
-    drawNebula(width * 0.78 - pointerX * 0.05, height * 0.24 - pointerY * 0.03, width * 0.34, "78, 176, 255", 0.24);
-    drawNebula(width * 0.18 + pointerX * 0.08, height * 0.78 + pointerY * 0.04, width * 0.28, "43, 105, 214", 0.18);
-    drawNebula(width * 0.52 + pointerX * 0.06, height * 0.52 + pointerY * 0.08, width * 0.18, "74, 216, 255", 0.12);
+    drawNebula(width * 0.78 - pointerX * 0.05, height * 0.24 - pointerY * 0.03, width * 0.34, "56, 136, 230", 0.16);
+    drawNebula(width * 0.18 + pointerX * 0.08, height * 0.78 + pointerY * 0.04, width * 0.28, "28, 74, 172", 0.13);
+    drawNebula(width * 0.52 + pointerX * 0.06, height * 0.52 + pointerY * 0.08, width * 0.18, "68, 166, 228", 0.08);
 
     if (pointer.active) {
-      drawNebula(pointer.x * width, pointer.y * height, Math.min(width, height) * 0.22, "160, 228, 255", 0.12);
+      drawNebula(pointer.x * width, pointer.y * height, Math.min(width, height) * 0.22, "150, 220, 255", 0.07);
     }
   }
 
