@@ -585,15 +585,6 @@ p {
   text-transform: uppercase;
 }
 
-.news-card-meta {
-  margin: 0;
-  color: #7f8e9c;
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
 .homepage-update-art {
   display: flex;
   align-items: center;
