@@ -1,9 +1,8 @@
 function initHeroCosmos() {
   const hero = document.querySelector(".hero-panel-cosmos");
-  const stage = hero?.querySelector(".hero-cosmos-stage");
-  const canvas = stage?.querySelector(".hero-cosmos-canvas");
+  const canvas = hero?.querySelector(".hero-cosmos-canvas");
 
-  if (!hero || !stage || !canvas) return;
+  if (!hero || !canvas) return;
 
   const ctx = canvas.getContext("2d");
   if (!ctx) return;
@@ -33,7 +32,7 @@ function initHeroCosmos() {
   }
 
   function resize() {
-    const rect = stage.getBoundingClientRect();
+    const rect = hero.getBoundingClientRect();
     width = Math.max(1, rect.width);
     height = Math.max(1, rect.height);
     dpr = Math.min(window.devicePixelRatio || 1, 2);
@@ -142,9 +141,9 @@ function initHeroCosmos() {
     pointer.active = true;
   }
 
-  stage.addEventListener("pointermove", setPointer);
-  stage.addEventListener("pointerenter", setPointer);
-  stage.addEventListener("pointerleave", () => {
+  hero.addEventListener("pointermove", setPointer);
+  hero.addEventListener("pointerenter", setPointer);
+  hero.addEventListener("pointerleave", () => {
     pointer.tx = 0.5;
     pointer.ty = 0.5;
     pointer.active = false;
