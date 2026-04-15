@@ -381,36 +381,6 @@ p {
   margin-bottom: 0;
 }
 
-.person-card-empty {
-  background: linear-gradient(180deg, rgba(251, 253, 255, 0.96) 0%, rgba(246, 249, 252, 0.98) 100%);
-  border-style: dashed;
-  border-color: rgba(184, 197, 209, 0.9);
-  box-shadow: none;
-}
-
-.person-placeholder-empty {
-  background: linear-gradient(180deg, rgba(244, 247, 250, 0.95) 0%, rgba(238, 242, 246, 0.98) 100%);
-  border: 1px dashed rgba(184, 197, 209, 0.95);
-  color: transparent;
-}
-
-.person-body-empty h3,
-.person-body-empty p {
-  min-height: 0.9rem;
-  border-radius: 999px;
-  background: rgba(225, 231, 237, 0.95);
-  color: transparent;
-}
-
-.person-body-empty h3 {
-  width: 72%;
-  margin-bottom: 0.65rem;
-}
-
-.person-body-empty p {
-  width: 56%;
-}
-
 .about-copy ul {
   padding-left: 1.25rem;
 }
@@ -462,13 +432,27 @@ p {
   padding: 0.15rem 0;
 }
 
-.news-card-tag {
+.news-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
   margin-bottom: 0.55rem;
+  flex-wrap: wrap;
+}
+
+.news-card-tag {
+  margin-bottom: 0;
   color: #5d7690;
   font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
+}
+
+.news-card-date {
+  color: #7a8c9a;
+  font-size: 0.86rem;
+  font-weight: 500;
 }
 
 .news-card-title {
