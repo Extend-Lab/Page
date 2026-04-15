@@ -578,50 +578,24 @@ p {
 
 .homepage-update-art {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: center;
   padding: 1.05rem;
   border-bottom: 1px solid rgba(207, 218, 228, 0.95);
 }
 
-.homepage-update-art-publication {
+.homepage-update-art-image {
   background:
     radial-gradient(circle at 18% 20%, rgba(142, 211, 255, 0.28), transparent 26%),
     linear-gradient(135deg, #153b63 0%, #1f5786 52%, #17446e 100%);
 }
 
-.homepage-update-art-inner {
+.homepage-update-art-image-asset {
   width: 100%;
-  padding: 0.95rem 0.95rem 0.8rem;
+  height: 100%;
+  object-fit: contain;
   border: 1px solid rgba(203, 226, 245, 0.18);
-  background: rgba(255, 255, 255, 0.06);
-  backdrop-filter: blur(2px);
-}
-
-.homepage-update-art-label,
-.homepage-update-art-title,
-.homepage-update-art-meta {
-  margin: 0;
-  color: #f7fbff;
-}
-
-.homepage-update-art-label {
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  opacity: 0.82;
-}
-
-.homepage-update-art-title {
-  margin-top: 0.55rem;
-  font-size: 1rem;
-  line-height: 1.32;
-}
-
-.homepage-update-art-meta {
-  margin-top: 0.65rem;
-  font-size: 0.82rem;
-  opacity: 0.82;
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .homepage-update-card .news-card-title {
