@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap");
+
 body {
   min-height: 100vh;
   background:
@@ -76,14 +78,17 @@ p {
   display: inline-flex;
   align-items: center;
   gap: 0.16rem;
+  font-family: "Caveat Brush", "Marker Felt", "Brush Script MT", cursive;
 }
 
 .brand-rainbow {
   display: inline-flex;
   align-items: center;
   gap: 0.01em;
-  font-weight: 800;
-  letter-spacing: 0.01em;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  transform: translateY(1px);
 }
 
 .brand-rainbow span:nth-child(1) {
@@ -112,6 +117,10 @@ p {
 
 .brand-lab {
   color: #f4f8fb;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  transform: translateY(1px);
 }
 
 .site-search {
@@ -128,10 +137,11 @@ p {
   width: 0.92rem;
   height: 0.92rem;
   transform: translateY(-50%);
-  border: 2px solid rgba(226, 239, 248, 0.72);
+  border: 2px solid rgba(247, 251, 255, 0.96);
   border-radius: 50%;
   pointer-events: none;
-  opacity: 0.82;
+  opacity: 1;
+  box-shadow: 0 0 10px rgba(182, 230, 255, 0.24);
 }
 
 .site-search::after {
@@ -141,11 +151,12 @@ p {
   left: 1.76rem;
   width: 0.46rem;
   height: 2px;
-  background: rgba(226, 239, 248, 0.72);
+  background: rgba(247, 251, 255, 0.96);
   transform: rotate(45deg);
   border-radius: 999px;
   pointer-events: none;
-  opacity: 0.82;
+  opacity: 1;
+  box-shadow: 0 0 10px rgba(182, 230, 255, 0.24);
 }
 
 .site-search-input {
