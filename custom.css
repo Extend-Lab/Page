@@ -585,6 +585,15 @@ p {
   text-transform: uppercase;
 }
 
+.news-card-meta {
+  margin: 0;
+  color: #7f8e9c;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
 .homepage-update-art {
   display: flex;
   align-items: center;
@@ -673,6 +682,9 @@ p {
 
 .event-feature-media-single {
   grid-template-columns: 1fr;
+  max-width: 300px;
+  width: 100%;
+  justify-self: center;
 }
 
 .event-feature-image {
@@ -687,9 +699,9 @@ p {
 }
 
 .event-feature-media-single .event-feature-image {
-  height: 100%;
-  min-height: 280px;
-  aspect-ratio: auto;
+  height: auto;
+  min-height: 0;
+  aspect-ratio: 4 / 3;
 }
 
 .event-feature-body {
