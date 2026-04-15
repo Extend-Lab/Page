@@ -1,117 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects | Extend Lab</title>
-  <meta name="description" content="Projects at Extend Lab.">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Projects – Extend Lab</title>
+<meta name="description" content="Projects at Extend Lab.">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-2ab0c76efacf72616ee6bc98aec9b576.min.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="custom.css">
 </head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html">
-        <span class="brand-mark">EX</span>
-        <span>Extend Lab</span>
-      </a>
-      <nav class="site-nav" aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="people.html">People</a>
-        <a class="active" href="projects.html">Projects</a>
-        <a href="publications.html">Publications</a>
-        <a href="news.html">News</a>
-        <a href="events.html">Events</a>
-        <a href="resources.html">Resources</a>
-        <a href="support.html">Support</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="page-hero">
-      <div class="container">
-        <span class="eyebrow">Projects</span>
-        <h1>Funded Projects</h1>
-        <p class="lead">Drafted from the project template and CV materials in your desktop folder.</p>
+<body class="nav-fixed quarto-light">
+<header id="quarto-header" class="headroom fixed-top">
+  <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+    <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+        <a class="navbar-brand" href="./index.html"><span class="navbar-title">Extend Lab</span></a>
       </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>Title</th>
-                <th>Funder</th>
-                <th>Summary</th>
-                <th>Team</th>
-                <th>Period</th>
-                <th>Funding</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Context-aware MAS: Sensing, Communication and Computation</td>
-                <td>University of Bristol Global Positioning Fund</td>
-                <td>Investigates how sensing, communication, and distributed decision-making can be jointly optimized in context-aware multi-agent systems.</td>
-                <td>&nbsp;</td>
-                <td>Feb 2026 - Jul 2026</td>
-                <td>GBP 10k</td>
-              </tr>
-              <tr>
-                <td>Preliminary Research on Industrial Image and CAD Recognition Algorithm Based on Generative Model Data Augmentation</td>
-                <td>Guangdong Quanzhun Intelligent Technology Co., Ltd.</td>
-                <td>Explores generative-data-augmented recognition pipelines for industrial image understanding and CAD recognition tasks.</td>
-                <td>&nbsp;</td>
-                <td>Feb 2026 - Jan 2027</td>
-                <td>CNY 200k</td>
-              </tr>
-              <tr>
-                <td>Robust Assistance Behaviour Generation for Smooth and Safe HRC in Construction Tasks</td>
-                <td>Jointly funded by Guangdong municipal, Hong Kong, and university partners</td>
-                <td>Develops safe and adaptive assistance strategies for human-robot collaboration in construction environments.</td>
-                <td>&nbsp;</td>
-                <td>Jan 2026 - Dec 2027</td>
-                <td>CNY 950k</td>
-              </tr>
-              <tr>
-                <td>Research on Intelligent Blockchain Computation Resource Allocation</td>
-                <td>Diandong Intelligent Technology Co., Ltd.</td>
-                <td>Studies intelligent scheduling and resource orchestration for blockchain-enabled computing systems.</td>
-                <td>&nbsp;</td>
-                <td>Jan 2026 - Dec 2026</td>
-                <td>CNY 1M</td>
-              </tr>
-              <tr>
-                <td>Research on Synchronisation and Security Algorithms for Cyber-Physical Systems in Smart Factories</td>
-                <td>Joint municipal-school-enterprise special project</td>
-                <td>Designs synchronization and security algorithms for reliable operations in smart-factory cyber-physical systems.</td>
-                <td>&nbsp;</td>
-                <td>Jan 2025 - Dec 2026</td>
-                <td>CNY 250k</td>
-              </tr>
-              <tr>
-                <td>Intelligent Reflecting Surfaces-assisted Edge Computing</td>
-                <td>City of Guangzhou and Nansha district postdoctoral grant</td>
-                <td>Explores learning-based optimization and resource allocation for IRS-assisted mobile edge computing systems.</td>
-                <td>&nbsp;</td>
-                <td>Nov 2021 - May 2024</td>
-                <td>CNY 300k</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav navbar-nav-scroll me-auto">
+          <li class="nav-item"><a class="nav-link" href="./about.html"><span class="menu-text">About</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="./news.html"><span class="menu-text">News</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="./events.html"><span class="menu-text">Events</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="./people.html"><span class="menu-text">People</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="./research.html"><span class="menu-text">Research</span></a></li>
+          <li class="nav-item"><a class="nav-link active" href="./projects.html" aria-current="page"><span class="menu-text">Projects</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="./publications.html"><span class="menu-text">Publications</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="./resources.html"><span class="menu-text">Resources</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="./support.html"><span class="menu-text">Support</span></a></li>
+        </ul>
       </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>Extend Lab, The Hong Kong University of Science and Technology (Guangzhou)</div>
-      <div><a href="mailto:jiadongyu@hkust-gz.edu.cn">jiadongyu@hkust-gz.edu.cn</a></div>
     </div>
-  </footer>
+  </nav>
+</header>
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<main class="content column-page" id="quarto-document-content">
+<header id="title-block-header" class="quarto-title-block default">
+  <div class="quarto-title">
+    <h1 class="title">Projects</h1>
+    <p class="subtitle lead">Funded projects</p>
+  </div>
+</header>
+<div class="table-responsive">
+  <table class="table table-hover align-middle">
+    <thead><tr><th>Title</th><th>Team</th><th>Funder</th><th>Description</th><th>Funding</th><th>Start</th><th>End</th></tr></thead>
+    <tbody>
+      <tr><td>Context-aware MAS: Sensing, Communication and Computation</td><td></td><td>University of Bristol Global Positioning Fund</td><td>Research on tightly coupled sensing, communication, and distributed intelligence for context-aware multi-agent systems.</td><td>GBP 10k</td><td>2026-02</td><td>2026-07</td></tr>
+      <tr><td>Preliminary Research on Industrial Image and CAD Recognition Algorithm Based on Generative Model Data Augmentation</td><td></td><td>Guangdong Quanzhun Intelligent Technology Co., Ltd.</td><td>Developing data-augmented recognition algorithms for industrial images and CAD understanding tasks.</td><td>CNY 200k</td><td>2026-02</td><td>2027-01</td></tr>
+      <tr><td>Robust Assistance Behaviour Generation for Smooth and Safe HRC in Construction Tasks</td><td></td><td>Jointly funded by Guangdong municipal, Hong Kong, and university partners</td><td>Designing robust assistance behaviours for smooth and safe human-robot collaboration in construction scenarios.</td><td>CNY 950k</td><td>2026-01</td><td>2027-12</td></tr>
+      <tr><td>Research on Intelligent Blockchain Computation Resource Allocation</td><td></td><td>Diandong Intelligent Technology Co., Ltd.</td><td>Studying intelligent computation resource allocation strategies in blockchain-enabled systems.</td><td>CNY 1M</td><td>2026-01</td><td>2026-12</td></tr>
+      <tr><td>Research on Synchronisation and Security Algorithms for Cyber-Physical Systems in Smart Factories</td><td></td><td>Joint municipal-school-enterprise special project</td><td>Developing synchronisation and security algorithms for reliable cyber-physical operations in smart-factory environments.</td><td>CNY 250k</td><td>2025-01</td><td>2026-12</td></tr>
+      <tr><td>Intelligent Reflecting Surfaces-assisted Edge Computing</td><td></td><td>City of Guangzhou and district of Nansha postdoctoral grant</td><td>Investigating learning-enabled optimization for IRS-assisted mobile edge computing systems.</td><td>CNY 300k</td><td>2021-11</td><td>2024-05</td></tr>
+    </tbody>
+  </table>
+</div>
+</main>
+</div>
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">&nbsp;</div>
+    <div class="nav-footer-center"><a href="https://extend-lab.github.io/Page/">Extend Lab</a> © <script>document.write(new Date().getFullYear())</script></div>
+    <div class="nav-footer-right">&nbsp;</div>
+  </div>
+</footer>
 </body>
 </html>

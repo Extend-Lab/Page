@@ -1,0 +1,128 @@
+/*https://github.com/quarto-dev/quarto-web/blob/main/index.css*/
+/*#447099*/
+
+.background-frame {
+  padding-bottom: 1rem;
+}
+
+.button {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.hero-banner {
+  position: relative;
+  background-color: rgb(240,245,249);
+  display: flex;
+  justify-content: center;
+}
+
+.alt-background {
+  background-color: rgb(247,249,251);
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.btn-action-primary {
+  color: white;
+  background-color: #1D3A83 !important;
+}
+
+.btn-action-primary:hover {
+  color: white;
+}
+
+.btn-action {
+  min-width: 165px;
+  border-radius: 30px;
+  border: none;
+}
+
+.content-block {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+@media(min-width: 900px) {
+  .content-block {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content-block {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.hero-image,
+.about-image {
+  width: 100%;
+  max-height: 460px;
+  object-fit: cover;
+}
+
+.card-grid,
+.people-grid {
+  row-gap: 1rem;
+}
+
+.feature-card,
+.publication-card,
+.person-card,
+.empty-panel {
+  background: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+  padding: 1.25rem;
+  height: 100%;
+}
+
+.feature-card h3,
+.publication-card h3,
+.person-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.person-photo {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.person-placeholder {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  background: rgb(240,245,249);
+  color: #1D3A83;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.person-body p,
+.publication-card p,
+.feature-card p,
+.empty-panel p {
+  margin-bottom: 0;
+}
+
+.pub-section ol {
+  padding-left: 1.25rem;
+}
+
+.pub-section li {
+  margin-bottom: 0.85rem;
+}
