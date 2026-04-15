@@ -1,4 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap");
+@font-face {
+  font-family: "Dry Brush";
+  src: url("./assets/fonts/Dry_Brush.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
 body {
   min-height: 100vh;
@@ -78,7 +84,7 @@ p {
   display: inline-flex;
   align-items: center;
   gap: 0.16rem;
-  font-family: "Caveat Brush", "Marker Felt", "Brush Script MT", cursive;
+  font-family: "Dry Brush", "Marker Felt", "Brush Script MT", cursive;
 }
 
 .brand-rainbow {
