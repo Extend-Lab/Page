@@ -632,6 +632,31 @@ p {
   line-height: 1.74;
 }
 
+.support-intro p {
+  margin: 0;
+  color: #5f6d79;
+  font-size: 1rem;
+  line-height: 1.78;
+}
+
+.support-list {
+  margin: 0.85rem 0 0;
+  padding-left: 1.15rem;
+}
+
+.support-list li {
+  margin-bottom: 0.45rem;
+  color: #4c6377;
+}
+
+.support-list li:last-child {
+  margin-bottom: 0;
+}
+
+.support-note {
+  margin-top: 0.8rem;
+}
+
 .person-role-line {
   display: block;
 }
