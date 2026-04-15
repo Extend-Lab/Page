@@ -78,9 +78,9 @@ const SITE_SEARCH_INDEX = [
     text: "journal articles conference papers ieee twc tmc tits wireless communications internet of things"
   },
   {
-    title: "Support",
+    title: "Collaborate",
     url: "support/",
-    category: "Support",
+    category: "Collaborate",
     text: "collaboration funding partners graduate students undergraduate students visiting phd scholars application materials"
   }
 ];
