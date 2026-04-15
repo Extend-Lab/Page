@@ -381,6 +381,16 @@ p {
   margin-bottom: 0;
 }
 
+.person-card-link {
+  display: block;
+  height: 100%;
+  color: inherit;
+}
+
+.person-card-link:hover {
+  color: inherit;
+}
+
 .about-copy ul {
   padding-left: 1.25rem;
 }
