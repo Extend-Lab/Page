@@ -1347,6 +1347,44 @@ p {
   color: #edf5fb;
 }
 
+.content.column-page,
+.content.column-page::before,
+.content-block,
+.hero-panel,
+.hero-cosmos-canvas,
+.hero-cosmos-vignette,
+.btn-action,
+.index-cta,
+.index-cta::before,
+.hero-image,
+.about-image,
+.feature-card,
+.publication-card,
+.person-card,
+.empty-panel,
+.table-responsive,
+.feature-card::before,
+.publication-card::before,
+.person-card::before,
+.empty-panel::before,
+.table-responsive::before,
+.person-photo,
+.person-placeholder,
+.site-search-input,
+.site-search-results,
+.site-search-result,
+.news-card,
+.news-card-image,
+.homepage-update-art,
+.homepage-update-art-image-asset,
+.event-feature-card,
+.event-feature-image,
+.publication-stat,
+.project-detail-panel,
+.nav-footer {
+  border-radius: 0 !important;
+}
+
 @media (max-width: 991px) {
   #quarto-content {
     padding-top: 82px;
