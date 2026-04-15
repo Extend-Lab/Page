@@ -323,8 +323,9 @@ p {
 }
 
 .hero-panel {
+  position: relative;
   overflow: hidden;
-  padding: 36px 34px 32px;
+  padding: 30px 34px 26px;
   border-radius: 22px;
   isolation: isolate;
   background:
@@ -376,6 +377,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-height: 220px;
 }
 
 .hero-eyebrow {
@@ -1347,12 +1349,16 @@ p {
   }
 
   .hero-panel {
-    padding: 26px 20px 22px;
+    padding: 24px 20px 20px;
   }
 
   .hero-cosmos-canvas,
   .hero-cosmos-vignette {
     border-radius: 18px;
+  }
+
+  .hero-copy {
+    min-height: 180px;
   }
 
   .hero-title {
