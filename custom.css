@@ -1349,9 +1349,6 @@ p {
 .hero-panel,
 .hero-cosmos-canvas,
 .hero-cosmos-vignette,
-.btn-action,
-.index-cta,
-.index-cta::before,
 .hero-image,
 .about-image,
 .feature-card,
@@ -1366,9 +1363,6 @@ p {
 .table-responsive::before,
 .person-photo,
 .person-placeholder,
-.site-search-input,
-.site-search-results,
-.site-search-result,
 .news-card,
 .news-card-image,
 .homepage-update-art,
@@ -1379,6 +1373,16 @@ p {
 .project-detail-panel,
 .nav-footer {
   border-radius: 0 !important;
+}
+
+.btn-action,
+.index-cta,
+.index-cta::before,
+.site-search-input,
+.site-search-results,
+.site-search-result,
+.navbar-toggler {
+  border-radius: 10px !important;
 }
 
 @media (max-width: 991px) {
