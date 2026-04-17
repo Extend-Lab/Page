@@ -341,11 +341,7 @@
               .join("")}
           </div>
         </div>
-        <div class="homepage-highlights-scrollbar" aria-hidden="true">
-          <div class="homepage-highlights-scrollbar-track">
-            <span class="homepage-highlights-scrollbar-thumb" data-role="scroll-thumb"></span>
-          </div>
-        </div>
+        <div class="homepage-highlights-dots" data-role="dots" aria-label="Highlight navigation"></div>
       </section>
     `;
   }
@@ -478,13 +474,13 @@
     document.querySelectorAll("[data-homepage-highlights]").forEach((rail) => {
       const viewport = rail.querySelector("[data-role='viewport']");
       const slides = Array.from(rail.querySelectorAll(".homepage-highlights-slide"));
-      const scrollThumb = rail.querySelector("[data-role='scroll-thumb']");
+      const dotsContainer = rail.querySelector("[data-role='dots']");
       let pointerId = null;
       let dragStartX = 0;
       let dragStartScrollLeft = 0;
       let dragDistance = 0;
 
-      if (!viewport || slides.length === 0 || !scrollThumb) return;
+      if (!viewport || slides.length === 0 || !dotsContainer) return;
 
       const getVisibleCount = () => {
         if (window.innerWidth <= 700) return 1;
@@ -494,15 +490,35 @@
 
       const getMaxIndex = () => Math.max(0, slides.length - getVisibleCount());
 
-      const updateScrollbar = () => {
-        const totalScrollable = viewport.scrollWidth - viewport.clientWidth;
-        const visibleRatio =
-          viewport.scrollWidth > 0 ? viewport.clientWidth / viewport.scrollWidth : 1;
-        const thumbWidth = `${Math.max(18, visibleRatio * 100)}%`;
-        const progress = totalScrollable > 0 ? viewport.scrollLeft / totalScrollable : 0;
+      const getAnchorIndices = () => {
+        const maxIndex = getMaxIndex();
+        const visibleCount = getVisibleCount();
+        const anchors = [0];
+        const step = Math.max(1, visibleCount - 1);
 
-        scrollThumb.style.width = thumbWidth;
-        scrollThumb.style.transform = `translateX(${progress * 100}%)`;
+        for (let index = step; index < maxIndex; index += step) {
+          anchors.push(index);
+        }
+
+        if (maxIndex > 0 && anchors[anchors.length - 1] !== maxIndex) {
+          anchors.push(maxIndex);
+        }
+
+        return anchors;
+      };
+
+      const updateDots = () => {
+        const anchors = getAnchorIndices();
+        const step = slides.length > 1 ? slides[1].offsetLeft - slides[0].offsetLeft : viewport.clientWidth;
+        const nearestIndex = step ? Math.round(viewport.scrollLeft / step) : 0;
+        const activeAnchor = anchors.reduce((closest, anchor) => {
+          return Math.abs(anchor - nearestIndex) < Math.abs(closest - nearestIndex) ? anchor : closest;
+        }, anchors[0] || 0);
+
+        dotsContainer.querySelectorAll(".homepage-highlights-dot").forEach((dot) => {
+          const dotIndex = Number(dot.dataset.index || 0);
+          dot.classList.toggle("is-active", anchors[dotIndex] === activeAnchor);
+        });
       };
 
       const scrollToIndex = (index, behavior = "smooth") => {
@@ -515,7 +531,7 @@
           behavior
         });
 
-        window.requestAnimationFrame(updateScrollbar);
+        window.requestAnimationFrame(updateDots);
       };
 
       const snapToNearest = () => {
@@ -525,6 +541,33 @@
         if (!step) return;
         const nearestIndex = Math.round(viewport.scrollLeft / step);
         scrollToIndex(nearestIndex);
+      };
+
+      const renderDots = () => {
+        const anchors = getAnchorIndices();
+        dotsContainer.innerHTML = anchors
+          .map(
+            (_, index) => `
+              <button
+                type="button"
+                class="homepage-highlights-dot${index === 0 ? " is-active" : ""}"
+                data-index="${index}"
+                aria-label="Show highlight set ${index + 1}"
+              ></button>
+            `
+          )
+          .join("");
+
+        dotsContainer.querySelectorAll(".homepage-highlights-dot").forEach((dot) => {
+          const jumpToAnchor = () => {
+            const dotIndex = Number(dot.dataset.index || 0);
+            scrollToIndex(anchors[dotIndex] || 0);
+          };
+
+          dot.addEventListener("mouseenter", jumpToAnchor);
+          dot.addEventListener("focus", jumpToAnchor);
+          dot.addEventListener("click", jumpToAnchor);
+        });
       };
 
       const startDrag = (event) => {
@@ -563,7 +606,7 @@
       viewport.addEventListener("pointermove", moveDrag);
       viewport.addEventListener("pointerup", endDrag);
       viewport.addEventListener("pointercancel", endDrag);
-      viewport.addEventListener("scroll", updateScrollbar, { passive: true });
+      viewport.addEventListener("scroll", updateDots, { passive: true });
 
       rail.addEventListener(
         "click",
@@ -578,12 +621,14 @@
       );
 
       window.addEventListener("resize", () => {
+        renderDots();
         snapToNearest();
-        updateScrollbar();
+        updateDots();
       });
 
+      renderDots();
       scrollToIndex(0, "auto");
-      updateScrollbar();
+      updateDots();
     });
   }
 
