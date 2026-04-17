@@ -103,9 +103,11 @@
             <button type="button" class="research-poster-tool" data-action="zoom-in" aria-label="Zoom in">+</button>
             <button type="button" class="research-poster-tool research-poster-tool-reset" data-action="reset">Reset</button>
           </div>
-          <img src="assets/research/PIMRC.jpg" alt="Poster for the IEEE PIMRC 2026 workshop on Multi-Agent Intelligence and Connectivity for Context-Aware Communication" class="research-poster-modal-image" data-role="poster-image">
+          <div class="research-poster-canvas" data-role="poster-canvas">
+            <img src="assets/research/PIMRC.jpg" alt="Poster for the IEEE PIMRC 2026 workshop on Multi-Agent Intelligence and Connectivity for Context-Aware Communication" class="research-poster-modal-image" data-role="poster-image">
+          </div>
         </div>
-        <p class="research-poster-modal-note">Use the buttons or mouse wheel to zoom, then use the side scrollbar to move through the poster.</p>
+        <p class="research-poster-modal-note">Use the buttons or mouse wheel to zoom, then use the scrollbars to inspect details.</p>
       </div>
     </div>
   </div>
@@ -116,55 +118,102 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!modal) return;
 
   const stage = modal.querySelector("[data-role='poster-stage']");
+  const canvas = modal.querySelector("[data-role='poster-canvas']");
   const image = modal.querySelector("[data-role='poster-image']");
   const zoomInButton = modal.querySelector("[data-action='zoom-in']");
   const zoomOutButton = modal.querySelector("[data-action='zoom-out']");
   const resetButton = modal.querySelector("[data-action='reset']");
 
-  if (!stage || !image || !zoomInButton || !zoomOutButton || !resetButton) return;
+  if (!stage || !canvas || !image || !zoomInButton || !zoomOutButton || !resetButton) return;
 
   const MIN_SCALE = 1;
   const MAX_SCALE = 3.5;
   const SCALE_STEP = 0.25;
   const state = {
-    scale: 1
+    scale: 1,
+    baseWidth: 0,
+    imageRatio: 1
   };
 
   const clamp = (value, min, max) => Math.min(max, Math.max(min, value));
 
-  const render = () => {
-    image.style.width = `${state.scale * 100}%`;
-    image.style.maxWidth = "none";
+  const ensureMetrics = () => {
+    const naturalWidth = image.naturalWidth || 1;
+    const naturalHeight = image.naturalHeight || 1;
+    state.imageRatio = naturalHeight / naturalWidth;
+    state.baseWidth = Math.max(320, stage.clientWidth - 2);
+  };
+
+  const render = (anchor) => {
+    ensureMetrics();
+    const previousWidth = canvas.offsetWidth || state.baseWidth;
+    const previousHeight = canvas.offsetHeight || (previousWidth * state.imageRatio);
+    const anchorX = anchor ? anchor.x : stage.clientWidth / 2;
+    const anchorY = anchor ? anchor.y : stage.clientHeight / 2;
+    const contentX = anchor ? anchor.contentX : stage.scrollLeft + anchorX;
+    const contentY = anchor ? anchor.contentY : stage.scrollTop + anchorY;
+    const nextWidth = state.baseWidth * state.scale;
+    const nextHeight = nextWidth * state.imageRatio;
+
+    canvas.style.width = `${nextWidth}px`;
+    canvas.style.height = `${nextHeight}px`;
     stage.dataset.zoomed = state.scale > 1 ? "true" : "false";
     zoomOutButton.disabled = state.scale <= MIN_SCALE;
     zoomInButton.disabled = state.scale >= MAX_SCALE;
+
+    const widthRatio = previousWidth ? nextWidth / previousWidth : 1;
+    const heightRatio = previousHeight ? nextHeight / previousHeight : 1;
+    const maxScrollLeft = Math.max(0, nextWidth - stage.clientWidth);
+    const maxScrollTop = Math.max(0, nextHeight - stage.clientHeight);
+
+    stage.scrollLeft = clamp((contentX * widthRatio) - anchorX, 0, maxScrollLeft);
+    stage.scrollTop = clamp((contentY * heightRatio) - anchorY, 0, maxScrollTop);
   };
 
-  const setScale = (nextScale) => {
+  const setScale = (nextScale, anchor) => {
     state.scale = clamp(nextScale, MIN_SCALE, MAX_SCALE);
-    render();
+    render(anchor);
   };
 
   const reset = () => {
     state.scale = 1;
     stage.scrollTop = 0;
     stage.scrollLeft = 0;
-    render();
+    render({
+      x: 0,
+      y: 0,
+      contentX: 0,
+      contentY: 0
+    });
   };
 
-  zoomInButton.addEventListener("click", () => setScale(state.scale + SCALE_STEP));
-  zoomOutButton.addEventListener("click", () => setScale(state.scale - SCALE_STEP));
+  const getStageCenterAnchor = () => ({
+    x: stage.clientWidth / 2,
+    y: stage.clientHeight / 2,
+    contentX: stage.scrollLeft + (stage.clientWidth / 2),
+    contentY: stage.scrollTop + (stage.clientHeight / 2)
+  });
+
+  zoomInButton.addEventListener("click", () => setScale(state.scale + SCALE_STEP, getStageCenterAnchor()));
+  zoomOutButton.addEventListener("click", () => setScale(state.scale - SCALE_STEP, getStageCenterAnchor()));
   resetButton.addEventListener("click", reset);
 
   stage.addEventListener("wheel", (event) => {
     event.preventDefault();
     const delta = event.deltaY > 0 ? -SCALE_STEP : SCALE_STEP;
-    setScale(state.scale + delta);
+    const rect = stage.getBoundingClientRect();
+    setScale(state.scale + delta, {
+      x: event.clientX - rect.left,
+      y: event.clientY - rect.top,
+      contentX: stage.scrollLeft + (event.clientX - rect.left),
+      contentY: stage.scrollTop + (event.clientY - rect.top)
+    });
   }, { passive: false });
 
   modal.addEventListener("shown.bs.modal", reset);
   modal.addEventListener("hidden.bs.modal", reset);
-  window.addEventListener("resize", render);
+  image.addEventListener("load", () => render(getStageCenterAnchor()));
+  window.addEventListener("resize", () => render(getStageCenterAnchor()));
 
   render();
 });

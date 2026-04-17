@@ -1318,12 +1318,14 @@ p {
 
 .research-poster-stage {
   position: relative;
-  overflow: auto;
+  overflow-x: auto;
+  overflow-y: scroll;
   border-radius: 12px;
   max-height: 80vh;
   cursor: default;
   touch-action: pan-y pan-x;
   background: rgba(255, 255, 255, 0.8);
+  scrollbar-gutter: stable both-edges;
   scrollbar-width: thin;
   scrollbar-color: rgba(78, 130, 178, 0.72) rgba(224, 234, 243, 0.95);
 }
@@ -1345,6 +1347,12 @@ p {
   border-radius: 999px;
 }
 
+.research-poster-canvas {
+  position: relative;
+  min-width: 100%;
+  margin: 0 auto;
+}
+
 .research-poster-modal-image {
   display: block;
   width: 100%;
@@ -1353,7 +1361,7 @@ p {
   object-fit: unset;
   margin: 0 auto;
   border-radius: 12px;
-  transition: width 180ms ease;
+  transition: width 180ms ease, height 180ms ease;
 }
 
 .research-poster-modal-note {
