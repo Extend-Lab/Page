@@ -243,12 +243,12 @@
   }
 
   function getHomepageHighlights() {
-    const latestPublication = getNewsItems("publication")[0];
-    const latestMedia = getNewsItems("media")[0];
-    const latestRecentActivity = getEventItems("recent-activity")[0];
-    const latestExtendSharing = getEventItems("extend-sharing")[0];
-
-    return [latestPublication, latestMedia, latestRecentActivity, latestExtendSharing].filter(Boolean);
+    return [
+      ...getNewsItems("publication").slice(0, 2),
+      ...getNewsItems("media").slice(0, 2),
+      ...getEventItems("recent-activity").slice(0, 2),
+      ...getEventItems("extend-sharing").slice(0, 2)
+    ].filter(Boolean);
   }
 
   function getItemUrl(item) {
@@ -309,19 +309,47 @@
       item.type === "event" ? `Events · ${item.categoryLabel}` : `News · ${item.categoryLabel}`;
 
     return `
-      <div class="g-col-12 g-col-md-6 g-col-xl-3">
-        <a href="${getItemUrl(item)}" class="homepage-update-link">
-          <article class="news-card homepage-update-card">
-            ${renderHomepageVisual(item)}
-            <div class="news-card-body">
-              <p class="homepage-update-label">${label}</p>
-              <p class="homepage-update-meta">${item.displayDate}</p>
-              <h3 class="news-card-title">${item.title}</h3>
-              <p class="news-card-text">${item.summaryHtml || item.bodyHtml}</p>
-            </div>
-          </article>
-        </a>
-      </div>
+      <a href="${getItemUrl(item)}" class="homepage-update-link">
+        <article class="news-card homepage-update-card">
+          ${renderHomepageVisual(item)}
+          <div class="news-card-body">
+            <p class="homepage-update-label">${label}</p>
+            <p class="homepage-update-meta">${item.displayDate}</p>
+            <h3 class="news-card-title">${item.title}</h3>
+            <p class="news-card-text">${item.summaryHtml || item.bodyHtml}</p>
+          </div>
+        </article>
+      </a>
+    `;
+  }
+
+  function renderHomepageHighlightsRail(items) {
+    if (!items.length) return "";
+
+    return `
+      <section class="homepage-highlights-rail" data-homepage-highlights>
+        <div class="homepage-highlights-controls">
+          <button type="button" class="homepage-highlights-button" data-direction="prev" aria-label="Show previous highlights">
+            <span aria-hidden="true">‹</span>
+          </button>
+          <button type="button" class="homepage-highlights-button" data-direction="next" aria-label="Show more highlights">
+            <span aria-hidden="true">›</span>
+          </button>
+        </div>
+        <div class="homepage-highlights-viewport" data-role="viewport">
+          <div class="homepage-highlights-track" data-role="track">
+            ${items
+              .map(
+                (item, index) => `
+                  <div class="homepage-highlights-slide" data-slide-index="${index}">
+                    ${renderHomepageCard(item)}
+                  </div>
+                `
+              )
+              .join("")}
+          </div>
+        </div>
+      </section>
     `;
   }
 
@@ -445,7 +473,55 @@
 
   function renderHomepage() {
     document.querySelectorAll("[data-render='homepage-highlights']").forEach((container) => {
-      container.innerHTML = getHomepageHighlights().map(renderHomepageCard).join("");
+      container.innerHTML = renderHomepageHighlightsRail(getHomepageHighlights());
+    });
+  }
+
+  function initHomepageHighlightsRail() {
+    document.querySelectorAll("[data-homepage-highlights]").forEach((rail) => {
+      const viewport = rail.querySelector("[data-role='viewport']");
+      const slides = Array.from(rail.querySelectorAll(".homepage-highlights-slide"));
+      const prevButton = rail.querySelector("[data-direction='prev']");
+      const nextButton = rail.querySelector("[data-direction='next']");
+      let currentIndex = 0;
+
+      if (!viewport || slides.length === 0 || !prevButton || !nextButton) return;
+
+      const getVisibleCount = () => {
+        if (window.innerWidth <= 700) return 1;
+        if (window.innerWidth <= 1080) return 2;
+        return 3;
+      };
+
+      const getMaxIndex = () => Math.max(0, slides.length - getVisibleCount());
+
+      const scrollToIndex = (index) => {
+        currentIndex = Math.max(0, Math.min(index, getMaxIndex()));
+        const targetSlide = slides[currentIndex];
+        const targetLeft = targetSlide.offsetLeft - viewport.offsetLeft;
+
+        viewport.scrollTo({
+          left: targetLeft,
+          behavior: "smooth"
+        });
+
+        prevButton.disabled = currentIndex <= 0;
+        nextButton.disabled = currentIndex >= getMaxIndex();
+      };
+
+      prevButton.addEventListener("click", () => {
+        scrollToIndex(currentIndex - 1);
+      });
+
+      nextButton.addEventListener("click", () => {
+        scrollToIndex(currentIndex + 1);
+      });
+
+      window.addEventListener("resize", () => {
+        scrollToIndex(currentIndex);
+      });
+
+      scrollToIndex(0);
     });
   }
 
@@ -487,6 +563,7 @@
 
   document.addEventListener("DOMContentLoaded", () => {
     renderHomepage();
+    initHomepageHighlightsRail();
     renderNewsPage();
     renderEventsPage();
     revealHashTarget();
