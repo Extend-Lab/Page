@@ -328,14 +328,6 @@
 
     return `
       <section class="homepage-highlights-rail" data-homepage-highlights>
-        <div class="homepage-highlights-controls">
-          <button type="button" class="homepage-highlights-button" data-direction="prev" aria-label="Show previous highlights">
-            <span aria-hidden="true">‹</span>
-          </button>
-          <button type="button" class="homepage-highlights-button" data-direction="next" aria-label="Show more highlights">
-            <span aria-hidden="true">›</span>
-          </button>
-        </div>
         <div class="homepage-highlights-viewport" data-role="viewport">
           <div class="homepage-highlights-track" data-role="track">
             ${items
@@ -481,11 +473,12 @@
     document.querySelectorAll("[data-homepage-highlights]").forEach((rail) => {
       const viewport = rail.querySelector("[data-role='viewport']");
       const slides = Array.from(rail.querySelectorAll(".homepage-highlights-slide"));
-      const prevButton = rail.querySelector("[data-direction='prev']");
-      const nextButton = rail.querySelector("[data-direction='next']");
-      let currentIndex = 0;
+      let pointerId = null;
+      let dragStartX = 0;
+      let dragStartScrollLeft = 0;
+      let dragDistance = 0;
 
-      if (!viewport || slides.length === 0 || !prevButton || !nextButton) return;
+      if (!viewport || slides.length === 0) return;
 
       const getVisibleCount = () => {
         if (window.innerWidth <= 700) return 1;
@@ -495,33 +488,76 @@
 
       const getMaxIndex = () => Math.max(0, slides.length - getVisibleCount());
 
-      const scrollToIndex = (index) => {
-        currentIndex = Math.max(0, Math.min(index, getMaxIndex()));
-        const targetSlide = slides[currentIndex];
+      const scrollToIndex = (index, behavior = "smooth") => {
+        const safeIndex = Math.max(0, Math.min(index, getMaxIndex()));
+        const targetSlide = slides[safeIndex];
         const targetLeft = targetSlide.offsetLeft - viewport.offsetLeft;
 
         viewport.scrollTo({
           left: targetLeft,
-          behavior: "smooth"
+          behavior
         });
-
-        prevButton.disabled = currentIndex <= 0;
-        nextButton.disabled = currentIndex >= getMaxIndex();
       };
 
-      prevButton.addEventListener("click", () => {
-        scrollToIndex(currentIndex - 1);
+      const snapToNearest = () => {
+        const slideWidth = slides[0].offsetWidth;
+        const gap = slides.length > 1 ? slides[1].offsetLeft - slides[0].offsetLeft - slideWidth : 0;
+        const step = slideWidth + gap;
+        if (!step) return;
+        const nearestIndex = Math.round(viewport.scrollLeft / step);
+        scrollToIndex(nearestIndex);
+      };
+
+      viewport.addEventListener("pointerdown", (event) => {
+        if (event.pointerType === "mouse" && event.button !== 0) return;
+        pointerId = event.pointerId;
+        dragStartX = event.clientX;
+        dragStartScrollLeft = viewport.scrollLeft;
+        dragDistance = 0;
+        rail.dataset.dragging = "true";
+        viewport.setPointerCapture(pointerId);
       });
 
-      nextButton.addEventListener("click", () => {
-        scrollToIndex(currentIndex + 1);
+      viewport.addEventListener("pointermove", (event) => {
+        if (pointerId !== event.pointerId) return;
+        const deltaX = event.clientX - dragStartX;
+        dragDistance = Math.max(dragDistance, Math.abs(deltaX));
+        viewport.scrollLeft = dragStartScrollLeft - deltaX;
       });
+
+      const endDrag = (event) => {
+        if (pointerId !== event.pointerId) return;
+        if (viewport.hasPointerCapture(pointerId)) {
+          viewport.releasePointerCapture(pointerId);
+        }
+        pointerId = null;
+        rail.dataset.dragging = "false";
+        window.setTimeout(() => {
+          rail.dataset.dragMoved = dragDistance > 8 ? "true" : "false";
+        }, 0);
+        snapToNearest();
+      };
+
+      viewport.addEventListener("pointerup", endDrag);
+      viewport.addEventListener("pointercancel", endDrag);
+
+      rail.addEventListener(
+        "click",
+        (event) => {
+          if (rail.dataset.dragMoved === "true") {
+            event.preventDefault();
+            event.stopPropagation();
+            rail.dataset.dragMoved = "false";
+          }
+        },
+        true
+      );
 
       window.addEventListener("resize", () => {
-        scrollToIndex(currentIndex);
+        snapToNearest();
       });
 
-      scrollToIndex(0);
+      scrollToIndex(0, "auto");
     });
   }
 
