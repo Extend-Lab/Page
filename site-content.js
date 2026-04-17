@@ -341,6 +341,14 @@
               .join("")}
           </div>
         </div>
+        <div class="homepage-highlights-hint-wrap">
+          <button type="button" class="homepage-highlights-drag-handle" data-role="drag-handle" aria-label="Drag to browse more highlights">
+            <span class="homepage-highlights-drag-icon" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </span>
+            <span class="homepage-highlights-drag-text">Drag to browse</span>
+          </button>
+        </div>
       </section>
     `;
   }
@@ -473,12 +481,14 @@
     document.querySelectorAll("[data-homepage-highlights]").forEach((rail) => {
       const viewport = rail.querySelector("[data-role='viewport']");
       const slides = Array.from(rail.querySelectorAll(".homepage-highlights-slide"));
+      const dragHandle = rail.querySelector("[data-role='drag-handle']");
       let pointerId = null;
       let dragStartX = 0;
       let dragStartScrollLeft = 0;
       let dragDistance = 0;
+      let dragSource = null;
 
-      if (!viewport || slides.length === 0) return;
+      if (!viewport || slides.length === 0 || !dragHandle) return;
 
       const getVisibleCount = () => {
         if (window.innerWidth <= 700) return 1;
@@ -508,29 +518,33 @@
         scrollToIndex(nearestIndex);
       };
 
-      viewport.addEventListener("pointerdown", (event) => {
+      const startDrag = (event) => {
         if (event.pointerType === "mouse" && event.button !== 0) return;
         pointerId = event.pointerId;
         dragStartX = event.clientX;
         dragStartScrollLeft = viewport.scrollLeft;
         dragDistance = 0;
+        dragSource = event.currentTarget;
         rail.dataset.dragging = "true";
-        viewport.setPointerCapture(pointerId);
-      });
+        rail.dataset.dragMoved = "false";
+        dragSource.setPointerCapture(pointerId);
+        event.preventDefault();
+      };
 
-      viewport.addEventListener("pointermove", (event) => {
+      const moveDrag = (event) => {
         if (pointerId !== event.pointerId) return;
         const deltaX = event.clientX - dragStartX;
         dragDistance = Math.max(dragDistance, Math.abs(deltaX));
         viewport.scrollLeft = dragStartScrollLeft - deltaX;
-      });
+      };
 
       const endDrag = (event) => {
         if (pointerId !== event.pointerId) return;
-        if (viewport.hasPointerCapture(pointerId)) {
-          viewport.releasePointerCapture(pointerId);
+        if (dragSource && dragSource.hasPointerCapture(pointerId)) {
+          dragSource.releasePointerCapture(pointerId);
         }
         pointerId = null;
+        dragSource = null;
         rail.dataset.dragging = "false";
         window.setTimeout(() => {
           rail.dataset.dragMoved = dragDistance > 8 ? "true" : "false";
@@ -538,8 +552,12 @@
         snapToNearest();
       };
 
-      viewport.addEventListener("pointerup", endDrag);
-      viewport.addEventListener("pointercancel", endDrag);
+      [viewport, dragHandle].forEach((source) => {
+        source.addEventListener("pointerdown", startDrag);
+        source.addEventListener("pointermove", moveDrag);
+        source.addEventListener("pointerup", endDrag);
+        source.addEventListener("pointercancel", endDrag);
+      });
 
       rail.addEventListener(
         "click",
