@@ -110,10 +110,31 @@
 
   const EVENT_ITEMS = [
     {
+      id: "event-quanzhun-visit",
+      type: "event",
+      category: "recent-activity",
+      categoryLabel: "Recent Activity",
+      title: "Visit to Guangdong Quanzhun Intelligent Technology Co., Ltd.",
+      bodyHtml:
+        "On <strong>11 March 2026</strong>, <strong>Dr. Jiadong Yu</strong>, <strong>Mr. Ziru Zhang</strong>, and <strong>Ms. Xuling Zhang</strong> visited <em>Guangdong Quanzhun Intelligent Technology Co., Ltd.</em>. During the visit, the team toured the company's production line and discussed potential collaboration opportunities and a shared long-term vision.",
+      summaryHtml:
+        "The team visited Guangdong Quanzhun Intelligent Technology Co., Ltd., toured its production line, and discussed future collaboration opportunities.",
+      displayDate: "11 Mar 2026",
+      sortDate: "2026-03-11",
+      images: [
+        {
+          src: "./assets/events/quanzhun.jpg",
+          alt: "EXTEND Lab members visiting Guangdong Quanzhun Intelligent Technology Co., Ltd."
+        }
+      ],
+      searchText:
+        "jiadong yu ziru zhang xuling zhang guangdong quanzhun intelligent technology company visit production line collaboration vision march 11 2026"
+    },
+    {
       id: "event-openclaw-ai-agent",
       type: "event",
-      category: "activity",
-      categoryLabel: "Event",
+      category: "extend-sharing",
+      categoryLabel: "EXTEND Sharing",
       title: "EXTEND Sharing: OpenClaw and AI Agent",
       bodyHtml:
         "We organized an EXTEND Sharing Session featuring Dr. Jiadong Yu and Mr. Jiale Li. The session covered the fundamentals of AI agents and OpenClaw, plus practical reflections on using tools such as Claude Code in everyday research workflows.",
@@ -215,8 +236,10 @@
     );
   }
 
-  function getEventItems() {
-    return sortByDateDesc(EVENT_ITEMS);
+  function getEventItems(category) {
+    return sortByDateDesc(
+      category ? EVENT_ITEMS.filter((item) => item.category === category) : EVENT_ITEMS
+    );
   }
 
   function getHomepageHighlights() {
@@ -416,7 +439,7 @@
 
   function renderEventsPage() {
     document.querySelectorAll("[data-render='events-section']").forEach((section) => {
-      renderArchiveSection(section, getEventItems(), renderEventCard);
+      renderArchiveSection(section, getEventItems(section.dataset.category), renderEventCard);
     });
   }
 
