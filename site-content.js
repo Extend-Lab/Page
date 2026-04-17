@@ -243,17 +243,12 @@
   }
 
   function getHomepageHighlights() {
-    const latestPublications = getNewsItems("publication").slice(0, 2);
+    const latestPublication = getNewsItems("publication")[0];
     const latestMedia = getNewsItems("media")[0];
     const latestRecentActivity = getEventItems("recent-activity")[0];
     const latestExtendSharing = getEventItems("extend-sharing")[0];
 
-    return [
-      ...latestPublications,
-      latestMedia,
-      latestRecentActivity,
-      latestExtendSharing
-    ].filter(Boolean);
+    return [latestPublication, latestMedia, latestRecentActivity, latestExtendSharing].filter(Boolean);
   }
 
   function getItemUrl(item) {
