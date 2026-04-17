@@ -297,8 +297,8 @@
     if (!visual) return "";
 
     return `
-      <div class="news-card-art news-card-art-image">
-        <img src="${visual.src}" alt="${escapeHtml(visual.alt)}" class="news-card-art-image-asset">
+      <div class="homepage-update-art homepage-update-art-image">
+        <img src="${visual.src}" alt="${escapeHtml(visual.alt)}" class="homepage-update-art-image-asset">
       </div>
     `;
   }
@@ -384,7 +384,7 @@
         <div class="event-feature-body">
           <p class="event-feature-date">${item.displayDate}</p>
           <h3 class="event-feature-title">${item.title}</h3>
-          <p class="event-feature-text">${item.bodyHtml}</p>
+          <p class="event-feature-text">${stripHtml(item.bodyHtml)}</p>
         </div>
       </article>
     `;

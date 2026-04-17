@@ -794,16 +794,16 @@ p {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  padding: 0.66rem 1rem;
+  padding: 0;
   border: none;
-  border-radius: 999px;
-  background: linear-gradient(180deg, rgba(245, 250, 255, 0.98) 0%, rgba(229, 240, 249, 0.98) 100%);
-  box-shadow: 0 12px 26px rgba(18, 46, 79, 0.1);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
   color: #2f5f91;
-  font-size: 0.84rem;
+  font-size: 0.88rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  text-transform: none;
 }
 
 .archive-return-link::before {
@@ -814,9 +814,9 @@ p {
 
 .archive-return-link:hover {
   color: #214a74;
-  background: linear-gradient(180deg, rgba(238, 246, 253, 0.98) 0%, rgba(219, 234, 247, 0.98) 100%);
-  box-shadow: 0 16px 30px rgba(18, 46, 79, 0.13);
-  transform: translateY(-1px);
+  background: transparent;
+  box-shadow: none;
+  transform: none;
 }
 
 .news-section-header {
@@ -870,31 +870,6 @@ p {
   object-fit: cover;
   display: block;
   border-bottom: 1px solid rgba(207, 218, 228, 0.95);
-}
-
-.news-card-art {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  aspect-ratio: 5 / 3;
-  padding: 1.05rem;
-  border-bottom: 1px solid rgba(207, 218, 228, 0.95);
-}
-
-.news-card-art-image {
-  background:
-    radial-gradient(circle at 18% 20%, rgba(142, 211, 255, 0.28), transparent 26%),
-    linear-gradient(135deg, #153b63 0%, #1f5786 52%, #17446e 100%);
-}
-
-.news-card-art-image-asset {
-  max-width: 88%;
-  max-height: 72%;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  border: 1px solid rgba(203, 226, 245, 0.18);
-  background: rgba(255, 255, 255, 0.08);
 }
 
 .news-card-body {
@@ -1043,7 +1018,7 @@ p {
 
 .event-feature-card {
   display: grid;
-  grid-template-columns: minmax(300px, 1.08fr) minmax(0, 1.15fr);
+  grid-template-columns: minmax(220px, 1fr) minmax(0, 2fr);
   gap: 1.6rem;
   align-items: stretch;
   padding: 1.35rem;
@@ -1061,9 +1036,9 @@ p {
 
 .event-feature-media-single {
   grid-template-columns: 1fr;
-  max-width: 240px;
+  max-width: 100%;
   width: 100%;
-  justify-self: center;
+  justify-self: stretch;
 }
 
 .event-feature-image {
@@ -1088,15 +1063,17 @@ p {
   flex-direction: column;
   justify-content: center;
   min-width: 0;
+  max-width: 100%;
 }
 
 .event-feature-date {
-  margin: 0 0 0.55rem;
-  color: #7f8e9c;
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  margin: 0 0 0.4rem;
+  color: #5f6d79;
+  font-size: 0.96rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+  font-style: normal;
 }
 
 .event-feature-title {
@@ -1112,6 +1089,8 @@ p {
   color: #5f6d79;
   font-size: 0.96rem;
   line-height: 1.74;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .archive-target-flash {
