@@ -14,8 +14,8 @@
       sortDate: "2026-04-17",
       homepageVisual: {
         type: "art-image",
-        src: "./assets/news/icc-2026-student-travel-grant.svg",
-        alt: "IEEE ICC 2026 Glasgow banner for the student travel grant announcement"
+        src: "./assets/news/ICC2026.jpg",
+        alt: "Official IEEE ICC 2026 conference banner"
       },
       searchText:
         "jianing zheng icc 2026 student travel grant maximizing personalized energy-efficiency for swarm learning in 6g networks glasgow may 25 2026"
@@ -348,6 +348,8 @@
   }
 
   function bindArchiveToggle(section) {
+    if (section.dataset.findMoreUrl) return;
+
     const button = section.querySelector(".archive-toggle-button");
     if (!button) return;
 
@@ -369,10 +371,14 @@
       .join("");
 
     if (actions) {
-      actions.innerHTML =
-        items.length > limit
-          ? '<button type="button" class="btn-action archive-toggle-button" aria-expanded="false">Find More</button>'
-          : "";
+      if (items.length > limit && section.dataset.findMoreUrl) {
+        actions.innerHTML = `<a class="btn-action archive-toggle-button" href="${section.dataset.findMoreUrl}">Find More</a>`;
+      } else {
+        actions.innerHTML =
+          items.length > limit
+            ? '<button type="button" class="btn-action archive-toggle-button" aria-expanded="false">Find More</button>'
+            : "";
+      }
     }
 
     setArchiveExpanded(section, false);
