@@ -314,56 +314,20 @@
       item.type === "event" ? `Events · ${item.categoryLabel}` : `News · ${item.categoryLabel}`;
 
     return `
-      <a href="${getItemUrl(item)}" class="homepage-update-link">
-        <article class="news-card homepage-update-card">
-          ${renderHomepageVisual(item)}
-          <div class="news-card-body">
-            <p class="homepage-update-label">${label}</p>
-            <p class="homepage-update-meta">${item.displayDate}</p>
-            <h3 class="news-card-title">${item.title}</h3>
-            <p class="news-card-text">${item.summaryHtml || item.bodyHtml}</p>
-            <p class="news-card-date">${item.displayDate}</p>
-          </div>
-        </article>
-      </a>
-    `;
-  }
-
-  function renderHomepageCarousel(items) {
-    if (!items.length) return "";
-
-    return `
-      <section class="homepage-carousel" data-homepage-carousel aria-label="Latest Highlights carousel">
-        <div class="homepage-carousel-viewport">
-          <div class="homepage-carousel-track" data-role="track">
-            ${items
-              .map(
-                (item, index) => `
-                  <div class="homepage-carousel-slide" data-slide-index="${index}" aria-hidden="${index === 0 ? "false" : "true"}">
-                    ${renderHomepageCard(item)}
-                  </div>
-                `
-              )
-              .join("")}
-          </div>
-        </div>
-        <div class="homepage-carousel-dots" data-role="dots" aria-label="Select a highlight">
-          <span class="homepage-carousel-dot-indicator" aria-hidden="true"></span>
-          ${items
-            .map(
-              (item, index) => `
-                <button
-                  type="button"
-                  class="homepage-carousel-dot${index === 0 ? " is-active" : ""}"
-                  data-slide-to="${index}"
-                  aria-label="Show highlight ${index + 1}: ${escapeHtml(item.title)}"
-                  aria-pressed="${index === 0 ? "true" : "false"}"
-                ></button>
-              `
-            )
-            .join("")}
-        </div>
-      </section>
+      <div class="g-col-12 g-col-md-6 g-col-xl-3">
+        <a href="${getItemUrl(item)}" class="homepage-update-link">
+          <article class="news-card homepage-update-card">
+            ${renderHomepageVisual(item)}
+            <div class="news-card-body">
+              <p class="homepage-update-label">${label}</p>
+              <p class="homepage-update-meta">${item.displayDate}</p>
+              <h3 class="news-card-title">${item.title}</h3>
+              <p class="news-card-text">${item.summaryHtml || item.bodyHtml}</p>
+              <p class="news-card-date">${item.displayDate}</p>
+            </div>
+          </article>
+        </a>
+      </div>
     `;
   }
 
@@ -487,81 +451,7 @@
 
   function renderHomepage() {
     document.querySelectorAll("[data-render='homepage-highlights']").forEach((container) => {
-      const items = getHomepageHighlights();
-      container.innerHTML = renderHomepageCarousel(items);
-    });
-  }
-
-  function initHomepageCarousel() {
-    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-    document.querySelectorAll("[data-homepage-carousel]").forEach((carousel) => {
-      const track = carousel.querySelector("[data-role='track']");
-      const slides = Array.from(carousel.querySelectorAll(".homepage-carousel-slide"));
-      const dots = Array.from(carousel.querySelectorAll(".homepage-carousel-dot"));
-      let currentIndex = 0;
-      let autoplayId = null;
-
-      if (!track || slides.length === 0) return;
-
-      const setSlide = (nextIndex) => {
-        currentIndex = (nextIndex + slides.length) % slides.length;
-        track.style.transform = `translate3d(-${currentIndex * 100}%, 0, 0)`;
-        carousel.style.setProperty("--homepage-active-index", String(currentIndex));
-
-        slides.forEach((slide, index) => {
-          slide.setAttribute("aria-hidden", index === currentIndex ? "false" : "true");
-        });
-
-        dots.forEach((dot, index) => {
-          const isActive = index === currentIndex;
-          dot.classList.toggle("is-active", isActive);
-          dot.setAttribute("aria-pressed", isActive ? "true" : "false");
-        });
-      };
-
-      const stopAutoplay = () => {
-        if (autoplayId !== null) {
-          window.clearInterval(autoplayId);
-          autoplayId = null;
-        }
-      };
-
-      const startAutoplay = () => {
-        if (prefersReducedMotion || slides.length < 2 || autoplayId !== null) return;
-
-        autoplayId = window.setInterval(() => {
-          setSlide(currentIndex + 1);
-        }, 5200);
-      };
-
-      dots.forEach((dot) => {
-        dot.addEventListener("pointerenter", () => {
-          carousel.style.setProperty("--homepage-active-index", String(Number(dot.dataset.slideTo || 0)));
-        });
-
-        dot.addEventListener("pointerleave", () => {
-          carousel.style.setProperty("--homepage-active-index", String(currentIndex));
-        });
-
-        dot.addEventListener("click", () => {
-          setSlide(Number(dot.dataset.slideTo || 0));
-          stopAutoplay();
-          startAutoplay();
-        });
-      });
-
-      carousel.addEventListener("mouseenter", stopAutoplay);
-      carousel.addEventListener("mouseleave", startAutoplay);
-      carousel.addEventListener("focusin", stopAutoplay);
-      carousel.addEventListener("focusout", (event) => {
-        if (!carousel.contains(event.relatedTarget)) {
-          startAutoplay();
-        }
-      });
-
-      setSlide(0);
-      startAutoplay();
+      container.innerHTML = getHomepageHighlights().map(renderHomepageCard).join("");
     });
   }
 
@@ -603,7 +493,6 @@
 
   document.addEventListener("DOMContentLoaded", () => {
     renderHomepage();
-    initHomepageCarousel();
     renderNewsPage();
     renderEventsPage();
     revealHashTarget();
