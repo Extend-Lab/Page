@@ -875,9 +875,10 @@ p {
 .news-card-body {
   display: flex;
   flex-direction: column;
+  flex: 1 1 auto;
   gap: 0.55rem;
   padding: 1rem 1rem 1rem;
-  min-height: 100%;
+  min-height: 0;
 }
 
 .news-card-title {
@@ -980,6 +981,9 @@ p {
   margin-top: auto;
   padding-top: 0.7rem;
   align-self: flex-end;
+  display: block;
+  width: 100%;
+  text-align: right;
   color: #7f8e9c;
   font-size: 0.76rem;
   font-weight: 600;
