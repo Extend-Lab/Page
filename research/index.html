@@ -94,14 +94,136 @@
     <div class="modal-content research-poster-modal-content">
       <div class="modal-header research-poster-modal-header">
         <h2 class="modal-title fs-5" id="pimrcPosterModalLabel">IEEE PIMRC 2026 Workshop Poster</h2>
+        <div class="research-poster-toolbar" aria-label="Poster zoom controls">
+          <button type="button" class="research-poster-tool" data-action="zoom-out" aria-label="Zoom out">-</button>
+          <button type="button" class="research-poster-tool" data-action="zoom-in" aria-label="Zoom in">+</button>
+          <button type="button" class="research-poster-tool research-poster-tool-reset" data-action="reset">Reset</button>
+        </div>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close poster preview"></button>
       </div>
       <div class="modal-body research-poster-modal-body">
-        <img src="assets/research/PIMRC.jpg" alt="Poster for the IEEE PIMRC 2026 workshop on Multi-Agent Intelligence and Connectivity for Context-Aware Communication" class="research-poster-modal-image">
+        <div class="research-poster-stage" data-role="poster-stage">
+          <img src="assets/research/PIMRC.jpg" alt="Poster for the IEEE PIMRC 2026 workshop on Multi-Agent Intelligence and Connectivity for Context-Aware Communication" class="research-poster-modal-image" data-role="poster-image">
+        </div>
+        <p class="research-poster-modal-note">Use the buttons or mouse wheel to zoom. Drag the poster to pan when zoomed in.</p>
       </div>
     </div>
   </div>
 </div>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.getElementById("pimrcPosterModal");
+  if (!modal) return;
+
+  const stage = modal.querySelector("[data-role='poster-stage']");
+  const image = modal.querySelector("[data-role='poster-image']");
+  const zoomInButton = modal.querySelector("[data-action='zoom-in']");
+  const zoomOutButton = modal.querySelector("[data-action='zoom-out']");
+  const resetButton = modal.querySelector("[data-action='reset']");
+
+  if (!stage || !image || !zoomInButton || !zoomOutButton || !resetButton) return;
+
+  const MIN_SCALE = 1;
+  const MAX_SCALE = 3.5;
+  const SCALE_STEP = 0.25;
+  const state = {
+    scale: 1,
+    x: 0,
+    y: 0,
+    pointerId: null,
+    startX: 0,
+    startY: 0,
+    originX: 0,
+    originY: 0
+  };
+
+  const clamp = (value, min, max) => Math.min(max, Math.max(min, value));
+
+  const clampOffset = () => {
+    const maxOffsetX = ((stage.clientWidth * state.scale) - stage.clientWidth) / 2;
+    const maxOffsetY = ((stage.clientHeight * state.scale) - stage.clientHeight) / 2;
+    state.x = clamp(state.x, -Math.max(0, maxOffsetX), Math.max(0, maxOffsetX));
+    state.y = clamp(state.y, -Math.max(0, maxOffsetY), Math.max(0, maxOffsetY));
+  };
+
+  const render = () => {
+    clampOffset();
+    image.style.transform = `translate(${state.x}px, ${state.y}px) scale(${state.scale})`;
+    stage.dataset.zoomed = state.scale > 1 ? "true" : "false";
+    zoomOutButton.disabled = state.scale <= MIN_SCALE;
+    zoomInButton.disabled = state.scale >= MAX_SCALE;
+  };
+
+  const setScale = (nextScale) => {
+    state.scale = clamp(nextScale, MIN_SCALE, MAX_SCALE);
+    if (state.scale === MIN_SCALE) {
+      state.x = 0;
+      state.y = 0;
+    }
+    render();
+  };
+
+  const reset = () => {
+    state.scale = 1;
+    state.x = 0;
+    state.y = 0;
+    state.pointerId = null;
+    render();
+  };
+
+  zoomInButton.addEventListener("click", () => setScale(state.scale + SCALE_STEP));
+  zoomOutButton.addEventListener("click", () => setScale(state.scale - SCALE_STEP));
+  resetButton.addEventListener("click", reset);
+
+  stage.addEventListener("wheel", (event) => {
+    event.preventDefault();
+    const delta = event.deltaY > 0 ? -SCALE_STEP : SCALE_STEP;
+    setScale(state.scale + delta);
+  }, { passive: false });
+
+  stage.addEventListener("dblclick", () => {
+    setScale(state.scale > 1 ? 1 : 2);
+  });
+
+  stage.addEventListener("pointerdown", (event) => {
+    if (state.scale <= 1) return;
+    state.pointerId = event.pointerId;
+    state.startX = event.clientX;
+    state.startY = event.clientY;
+    state.originX = state.x;
+    state.originY = state.y;
+    stage.dataset.dragging = "true";
+    stage.setPointerCapture(event.pointerId);
+  });
+
+  stage.addEventListener("pointermove", (event) => {
+    if (state.pointerId !== event.pointerId) return;
+    state.x = state.originX + (event.clientX - state.startX);
+    state.y = state.originY + (event.clientY - state.startY);
+    render();
+  });
+
+  const endDrag = (event) => {
+    if (state.pointerId !== event.pointerId) return;
+    if (stage.hasPointerCapture(event.pointerId)) {
+      stage.releasePointerCapture(event.pointerId);
+    }
+    stage.dataset.dragging = "false";
+    state.pointerId = null;
+  };
+
+  stage.addEventListener("pointerup", endDrag);
+  stage.addEventListener("pointercancel", endDrag);
+  stage.addEventListener("pointerleave", (event) => {
+    if (state.pointerId === event.pointerId) endDrag(event);
+  });
+
+  modal.addEventListener("shown.bs.modal", reset);
+  modal.addEventListener("hidden.bs.modal", reset);
+
+  render();
+});
+</script>
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">&nbsp;</div>
