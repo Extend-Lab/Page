@@ -787,17 +787,21 @@ p {
 }
 
 .archive-return {
-  margin: 0 0 0.75rem;
+  margin: 0 0 0.95rem;
 }
 
 .archive-return-link {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  color: #4a78a8;
-  font-size: 0.9rem;
+  padding: 0.62rem 0.9rem;
+  border: 1px solid rgba(146, 184, 216, 0.5);
+  background: linear-gradient(180deg, rgba(249, 252, 255, 0.98) 0%, rgba(238, 246, 252, 0.98) 100%);
+  box-shadow: 0 10px 24px rgba(18, 46, 79, 0.08);
+  color: #2f5f91;
+  font-size: 0.84rem;
   font-weight: 700;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
@@ -805,6 +809,13 @@ p {
   content: "\2190";
   font-size: 0.95rem;
   line-height: 1;
+}
+
+.archive-return-link:hover {
+  color: #214a74;
+  border-color: rgba(122, 170, 212, 0.74);
+  background: linear-gradient(180deg, rgba(245, 250, 255, 0.98) 0%, rgba(229, 240, 249, 0.98) 100%);
+  box-shadow: 0 14px 28px rgba(18, 46, 79, 0.11);
 }
 
 .news-section-header {
