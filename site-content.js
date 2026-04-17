@@ -1,6 +1,26 @@
 (function () {
   const NEWS_ITEMS = [
     {
+      id: "news-publication-icc-2026-travel-grant",
+      type: "news",
+      category: "publication",
+      categoryLabel: "Publication",
+      title: "Ms. Jianing Zheng Receives ICC 2026 Student Travel Grant",
+      bodyHtml:
+        "<strong>Ms. Jianing Zheng</strong> received the <em>ICC 2026 Student Travel Grant</em>. Her paper, <em>Maximizing Personalized Energy-efficiency for Swarm Learning in 6G Networks</em>, will be presented on <strong>25 May 2026</strong> in Glasgow, Scotland, UK.",
+      summaryHtml:
+        "<strong>Ms. Jianing Zheng</strong> received the ICC 2026 Student Travel Grant for her work on personalized energy efficiency in swarm learning for 6G networks.",
+      displayDate: "17 Apr 2026",
+      sortDate: "2026-04-17",
+      homepageVisual: {
+        type: "art-image",
+        src: "./assets/news/icc-2026-student-travel-grant.svg",
+        alt: "IEEE ICC 2026 Glasgow banner for the student travel grant announcement"
+      },
+      searchText:
+        "jianing zheng icc 2026 student travel grant maximizing personalized energy-efficiency for swarm learning in 6g networks glasgow may 25 2026"
+    },
+    {
       id: "news-publication-tits",
       type: "news",
       category: "publication",
