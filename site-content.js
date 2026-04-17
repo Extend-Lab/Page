@@ -343,10 +343,12 @@
         </div>
         <div class="homepage-highlights-hint-wrap">
           <button type="button" class="homepage-highlights-drag-handle" data-role="drag-handle" aria-label="Drag to browse more highlights">
+            <span class="homepage-highlights-drag-arrow" aria-hidden="true">←</span>
             <span class="homepage-highlights-drag-icon" aria-hidden="true">
               <span></span><span></span><span></span>
             </span>
-            <span class="homepage-highlights-drag-text">Drag to browse</span>
+            <span class="homepage-highlights-drag-text">Drag left or right</span>
+            <span class="homepage-highlights-drag-arrow" aria-hidden="true">→</span>
           </button>
         </div>
       </section>
