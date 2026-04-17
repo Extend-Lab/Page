@@ -289,6 +289,20 @@
     return `<img src="${image.src}" alt="${escapeHtml(image.alt)}" class="news-card-image">`;
   }
 
+  function renderPublicationCardVisual(item) {
+    const visual =
+      (item.homepageVisual && item.homepageVisual.type === "art-image" && item.homepageVisual) ||
+      item.image;
+
+    if (!visual) return "";
+
+    return `
+      <div class="news-card-art news-card-art-image">
+        <img src="${visual.src}" alt="${escapeHtml(visual.alt)}" class="news-card-art-image-asset">
+      </div>
+    `;
+  }
+
   function renderHomepageCard(item) {
     const label = item.type === "event" ? "Events" : `News · ${item.categoryLabel}`;
 
@@ -313,6 +327,7 @@
   function renderNewsCard(item, hidden, section) {
     const hiddenAttrs = hidden ? ' hidden data-archive-hidden="true"' : ' data-archive-hidden="false"';
     const useImageCards = section && section.dataset.cardStyle === "image";
+    const usePublicationArt = useImageCards && item.category === "publication";
 
     if (item.category === "publication" && !useImageCards) {
       return `
@@ -329,7 +344,9 @@
     const linkedTitle = item.link
       ? `<a href="${item.link}" target="_blank" rel="noopener">${item.title}</a>`
       : item.title;
-    const image = item.image
+    const image = usePublicationArt
+      ? renderPublicationCardVisual(item)
+      : item.image
       ? `
         ${item.link
           ? `<a href="${item.link}" target="_blank" rel="noopener" class="news-card-image-link"><img src="${item.image.src}" alt="${escapeHtml(item.image.alt)}" class="news-card-image"></a>`
