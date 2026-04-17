@@ -341,15 +341,10 @@
               .join("")}
           </div>
         </div>
-        <div class="homepage-highlights-hint-wrap">
-          <button type="button" class="homepage-highlights-drag-handle" data-role="drag-handle" aria-label="Drag to browse more highlights">
-            <span class="homepage-highlights-drag-arrow" aria-hidden="true">←</span>
-            <span class="homepage-highlights-drag-icon" aria-hidden="true">
-              <span></span><span></span><span></span>
-            </span>
-            <span class="homepage-highlights-drag-text">Drag left or right</span>
-            <span class="homepage-highlights-drag-arrow" aria-hidden="true">→</span>
-          </button>
+        <div class="homepage-highlights-scrollbar" aria-hidden="true">
+          <div class="homepage-highlights-scrollbar-track">
+            <span class="homepage-highlights-scrollbar-thumb" data-role="scroll-thumb"></span>
+          </div>
         </div>
       </section>
     `;
@@ -483,14 +478,13 @@
     document.querySelectorAll("[data-homepage-highlights]").forEach((rail) => {
       const viewport = rail.querySelector("[data-role='viewport']");
       const slides = Array.from(rail.querySelectorAll(".homepage-highlights-slide"));
-      const dragHandle = rail.querySelector("[data-role='drag-handle']");
+      const scrollThumb = rail.querySelector("[data-role='scroll-thumb']");
       let pointerId = null;
       let dragStartX = 0;
       let dragStartScrollLeft = 0;
       let dragDistance = 0;
-      let dragSource = null;
 
-      if (!viewport || slides.length === 0 || !dragHandle) return;
+      if (!viewport || slides.length === 0 || !scrollThumb) return;
 
       const getVisibleCount = () => {
         if (window.innerWidth <= 700) return 1;
@@ -499,6 +493,17 @@
       };
 
       const getMaxIndex = () => Math.max(0, slides.length - getVisibleCount());
+
+      const updateScrollbar = () => {
+        const totalScrollable = viewport.scrollWidth - viewport.clientWidth;
+        const visibleRatio =
+          viewport.scrollWidth > 0 ? viewport.clientWidth / viewport.scrollWidth : 1;
+        const thumbWidth = `${Math.max(18, visibleRatio * 100)}%`;
+        const progress = totalScrollable > 0 ? viewport.scrollLeft / totalScrollable : 0;
+
+        scrollThumb.style.width = thumbWidth;
+        scrollThumb.style.transform = `translateX(${progress * 100}%)`;
+      };
 
       const scrollToIndex = (index, behavior = "smooth") => {
         const safeIndex = Math.max(0, Math.min(index, getMaxIndex()));
@@ -509,6 +514,8 @@
           left: targetLeft,
           behavior
         });
+
+        window.requestAnimationFrame(updateScrollbar);
       };
 
       const snapToNearest = () => {
@@ -526,10 +533,9 @@
         dragStartX = event.clientX;
         dragStartScrollLeft = viewport.scrollLeft;
         dragDistance = 0;
-        dragSource = event.currentTarget;
         rail.dataset.dragging = "true";
         rail.dataset.dragMoved = "false";
-        dragSource.setPointerCapture(pointerId);
+        viewport.setPointerCapture(pointerId);
         event.preventDefault();
       };
 
@@ -542,11 +548,10 @@
 
       const endDrag = (event) => {
         if (pointerId !== event.pointerId) return;
-        if (dragSource && dragSource.hasPointerCapture(pointerId)) {
-          dragSource.releasePointerCapture(pointerId);
+        if (viewport.hasPointerCapture(pointerId)) {
+          viewport.releasePointerCapture(pointerId);
         }
         pointerId = null;
-        dragSource = null;
         rail.dataset.dragging = "false";
         window.setTimeout(() => {
           rail.dataset.dragMoved = dragDistance > 8 ? "true" : "false";
@@ -554,12 +559,11 @@
         snapToNearest();
       };
 
-      [viewport, dragHandle].forEach((source) => {
-        source.addEventListener("pointerdown", startDrag);
-        source.addEventListener("pointermove", moveDrag);
-        source.addEventListener("pointerup", endDrag);
-        source.addEventListener("pointercancel", endDrag);
-      });
+      viewport.addEventListener("pointerdown", startDrag);
+      viewport.addEventListener("pointermove", moveDrag);
+      viewport.addEventListener("pointerup", endDrag);
+      viewport.addEventListener("pointercancel", endDrag);
+      viewport.addEventListener("scroll", updateScrollbar, { passive: true });
 
       rail.addEventListener(
         "click",
@@ -575,9 +579,11 @@
 
       window.addEventListener("resize", () => {
         snapToNearest();
+        updateScrollbar();
       });
 
       scrollToIndex(0, "auto");
+      updateScrollbar();
     });
   }
 
