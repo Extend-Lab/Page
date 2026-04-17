@@ -245,9 +245,10 @@
   function getHomepageHighlights() {
     const latestPublication = getNewsItems("publication")[0];
     const latestMedia = getNewsItems("media")[0];
-    const latestEvent = getEventItems()[0];
+    const latestRecentActivity = getEventItems("recent-activity")[0];
+    const latestExtendSharing = getEventItems("extend-sharing")[0];
 
-    return [latestPublication, latestMedia, latestEvent].filter(Boolean);
+    return [latestPublication, latestMedia, latestRecentActivity, latestExtendSharing].filter(Boolean);
   }
 
   function getItemUrl(item) {
@@ -304,10 +305,11 @@
   }
 
   function renderHomepageCard(item) {
-    const label = item.type === "event" ? "Events" : `News · ${item.categoryLabel}`;
+    const label =
+      item.type === "event" ? `Events · ${item.categoryLabel}` : `News · ${item.categoryLabel}`;
 
     return `
-      <div class="g-col-12 g-col-md-4">
+      <div class="g-col-12 g-col-md-6 g-col-xl-3">
         <a href="${getItemUrl(item)}" class="homepage-update-link">
           <article class="news-card homepage-update-card">
             ${renderHomepageVisual(item)}

@@ -1018,7 +1018,7 @@ p {
 
 .event-feature-card {
   display: grid;
-  grid-template-columns: minmax(180px, 0.82fr) minmax(0, 2.18fr);
+  grid-template-columns: minmax(170px, 0.75fr) minmax(0, 1.75fr);
   gap: 1.2rem;
   align-items: stretch;
   padding: 1.35rem;
