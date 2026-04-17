@@ -776,6 +776,16 @@ p {
   padding-top: 24px;
 }
 
+.archive-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.35rem;
+}
+
+.archive-toggle-button {
+  min-width: 148px;
+}
+
 .news-section-header {
   display: flex;
   align-items: flex-end;
@@ -968,6 +978,11 @@ p {
   padding-top: 24px;
 }
 
+.event-feature-stack {
+  display: grid;
+  gap: 1.2rem;
+}
+
 .event-feature-card {
   display: grid;
   grid-template-columns: minmax(300px, 1.08fr) minmax(0, 1.15fr);
@@ -1039,6 +1054,10 @@ p {
   color: #5f6d79;
   font-size: 0.96rem;
   line-height: 1.74;
+}
+
+.archive-target-flash {
+  box-shadow: 0 0 0 3px rgba(74, 120, 168, 0.16);
 }
 
 .support-intro p {
@@ -1363,6 +1382,11 @@ p {
 .project-detail-panel,
 .nav-footer {
   border-radius: 0 !important;
+}
+
+.news-card,
+.event-feature-card {
+  scroll-margin-top: 110px;
 }
 
 .btn-action,

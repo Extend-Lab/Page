@@ -1,4 +1,4 @@
-const SITE_SEARCH_INDEX = [
+const FALLBACK_SEARCH_INDEX = [
   {
     title: "About EXTEND Lab",
     url: "about/",
@@ -7,31 +7,31 @@ const SITE_SEARCH_INDEX = [
   },
   {
     title: "News: IEEE T-ITS Paper Accepted",
-    url: "news/#news-publication-latest",
+    url: "news/#news-publication-tits",
     category: "News",
     text: "hao xiong ieee transactions on intelligent transportation systems latency freshness vehicular edge computing digital twin accepted paper"
   },
   {
     title: "News: Multi-Agent Communication Paper Revision",
-    url: "news/",
+    url: "news/#news-publication-tmlcn",
     category: "News",
     text: "xinren zhang machine learning in communications and networking major revision multi-agent communication protocols"
   },
   {
     title: "News: IEEE TMC Paper Accepted",
-    url: "news/",
+    url: "news/#news-publication-tmc",
     category: "News",
     text: "jianing zheng ieee transactions on mobile computing multimodal federated learning accepted paper"
   },
   {
     title: "News: Media Coverage",
-    url: "news/#news-media-latest",
+    url: "news/#news-media-joint-lab-forum",
     category: "News",
     text: "dr jiadong yu diandong joint laboratory media coverage data center heterogeneous computing resources"
   },
   {
     title: "Events: OpenClaw and AI Agent",
-    url: "events/#event-latest",
+    url: "events/#event-openclaw-ai-agent",
     category: "Events",
     text: "extend sharing openclaw ai agent jiale li tools claude code internal sharing session"
   },
@@ -84,6 +84,13 @@ const SITE_SEARCH_INDEX = [
     text: "collaboration funding partners graduate students undergraduate students visiting phd scholars application materials"
   }
 ];
+
+const SITE_SEARCH_INDEX =
+  typeof window !== "undefined" &&
+  window.EXTEND_SITE_CONTENT &&
+  typeof window.EXTEND_SITE_CONTENT.getSearchIndex === "function"
+    ? window.EXTEND_SITE_CONTENT.getSearchIndex()
+    : FALLBACK_SEARCH_INDEX;
 
 function normalizeSearchText(text) {
   return (text || "").toLowerCase().replace(/\s+/g, " ").trim();
