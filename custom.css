@@ -786,6 +786,27 @@ p {
   min-width: 148px;
 }
 
+.archive-return {
+  margin: 0 0 0.75rem;
+}
+
+.archive-return-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #4a78a8;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.archive-return-link::before {
+  content: "\2190";
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
 .news-section-header {
   display: flex;
   align-items: flex-end;

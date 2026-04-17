@@ -17,6 +17,10 @@
         src: "./assets/news/ICC2026.jpg",
         alt: "Official IEEE ICC 2026 conference banner"
       },
+      image: {
+        src: "./assets/news/ICC2026.jpg",
+        alt: "Official IEEE ICC 2026 conference banner"
+      },
       searchText:
         "jianing zheng icc 2026 student travel grant maximizing personalized energy-efficiency for swarm learning in 6g networks glasgow may 25 2026"
     },
@@ -37,6 +41,10 @@
         src: "./assets/news/TITS.jpg",
         alt: "IEEE Transactions on Intelligent Transportation Systems homepage screenshot"
       },
+      image: {
+        src: "./assets/news/TITS.jpg",
+        alt: "IEEE Transactions on Intelligent Transportation Systems homepage screenshot"
+      },
       searchText:
         "hao xiong ieee transactions on intelligent transportation systems latency freshness vehicular edge computing digital twin accepted paper"
     },
@@ -52,6 +60,10 @@
         "<strong>Ms. Xinren Zhang</strong> received a major revision for a paper on efficient communication protocols in multi-agent reinforcement learning.",
       displayDate: "Mar 2026",
       sortDate: "2026-03-12",
+      image: {
+        src: "./assets/news/TMLCN.jpg",
+        alt: "IEEE Transactions on Machine Learning in Communications and Networking journal graphic"
+      },
       searchText:
         "xinren zhang machine learning in communications and networking major revision multi-agent communication protocols reinforcement learning"
     },
@@ -67,6 +79,10 @@
         "<strong>Ms. Jianing Zheng</strong> reports an acceptance on multimodal federated learning in energy-constrained wireless networks.",
       displayDate: "Sep 2025",
       sortDate: "2025-09-08",
+      image: {
+        src: "./assets/news/TMC.jpg",
+        alt: "IEEE Transactions on Mobile Computing journal graphic"
+      },
       searchText:
         "jianing zheng ieee transactions on mobile computing multimodal federated learning energy constrained wireless networks accepted paper"
     },
@@ -271,10 +287,11 @@
     `;
   }
 
-  function renderNewsCard(item, hidden) {
+  function renderNewsCard(item, hidden, section) {
     const hiddenAttrs = hidden ? ' hidden data-archive-hidden="true"' : ' data-archive-hidden="false"';
+    const useImageCards = section && section.dataset.cardStyle === "image";
 
-    if (item.category === "publication") {
+    if (item.category === "publication" && !useImageCards) {
       return `
         <article class="news-card news-card-textonly" id="${item.id}"${hiddenAttrs}>
           <div class="news-card-body">
@@ -291,9 +308,9 @@
       : item.title;
     const image = item.image
       ? `
-        <a href="${item.link || getItemUrl(item)}" ${item.link ? 'target="_blank" rel="noopener"' : ""} class="news-card-image-link">
-          <img src="${item.image.src}" alt="${escapeHtml(item.image.alt)}" class="news-card-image">
-        </a>
+        ${item.link
+          ? `<a href="${item.link}" target="_blank" rel="noopener" class="news-card-image-link"><img src="${item.image.src}" alt="${escapeHtml(item.image.alt)}" class="news-card-image"></a>`
+          : `<div class="news-card-image-link"><img src="${item.image.src}" alt="${escapeHtml(item.image.alt)}" class="news-card-image"></div>`}
       `
       : "";
 
@@ -367,7 +384,7 @@
     if (!list) return;
 
     list.innerHTML = items
-      .map((item, index) => renderer(item, index >= limit))
+      .map((item, index) => renderer(item, index >= limit, section))
       .join("");
 
     if (actions) {
