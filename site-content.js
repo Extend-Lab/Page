@@ -323,7 +323,6 @@
               <p class="homepage-update-meta">${item.displayDate}</p>
               <h3 class="news-card-title">${item.title}</h3>
               <p class="news-card-text">${item.summaryHtml || item.bodyHtml}</p>
-              <p class="news-card-date">${item.displayDate}</p>
             </div>
           </article>
         </a>
