@@ -1318,37 +1318,42 @@ p {
 
 .research-poster-stage {
   position: relative;
-  overflow: hidden;
+  overflow: auto;
   border-radius: 12px;
   max-height: 80vh;
-  cursor: zoom-in;
-  touch-action: none;
+  cursor: default;
+  touch-action: pan-y pan-x;
   background: rgba(255, 255, 255, 0.8);
+  scrollbar-width: thin;
+  scrollbar-color: rgba(78, 130, 178, 0.72) rgba(224, 234, 243, 0.95);
 }
 
-.research-poster-stage[data-zoomed="true"] {
-  cursor: grab;
+.research-poster-stage::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
 }
 
-.research-poster-stage[data-zoomed="true"][data-dragging="true"] {
-  cursor: grabbing;
+.research-poster-stage::-webkit-scrollbar-track {
+  background: rgba(224, 234, 243, 0.95);
+  border-left: 1px solid rgba(206, 219, 231, 0.9);
+  border-radius: 999px;
+}
+
+.research-poster-stage::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(78, 130, 178, 0.82) 0%, rgba(130, 192, 238, 0.88) 100%);
+  border: 2px solid rgba(224, 234, 243, 0.95);
+  border-radius: 999px;
 }
 
 .research-poster-modal-image {
   display: block;
   width: 100%;
   height: auto;
-  max-height: 80vh;
-  object-fit: contain;
+  max-height: none;
+  object-fit: unset;
   margin: 0 auto;
   border-radius: 12px;
-  transform-origin: center center;
-  transition: transform 180ms ease;
-  will-change: transform;
-}
-
-.research-poster-stage[data-dragging="true"] .research-poster-modal-image {
-  transition: none;
+  transition: width 180ms ease;
 }
 
 .research-poster-modal-note {
