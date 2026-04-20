@@ -96,8 +96,8 @@
         "<strong>Dr. Jiadong Yu</strong> was interviewed by <em>Jituo Forum</em> and asked what qualities she hopes to see in prospective students. She highlighted <strong>curiosity</strong>, <strong>execution</strong>, and <strong>resilience</strong> as the traits she values most.",
       summaryHtml:
         "In a Jituo Forum interview, Dr. Jiadong Yu shared that she values curiosity, execution, and resilience in prospective students.",
-      displayDate: "20 Apr 2026",
-      sortDate: "2026-04-20",
+      displayDate: "19 Aug 2025",
+      sortDate: "2025-08-19",
       link: "https://weixin.qq.com/sph/AAr5v9a3f5",
       image: {
         src: "./assets/news/jituo.jpg",
