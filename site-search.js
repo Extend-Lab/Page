@@ -6,7 +6,7 @@ const FALLBACK_SEARCH_INDEX = [
     category: "About",
     categoryZh: "关于",
     text: "mission values break boundaries unlock possibilities reinforcement learning multi-agent systems robotics embodied intelligence",
-    textZh: "使命 价值观 打破边界 解锁可能 强化学习 多智能体系统 机器人 具身智能"
+    textZh: "使命 价值观 打破边界 无限可能 强化学习 多智能体系统 机器人 具身智能"
   },
   {
     title: "News: IEEE T-ITS Paper Accepted",
@@ -15,7 +15,7 @@ const FALLBACK_SEARCH_INDEX = [
     category: "News",
     categoryZh: "动态",
     text: "hao xiong ieee transactions on intelligent transportation systems latency freshness vehicular edge computing digital twin accepted paper",
-    textZh: "熊昊 TITS 接收 车联网 边缘计算 数字孪生 智能交通"
+    textZh: "熊浩 TITS 接收 车联网 边缘计算 数字孪生 智能交通"
   },
   {
     title: "News: Multi-Agent Communication Paper Revision",
@@ -24,7 +24,7 @@ const FALLBACK_SEARCH_INDEX = [
     category: "News",
     categoryZh: "动态",
     text: "xinren zhang machine learning in communications and networking major revision multi-agent communication protocols",
-    textZh: "张欣任 大修 多智能体 通信协议 强化学习"
+    textZh: "张馨仁 大修 多智能体 通信协议 强化学习"
   },
   {
     title: "News: IEEE TMC Paper Accepted",
@@ -42,7 +42,7 @@ const FALLBACK_SEARCH_INDEX = [
     category: "News",
     categoryZh: "动态",
     text: "dr jiadong yu diandong joint laboratory media coverage data center heterogeneous computing resources",
-    textZh: "余嘉栋 联合实验室 媒体报道 数据中心 异构计算"
+    textZh: "于佳冬 点动 联合实验室 媒体报道 数据中心 异构计算"
   },
   {
     title: "Events: OpenClaw and AI Agent",
@@ -51,7 +51,7 @@ const FALLBACK_SEARCH_INDEX = [
     category: "Events",
     categoryZh: "活动",
     text: "extend sharing openclaw ai agent jiale li tools claude code internal sharing session",
-    textZh: "EXTEND 分享 OpenClaw AI Agent 李嘉乐 Claude Code"
+    textZh: "展开讲讲 OpenClaw AI Agent 李佳乐 Claude Code"
   },
   {
     title: "Research: Multi-Agent Systems",
@@ -96,7 +96,7 @@ const FALLBACK_SEARCH_INDEX = [
     category: "Projects",
     categoryZh: "项目",
     text: "funded projects grants sponsored collaborations bristol guangdong diandong blockchain smart factories",
-    textZh: "资助项目 合作 布里斯托 广东 典当 区块链 智能工厂"
+    textZh: "资助项目 合作 布里斯托 广东 点动 区块链 智能工厂"
   },
   {
     title: "People",
@@ -105,7 +105,7 @@ const FALLBACK_SEARCH_INDEX = [
     category: "People",
     categoryZh: "成员",
     text: "jiadong yu hao xiong xinren zhang jianing zheng yulong zhang guangzhi zhu nianfu wang phd mphil visiting students",
-    textZh: "余嘉栋 熊昊 张欣任 郑佳宁 张雨龙 朱广志 王念富 博士生 硕士 访问学生"
+    textZh: "于佳冬 熊浩 张馨仁 郑佳宁 张雨龙 张子儒 张栩棱 李佳乐 朱光智 王年福 博士生 硕士 访问学生"
   },
   {
     title: "Publications",

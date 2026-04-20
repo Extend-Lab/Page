@@ -65,7 +65,7 @@
             },
             {
               selector: ".hero-title",
-              text: "打破边界，解锁可能。"
+              text: "打破边界，无限可能。"
             },
             {
               selector: ".hero-subtitle",
@@ -113,7 +113,7 @@
             {
               selector: ".about-copy",
               html:
-                "<p><strong>EXTEND Lab</strong> 位于中国广州的香港科技大学（广州），建立在一个朴素却充满雄心的信念之上：打破边界，解锁可能。我们不仅把强化学习视为一种算法，更把它当作一种思维方式，用以持续迭代我们的研究项目，也推动每位探索者的个人成长。</p>" +
+                "<p><strong>EXTEND Lab</strong> 位于中国广州的香港科技大学（广州），建立在一个朴素却充满雄心的信念之上：打破边界，无限可能。我们不仅把强化学习视为一种算法，更把它当作一种思维方式，用以持续迭代我们的研究项目，也推动每位探索者的个人成长。</p>" +
                 "<p>好奇心、执行力与韧性，是驱动我们前行的核心价值观；从提出研究问题，到推动真实世界中的系统落地，这些价值始终贯穿其中。</p>" +
                 "<p>我们的使命，是通过多智能体系统推动物理世界中的智能发展，并把正在发生的 AI 变革视为重新想象机器与人类如何协同创造价值的机会。</p>" +
                 "<p>在 EXTEND Lab，我们重点关注：</p>" +
@@ -124,7 +124,7 @@
                 "</ul>" +
                 "<p>我们欢迎对未知保持热情的合作伙伴加入。无论你是研究者、学生，还是产业伙伴，只要你同样被好奇心与韧性驱动，都欢迎与我们一起拓展智能的边界。</p>" +
                 "<p>让我们一起打破边界。</p>" +
-                "<p>联系：余嘉栋博士：<a href=\"mailto:jiadongyu@hkust-gz.edu.cn\" class=\"email\">jiadongyu@hkust-gz.edu.cn</a></p>"
+                "<p>联系：于佳冬博士：<a href=\"mailto:jiadongyu@hkust-gz.edu.cn\" class=\"email\">jiadongyu@hkust-gz.edu.cn</a></p>"
             }
           ]
         },
@@ -235,6 +235,10 @@
               multiText: ["主任", "博士生", "硕士研究生", "访问学生", "校友"]
             },
             {
+              selector: ".person-body h3",
+              multiText: ["于佳冬", "张雨龙", "熊浩", "张子儒", "郑佳宁", "张栩棱", "张馨仁", "李佳乐", "朱光智", "王年福", "张耀尹"]
+            },
+            {
               selector: ".person-body p",
               multiHtml: [
                 "香港科技大学（广州）助理教授",
@@ -253,6 +257,10 @@
             {
               selector: ".table thead th",
               multiText: ["姓名", "当前去向"]
+            },
+            {
+              selector: ".table tbody tr td:nth-child(1)",
+              multiText: ["商晨", "成思希"]
             },
             {
               selector: ".table tbody tr td:nth-child(2)",
@@ -352,13 +360,13 @@
             },
             {
               selector: ".section-heading",
-              multiText: ["近期活动", "EXTEND 分享"]
+              multiText: ["近期活动", "展开讲讲"]
             },
             {
               selector: ".news-section-text",
               multiText: [
                 "记录实验室来访、对外交流与合作活动。",
-                "记录团队内部关于工具、想法与研究实践的分享会。"
+                "记录团队内部围绕工具、想法与研究实践展开讲讲的分享活动。"
               ]
             }
           ]
@@ -401,22 +409,22 @@
             {
               selector: "#project-detail-1 .project-detail-panel",
               html:
-                "<div class=\"project-detail-grid\"><div><h3>团队成员</h3><ul><li>刘晓岚博士，布里斯托大学</li><li>余嘉栋博士，香港科技大学（广州）</li></ul></div><div><h3>项目简介</h3><p>围绕面向情境感知的多智能体系统，开展紧耦合感知、通信与分布式智能研究。</p><p>主题：迈向边缘智能：面向情境感知的感知、计算与通信的多智能体方法</p><div class=\"project-meta\"><p><strong>日期：</strong>2026年5月29日</p><p><strong>地点：</strong>英国布里斯托大学 BDFI（65 Avon St, Bristol, UK BS2 0PZ）</p></div></div></div>"
+                "<div class=\"project-detail-grid\"><div><h3>团队成员</h3><ul><li>刘晓岚博士，布里斯托大学</li><li>于佳冬博士，香港科技大学（广州）</li></ul></div><div><h3>项目简介</h3><p>围绕面向情境感知的多智能体系统，开展紧耦合感知、通信与分布式智能研究。</p><p>主题：迈向边缘智能：面向情境感知的感知、计算与通信的多智能体方法</p><div class=\"project-meta\"><p><strong>日期：</strong>2026年5月29日</p><p><strong>地点：</strong>英国布里斯托大学 BDFI（65 Avon St, Bristol, UK BS2 0PZ）</p></div></div></div>"
             },
             {
               selector: "#project-detail-2 .project-detail-panel",
               html:
-                "<div class=\"project-detail-grid\"><div><h3>团队成员</h3><ul><li>张子睿</li><li>张旭凌</li><li>王念富</li></ul></div><div><h3>项目简介</h3><p>开发面向工业图像与 CAD 理解任务的数据增强识别算法。</p></div></div>"
+                "<div class=\"project-detail-grid\"><div><h3>团队成员</h3><ul><li>张子儒</li><li>张栩棱</li><li>王年福</li></ul></div><div><h3>项目简介</h3><p>开发面向工业图像与 CAD 理解任务的数据增强识别算法。</p></div></div>"
             },
             {
               selector: "#project-detail-3 .project-detail-panel",
               html:
-                "<div class=\"project-detail-grid\"><div><h3>团队成员</h3><ul><li>余嘉栋博士，香港科技大学（广州）</li><li>余延涛博士，香港科技大学</li><li>张子睿</li></ul></div><div><h3>项目简介</h3><p>面向建筑作业场景，设计平滑且安全的人机协作鲁棒辅助行为。</p></div></div>"
+                "<div class=\"project-detail-grid\"><div><h3>团队成员</h3><ul><li>于佳冬博士，香港科技大学（广州）</li><li>余延涛博士，香港科技大学</li><li>张子儒</li></ul></div><div><h3>项目简介</h3><p>面向建筑作业场景，设计平滑且安全的人机协作鲁棒辅助行为。</p></div></div>"
             },
             {
               selector: "#project-detail-4 .project-detail-panel",
               html:
-                "<div class=\"project-detail-grid\"><div><h3>团队成员</h3><ul><li>余嘉栋博士，香港科技大学（广州）</li><li>王学超博士，香港科技大学（广州）</li><li>朱广志</li><li>熊昊</li><li>苏宏旭</li></ul></div><div><h3>项目简介</h3><p>设计区块链赋能系统中的智能计算资源分配策略。</p></div></div>"
+                "<div class=\"project-detail-grid\"><div><h3>团队成员</h3><ul><li>于佳冬博士，香港科技大学（广州）</li><li>王学超博士，香港科技大学（广州）</li><li>朱光智</li><li>熊浩</li><li>苏宏旭</li></ul></div><div><h3>项目简介</h3><p>设计区块链赋能系统中的智能计算资源分配策略。</p></div></div>"
             },
             {
               selector: "#project-detail-5 .project-detail-panel",
@@ -533,7 +541,7 @@
           ]
         },
         "events/extend-sharing": {
-          title: "EXTEND 分享 – EXTEND Lab",
+          title: "展开讲讲 – EXTEND Lab",
           updates: [
             {
               selector: ".archive-return-link",
@@ -541,7 +549,7 @@
             },
             {
               selector: ".quarto-title .title",
-              text: "EXTEND 分享"
+              text: "展开讲讲"
             },
             {
               selector: ".quarto-title .subtitle",

@@ -46,11 +46,11 @@
       bodyHtml:
         "<strong>Mr. Hao Xiong</strong> reports that <em>Latency-Freshness-Aware Vehicular Edge Computing for Digital Twin-Enabled Intelligent Transportation</em> has been accepted by <em>IEEE Transactions on Intelligent Transportation Systems</em>.",
       bodyHtmlZh:
-        "<strong>熊昊同学</strong>的论文 <em>Latency-Freshness-Aware Vehicular Edge Computing for Digital Twin-Enabled Intelligent Transportation</em> 已被 <em>IEEE Transactions on Intelligent Transportation Systems</em> 接收。",
+        "<strong>熊浩同学</strong>的论文 <em>Latency-Freshness-Aware Vehicular Edge Computing for Digital Twin-Enabled Intelligent Transportation</em> 已被 <em>IEEE Transactions on Intelligent Transportation Systems</em> 接收。",
       summaryHtml:
         "<strong>Mr. Hao Xiong</strong> reports a new acceptance for digital twin-enabled vehicular edge computing.",
       summaryHtmlZh:
-        "<strong>熊昊同学</strong>在数字孪生赋能车联网边缘计算方向获得新的论文接收。",
+        "<strong>熊浩同学</strong>在数字孪生赋能车联网边缘计算方向获得新的论文接收。",
       displayDate: "Mar 2026",
       displayDateZh: "2026年3月",
       sortDate: "2026-03-20",
@@ -68,7 +68,7 @@
       searchText:
         "hao xiong ieee transactions on intelligent transportation systems latency freshness vehicular edge computing digital twin accepted paper",
       searchTextZh:
-        "熊昊 TITS 接收 车联网 边缘计算 数字孪生 智能交通"
+        "熊浩 TITS 接收 车联网 边缘计算 数字孪生 智能交通"
     },
     {
       id: "news-publication-tmlcn",
@@ -81,11 +81,11 @@
       bodyHtml:
         "<strong>Ms. Xinren Zhang</strong> received a major revision decision for <em>Learning Efficient Communication Protocols for Multi-Agent Reinforcement Learning</em> from <em>IEEE Transactions on Machine Learning in Communications and Networking</em>.",
       bodyHtmlZh:
-        "<strong>张欣任同学</strong>的论文 <em>Learning Efficient Communication Protocols for Multi-Agent Reinforcement Learning</em> 在 <em>IEEE Transactions on Machine Learning in Communications and Networking</em> 获得大修意见。",
+        "<strong>张馨仁同学</strong>的论文 <em>Learning Efficient Communication Protocols for Multi-Agent Reinforcement Learning</em> 在 <em>IEEE Transactions on Machine Learning in Communications and Networking</em> 获得大修意见。",
       summaryHtml:
         "<strong>Ms. Xinren Zhang</strong> received a major revision for a paper on efficient communication protocols in multi-agent reinforcement learning.",
       summaryHtmlZh:
-        "<strong>张欣任同学</strong>关于多智能体强化学习高效通信协议的论文获得大修。",
+        "<strong>张馨仁同学</strong>关于多智能体强化学习高效通信协议的论文获得大修。",
       displayDate: "Mar 2026",
       displayDateZh: "2026年3月",
       sortDate: "2026-03-12",
@@ -97,7 +97,7 @@
       searchText:
         "xinren zhang machine learning in communications and networking major revision multi-agent communication protocols reinforcement learning",
       searchTextZh:
-        "张欣任 大修 多智能体 通信协议 强化学习 TMLCN"
+        "张馨仁 大修 多智能体 通信协议 强化学习 TMLCN"
     },
     {
       id: "news-publication-tmc",
@@ -135,15 +135,15 @@
       categoryLabel: "Media",
       categoryLabelZh: "媒体报道",
       title: "Dr. Jiadong Yu Shared What She Looks for in Prospective Students in a Jituo Forum Interview",
-      titleZh: "余嘉栋博士在集拓论坛采访中分享对未来学生的期待",
+      titleZh: "于佳冬博士在寄托天下论坛采访中分享对未来学生的期待",
       bodyHtml:
         "<strong>Dr. Jiadong Yu</strong> was interviewed by <em>Jituo Forum</em> and asked what qualities she hopes to see in prospective students. She highlighted <strong>curiosity</strong>, <strong>execution</strong>, and <strong>resilience</strong> as the traits she values most.",
       bodyHtmlZh:
-        "<strong>余嘉栋博士</strong>接受了 <em>集拓论坛</em> 采访，分享她最看重未来学生的哪些特质。她特别强调了 <strong>好奇心</strong>、<strong>执行力</strong> 与 <strong>韧性</strong>。",
+        "<strong>于佳冬博士</strong>接受了 <em>寄托天下论坛</em> 采访，分享她最看重未来学生的哪些特质。她特别强调了 <strong>好奇心</strong>、<strong>执行力</strong> 与 <strong>韧性</strong>。",
       summaryHtml:
         "In a Jituo Forum interview, Dr. Jiadong Yu shared that she values curiosity, execution, and resilience in prospective students.",
       summaryHtmlZh:
-        "在集拓论坛采访中，余嘉栋博士表示她最看重未来学生的好奇心、执行力与韧性。",
+        "在寄托天下论坛采访中，于佳冬博士表示她最看重未来学生的好奇心、执行力与韧性。",
       displayDate: "19 Aug 2025",
       displayDateZh: "2025年8月19日",
       sortDate: "2025-08-19",
@@ -151,12 +151,12 @@
       image: {
         src: "./assets/news/jituo.jpg",
         alt: "Jituo Forum interview coverage featuring Dr. Jiadong Yu",
-        altZh: "集拓论坛对余嘉栋博士的采访报道"
+        altZh: "寄托天下论坛对于佳冬博士的采访报道"
       },
       searchText:
         "dr jiadong yu jituo forum interview prospective students curiosity execution resilience media coverage april 20 2026",
       searchTextZh:
-        "余嘉栋 集拓论坛 采访 学生 好奇心 执行力 韧性 媒体报道"
+        "于佳冬 寄托天下论坛 采访 学生 好奇心 执行力 韧性 媒体报道"
     },
     {
       id: "news-media-joint-lab-forum",
@@ -165,11 +165,11 @@
       categoryLabel: "Media",
       categoryLabelZh: "媒体报道",
       title: "Dr. Jiadong Yu Delivered a Forum Talk at the HKUST(GZ)-Diandong Joint Laboratory Event",
-      titleZh: "余嘉栋博士在港科大（广州）- 典当联合实验室活动中作论坛报告",
+      titleZh: "于佳冬博士在港科大（广州）- 点动联合实验室活动中作论坛报告",
       bodyHtml:
         "In the featured report, <strong>Dr. Jiadong Yu</strong> introduced the group's work on scheduling heterogeneous computing resources for data centers, guided by the vision of making compute as accessible and on-demand as electricity.",
       bodyHtmlZh:
-        "在专题报道中，<strong>余嘉栋博士</strong>介绍了团队在数据中心异构计算资源调度方面的研究工作，并分享了“让算力像电力一样可获得、可按需使用”的愿景。",
+        "在专题报道中，<strong>于佳冬博士</strong>介绍了团队在数据中心异构计算资源调度方面的研究工作，并分享了“让算力像电力一样可获得、可按需使用”的愿景。",
       summaryHtml:
         "A featured media report highlighted the group's vision for on-demand heterogeneous computing.",
       summaryHtmlZh:
@@ -181,12 +181,12 @@
       image: {
         src: "./assets/news/joint-lab-report.jpg",
         alt: "Dr. Jiadong Yu speaking at the HKUST(GZ)-Diandong joint laboratory event",
-        altZh: "余嘉栋博士在港科大（广州）- 典当联合实验室活动中发言"
+        altZh: "于佳冬博士在港科大（广州）- 点动联合实验室活动中发言"
       },
       searchText:
         "dr jiadong yu diandong joint laboratory media coverage data center heterogeneous computing resources",
       searchTextZh:
-        "余嘉栋 联合实验室 媒体报道 数据中心 异构计算 资源调度"
+        "于佳冬 点动 联合实验室 媒体报道 数据中心 异构计算 资源调度"
     }
   ];
 
@@ -198,15 +198,15 @@
       categoryLabel: "Recent Activity",
       categoryLabelZh: "近期活动",
       title: "Visit to Guangdong Quanzhun Intelligent Technology Co., Ltd.",
-      titleZh: "走访广东全准智能科技有限公司",
+      titleZh: "走访广东泉准智能科技有限公司",
       bodyHtml:
         "On <strong>11 March 2026</strong>, <strong>Dr. Jiadong Yu</strong>, <strong>Mr. Ziru Zhang</strong>, and <strong>Ms. Xuling Zhang</strong> visited <em>Guangdong Quanzhun Intelligent Technology Co., Ltd.</em>. During the visit, the team toured the company's production line and discussed potential collaboration opportunities and a shared long-term vision.",
       bodyHtmlZh:
-        "在 <strong>2026 年 3 月 11 日</strong>，<strong>余嘉栋博士</strong>、<strong>张子睿同学</strong>和 <strong>张旭凌同学</strong>走访了 <em>广东全准智能科技有限公司</em>。团队参观了企业生产线，并围绕潜在合作机会与长期共同愿景进行了交流。",
+        "在 <strong>2026 年 3 月 11 日</strong>，<strong>于佳冬博士</strong>、<strong>张子儒同学</strong>和 <strong>张栩棱同学</strong>走访了 <em>广东泉准智能科技有限公司</em>。团队参观了企业生产线，并围绕潜在合作机会与长期共同愿景进行了交流。",
       summaryHtml:
         "The team visited Guangdong Quanzhun Intelligent Technology Co., Ltd., toured its production line, and discussed future collaboration opportunities.",
       summaryHtmlZh:
-        "团队走访广东全准智能科技有限公司，参观生产线并交流未来合作机会。",
+        "团队走访广东泉准智能科技有限公司，参观生产线并交流未来合作机会。",
       displayDate: "11 Mar 2026",
       displayDateZh: "2026年3月11日",
       sortDate: "2026-03-11",
@@ -214,30 +214,30 @@
         {
           src: "./assets/events/quanzhun.jpg",
           alt: "EXTEND Lab members visiting Guangdong Quanzhun Intelligent Technology Co., Ltd.",
-          altZh: "EXTEND Lab 成员走访广东全准智能科技有限公司"
+          altZh: "EXTEND Lab 成员走访广东泉准智能科技有限公司"
         }
       ],
       searchText:
         "jiadong yu ziru zhang xuling zhang guangdong quanzhun intelligent technology company visit production line collaboration vision march 11 2026",
       searchTextZh:
-        "余嘉栋 张子睿 张旭凌 广东全准智能科技 走访 生产线 合作 2026年3月11日"
+        "于佳冬 张子儒 张栩棱 广东泉准智能科技 走访 生产线 合作 2026年3月11日"
     },
     {
       id: "event-openclaw-ai-agent",
       type: "event",
       category: "extend-sharing",
       categoryLabel: "EXTEND Sharing",
-      categoryLabelZh: "EXTEND 分享",
+      categoryLabelZh: "展开讲讲",
       title: "EXTEND Sharing: OpenClaw and AI Agent",
-      titleZh: "EXTEND 分享：OpenClaw 与 AI Agent",
+      titleZh: "展开讲讲：OpenClaw 与 AI Agent",
       bodyHtml:
         "We organized an EXTEND Sharing Session featuring Dr. Jiadong Yu and Mr. Jiale Li. The session covered the fundamentals of AI agents and OpenClaw, plus practical reflections on using tools such as Claude Code in everyday research workflows.",
       bodyHtmlZh:
-        "我们组织了一场由余嘉栋博士与李嘉乐同学主讲的 EXTEND 分享会，介绍 AI Agent 与 OpenClaw 的基础内容，并交流了将 Claude Code 等工具用于日常科研流程的实践体会。",
+        "我们组织了一场由于佳冬博士与李佳乐同学主讲的“展开讲讲”活动，介绍 AI Agent 与 OpenClaw 的基础内容，并交流了将 Claude Code 等工具用于日常科研流程的实践体会。",
       summaryHtml:
         "An internal sharing session on AI agents, OpenClaw, and practical tooling for everyday research workflows.",
       summaryHtmlZh:
-        "一场聚焦 AI Agent、OpenClaw 以及日常科研工具实践的内部分享会。",
+        "一场聚焦 AI Agent、OpenClaw 以及日常科研工具实践的“展开讲讲”活动。",
       displayDate: "20 Mar 2026",
       displayDateZh: "2026年3月20日",
       sortDate: "2026-03-20",
@@ -245,13 +245,13 @@
         {
           src: "./assets/events/extendclaw.jpg",
           alt: "Participants at the EXTEND Sharing Session",
-          altZh: "EXTEND 分享会现场"
+          altZh: "“展开讲讲”活动现场"
         }
       ],
       searchText:
         "extend sharing openclaw ai agent jiale li tools claude code internal sharing session",
       searchTextZh:
-        "EXTEND 分享 OpenClaw AI Agent 李嘉乐 Claude Code 工具 科研工作流"
+        "展开讲讲 OpenClaw AI Agent 李佳乐 Claude Code 工具 科研工作流"
     }
   ];
 
@@ -263,7 +263,7 @@
       category: "About",
       categoryZh: "关于",
       text: "mission values break boundaries unlock possibilities reinforcement learning multi-agent systems robotics embodied intelligence",
-      textZh: "使命 价值观 打破边界 解锁可能 强化学习 多智能体系统 机器人 具身智能"
+      textZh: "使命 价值观 打破边界 无限可能 强化学习 多智能体系统 机器人 具身智能"
     },
     {
       title: "Research: Multi-Agent Systems",
@@ -308,7 +308,7 @@
       category: "Projects",
       categoryZh: "项目",
       text: "funded projects grants sponsored collaborations bristol guangdong diandong blockchain smart factories",
-      textZh: "资助项目 合作 布里斯托 广东 典当 区块链 智能工厂"
+      textZh: "资助项目 合作 布里斯托 广东 点动 区块链 智能工厂"
     },
     {
       title: "People",
@@ -317,7 +317,7 @@
       category: "People",
       categoryZh: "成员",
       text: "jiadong yu hao xiong xinren zhang jianing zheng yulong zhang guangzhi zhu nianfu wang phd mphil visiting students",
-      textZh: "余嘉栋 熊昊 张欣任 郑佳宁 张雨龙 朱广志 王念富 博士生 硕士 访问学生"
+      textZh: "于佳冬 熊浩 张馨仁 郑佳宁 张雨龙 张子儒 张栩棱 李佳乐 朱光智 王年福 博士生 硕士 访问学生"
     },
     {
       title: "Publications",
