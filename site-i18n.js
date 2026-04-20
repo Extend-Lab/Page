@@ -409,7 +409,7 @@
             {
               selector: "#project-detail-1 .project-detail-panel",
               html:
-                "<div class=\"project-detail-grid\"><div><h3>团队成员</h3><ul><li>刘晓岚博士，布里斯托大学</li><li>于佳冬博士，香港科技大学（广州）</li></ul></div><div><h3>项目简介</h3><p>围绕面向情境感知的多智能体系统，开展紧耦合感知、通信与分布式智能研究。</p><p>主题：迈向边缘智能：面向情境感知的感知、计算与通信的多智能体方法</p><div class=\"project-meta\"><p><strong>日期：</strong>2026年5月29日</p><p><strong>地点：</strong>英国布里斯托大学 BDFI（65 Avon St, Bristol, UK BS2 0PZ）</p></div></div></div>"
+                "<div class=\"project-detail-grid\"><div><h3>团队成员</h3><ul><li>刘小兰博士，布里斯托大学</li><li>于佳冬博士，香港科技大学（广州）</li></ul></div><div><h3>项目简介</h3><p>围绕面向情境感知的多智能体系统，开展紧耦合感知、通信与分布式智能研究。</p><p>主题：迈向边缘智能：面向情境感知的感知、计算与通信的多智能体方法</p><div class=\"project-meta\"><p><strong>日期：</strong>2026年5月29日</p><p><strong>地点：</strong>英国布里斯托大学 BDFI（65 Avon St, Bristol, UK BS2 0PZ）</p></div></div></div>"
             },
             {
               selector: "#project-detail-2 .project-detail-panel",
@@ -419,12 +419,12 @@
             {
               selector: "#project-detail-3 .project-detail-panel",
               html:
-                "<div class=\"project-detail-grid\"><div><h3>团队成员</h3><ul><li>于佳冬博士，香港科技大学（广州）</li><li>余延涛博士，香港科技大学</li><li>张子儒</li></ul></div><div><h3>项目简介</h3><p>面向建筑作业场景，设计平滑且安全的人机协作鲁棒辅助行为。</p></div></div>"
+                "<div class=\"project-detail-grid\"><div><h3>团队成员</h3><ul><li>于佳冬博士，香港科技大学（广州）</li><li>于言滔博士，香港科技大学</li><li>张子儒</li></ul></div><div><h3>项目简介</h3><p>面向建筑作业场景，设计平滑且安全的人机协作鲁棒辅助行为。</p></div></div>"
             },
             {
               selector: "#project-detail-4 .project-detail-panel",
               html:
-                "<div class=\"project-detail-grid\"><div><h3>团队成员</h3><ul><li>于佳冬博士，香港科技大学（广州）</li><li>王学超博士，香港科技大学（广州）</li><li>朱光智</li><li>熊浩</li><li>苏宏旭</li></ul></div><div><h3>项目简介</h3><p>设计区块链赋能系统中的智能计算资源分配策略。</p></div></div>"
+                "<div class=\"project-detail-grid\"><div><h3>团队成员</h3><ul><li>于佳冬博士，香港科技大学（广州）</li><li>王雪超博士，香港科技大学（广州）</li><li>朱光智</li><li>熊浩</li><li>苏宏旭</li></ul></div><div><h3>项目简介</h3><p>设计区块链赋能系统中的智能计算资源分配策略。</p></div></div>"
             },
             {
               selector: "#project-detail-5 .project-detail-panel",
