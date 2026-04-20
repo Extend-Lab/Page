@@ -238,7 +238,7 @@
               selector: ".person-body",
               multiHtml: [
                 "<h3>于佳冬</h3><p>香港科技大学（广州）助理教授</p>",
-                "<h3>张雨龙</h3><p><span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2023年至今</span></p>",
+                "<h3>张育龙</h3><p><span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2023年至今</span></p>",
                 "<h3>熊浩</h3><p><span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2023年至今</span></p>",
                 "<h3>张子儒</h3><p><span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2024年至今</span></p>",
                 "<h3>郑佳宁</h3><p><span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2024年至今</span></p>",

@@ -317,7 +317,7 @@
       category: "People",
       categoryZh: "成员",
       text: "jiadong yu hao xiong xinren zhang jianing zheng yulong zhang guangzhi zhu nianfu wang phd mphil visiting students",
-      textZh: "于佳冬 熊浩 张馨仁 郑佳宁 张雨龙 张子儒 张栩棱 李佳乐 朱光智 王年福 博士生 硕士 访问学生"
+      textZh: "于佳冬 熊浩 张馨仁 郑佳宁 张育龙 张子儒 张栩棱 李佳乐 朱光智 王年福 博士生 硕士 访问学生"
     },
     {
       title: "Publications",
