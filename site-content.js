@@ -599,7 +599,6 @@
         rail.dataset.dragging = "true";
         rail.dataset.dragMoved = "false";
         viewport.setPointerCapture(pointerId);
-        event.preventDefault();
       };
 
       const moveDrag = (event) => {
