@@ -87,6 +87,26 @@
         "jianing zheng ieee transactions on mobile computing multimodal federated learning energy constrained wireless networks accepted paper"
     },
     {
+      id: "news-media-jituo-interview",
+      type: "news",
+      category: "media",
+      categoryLabel: "Media",
+      title: "Dr. Jiadong Yu Shared What She Looks for in Prospective Students in a Jituo Forum Interview",
+      bodyHtml:
+        "<strong>Dr. Jiadong Yu</strong> was interviewed by <em>Jituo Forum</em> and asked what qualities she hopes to see in prospective students. She highlighted <strong>curiosity</strong>, <strong>execution</strong>, and <strong>resilience</strong> as the traits she values most.",
+      summaryHtml:
+        "In a Jituo Forum interview, Dr. Jiadong Yu shared that she values curiosity, execution, and resilience in prospective students.",
+      displayDate: "20 Apr 2026",
+      sortDate: "2026-04-20",
+      link: "https://weixin.qq.com/sph/AAr5v9a3f5",
+      image: {
+        src: "./assets/news/jituo.jpg",
+        alt: "Jituo Forum interview coverage featuring Dr. Jiadong Yu"
+      },
+      searchText:
+        "dr jiadong yu jituo forum interview prospective students curiosity execution resilience media coverage april 20 2026"
+    },
+    {
       id: "news-media-joint-lab-forum",
       type: "news",
       category: "media",
