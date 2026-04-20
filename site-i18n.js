@@ -65,7 +65,7 @@
             },
             {
               selector: ".hero-title",
-              text: "打破边界，无限可能。"
+              html: "打破边界，<br>无限可能。"
             },
             {
               selector: ".hero-subtitle",
