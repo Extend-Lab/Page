@@ -304,10 +304,6 @@
       `;
     }
 
-    if (item.type === "news" && item.category === "media") {
-      return renderEditorialCardVisual(item);
-    }
-
     const image = item.image || (item.images && item.images[0]);
     if (!image) return "";
 
@@ -373,7 +369,7 @@
   function renderNewsCard(item, hidden, section) {
     const hiddenAttrs = hidden ? ' hidden data-archive-hidden="true"' : ' data-archive-hidden="false"';
     const useImageCards = section && section.dataset.cardStyle === "image";
-    const useEditorialArt = useImageCards && (item.category === "publication" || item.category === "media");
+    const useEditorialArt = useImageCards && item.category === "publication";
 
     if (item.category === "publication" && !useImageCards) {
       return `
