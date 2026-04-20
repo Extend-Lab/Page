@@ -1356,7 +1356,7 @@ p {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  z-index: 3;
+  z-index: 4;
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
@@ -1373,7 +1373,7 @@ p {
   position: absolute;
   top: 1rem;
   left: 1rem;
-  z-index: 3;
+  z-index: 4;
   width: 2.4rem;
   height: 2.4rem;
   padding: 0;
@@ -1422,6 +1422,7 @@ p {
 }
 
 .research-poster-modal-body {
+  position: relative;
   display: flex;
   flex: 1 1 auto;
   min-height: 0;
