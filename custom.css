@@ -1339,14 +1339,30 @@ p {
   width: 2.4rem;
   height: 2.4rem;
   padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 999px;
   border: none;
   background: rgba(247, 251, 255, 0.82);
+  color: #20456d;
+  font-size: 1.55rem;
+  line-height: 1;
   box-shadow:
     0 12px 24px rgba(17, 46, 80, 0.12),
     inset 0 1px 0 rgba(255, 255, 255, 0.66);
   backdrop-filter: blur(12px);
   opacity: 0.9;
+}
+
+.research-poster-close:hover,
+.research-poster-close:focus-visible {
+  color: #173858;
+  background: rgba(250, 253, 255, 0.92);
+  box-shadow:
+    0 14px 28px rgba(17, 46, 80, 0.14),
+    inset 0 1px 0 rgba(255, 255, 255, 0.72);
+  outline: none;
 }
 
 .research-poster-tool {
