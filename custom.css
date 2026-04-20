@@ -864,12 +864,50 @@ p {
   display: block;
 }
 
+.news-card-image-link-media {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 5 / 3;
+  background:
+    linear-gradient(180deg, rgba(241, 247, 252, 0.96) 0%, rgba(231, 239, 247, 0.98) 100%);
+  border-bottom: 1px solid rgba(207, 218, 228, 0.95);
+}
+
+.news-card-image-link-media::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: var(--news-card-image);
+  background-size: cover;
+  background-position: center;
+  filter: blur(20px) saturate(0.95);
+  transform: scale(1.08);
+  opacity: 0.32;
+}
+
+.news-card-image-link-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(248, 252, 255, 0.18) 0%, rgba(240, 246, 251, 0.12) 100%);
+}
+
 .news-card-image {
   width: 100%;
   aspect-ratio: 5 / 3;
   object-fit: cover;
   display: block;
   border-bottom: 1px solid rgba(207, 218, 228, 0.95);
+}
+
+.news-card-image-media {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  padding: 0.2rem 0;
+  object-fit: contain;
+  border-bottom: none;
 }
 
 .news-card-body {

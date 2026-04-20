@@ -250,6 +250,13 @@
       .replace(/\"/g, "&quot;");
   }
 
+  function escapeCssUrl(url) {
+    return String(url || "").replace(/["\\\n\r()]/g, (char) => {
+      if (char === "\n" || char === "\r") return "";
+      return `\\${char}`;
+    });
+  }
+
   function getNewsItems(category) {
     return sortByDateDesc(
       category ? NEWS_ITEMS.filter((item) => item.category === category) : NEWS_ITEMS
@@ -386,13 +393,21 @@
     const linkedTitle = item.link
       ? `<a href="${item.link}" target="_blank" rel="noopener">${item.title}</a>`
       : item.title;
+    const isMediaCard = item.category === "media";
+    const imageWrapperClass = isMediaCard
+      ? "news-card-image-link news-card-image-link-media"
+      : "news-card-image-link";
+    const imageClass = isMediaCard ? "news-card-image news-card-image-media" : "news-card-image";
+    const imageWrapperStyle = isMediaCard
+      ? ` style="--news-card-image:url('${escapeCssUrl(item.image.src)}')"`
+      : "";
     const image = usePublicationArt
       ? renderPublicationCardVisual(item)
       : item.image
       ? `
         ${item.link
-          ? `<a href="${item.link}" target="_blank" rel="noopener" class="news-card-image-link"><img src="${item.image.src}" alt="${escapeHtml(item.image.alt)}" class="news-card-image"></a>`
-          : `<div class="news-card-image-link"><img src="${item.image.src}" alt="${escapeHtml(item.image.alt)}" class="news-card-image"></div>`}
+          ? `<a href="${item.link}" target="_blank" rel="noopener" class="${imageWrapperClass}"${imageWrapperStyle}><img src="${item.image.src}" alt="${escapeHtml(item.image.alt)}" class="${imageClass}"></a>`
+          : `<div class="${imageWrapperClass}"${imageWrapperStyle}><img src="${item.image.src}" alt="${escapeHtml(item.image.alt)}" class="${imageClass}"></div>`}
       `
       : "";
 
@@ -675,6 +690,13 @@
     if (section && target.hidden) {
       setArchiveExpanded(section, true);
     }
+
+    window.requestAnimationFrame(() => {
+      target.scrollIntoView({
+        block: "start",
+        behavior: "auto"
+      });
+    });
 
     target.classList.add("archive-target-flash");
     window.setTimeout(() => {
