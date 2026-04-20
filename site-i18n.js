@@ -235,23 +235,19 @@
               multiText: ["主任", "博士生", "硕士研究生", "访问学生", "校友"]
             },
             {
-              selector: ".person-body h3",
-              multiText: ["于佳冬", "张雨龙", "熊浩", "张子儒", "郑佳宁", "张栩棱", "张馨仁", "李佳乐", "朱光智", "王年福", "张耀尹"]
-            },
-            {
-              selector: ".person-body p",
+              selector: ".person-body",
               multiHtml: [
-                "香港科技大学（广州）助理教授",
-                "<span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2023年至今</span>",
-                "<span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2023年至今</span>",
-                "<span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2024年至今</span>",
-                "<span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2024年至今</span>",
-                "<span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2024年至今</span>",
-                "<span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2025年至今</span>",
-                "<span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2025年至今</span>",
-                "硕士研究生",
-                "哈尔滨工业大学（深圳）与鹏城实验室博士生",
-                "复旦大学本科生"
+                "<h3>于佳冬</h3><p>香港科技大学（广州）助理教授</p>",
+                "<h3>张雨龙</h3><p><span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2023年至今</span></p>",
+                "<h3>熊浩</h3><p><span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2023年至今</span></p>",
+                "<h3>张子儒</h3><p><span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2024年至今</span></p>",
+                "<h3>郑佳宁</h3><p><span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2024年至今</span></p>",
+                "<h3>张栩棱</h3><p><span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2024年至今</span></p>",
+                "<h3>张馨仁</h3><p><span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2025年至今</span></p>",
+                "<h3>李佳乐</h3><p><span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2025年至今</span></p>",
+                "<h3>朱光智</h3><p>硕士研究生</p>",
+                "<h3>王年福</h3><p>哈尔滨工业大学（深圳）与鹏城实验室博士生</p>",
+                "<h3>张耀尹</h3><p>复旦大学本科生</p>"
               ]
             },
             {
