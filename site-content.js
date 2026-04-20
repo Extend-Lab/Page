@@ -496,6 +496,7 @@
       const slides = Array.from(rail.querySelectorAll(".homepage-highlights-slide"));
       const dotsContainer = rail.querySelector("[data-role='dots']");
       let pointerId = null;
+      let pressedLink = null;
       let dragStartX = 0;
       let dragStartScrollLeft = 0;
       let dragDistance = 0;
@@ -593,6 +594,7 @@
       const startDrag = (event) => {
         if (event.pointerType === "mouse" && event.button !== 0) return;
         pointerId = event.pointerId;
+        pressedLink = event.target.closest(".homepage-update-link");
         dragStartX = event.clientX;
         dragStartScrollLeft = viewport.scrollLeft;
         dragDistance = 0;
@@ -613,12 +615,17 @@
         if (viewport.hasPointerCapture(pointerId)) {
           viewport.releasePointerCapture(pointerId);
         }
+        const shouldNavigate = dragDistance <= 8 && pressedLink;
         pointerId = null;
+        pressedLink = null;
         rail.dataset.dragging = "false";
         window.setTimeout(() => {
           rail.dataset.dragMoved = dragDistance > 8 ? "true" : "false";
         }, 0);
         snapToNearest();
+        if (shouldNavigate) {
+          window.location.assign(shouldNavigate.href);
+        }
       };
 
       viewport.addEventListener("pointerdown", startDrag);
