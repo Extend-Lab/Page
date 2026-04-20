@@ -5,126 +5,188 @@
       type: "news",
       category: "publication",
       categoryLabel: "Publication",
+      categoryLabelZh: "论文动态",
       title: "Ms. Jianing Zheng Receives ICC 2026 Student Travel Grant",
+      titleZh: "郑佳宁同学获 ICC 2026 Student Travel Grant",
       bodyHtml:
         "<strong>Ms. Jianing Zheng</strong> received the <em>ICC 2026 Student Travel Grant</em>. Her paper, <em>Maximizing Personalized Energy-efficiency for Swarm Learning in 6G Networks</em>, will be presented on 25 May 2026 in Glasgow, Scotland, UK.",
+      bodyHtmlZh:
+        "<strong>郑佳宁同学</strong>获得了 <em>ICC 2026 Student Travel Grant</em>。她的论文 <em>Maximizing Personalized Energy-efficiency for Swarm Learning in 6G Networks</em> 将于 <strong>2026 年 5 月 25 日</strong> 在英国苏格兰格拉斯哥宣讲。",
       summaryHtml:
         "<strong>Ms. Jianing Zheng</strong> received the ICC 2026 Student Travel Grant for her work on personalized energy efficiency in swarm learning for 6G networks.",
+      summaryHtmlZh:
+        "<strong>郑佳宁同学</strong>因其关于 6G 群体学习个性化能效的研究，获得 ICC 2026 学生差旅资助。",
       displayDate: "17 Apr 2026",
+      displayDateZh: "2026年4月17日",
       sortDate: "2026-04-17",
       homepageVisual: {
         type: "art-image",
         src: "./assets/news/ICC2026.jpg",
-        alt: "Official IEEE ICC 2026 conference banner"
+        alt: "Official IEEE ICC 2026 conference banner",
+        altZh: "IEEE ICC 2026 官方会议横幅"
       },
       image: {
         src: "./assets/news/ICC2026.jpg",
-        alt: "Official IEEE ICC 2026 conference banner"
+        alt: "Official IEEE ICC 2026 conference banner",
+        altZh: "IEEE ICC 2026 官方会议横幅"
       },
       searchText:
-        "jianing zheng icc 2026 student travel grant maximizing personalized energy-efficiency for swarm learning in 6g networks glasgow may 25 2026"
+        "jianing zheng icc 2026 student travel grant maximizing personalized energy-efficiency for swarm learning in 6g networks glasgow may 25 2026",
+      searchTextZh:
+        "郑佳宁 ICC 2026 学生差旅资助 6G 群体学习 个性化 能效 格拉斯哥 2026年5月25日"
     },
     {
       id: "news-publication-tits",
       type: "news",
       category: "publication",
       categoryLabel: "Publication",
+      categoryLabelZh: "论文动态",
       title: "Paper Accepted by IEEE Transactions on Intelligent Transportation Systems",
+      titleZh: "论文被 IEEE Transactions on Intelligent Transportation Systems 接收",
       bodyHtml:
         "<strong>Mr. Hao Xiong</strong> reports that <em>Latency-Freshness-Aware Vehicular Edge Computing for Digital Twin-Enabled Intelligent Transportation</em> has been accepted by <em>IEEE Transactions on Intelligent Transportation Systems</em>.",
+      bodyHtmlZh:
+        "<strong>熊昊同学</strong>的论文 <em>Latency-Freshness-Aware Vehicular Edge Computing for Digital Twin-Enabled Intelligent Transportation</em> 已被 <em>IEEE Transactions on Intelligent Transportation Systems</em> 接收。",
       summaryHtml:
         "<strong>Mr. Hao Xiong</strong> reports a new acceptance for digital twin-enabled vehicular edge computing.",
+      summaryHtmlZh:
+        "<strong>熊昊同学</strong>在数字孪生赋能车联网边缘计算方向获得新的论文接收。",
       displayDate: "Mar 2026",
+      displayDateZh: "2026年3月",
       sortDate: "2026-03-20",
       homepageVisual: {
         type: "art-image",
         src: "./assets/news/TITS.jpg",
-        alt: "IEEE Transactions on Intelligent Transportation Systems homepage screenshot"
+        alt: "IEEE Transactions on Intelligent Transportation Systems homepage screenshot",
+        altZh: "IEEE Transactions on Intelligent Transportation Systems 页面截图"
       },
       image: {
         src: "./assets/news/TITS.jpg",
-        alt: "IEEE Transactions on Intelligent Transportation Systems homepage screenshot"
+        alt: "IEEE Transactions on Intelligent Transportation Systems homepage screenshot",
+        altZh: "IEEE Transactions on Intelligent Transportation Systems 页面截图"
       },
       searchText:
-        "hao xiong ieee transactions on intelligent transportation systems latency freshness vehicular edge computing digital twin accepted paper"
+        "hao xiong ieee transactions on intelligent transportation systems latency freshness vehicular edge computing digital twin accepted paper",
+      searchTextZh:
+        "熊昊 TITS 接收 车联网 边缘计算 数字孪生 智能交通"
     },
     {
       id: "news-publication-tmlcn",
       type: "news",
       category: "publication",
       categoryLabel: "Publication",
+      categoryLabelZh: "论文动态",
       title: "Major Revision for Multi-Agent Communication Learning Paper",
+      titleZh: "多智能体通信学习论文获得大修",
       bodyHtml:
         "<strong>Ms. Xinren Zhang</strong> received a major revision decision for <em>Learning Efficient Communication Protocols for Multi-Agent Reinforcement Learning</em> from <em>IEEE Transactions on Machine Learning in Communications and Networking</em>.",
+      bodyHtmlZh:
+        "<strong>张欣任同学</strong>的论文 <em>Learning Efficient Communication Protocols for Multi-Agent Reinforcement Learning</em> 在 <em>IEEE Transactions on Machine Learning in Communications and Networking</em> 获得大修意见。",
       summaryHtml:
         "<strong>Ms. Xinren Zhang</strong> received a major revision for a paper on efficient communication protocols in multi-agent reinforcement learning.",
+      summaryHtmlZh:
+        "<strong>张欣任同学</strong>关于多智能体强化学习高效通信协议的论文获得大修。",
       displayDate: "Mar 2026",
+      displayDateZh: "2026年3月",
       sortDate: "2026-03-12",
       image: {
         src: "./assets/news/TMLCN.jpg",
-        alt: "IEEE Transactions on Machine Learning in Communications and Networking journal graphic"
+        alt: "IEEE Transactions on Machine Learning in Communications and Networking journal graphic",
+        altZh: "IEEE Transactions on Machine Learning in Communications and Networking 期刊图示"
       },
       searchText:
-        "xinren zhang machine learning in communications and networking major revision multi-agent communication protocols reinforcement learning"
+        "xinren zhang machine learning in communications and networking major revision multi-agent communication protocols reinforcement learning",
+      searchTextZh:
+        "张欣任 大修 多智能体 通信协议 强化学习 TMLCN"
     },
     {
       id: "news-publication-tmc",
       type: "news",
       category: "publication",
       categoryLabel: "Publication",
+      categoryLabelZh: "论文动态",
       title: "Paper Accepted by IEEE Transactions on Mobile Computing",
+      titleZh: "论文被 IEEE Transactions on Mobile Computing 接收",
       bodyHtml:
         "<strong>Ms. Jianing Zheng</strong> reports that <em>Scheduling and Fusion for Multimodal Federated Learning in Energy-constrained Wireless Networks</em> has been accepted by <em>IEEE Transactions on Mobile Computing</em>.",
+      bodyHtmlZh:
+        "<strong>郑佳宁同学</strong>的论文 <em>Scheduling and Fusion for Multimodal Federated Learning in Energy-constrained Wireless Networks</em> 已被 <em>IEEE Transactions on Mobile Computing</em> 接收。",
       summaryHtml:
         "<strong>Ms. Jianing Zheng</strong> reports an acceptance on multimodal federated learning in energy-constrained wireless networks.",
+      summaryHtmlZh:
+        "<strong>郑佳宁同学</strong>在能量受限无线网络中的多模态联邦学习方向获得新的论文接收。",
       displayDate: "Sep 2025",
+      displayDateZh: "2025年9月",
       sortDate: "2025-09-08",
       image: {
         src: "./assets/news/TMC.jpg",
-        alt: "IEEE Transactions on Mobile Computing journal graphic"
+        alt: "IEEE Transactions on Mobile Computing journal graphic",
+        altZh: "IEEE Transactions on Mobile Computing 期刊图示"
       },
       searchText:
-        "jianing zheng ieee transactions on mobile computing multimodal federated learning energy constrained wireless networks accepted paper"
+        "jianing zheng ieee transactions on mobile computing multimodal federated learning energy constrained wireless networks accepted paper",
+      searchTextZh:
+        "郑佳宁 TMC 接收 多模态 联邦学习 能量受限 无线网络"
     },
     {
       id: "news-media-jituo-interview",
       type: "news",
       category: "media",
       categoryLabel: "Media",
+      categoryLabelZh: "媒体报道",
       title: "Dr. Jiadong Yu Shared What She Looks for in Prospective Students in a Jituo Forum Interview",
+      titleZh: "余嘉栋博士在集拓论坛采访中分享对未来学生的期待",
       bodyHtml:
         "<strong>Dr. Jiadong Yu</strong> was interviewed by <em>Jituo Forum</em> and asked what qualities she hopes to see in prospective students. She highlighted <strong>curiosity</strong>, <strong>execution</strong>, and <strong>resilience</strong> as the traits she values most.",
+      bodyHtmlZh:
+        "<strong>余嘉栋博士</strong>接受了 <em>集拓论坛</em> 采访，分享她最看重未来学生的哪些特质。她特别强调了 <strong>好奇心</strong>、<strong>执行力</strong> 与 <strong>韧性</strong>。",
       summaryHtml:
         "In a Jituo Forum interview, Dr. Jiadong Yu shared that she values curiosity, execution, and resilience in prospective students.",
+      summaryHtmlZh:
+        "在集拓论坛采访中，余嘉栋博士表示她最看重未来学生的好奇心、执行力与韧性。",
       displayDate: "19 Aug 2025",
+      displayDateZh: "2025年8月19日",
       sortDate: "2025-08-19",
       link: "https://weixin.qq.com/sph/AAr5v9a3f5",
       image: {
         src: "./assets/news/jituo.jpg",
-        alt: "Jituo Forum interview coverage featuring Dr. Jiadong Yu"
+        alt: "Jituo Forum interview coverage featuring Dr. Jiadong Yu",
+        altZh: "集拓论坛对余嘉栋博士的采访报道"
       },
       searchText:
-        "dr jiadong yu jituo forum interview prospective students curiosity execution resilience media coverage april 20 2026"
+        "dr jiadong yu jituo forum interview prospective students curiosity execution resilience media coverage april 20 2026",
+      searchTextZh:
+        "余嘉栋 集拓论坛 采访 学生 好奇心 执行力 韧性 媒体报道"
     },
     {
       id: "news-media-joint-lab-forum",
       type: "news",
       category: "media",
       categoryLabel: "Media",
+      categoryLabelZh: "媒体报道",
       title: "Dr. Jiadong Yu Delivered a Forum Talk at the HKUST(GZ)-Diandong Joint Laboratory Event",
+      titleZh: "余嘉栋博士在港科大（广州）- 典当联合实验室活动中作论坛报告",
       bodyHtml:
         "In the featured report, <strong>Dr. Jiadong Yu</strong> introduced the group's work on scheduling heterogeneous computing resources for data centers, guided by the vision of making compute as accessible and on-demand as electricity.",
+      bodyHtmlZh:
+        "在专题报道中，<strong>余嘉栋博士</strong>介绍了团队在数据中心异构计算资源调度方面的研究工作，并分享了“让算力像电力一样可获得、可按需使用”的愿景。",
       summaryHtml:
         "A featured media report highlighted the group's vision for on-demand heterogeneous computing.",
+      summaryHtmlZh:
+        "专题媒体报道介绍了团队关于按需异构算力的研究愿景。",
       displayDate: "8 Sep 2025",
+      displayDateZh: "2025年9月8日",
       sortDate: "2025-09-08",
       link: "https://mp.weixin.qq.com/s/288UUs9USw-S1FGN5Nji5Q",
       image: {
         src: "./assets/news/joint-lab-report.jpg",
-        alt: "Dr. Jiadong Yu speaking at the HKUST(GZ)-Diandong joint laboratory event"
+        alt: "Dr. Jiadong Yu speaking at the HKUST(GZ)-Diandong joint laboratory event",
+        altZh: "余嘉栋博士在港科大（广州）- 典当联合实验室活动中发言"
       },
       searchText:
-        "dr jiadong yu diandong joint laboratory media coverage data center heterogeneous computing resources"
+        "dr jiadong yu diandong joint laboratory media coverage data center heterogeneous computing resources",
+      searchTextZh:
+        "余嘉栋 联合实验室 媒体报道 数据中心 异构计算 资源调度"
     }
   ];
 
@@ -134,101 +196,191 @@
       type: "event",
       category: "recent-activity",
       categoryLabel: "Recent Activity",
+      categoryLabelZh: "近期活动",
       title: "Visit to Guangdong Quanzhun Intelligent Technology Co., Ltd.",
+      titleZh: "走访广东全准智能科技有限公司",
       bodyHtml:
         "On <strong>11 March 2026</strong>, <strong>Dr. Jiadong Yu</strong>, <strong>Mr. Ziru Zhang</strong>, and <strong>Ms. Xuling Zhang</strong> visited <em>Guangdong Quanzhun Intelligent Technology Co., Ltd.</em>. During the visit, the team toured the company's production line and discussed potential collaboration opportunities and a shared long-term vision.",
+      bodyHtmlZh:
+        "在 <strong>2026 年 3 月 11 日</strong>，<strong>余嘉栋博士</strong>、<strong>张子睿同学</strong>和 <strong>张旭凌同学</strong>走访了 <em>广东全准智能科技有限公司</em>。团队参观了企业生产线，并围绕潜在合作机会与长期共同愿景进行了交流。",
       summaryHtml:
         "The team visited Guangdong Quanzhun Intelligent Technology Co., Ltd., toured its production line, and discussed future collaboration opportunities.",
+      summaryHtmlZh:
+        "团队走访广东全准智能科技有限公司，参观生产线并交流未来合作机会。",
       displayDate: "11 Mar 2026",
+      displayDateZh: "2026年3月11日",
       sortDate: "2026-03-11",
       images: [
         {
           src: "./assets/events/quanzhun.jpg",
-          alt: "EXTEND Lab members visiting Guangdong Quanzhun Intelligent Technology Co., Ltd."
+          alt: "EXTEND Lab members visiting Guangdong Quanzhun Intelligent Technology Co., Ltd.",
+          altZh: "EXTEND Lab 成员走访广东全准智能科技有限公司"
         }
       ],
       searchText:
-        "jiadong yu ziru zhang xuling zhang guangdong quanzhun intelligent technology company visit production line collaboration vision march 11 2026"
+        "jiadong yu ziru zhang xuling zhang guangdong quanzhun intelligent technology company visit production line collaboration vision march 11 2026",
+      searchTextZh:
+        "余嘉栋 张子睿 张旭凌 广东全准智能科技 走访 生产线 合作 2026年3月11日"
     },
     {
       id: "event-openclaw-ai-agent",
       type: "event",
       category: "extend-sharing",
       categoryLabel: "EXTEND Sharing",
+      categoryLabelZh: "EXTEND 分享",
       title: "EXTEND Sharing: OpenClaw and AI Agent",
+      titleZh: "EXTEND 分享：OpenClaw 与 AI Agent",
       bodyHtml:
         "We organized an EXTEND Sharing Session featuring Dr. Jiadong Yu and Mr. Jiale Li. The session covered the fundamentals of AI agents and OpenClaw, plus practical reflections on using tools such as Claude Code in everyday research workflows.",
+      bodyHtmlZh:
+        "我们组织了一场由余嘉栋博士与李嘉乐同学主讲的 EXTEND 分享会，介绍 AI Agent 与 OpenClaw 的基础内容，并交流了将 Claude Code 等工具用于日常科研流程的实践体会。",
       summaryHtml:
         "An internal sharing session on AI agents, OpenClaw, and practical tooling for everyday research workflows.",
+      summaryHtmlZh:
+        "一场聚焦 AI Agent、OpenClaw 以及日常科研工具实践的内部分享会。",
       displayDate: "20 Mar 2026",
+      displayDateZh: "2026年3月20日",
       sortDate: "2026-03-20",
       images: [
         {
           src: "./assets/events/extendclaw.jpg",
-          alt: "Participants at the EXTEND Sharing Session"
+          alt: "Participants at the EXTEND Sharing Session",
+          altZh: "EXTEND 分享会现场"
         }
       ],
       searchText:
-        "extend sharing openclaw ai agent jiale li tools claude code internal sharing session"
+        "extend sharing openclaw ai agent jiale li tools claude code internal sharing session",
+      searchTextZh:
+        "EXTEND 分享 OpenClaw AI Agent 李嘉乐 Claude Code 工具 科研工作流"
     }
   ];
 
   const STATIC_SEARCH_INDEX = [
     {
       title: "About EXTEND Lab",
+      titleZh: "关于 EXTEND Lab",
       url: "about/",
       category: "About",
-      text: "mission values break boundaries unlock possibilities reinforcement learning multi-agent systems robotics embodied intelligence"
+      categoryZh: "关于",
+      text: "mission values break boundaries unlock possibilities reinforcement learning multi-agent systems robotics embodied intelligence",
+      textZh: "使命 价值观 打破边界 解锁可能 强化学习 多智能体系统 机器人 具身智能"
     },
     {
       title: "Research: Multi-Agent Systems",
+      titleZh: "研究：多智能体系统",
       url: "research/",
       category: "Research",
-      text: "multi-agent systems collaborative competitive intelligence cyber-physical tasks"
+      categoryZh: "研究",
+      text: "multi-agent systems collaborative competitive intelligence cyber-physical tasks",
+      textZh: "多智能体系统 协作 竞争 智能 信息物理 任务"
     },
     {
       title: "Research: Robotic/Embodied AI",
+      titleZh: "研究：机器人 / 具身智能",
       url: "research/",
       category: "Research",
-      text: "robotic embodied ai perception adaptation dynamic environments"
+      categoryZh: "研究",
+      text: "robotic embodied ai perception adaptation dynamic environments",
+      textZh: "机器人 具身智能 感知 适应 动态环境"
     },
     {
       title: "Research: Simulation-to-Reality RL",
+      titleZh: "研究：仿真到现实强化学习",
       url: "research/",
       category: "Research",
-      text: "simulation to reality reinforcement learning physical deployment training environments"
+      categoryZh: "研究",
+      text: "simulation to reality reinforcement learning physical deployment training environments",
+      textZh: "仿真到现实 强化学习 物理部署 训练环境"
     },
     {
       title: "Research: Edge Intelligence and Wireless Systems",
+      titleZh: "研究：边缘智能与无线系统",
       url: "research/",
       category: "Research",
-      text: "edge intelligence wireless systems resource allocation communications intelligent infrastructure"
+      categoryZh: "研究",
+      text: "edge intelligence wireless systems resource allocation communications intelligent infrastructure",
+      textZh: "边缘智能 无线系统 资源分配 通信 智能基础设施"
     },
     {
       title: "Projects",
+      titleZh: "项目",
       url: "projects/",
       category: "Projects",
-      text: "funded projects grants sponsored collaborations bristol guangdong diandong blockchain smart factories"
+      categoryZh: "项目",
+      text: "funded projects grants sponsored collaborations bristol guangdong diandong blockchain smart factories",
+      textZh: "资助项目 合作 布里斯托 广东 典当 区块链 智能工厂"
     },
     {
       title: "People",
+      titleZh: "成员",
       url: "people/",
       category: "People",
-      text: "jiadong yu hao xiong xinren zhang jianing zheng yulong zhang guangzhi zhu nianfu wang phd mphil visiting students"
+      categoryZh: "成员",
+      text: "jiadong yu hao xiong xinren zhang jianing zheng yulong zhang guangzhi zhu nianfu wang phd mphil visiting students",
+      textZh: "余嘉栋 熊昊 张欣任 郑佳宁 张雨龙 朱广志 王念富 博士生 硕士 访问学生"
     },
     {
       title: "Publications",
+      titleZh: "论文",
       url: "publications/",
       category: "Publications",
-      text: "journal articles conference papers ieee twc tmc tits wireless communications internet of things"
+      categoryZh: "论文",
+      text: "journal articles conference papers ieee twc tmc tits wireless communications internet of things",
+      textZh: "期刊论文 会议论文 IEEE TWC TMC TITS 无线通信 物联网"
     },
     {
       title: "Collaborate",
+      titleZh: "合作",
       url: "support/",
       category: "Collaborate",
-      text: "collaboration funding partners graduate students undergraduate students visiting phd scholars application materials"
+      categoryZh: "合作",
+      text: "collaboration funding partners graduate students undergraduate students visiting phd scholars application materials",
+      textZh: "合作 资助伙伴 研究生 本科生 访问博士 学者 申请材料"
     }
   ];
+
+  function getLanguage() {
+    if (
+      typeof window !== "undefined" &&
+      window.EXTEND_I18N &&
+      typeof window.EXTEND_I18N.getLanguage === "function"
+    ) {
+      return window.EXTEND_I18N.getLanguage();
+    }
+
+    return "en";
+  }
+
+  function t(key, params, fallback) {
+    if (
+      typeof window !== "undefined" &&
+      window.EXTEND_I18N &&
+      typeof window.EXTEND_I18N.t === "function"
+    ) {
+      return window.EXTEND_I18N.t(key, params, fallback);
+    }
+
+    return fallback !== undefined ? fallback : key;
+  }
+
+  function getLocalizedValue(item, key) {
+    const language = getLanguage();
+    if (language === "zh" && item && item[`${key}Zh`]) {
+      return item[`${key}Zh`];
+    }
+
+    return item ? item[key] : "";
+  }
+
+  function getLocalizedImageAlt(image) {
+    if (!image) return "";
+    if (getLanguage() === "zh" && image.altZh) return image.altZh;
+    return image.alt || "";
+  }
+
+  function getSearchText(value, zhValue) {
+    return [value, zhValue].filter(Boolean).join(" ");
+  }
 
   function sortByDateDesc(items) {
     return [...items].sort((a, b) => {
@@ -277,29 +429,38 @@
   }
 
   function getSearchIndex() {
+    const newsLabel = t("content.newsLabel", {}, "News");
+    const eventsLabel = t("content.eventsLabel", {}, "Events");
     const contentItems = [
       ...getNewsItems().map((item) => ({
-        title: `News: ${item.title}`,
+        title: `${newsLabel}: ${getLocalizedValue(item, "title")}`,
         url: `news/#${item.id}`,
-        category: "News",
-        text: `${stripHtml(item.bodyHtml)} ${item.searchText || ""}`
+        category: newsLabel,
+        text: `${stripHtml(item.bodyHtml)} ${stripHtml(item.bodyHtmlZh)} ${getSearchText(item.searchText, item.searchTextZh)}`
       })),
       ...getEventItems().map((item) => ({
-        title: `Events: ${item.title}`,
+        title: `${eventsLabel}: ${getLocalizedValue(item, "title")}`,
         url: `events/#${item.id}`,
-        category: "Events",
-        text: `${stripHtml(item.bodyHtml)} ${item.searchText || ""}`
+        category: eventsLabel,
+        text: `${stripHtml(item.bodyHtml)} ${stripHtml(item.bodyHtmlZh)} ${getSearchText(item.searchText, item.searchTextZh)}`
       }))
     ];
 
-    return [...STATIC_SEARCH_INDEX, ...contentItems];
+    const staticItems = STATIC_SEARCH_INDEX.map((item) => ({
+      title: getLocalizedValue(item, "title"),
+      url: item.url,
+      category: getLocalizedValue(item, "category"),
+      text: getSearchText(item.text, item.textZh)
+    }));
+
+    return [...staticItems, ...contentItems];
   }
 
   function renderHomepageVisual(item) {
     if (item.homepageVisual && item.homepageVisual.type === "art-image") {
       return `
         <div class="homepage-update-art homepage-update-art-image">
-          <img src="${item.homepageVisual.src}" alt="${escapeHtml(item.homepageVisual.alt)}" class="homepage-update-art-image-asset">
+          <img src="${item.homepageVisual.src}" alt="${escapeHtml(getLocalizedImageAlt(item.homepageVisual))}" class="homepage-update-art-image-asset">
         </div>
       `;
     }
@@ -307,7 +468,7 @@
     const image = item.image || (item.images && item.images[0]);
     if (!image) return "";
 
-    return `<img src="${image.src}" alt="${escapeHtml(image.alt)}" class="news-card-image">`;
+    return `<img src="${image.src}" alt="${escapeHtml(getLocalizedImageAlt(image))}" class="news-card-image">`;
   }
 
   function renderEditorialCardVisual(item) {
@@ -319,14 +480,19 @@
 
     return `
       <div class="homepage-update-art homepage-update-art-image">
-        <img src="${visual.src}" alt="${escapeHtml(visual.alt)}" class="homepage-update-art-image-asset">
+        <img src="${visual.src}" alt="${escapeHtml(getLocalizedImageAlt(visual))}" class="homepage-update-art-image-asset">
       </div>
     `;
   }
 
   function renderHomepageCard(item) {
+    const title = getLocalizedValue(item, "title");
+    const summaryHtml = getLocalizedValue(item, "summaryHtml") || getLocalizedValue(item, "bodyHtml");
+    const displayDate = getLocalizedValue(item, "displayDate");
     const label =
-      item.type === "event" ? `Events · ${item.categoryLabel}` : `News · ${item.categoryLabel}`;
+      item.type === "event"
+        ? `${t("content.eventsLabel", {}, "Events")} · ${getLocalizedValue(item, "categoryLabel")}`
+        : `${t("content.newsLabel", {}, "News")} · ${getLocalizedValue(item, "categoryLabel")}`;
 
     return `
       <a href="${getItemUrl(item)}" class="homepage-update-link">
@@ -334,9 +500,9 @@
           ${renderHomepageVisual(item)}
           <div class="news-card-body">
             <p class="homepage-update-label">${label}</p>
-            <p class="homepage-update-meta">${item.displayDate}</p>
-            <h3 class="news-card-title">${item.title}</h3>
-            <p class="news-card-text">${item.summaryHtml || item.bodyHtml}</p>
+            <p class="homepage-update-meta">${displayDate}</p>
+            <h3 class="news-card-title">${title}</h3>
+            <p class="news-card-text">${summaryHtml}</p>
           </div>
         </article>
       </a>
@@ -361,7 +527,9 @@
               .join("")}
           </div>
         </div>
-        <div class="homepage-highlights-dots" data-role="dots" aria-label="Highlight navigation"></div>
+        <div class="homepage-highlights-dots" data-role="dots" aria-label="${escapeHtml(
+          t("content.highlightNavigation", {}, "Highlight navigation")
+        )}"></div>
       </section>
     `;
   }
@@ -370,29 +538,32 @@
     const hiddenAttrs = hidden ? ' hidden data-archive-hidden="true"' : ' data-archive-hidden="false"';
     const useImageCards = section && section.dataset.cardStyle === "image";
     const useEditorialArt = useImageCards && item.category === "publication";
+    const title = getLocalizedValue(item, "title");
+    const bodyHtml = getLocalizedValue(item, "bodyHtml");
+    const displayDate = getLocalizedValue(item, "displayDate");
 
     if (item.category === "publication" && !useImageCards) {
       return `
         <article class="news-card news-card-textonly" id="${item.id}"${hiddenAttrs}>
           <div class="news-card-body">
-            <h3 class="news-card-title">${item.title}</h3>
-            <p class="news-card-text">${item.bodyHtml}</p>
-            <p class="news-card-date">${item.displayDate}</p>
+            <h3 class="news-card-title">${title}</h3>
+            <p class="news-card-text">${bodyHtml}</p>
+            <p class="news-card-date">${displayDate}</p>
           </div>
         </article>
       `;
     }
 
     const linkedTitle = item.link
-      ? `<a href="${item.link}" target="_blank" rel="noopener">${item.title}</a>`
-      : item.title;
+      ? `<a href="${item.link}" target="_blank" rel="noopener">${title}</a>`
+      : title;
     const image = useEditorialArt
       ? renderEditorialCardVisual(item)
       : item.image
       ? `
         ${item.link
-          ? `<a href="${item.link}" target="_blank" rel="noopener" class="news-card-image-link"><img src="${item.image.src}" alt="${escapeHtml(item.image.alt)}" class="news-card-image"></a>`
-          : `<div class="news-card-image-link"><img src="${item.image.src}" alt="${escapeHtml(item.image.alt)}" class="news-card-image"></div>`}
+          ? `<a href="${item.link}" target="_blank" rel="noopener" class="news-card-image-link"><img src="${item.image.src}" alt="${escapeHtml(getLocalizedImageAlt(item.image))}" class="news-card-image"></a>`
+          : `<div class="news-card-image-link"><img src="${item.image.src}" alt="${escapeHtml(getLocalizedImageAlt(item.image))}" class="news-card-image"></div>`}
       `
       : "";
 
@@ -401,8 +572,8 @@
         ${image}
         <div class="news-card-body">
           <h3 class="news-card-title">${linkedTitle}</h3>
-          <p class="news-card-text">${item.bodyHtml}</p>
-          <p class="news-card-date">${item.displayDate}</p>
+          <p class="news-card-text">${bodyHtml}</p>
+          <p class="news-card-date">${displayDate}</p>
         </div>
       </article>
     `;
@@ -411,12 +582,15 @@
   function renderEventCard(item, hidden) {
     const hiddenAttrs = hidden ? ' hidden data-archive-hidden="true"' : ' data-archive-hidden="false"';
     const images = item.images || [];
+    const displayDate = getLocalizedValue(item, "displayDate");
+    const title = getLocalizedValue(item, "title");
+    const bodyHtml = getLocalizedValue(item, "bodyHtml");
     const mediaClass =
       images.length > 1 ? "event-feature-media" : "event-feature-media event-feature-media-single";
     const mediaMarkup = images
       .map(
         (image) =>
-          `<img src="${image.src}" alt="${escapeHtml(image.alt)}" class="event-feature-image">`
+          `<img src="${image.src}" alt="${escapeHtml(getLocalizedImageAlt(image))}" class="event-feature-image">`
       )
       .join("");
 
@@ -424,9 +598,9 @@
       <article class="event-feature-card" id="${item.id}"${hiddenAttrs}>
         <div class="${mediaClass}">${mediaMarkup}</div>
         <div class="event-feature-body">
-          <p class="event-feature-date">${item.displayDate}</p>
-          <h3 class="event-feature-title">${item.title}</h3>
-          <p class="event-feature-text">${stripHtml(item.bodyHtml)}</p>
+          <p class="event-feature-date">${displayDate}</p>
+          <h3 class="event-feature-title">${title}</h3>
+          <p class="event-feature-text">${stripHtml(bodyHtml)}</p>
         </div>
       </article>
     `;
@@ -441,7 +615,9 @@
 
     const button = section.querySelector(".archive-toggle-button");
     if (button) {
-      button.textContent = expanded ? "Show Less" : "Find More";
+      button.textContent = expanded
+        ? t("archive.showLess", {}, "Show Less")
+        : t("archive.findMore", {}, "Find More");
       button.setAttribute("aria-expanded", expanded ? "true" : "false");
     }
   }
@@ -471,11 +647,19 @@
 
     if (actions) {
       if (items.length > limit && section.dataset.findMoreUrl) {
-        actions.innerHTML = `<a class="btn-action archive-toggle-button" href="${section.dataset.findMoreUrl}">Find More</a>`;
+        actions.innerHTML = `<a class="btn-action archive-toggle-button" href="${section.dataset.findMoreUrl}">${t(
+          "archive.findMore",
+          {},
+          "Find More"
+        )}</a>`;
       } else {
         actions.innerHTML =
           items.length > limit
-            ? '<button type="button" class="btn-action archive-toggle-button" aria-expanded="false">Find More</button>'
+            ? `<button type="button" class="btn-action archive-toggle-button" aria-expanded="false">${t(
+                "archive.findMore",
+                {},
+                "Find More"
+              )}</button>`
             : "";
       }
     }
@@ -569,11 +753,13 @@
         dotsContainer.innerHTML = anchors
           .map(
             (_, index) => `
-              <button
+                <button
                 type="button"
                 class="homepage-highlights-dot${index === 0 ? " is-active" : ""}"
                 data-index="${index}"
-                aria-label="Show highlight set ${index + 1}"
+                aria-label="${escapeHtml(
+                  t("content.highlightSet", { index: index + 1 }, `Show highlight set ${index + 1}`)
+                )}"
               ></button>
             `
           )
@@ -708,5 +894,12 @@
     renderEventsPage();
     revealHashTarget();
     window.addEventListener("hashchange", revealHashTarget);
+    window.addEventListener("extend:languagechange", () => {
+      renderHomepage();
+      initHomepageHighlightsRail();
+      renderNewsPage();
+      renderEventsPage();
+      revealHashTarget();
+    });
   });
 })();

@@ -1,96 +1,170 @@
 const FALLBACK_SEARCH_INDEX = [
   {
     title: "About EXTEND Lab",
+    titleZh: "关于 EXTEND Lab",
     url: "about/",
     category: "About",
-    text: "mission values break boundaries unlock possibilities reinforcement learning multi-agent systems robotics embodied intelligence"
+    categoryZh: "关于",
+    text: "mission values break boundaries unlock possibilities reinforcement learning multi-agent systems robotics embodied intelligence",
+    textZh: "使命 价值观 打破边界 解锁可能 强化学习 多智能体系统 机器人 具身智能"
   },
   {
     title: "News: IEEE T-ITS Paper Accepted",
+    titleZh: "动态：IEEE T-ITS 论文接收",
     url: "news/#news-publication-tits",
     category: "News",
-    text: "hao xiong ieee transactions on intelligent transportation systems latency freshness vehicular edge computing digital twin accepted paper"
+    categoryZh: "动态",
+    text: "hao xiong ieee transactions on intelligent transportation systems latency freshness vehicular edge computing digital twin accepted paper",
+    textZh: "熊昊 TITS 接收 车联网 边缘计算 数字孪生 智能交通"
   },
   {
     title: "News: Multi-Agent Communication Paper Revision",
+    titleZh: "动态：多智能体通信论文大修",
     url: "news/#news-publication-tmlcn",
     category: "News",
-    text: "xinren zhang machine learning in communications and networking major revision multi-agent communication protocols"
+    categoryZh: "动态",
+    text: "xinren zhang machine learning in communications and networking major revision multi-agent communication protocols",
+    textZh: "张欣任 大修 多智能体 通信协议 强化学习"
   },
   {
     title: "News: IEEE TMC Paper Accepted",
+    titleZh: "动态：IEEE TMC 论文接收",
     url: "news/#news-publication-tmc",
     category: "News",
-    text: "jianing zheng ieee transactions on mobile computing multimodal federated learning accepted paper"
+    categoryZh: "动态",
+    text: "jianing zheng ieee transactions on mobile computing multimodal federated learning accepted paper",
+    textZh: "郑佳宁 TMC 接收 多模态 联邦学习"
   },
   {
     title: "News: Media Coverage",
+    titleZh: "动态：媒体报道",
     url: "news/#news-media-joint-lab-forum",
     category: "News",
-    text: "dr jiadong yu diandong joint laboratory media coverage data center heterogeneous computing resources"
+    categoryZh: "动态",
+    text: "dr jiadong yu diandong joint laboratory media coverage data center heterogeneous computing resources",
+    textZh: "余嘉栋 联合实验室 媒体报道 数据中心 异构计算"
   },
   {
     title: "Events: OpenClaw and AI Agent",
+    titleZh: "活动：OpenClaw 与 AI Agent",
     url: "events/#event-openclaw-ai-agent",
     category: "Events",
-    text: "extend sharing openclaw ai agent jiale li tools claude code internal sharing session"
+    categoryZh: "活动",
+    text: "extend sharing openclaw ai agent jiale li tools claude code internal sharing session",
+    textZh: "EXTEND 分享 OpenClaw AI Agent 李嘉乐 Claude Code"
   },
   {
     title: "Research: Multi-Agent Systems",
+    titleZh: "研究：多智能体系统",
     url: "research/",
     category: "Research",
-    text: "multi-agent systems collaborative competitive intelligence cyber-physical tasks"
+    categoryZh: "研究",
+    text: "multi-agent systems collaborative competitive intelligence cyber-physical tasks",
+    textZh: "多智能体系统 协作 竞争 智能 信息物理"
   },
   {
     title: "Research: Robotic/Embodied AI",
+    titleZh: "研究：机器人 / 具身智能",
     url: "research/",
     category: "Research",
-    text: "robotic embodied ai perception adaptation dynamic environments"
+    categoryZh: "研究",
+    text: "robotic embodied ai perception adaptation dynamic environments",
+    textZh: "机器人 具身智能 感知 适应 动态环境"
   },
   {
     title: "Research: Simulation-to-Reality RL",
+    titleZh: "研究：仿真到现实强化学习",
     url: "research/",
     category: "Research",
-    text: "simulation to reality reinforcement learning physical deployment training environments"
+    categoryZh: "研究",
+    text: "simulation to reality reinforcement learning physical deployment training environments",
+    textZh: "仿真到现实 强化学习 物理部署"
   },
   {
     title: "Research: Edge Intelligence and Wireless Systems",
+    titleZh: "研究：边缘智能与无线系统",
     url: "research/",
     category: "Research",
-    text: "edge intelligence wireless systems resource allocation communications intelligent infrastructure"
+    categoryZh: "研究",
+    text: "edge intelligence wireless systems resource allocation communications intelligent infrastructure",
+    textZh: "边缘智能 无线系统 资源分配 通信"
   },
   {
     title: "Projects",
+    titleZh: "项目",
     url: "projects/",
     category: "Projects",
-    text: "funded projects grants sponsored collaborations bristol guangdong diandong blockchain smart factories"
+    categoryZh: "项目",
+    text: "funded projects grants sponsored collaborations bristol guangdong diandong blockchain smart factories",
+    textZh: "资助项目 合作 布里斯托 广东 典当 区块链 智能工厂"
   },
   {
     title: "People",
+    titleZh: "成员",
     url: "people/",
     category: "People",
-    text: "jiadong yu hao xiong xinren zhang jianing zheng yulong zhang guangzhi zhu nianfu wang phd mphil visiting students"
+    categoryZh: "成员",
+    text: "jiadong yu hao xiong xinren zhang jianing zheng yulong zhang guangzhi zhu nianfu wang phd mphil visiting students",
+    textZh: "余嘉栋 熊昊 张欣任 郑佳宁 张雨龙 朱广志 王念富 博士生 硕士 访问学生"
   },
   {
     title: "Publications",
+    titleZh: "论文",
     url: "publications/",
     category: "Publications",
-    text: "journal articles conference papers ieee twc tmc tits wireless communications internet of things"
+    categoryZh: "论文",
+    text: "journal articles conference papers ieee twc tmc tits wireless communications internet of things",
+    textZh: "期刊论文 会议论文 IEEE TWC TMC TITS 无线通信 物联网"
   },
   {
     title: "Collaborate",
+    titleZh: "合作",
     url: "support/",
     category: "Collaborate",
-    text: "collaboration funding partners graduate students undergraduate students visiting phd scholars application materials"
+    categoryZh: "合作",
+    text: "collaboration funding partners graduate students undergraduate students visiting phd scholars application materials",
+    textZh: "合作 资助伙伴 研究生 本科生 访问博士 学者 申请材料"
   }
 ];
 
-const SITE_SEARCH_INDEX =
-  typeof window !== "undefined" &&
-  window.EXTEND_SITE_CONTENT &&
-  typeof window.EXTEND_SITE_CONTENT.getSearchIndex === "function"
-    ? window.EXTEND_SITE_CONTENT.getSearchIndex()
-    : FALLBACK_SEARCH_INDEX;
+function getSiteSearchIndex() {
+  if (
+    typeof window !== "undefined" &&
+    window.EXTEND_SITE_CONTENT &&
+    typeof window.EXTEND_SITE_CONTENT.getSearchIndex === "function"
+  ) {
+    return window.EXTEND_SITE_CONTENT.getSearchIndex();
+  }
+
+  const isChinese =
+    typeof window !== "undefined" &&
+    window.EXTEND_I18N &&
+    typeof window.EXTEND_I18N.getLanguage === "function" &&
+    window.EXTEND_I18N.getLanguage() === "zh";
+
+  return FALLBACK_SEARCH_INDEX.map((entry) => ({
+    title: isChinese && entry.titleZh ? entry.titleZh : entry.title,
+    url: entry.url,
+    category: isChinese && entry.categoryZh ? entry.categoryZh : entry.category,
+    text: [entry.text, entry.textZh].filter(Boolean).join(" ")
+  }));
+}
+
+function t(key, fallback) {
+  return typeof window !== "undefined" &&
+    window.EXTEND_I18N &&
+    typeof window.EXTEND_I18N.t === "function"
+    ? window.EXTEND_I18N.t(key, {}, fallback)
+    : fallback;
+}
+
+function escapeHtml(text) {
+  return String(text || "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
 
 function normalizeSearchText(text) {
   return (text || "").toLowerCase().replace(/\s+/g, " ").trim();
@@ -113,8 +187,8 @@ function scoreSearchEntry(entry, terms) {
 function buildResultMarkup(entry) {
   return `
     <a class="site-search-result" href="${entry.url}">
-      <span class="site-search-result-title">${entry.title}</span>
-      <span class="site-search-result-meta">${entry.category}</span>
+      <span class="site-search-result-title">${escapeHtml(entry.title)}</span>
+      <span class="site-search-result-meta">${escapeHtml(entry.category)}</span>
     </a>
   `;
 }
@@ -125,6 +199,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const results = searchRoot.querySelector(".site-search-results");
 
     if (!input || !results) return;
+
+    const applySearchTranslations = () => {
+      input.placeholder = t("common.searchPlaceholder", "Search site");
+      input.setAttribute("aria-label", t("common.searchAriaLabel", "Search site"));
+    };
 
     const closeResults = () => {
       results.hidden = true;
@@ -139,7 +218,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       const terms = normalizedQuery.split(" ");
-      const matches = SITE_SEARCH_INDEX
+      const matches = getSiteSearchIndex()
         .map((entry) => ({ entry, score: scoreSearchEntry(entry, terms) }))
         .filter((item) => item.score > 0)
         .sort((a, b) => b.score - a.score)
@@ -147,7 +226,9 @@ document.addEventListener("DOMContentLoaded", () => {
         .map((item) => item.entry);
 
       if (!matches.length) {
-        results.innerHTML = '<div class="site-search-empty">No results found.</div>';
+        results.innerHTML = `<div class="site-search-empty">${escapeHtml(
+          t("common.noResults", "No results found.")
+        )}</div>`;
         results.hidden = false;
         return;
       }
@@ -185,5 +266,16 @@ document.addEventListener("DOMContentLoaded", () => {
         closeResults();
       }
     });
+
+    window.addEventListener("extend:languagechange", () => {
+      applySearchTranslations();
+      if (input.value.trim().length >= 2) {
+        renderResults(input.value);
+      } else {
+        closeResults();
+      }
+    });
+
+    applySearchTranslations();
   });
 });
