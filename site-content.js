@@ -7,7 +7,7 @@
       categoryLabel: "Publication",
       title: "Ms. Jianing Zheng Receives ICC 2026 Student Travel Grant",
       bodyHtml:
-        "<strong>Ms. Jianing Zheng</strong> received the <em>ICC 2026 Student Travel Grant</em>. Her paper, <em>Maximizing Personalized Energy-efficiency for Swarm Learning in 6G Networks</em>, will be presented on <strong>25 May 2026</strong> in Glasgow, Scotland, UK.",
+        "<strong>Ms. Jianing Zheng</strong> received the <em>ICC 2026 Student Travel Grant</em>. Her paper, <em>Maximizing Personalized Energy-efficiency for Swarm Learning in 6G Networks</em>, will be presented on 25 May 2026 in Glasgow, Scotland, UK.",
       summaryHtml:
         "<strong>Ms. Jianing Zheng</strong> received the ICC 2026 Student Travel Grant for her work on personalized energy efficiency in swarm learning for 6G networks.",
       displayDate: "17 Apr 2026",

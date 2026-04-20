@@ -89,17 +89,14 @@
 </div>
 </main>
 </div>
-<div class="modal fade research-poster-modal" id="pimrcPosterModal" tabindex="-1" aria-labelledby="pimrcPosterModalLabel" aria-hidden="true">
+<div class="modal fade research-poster-modal" id="pimrcPosterModal" tabindex="-1" aria-label="IEEE PIMRC 2026 Workshop Poster Preview" aria-hidden="true">
   <div class="modal-dialog modal-fullscreen">
     <div class="modal-content research-poster-modal-content">
-      <div class="modal-header research-poster-modal-header">
-        <h2 class="modal-title fs-5" id="pimrcPosterModalLabel">IEEE PIMRC 2026 Workshop Poster</h2>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close poster preview"></button>
-      </div>
       <div class="modal-body research-poster-modal-body">
         <div class="research-poster-stage" data-role="poster-stage">
+          <button type="button" class="btn-close research-poster-close" data-bs-dismiss="modal" aria-label="Close poster preview"></button>
           <div class="research-poster-toolbar" aria-label="Poster zoom controls">
-            <button type="button" class="research-poster-tool" data-action="zoom-out" aria-label="Zoom out">-</button>
+            <button type="button" class="research-poster-tool" data-action="zoom-out" aria-label="Zoom out">−</button>
             <button type="button" class="research-poster-tool" data-action="zoom-in" aria-label="Zoom in">+</button>
             <button type="button" class="research-poster-tool research-poster-tool-reset" data-action="reset">Reset</button>
           </div>
@@ -130,7 +127,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const SCALE_STEP = 0.25;
   const state = {
     scale: 1,
-    baseWidth: 0,
+    baseHeight: 0,
     imageRatio: 1
   };
 
@@ -140,19 +137,19 @@ document.addEventListener("DOMContentLoaded", () => {
     const naturalWidth = image.naturalWidth || 1;
     const naturalHeight = image.naturalHeight || 1;
     state.imageRatio = naturalHeight / naturalWidth;
-    state.baseWidth = Math.max(320, stage.clientWidth - 2);
+    state.baseHeight = Math.max(320, stage.clientHeight - 32);
   };
 
   const render = (anchor) => {
     ensureMetrics();
-    const previousWidth = canvas.offsetWidth || state.baseWidth;
-    const previousHeight = canvas.offsetHeight || (previousWidth * state.imageRatio);
+    const previousWidth = canvas.offsetWidth || (state.baseHeight / state.imageRatio);
+    const previousHeight = canvas.offsetHeight || state.baseHeight;
     const anchorX = anchor ? anchor.x : stage.clientWidth / 2;
     const anchorY = anchor ? anchor.y : stage.clientHeight / 2;
     const contentX = anchor ? anchor.contentX : stage.scrollLeft + anchorX;
     const contentY = anchor ? anchor.contentY : stage.scrollTop + anchorY;
-    const nextWidth = state.baseWidth * state.scale;
-    const nextHeight = nextWidth * state.imageRatio;
+    const nextHeight = state.baseHeight * state.scale;
+    const nextWidth = nextHeight / state.imageRatio;
 
     canvas.style.width = `${nextWidth}px`;
     canvas.style.height = `${nextHeight}px`;
