@@ -61,7 +61,16 @@ p {
 .navbar .navbar-brand {
   display: inline-flex;
   align-items: center;
+  gap: 0.48rem;
   white-space: nowrap;
+}
+
+.lab-logo {
+  width: 2.2rem;
+  height: 2.2rem;
+  flex: 0 0 auto;
+  object-fit: contain;
+  display: inline-block;
 }
 
 .navbar-collapse {
