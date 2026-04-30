@@ -192,6 +192,42 @@
 
   const EVENT_ITEMS = [
     {
+      id: "event-tei-seminar-bristol",
+      type: "event",
+      category: "recent-activity",
+      categoryLabel: "Recent Activity",
+      categoryLabelZh: "近期活动",
+      title: "Co-organize Seminar in University of Bristol.",
+      titleZh: "在布里斯托大学联合组织研讨会",
+      bodyHtml:
+        "<strong>EXTEND Lab</strong> and <strong>Dr. Xiaolan Liu</strong> from the <em>Smart Internet Lab</em> and <em>Bristol Digital Futures Institute</em>, University of Bristol, are co-organizing the <em>1st Seminar of Towards Edge Intelligence</em>. The seminar theme is <strong>Towards Edge Intelligence</strong>: context-aware and multi-agent approaches for sensing, computation and communication. The hybrid seminar brings together invited keynote speakers, PhD poster presentations, and networking around edge intelligence, networked AI, and multi-agent systems. For more information, visit <a href=\"https://extend-lab.github.io/TEI/\" target=\"_blank\" rel=\"noopener\">the seminar website</a>.",
+      bodyHtmlZh:
+        "<strong>EXTEND Lab</strong> 与布里斯托大学 <em>Smart Internet Lab</em> 和 <em>Bristol Digital Futures Institute</em> 的 <strong>刘小兰博士</strong> 共同组织 <em>首届 Towards Edge Intelligence Seminar</em>。研讨会主题为 <strong>Towards Edge Intelligence</strong>：面向感知、计算与通信的情境感知和多智能体方法。本次混合研讨会将围绕边缘智能、网络化 AI 与多智能体系统，组织特邀报告、博士生海报展示与学术交流。更多信息请访问 <a href=\"https://extend-lab.github.io/TEI/\" target=\"_blank\" rel=\"noopener\">活动网站</a>。",
+      summaryHtml:
+        "EXTEND Lab and Dr. Xiaolan Liu from the University of Bristol are co-organizing a hybrid seminar on Towards Edge Intelligence.",
+      summaryHtmlZh:
+        "EXTEND Lab 与布里斯托大学刘小兰博士共同组织一场聚焦 Towards Edge Intelligence 的混合研讨会。",
+      displayDate: "29 May 2026",
+      displayDateZh: "2026年5月29日",
+      sortDate: "2026-05-29",
+      posterPreview: {
+        modalId: "teiSeminarPosterModal",
+        hint: "Click poster to enlarge",
+        hintZh: "点击海报查看大图"
+      },
+      images: [
+        {
+          src: "./assets/events/tei.jpg",
+          alt: "Poster for the 1st Seminar of Towards Edge Intelligence",
+          altZh: "首届 Towards Edge Intelligence Seminar 海报"
+        }
+      ],
+      searchText:
+        "co-organize seminar university of bristol towards edge intelligence seminar xiaolan liu smart internet lab bristol digital futures institute bdfi hkust gz edge intelligence networked ai multi-agent systems may 29 2026",
+      searchTextZh:
+        "在布里斯托大学联合组织研讨会 Towards Edge Intelligence 研讨会 布里斯托大学 刘小兰 Smart Internet Lab BDFI 香港科技大学广州 边缘智能 网络化AI 多智能体系统 2026年5月29日"
+    },
+    {
       id: "event-quanzhun-visit",
       type: "event",
       category: "recent-activity",
@@ -585,25 +621,88 @@
     const displayDate = getLocalizedValue(item, "displayDate");
     const title = getLocalizedValue(item, "title");
     const bodyHtml = getLocalizedValue(item, "bodyHtml");
+    const posterPreview = item.posterPreview && images[0] ? item.posterPreview : null;
     const mediaClass =
       images.length > 1 ? "event-feature-media" : "event-feature-media event-feature-media-single";
-    const mediaMarkup = images
-      .map(
-        (image) =>
-          `<img src="${image.src}" alt="${escapeHtml(getLocalizedImageAlt(image))}" class="event-feature-image">`
-      )
-      .join("");
-
+    const mediaMarkup = posterPreview
+      ? `
+        <button type="button" class="research-poster-trigger event-poster-trigger" data-bs-toggle="modal" data-bs-target="#${posterPreview.modalId}" aria-label="${escapeHtml(
+          getLanguage() === "zh" ? "打开活动海报" : "Open the event poster"
+        )}">
+          <img src="${images[0].src}" alt="${escapeHtml(getLocalizedImageAlt(images[0]))}" class="event-feature-image research-cfp-image">
+          <span class="research-poster-hint">${escapeHtml(
+            getLanguage() === "zh" && posterPreview.hintZh ? posterPreview.hintZh : posterPreview.hint
+          )}</span>
+        </button>
+      `
+      : images
+          .map(
+            (image) =>
+              `<img src="${image.src}" alt="${escapeHtml(getLocalizedImageAlt(image))}" class="event-feature-image">`
+          )
+          .join("");
     return `
       <article class="event-feature-card" id="${item.id}"${hiddenAttrs}>
         <div class="${mediaClass}">${mediaMarkup}</div>
         <div class="event-feature-body">
           <p class="event-feature-date">${displayDate}</p>
           <h3 class="event-feature-title">${title}</h3>
-          <p class="event-feature-text">${stripHtml(bodyHtml)}</p>
+          <p class="event-feature-text">${bodyHtml}</p>
         </div>
       </article>
     `;
+  }
+
+  function renderPosterModal(modalId, image) {
+    return `
+      <div class="modal fade research-poster-modal" id="${modalId}" tabindex="-1" aria-label="${escapeHtml(
+        getLanguage() === "zh" ? "活动海报预览" : "Event poster preview"
+      )}" aria-hidden="true" data-event-poster-modal="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content research-poster-modal-content">
+            <div class="modal-body research-poster-modal-body">
+              <button type="button" class="research-poster-close" data-bs-dismiss="modal" aria-label="${escapeHtml(
+                getLanguage() === "zh" ? "关闭海报预览" : "Close poster preview"
+              )}">×</button>
+              <div class="research-poster-toolbar" aria-label="${escapeHtml(
+                getLanguage() === "zh" ? "海报缩放控制" : "Poster zoom controls"
+              )}">
+                <button type="button" class="research-poster-tool" data-action="zoom-out" aria-label="${escapeHtml(
+                  getLanguage() === "zh" ? "缩小" : "Zoom out"
+                )}">−</button>
+                <button type="button" class="research-poster-tool" data-action="zoom-in" aria-label="${escapeHtml(
+                  getLanguage() === "zh" ? "放大" : "Zoom in"
+                )}">+</button>
+                <button type="button" class="research-poster-tool research-poster-tool-reset" data-action="reset">${escapeHtml(
+                  getLanguage() === "zh" ? "重置" : "Reset"
+                )}</button>
+              </div>
+              <div class="research-poster-stage" data-role="poster-stage">
+                <div class="research-poster-canvas" data-role="poster-canvas">
+                  <img src="${image.src}" alt="${escapeHtml(getLocalizedImageAlt(image))}" class="research-poster-modal-image" data-role="poster-image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  function syncEventPosterModals() {
+    const hasEventSections = document.querySelector("[data-render='events-section']");
+    document.querySelectorAll("[data-event-poster-modal='true']").forEach((modal) => modal.remove());
+
+    if (!hasEventSections) return;
+
+    const modalMarkup = getEventItems()
+      .filter((item) => item.posterPreview && item.images && item.images[0])
+      .map((item) => renderPosterModal(item.posterPreview.modalId, item.images[0]))
+      .join("");
+
+    if (!modalMarkup) return;
+
+    document.body.insertAdjacentHTML("beforeend", modalMarkup);
   }
 
   function setArchiveExpanded(section, expanded) {
@@ -854,6 +953,118 @@
     document.querySelectorAll("[data-render='events-section']").forEach((section) => {
       renderArchiveSection(section, getEventItems(section.dataset.category), renderEventCard);
     });
+    syncEventPosterModals();
+  }
+
+  function initPosterModals() {
+    document.querySelectorAll(".research-poster-modal").forEach((modal) => {
+      if (modal.dataset.posterReady === "true") return;
+
+      const stage = modal.querySelector("[data-role='poster-stage']");
+      const canvas = modal.querySelector("[data-role='poster-canvas']");
+      const image = modal.querySelector("[data-role='poster-image']");
+      const zoomInButton = modal.querySelector("[data-action='zoom-in']");
+      const zoomOutButton = modal.querySelector("[data-action='zoom-out']");
+      const resetButton = modal.querySelector("[data-action='reset']");
+
+      if (!stage || !canvas || !image || !zoomInButton || !zoomOutButton || !resetButton) return;
+
+      const MIN_SCALE = 1;
+      const MAX_SCALE = 3.5;
+      const SCALE_STEP = 0.25;
+      const state = {
+        scale: 1,
+        baseHeight: 0,
+        imageRatio: 1
+      };
+
+      const clamp = (value, min, max) => Math.min(max, Math.max(min, value));
+
+      const ensureMetrics = () => {
+        const naturalWidth = image.naturalWidth || 1;
+        const naturalHeight = image.naturalHeight || 1;
+        state.imageRatio = naturalHeight / naturalWidth;
+        state.baseHeight = Math.max(320, stage.clientHeight - 32);
+      };
+
+      const render = (anchor) => {
+        ensureMetrics();
+        const previousWidth = canvas.offsetWidth || (state.baseHeight / state.imageRatio);
+        const previousHeight = canvas.offsetHeight || state.baseHeight;
+        const anchorX = anchor ? anchor.x : stage.clientWidth / 2;
+        const anchorY = anchor ? anchor.y : stage.clientHeight / 2;
+        const contentX = anchor ? anchor.contentX : stage.scrollLeft + anchorX;
+        const contentY = anchor ? anchor.contentY : stage.scrollTop + anchorY;
+        const nextHeight = state.baseHeight * state.scale;
+        const nextWidth = nextHeight / state.imageRatio;
+
+        canvas.style.width = `${nextWidth}px`;
+        canvas.style.height = `${nextHeight}px`;
+        stage.dataset.zoomed = state.scale > 1 ? "true" : "false";
+        zoomOutButton.disabled = state.scale <= MIN_SCALE;
+        zoomInButton.disabled = state.scale >= MAX_SCALE;
+
+        const widthRatio = previousWidth ? nextWidth / previousWidth : 1;
+        const heightRatio = previousHeight ? nextHeight / previousHeight : 1;
+        const maxScrollLeft = Math.max(0, nextWidth - stage.clientWidth);
+        const maxScrollTop = Math.max(0, nextHeight - stage.clientHeight);
+
+        stage.scrollLeft = clamp((contentX * widthRatio) - anchorX, 0, maxScrollLeft);
+        stage.scrollTop = clamp((contentY * heightRatio) - anchorY, 0, maxScrollTop);
+      };
+
+      const setScale = (nextScale, anchor) => {
+        state.scale = clamp(nextScale, MIN_SCALE, MAX_SCALE);
+        render(anchor);
+      };
+
+      const reset = () => {
+        state.scale = 1;
+        stage.scrollTop = 0;
+        stage.scrollLeft = 0;
+        render({
+          x: 0,
+          y: 0,
+          contentX: 0,
+          contentY: 0
+        });
+      };
+
+      const getStageCenterAnchor = () => ({
+        x: stage.clientWidth / 2,
+        y: stage.clientHeight / 2,
+        contentX: stage.scrollLeft + stage.clientWidth / 2,
+        contentY: stage.scrollTop + stage.clientHeight / 2
+      });
+
+      zoomInButton.addEventListener("click", () => setScale(state.scale + SCALE_STEP, getStageCenterAnchor()));
+      zoomOutButton.addEventListener("click", () => setScale(state.scale - SCALE_STEP, getStageCenterAnchor()));
+      resetButton.addEventListener("click", reset);
+
+      stage.addEventListener(
+        "wheel",
+        (event) => {
+          event.preventDefault();
+          const delta = event.deltaY > 0 ? -SCALE_STEP : SCALE_STEP;
+          const rect = stage.getBoundingClientRect();
+          setScale(state.scale + delta, {
+            x: event.clientX - rect.left,
+            y: event.clientY - rect.top,
+            contentX: stage.scrollLeft + (event.clientX - rect.left),
+            contentY: stage.scrollTop + (event.clientY - rect.top)
+          });
+        },
+        { passive: false }
+      );
+
+      modal.addEventListener("shown.bs.modal", reset);
+      modal.addEventListener("hidden.bs.modal", reset);
+      image.addEventListener("load", () => render(getStageCenterAnchor()));
+      window.addEventListener("resize", () => render(getStageCenterAnchor()));
+
+      modal.dataset.posterReady = "true";
+      render();
+    });
   }
 
   function revealHashTarget() {
@@ -892,6 +1103,7 @@
     initHomepageHighlightsRail();
     renderNewsPage();
     renderEventsPage();
+    initPosterModals();
     revealHashTarget();
     window.addEventListener("hashchange", revealHashTarget);
     window.addEventListener("extend:languagechange", () => {
@@ -899,6 +1111,7 @@
       initHomepageHighlightsRail();
       renderNewsPage();
       renderEventsPage();
+      initPosterModals();
       revealHashTarget();
     });
   });

@@ -146,7 +146,7 @@
             },
             {
               selector: ".section-heading",
-              multiText: ["我们探索的主题", "IEEE PIMRC 2026 Workshop 征稿"]
+              multiText: ["我们探索的主题", "开放征集与征稿"]
             },
             {
               selector: ".card-grid .feature-card",
@@ -163,23 +163,29 @@
             },
             {
               selector: ".research-cfp-link-card",
-              html:
+              multiHtml: [
+                "<p class=\"event-feature-date\">2026年5月29日 · 英国</p>" +
+                  "<h3 class=\"event-feature-title\">海报征集：Towards Edge Intelligence</h3>" +
+                  "<p class=\"event-feature-text\"><strong>首届 Towards Edge Intelligence Seminar</strong> 由布里斯托大学与香港科技大学（广州）联合主办，诚邀博士生分享边缘智能、多智能体系统、感知、计算、通信、无线 AI、联邦学习与网络智能等相关研究。</p>" +
+                  "<p class=\"research-cfp-meta\"><strong>提交截止：</strong>2026年5月18日</p>" +
+                  "<p class=\"research-cfp-website\">活动网站：extend-lab.github.io/TEI/</p>",
                 "<p class=\"event-feature-date\">2026年9月1日至4日 · 新加坡</p>" +
-                "<h3 class=\"event-feature-title\">征稿启事：面向情境感知通信的多智能体智能与连接</h3>" +
-                "<p class=\"event-feature-text\">我们正在 <strong>IEEE PIMRC 2026</strong> 组织一个工作坊，聚焦多智能体智能与通信网络在情境感知连接中的深度协同。诚邀相关方向投稿与交流。</p>" +
-                "<p class=\"research-cfp-meta\"><strong>截稿日期：</strong>2026年6月5日</p>" +
-                "<p class=\"research-cfp-website\">工作坊网站：sites.google.com/york.ac.uk/pimrc2026-multi-agent-intel</p>"
+                  "<h3 class=\"event-feature-title\">征稿启事：面向情境感知通信的多智能体智能与连接</h3>" +
+                  "<p class=\"event-feature-text\">我们正在 <strong>IEEE PIMRC 2026</strong> 组织一个工作坊，聚焦多智能体智能与通信网络在情境感知连接中的深度协同。诚邀相关方向投稿与交流。</p>" +
+                  "<p class=\"research-cfp-meta\"><strong>截稿日期：</strong>2026年6月5日</p>" +
+                  "<p class=\"research-cfp-website\">工作坊网站：sites.google.com/york.ac.uk/pimrc2026-multi-agent-intel</p>"
+              ]
             },
             {
               selector: ".research-poster-trigger",
               attrs: {
-                "aria-label": "打开 IEEE PIMRC 2026 工作坊海报"
+                "aria-label": "打开征集海报"
               }
             },
             {
-              selector: "#pimrcPosterModal",
+              selector: ".research-poster-modal",
               attrs: {
-                "aria-label": "IEEE PIMRC 2026 工作坊海报预览"
+                "aria-label": "征集海报预览"
               }
             },
             {
