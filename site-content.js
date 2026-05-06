@@ -11,11 +11,11 @@
       bodyHtml:
         "<strong>Ms. Xinren Zhang</strong>'s conference paper, Learning Multi-Agent Communication Protocol: Study on Information Entropy Efficiency in MARL, has been accepted by RLC 2026 (Reinforcement Learning Conference).",
       bodyHtmlZh:
-        "<strong>张馨仁同学</strong>的会议论文 Learning Multi-Agent Communication Protocol: Study on Information Entropy Efficiency in MARL 已被 RLC 2026（强化学习会议）接收。",
+        "<strong>张馨仁</strong>的会议论文 Learning Multi-Agent Communication Protocol: Study on Information Entropy Efficiency in MARL 已被 RLC 2026（强化学习会议）接收。",
       summaryHtml:
         "<strong>Ms. Xinren Zhang</strong>'s work on information entropy efficiency in multi-agent communication has been accepted by RLC 2026.",
       summaryHtmlZh:
-        "<strong>张馨仁同学</strong>关于多智能体通信中信息熵效率的研究被 RLC 2026 接收。",
+        "<strong>张馨仁</strong>关于多智能体通信中信息熵效率的研究被 RLC 2026 接收。",
       displayDate: "6 May 2026",
       displayDateZh: "2026年5月6日",
       sortDate: "2026-05-06",
@@ -42,15 +42,15 @@
       categoryLabel: "Publication",
       categoryLabelZh: "论文动态",
       title: "Ms. Jianing Zheng Receives ICC 2026 Student Travel Grant",
-      titleZh: "郑佳宁同学获 ICC 2026 Student Travel Grant",
+      titleZh: "郑佳宁获 ICC 2026 Student Travel Grant",
       bodyHtml:
         "<strong>Ms. Jianing Zheng</strong> received the ICC 2026 Student Travel Grant. Her paper, Maximizing Personalized Energy-efficiency for Swarm Learning in 6G Networks, will be presented on 25 May 2026 in Glasgow, Scotland, UK.",
       bodyHtmlZh:
-        "<strong>郑佳宁同学</strong>获得了 ICC 2026 Student Travel Grant。她的论文 Maximizing Personalized Energy-efficiency for Swarm Learning in 6G Networks 将于 <strong>2026 年 5 月 25 日</strong> 在英国苏格兰格拉斯哥宣讲。",
+        "<strong>郑佳宁</strong>获得了 ICC 2026 Student Travel Grant。她的论文 Maximizing Personalized Energy-efficiency for Swarm Learning in 6G Networks 将于 <strong>2026 年 5 月 25 日</strong> 在英国苏格兰格拉斯哥宣讲。",
       summaryHtml:
         "<strong>Ms. Jianing Zheng</strong> received the ICC 2026 Student Travel Grant for her work on personalized energy efficiency in swarm learning for 6G networks.",
       summaryHtmlZh:
-        "<strong>郑佳宁同学</strong>因其关于 6G 群体学习个性化能效的研究，获得 ICC 2026 学生差旅资助。",
+        "<strong>郑佳宁</strong>因其关于 6G 群体学习个性化能效的研究，获得 ICC 2026 学生差旅资助。",
       displayDate: "17 Apr 2026",
       displayDateZh: "2026年4月17日",
       sortDate: "2026-04-17",
@@ -81,11 +81,11 @@
       bodyHtml:
         "<strong>Mr. Hao Xiong</strong> reports that Latency-Freshness-Aware Vehicular Edge Computing for Digital Twin-Enabled Intelligent Transportation has been accepted by IEEE Transactions on Intelligent Transportation Systems.",
       bodyHtmlZh:
-        "<strong>熊浩同学</strong>的论文 Latency-Freshness-Aware Vehicular Edge Computing for Digital Twin-Enabled Intelligent Transportation 已被 IEEE Transactions on Intelligent Transportation Systems 接收。",
+        "<strong>熊浩</strong>的论文 Latency-Freshness-Aware Vehicular Edge Computing for Digital Twin-Enabled Intelligent Transportation 已被 IEEE Transactions on Intelligent Transportation Systems 接收。",
       summaryHtml:
         "<strong>Mr. Hao Xiong</strong> reports a new acceptance for digital twin-enabled vehicular edge computing.",
       summaryHtmlZh:
-        "<strong>熊浩同学</strong>在数字孪生赋能车联网边缘计算方向获得新的论文接收。",
+        "<strong>熊浩</strong>在数字孪生赋能车联网边缘计算方向获得新的论文接收。",
       displayDate: "Mar 2026",
       displayDateZh: "2026年3月",
       sortDate: "2026-03-20",
@@ -116,11 +116,11 @@
       bodyHtml:
         "<strong>Ms. Xinren Zhang</strong> received a major revision decision for Learning Efficient Communication Protocols for Multi-Agent Reinforcement Learning from IEEE Transactions on Machine Learning in Communications and Networking.",
       bodyHtmlZh:
-        "<strong>张馨仁同学</strong>的论文 Learning Efficient Communication Protocols for Multi-Agent Reinforcement Learning 在 IEEE Transactions on Machine Learning in Communications and Networking 获得大修意见。",
+        "<strong>张馨仁</strong>的论文 Learning Efficient Communication Protocols for Multi-Agent Reinforcement Learning 在 IEEE Transactions on Machine Learning in Communications and Networking 获得大修意见。",
       summaryHtml:
         "<strong>Ms. Xinren Zhang</strong> received a major revision for a paper on efficient communication protocols in multi-agent reinforcement learning.",
       summaryHtmlZh:
-        "<strong>张馨仁同学</strong>关于多智能体强化学习高效通信协议的论文获得大修。",
+        "<strong>张馨仁</strong>关于多智能体强化学习高效通信协议的论文获得大修。",
       displayDate: "Mar 2026",
       displayDateZh: "2026年3月",
       sortDate: "2026-03-12",
@@ -145,11 +145,11 @@
       bodyHtml:
         "<strong>Ms. Jianing Zheng</strong> reports that Scheduling and Fusion for Multimodal Federated Learning in Energy-constrained Wireless Networks has been accepted by IEEE Transactions on Mobile Computing.",
       bodyHtmlZh:
-        "<strong>郑佳宁同学</strong>的论文 Scheduling and Fusion for Multimodal Federated Learning in Energy-constrained Wireless Networks 已被 IEEE Transactions on Mobile Computing 接收。",
+        "<strong>郑佳宁</strong>的论文 Scheduling and Fusion for Multimodal Federated Learning in Energy-constrained Wireless Networks 已被 IEEE Transactions on Mobile Computing 接收。",
       summaryHtml:
         "<strong>Ms. Jianing Zheng</strong> reports an acceptance on multimodal federated learning in energy-constrained wireless networks.",
       summaryHtmlZh:
-        "<strong>郑佳宁同学</strong>在能量受限无线网络中的多模态联邦学习方向获得新的论文接收。",
+        "<strong>郑佳宁</strong>在能量受限无线网络中的多模态联邦学习方向获得新的论文接收。",
       displayDate: "Sep 2025",
       displayDateZh: "2025年9月",
       sortDate: "2025-09-08",
@@ -162,6 +162,36 @@
         "jianing zheng ieee transactions on mobile computing multimodal federated learning energy constrained wireless networks accepted paper",
       searchTextZh:
         "郑佳宁 TMC 接收 多模态 联邦学习 能量受限 无线网络"
+    },
+    {
+      id: "news-media-guangdong-iot-association-visit",
+      type: "news",
+      category: "media",
+      categoryLabel: "Media",
+      categoryLabelZh: "媒体报道",
+      title: "Guangdong Internet of Things Association Visited HKUST(GZ) for Exchange",
+      titleZh: "广东省物联网协会来港科大（广州）参观交流",
+      bodyHtml:
+        "A featured report covered the <strong>Guangdong Internet of Things Association</strong>'s visit to <strong>HKUST(GZ)</strong> for exchange. During the visit, Dr. Jiadong Yu introduced <strong>EXTEND Lab</strong>'s recent research outcomes and project progress.",
+      bodyHtmlZh:
+        "专题报道介绍了<strong>广东省物联网协会</strong>来访<strong>港科大（广州）</strong>参观交流的活动。交流期间，于佳冬博士介绍了 <strong>EXTEND Lab</strong> 的近期研究成果与项目进展。",
+      summaryHtml:
+        "A media report highlighted Guangdong Internet of Things Association's visit to HKUST(GZ) and Dr. Jiadong Yu's introduction of EXTEND Lab's recent work.",
+      summaryHtmlZh:
+        "媒体报道介绍了广东省物联网协会来港科大（广州）参观交流，以及于佳冬博士对 EXTEND Lab 近期工作的分享。",
+      displayDate: "26 Apr 2026",
+      displayDateZh: "2026年4月26日",
+      sortDate: "2026-04-26",
+      link: "https://mp.weixin.qq.com/s/xwyuhbr4OYw4A_ay2al6lg",
+      image: {
+        src: "./assets/news/guangdong.jpg",
+        alt: "Guangdong Internet of Things Association visit to HKUST(GZ)",
+        altZh: "广东省物联网协会来港科大（广州）参观交流"
+      },
+      searchText:
+        "guangdong internet of things association visit hkust gz exchange dr jiadong yu extend lab recent research outcomes project progress media coverage",
+      searchTextZh:
+        "广东省物联网协会 港科大广州 参观交流 于佳冬 EXTEND Lab 近期研究成果 项目进展 媒体报道"
     },
     {
       id: "news-media-jituo-interview",
@@ -273,7 +303,7 @@
       bodyHtml:
         "On <strong>11 March 2026</strong>, <strong>Dr. Jiadong Yu</strong>, <strong>Mr. Ziru Zhang</strong>, and <strong>Ms. Xuling Zhang</strong> visited <em>Guangdong Quanzhun Intelligent Technology Co., Ltd.</em>. During the visit, the team toured the company's production line and discussed potential collaboration opportunities and a shared long-term vision.",
       bodyHtmlZh:
-        "在 <strong>2026 年 3 月 11 日</strong>，<strong>于佳冬博士</strong>、<strong>张子儒同学</strong>和 <strong>张栩棱同学</strong>走访了 <em>广东泉准智能科技有限公司</em>。团队参观了企业生产线，并围绕潜在合作机会与长期共同愿景进行了交流。",
+        "在 <strong>2026 年 3 月 11 日</strong>，<strong>于佳冬博士</strong>、<strong>张子儒</strong>和 <strong>张栩棱</strong>走访了 <em>广东泉准智能科技有限公司</em>。团队参观了企业生产线，并围绕潜在合作机会与长期共同愿景进行了交流。",
       summaryHtml:
         "The team visited Guangdong Quanzhun Intelligent Technology Co., Ltd., toured its production line, and discussed future collaboration opportunities.",
       summaryHtmlZh:
@@ -304,7 +334,7 @@
       bodyHtml:
         "We organized an EXTEND Sharing Session featuring Dr. Jiadong Yu and Mr. Jiale Li. The session covered the fundamentals of AI agents and OpenClaw, plus practical reflections on using tools such as Claude Code in everyday research workflows.",
       bodyHtmlZh:
-        "我们组织了一场由于佳冬博士与李佳乐同学主讲的“展开讲讲”活动，介绍 AI Agent 与 OpenClaw 的基础内容，并交流了将 Claude Code 等工具用于日常科研流程的实践体会。",
+        "我们组织了一场由于佳冬博士与李佳乐主讲的“展开讲讲”活动，介绍 AI Agent 与 OpenClaw 的基础内容，并交流了将 Claude Code 等工具用于日常科研流程的实践体会。",
       summaryHtml:
         "An internal sharing session on AI agents, OpenClaw, and practical tooling for everyday research workflows.",
       summaryHtmlZh:
