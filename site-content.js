@@ -16,8 +16,8 @@
         "<strong>Ms. Xinren Zhang</strong>'s work on information entropy efficiency in multi-agent communication has been accepted by RLC 2026.",
       summaryHtmlZh:
         "<strong>张馨仁同学</strong>关于多智能体通信中信息熵效率的研究被 RLC 2026 接收。",
-      displayDate: "May 2026",
-      displayDateZh: "2026年5月",
+      displayDate: "6 May 2026",
+      displayDateZh: "2026年5月6日",
       sortDate: "2026-05-06",
       homepageVisual: {
         type: "art-image",
