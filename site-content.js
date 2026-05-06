@@ -1,6 +1,41 @@
 (function () {
   const NEWS_ITEMS = [
     {
+      id: "news-publication-rlc-2026",
+      type: "news",
+      category: "publication",
+      categoryLabel: "Publication",
+      categoryLabelZh: "论文动态",
+      title: "Paper Accepted by RLC 2026",
+      titleZh: "论文被 RLC 2026 强化学习会议接收",
+      bodyHtml:
+        "<strong>Ms. Xinren Zhang</strong>'s conference paper, Learning Multi-Agent Communication Protocol: Study on Information Entropy Efficiency in MARL, has been accepted by RLC 2026 (Reinforcement Learning Conference).",
+      bodyHtmlZh:
+        "<strong>张馨仁同学</strong>的会议论文 Learning Multi-Agent Communication Protocol: Study on Information Entropy Efficiency in MARL 已被 RLC 2026（强化学习会议）接收。",
+      summaryHtml:
+        "<strong>Ms. Xinren Zhang</strong>'s work on information entropy efficiency in multi-agent communication has been accepted by RLC 2026.",
+      summaryHtmlZh:
+        "<strong>张馨仁同学</strong>关于多智能体通信中信息熵效率的研究被 RLC 2026 接收。",
+      displayDate: "May 2026",
+      displayDateZh: "2026年5月",
+      sortDate: "2026-05-06",
+      homepageVisual: {
+        type: "art-image",
+        src: "./assets/news/RLC.jpg",
+        alt: "RLC 2026 conference visual",
+        altZh: "RLC 2026 会议配图"
+      },
+      image: {
+        src: "./assets/news/RLC.jpg",
+        alt: "RLC 2026 conference visual",
+        altZh: "RLC 2026 会议配图"
+      },
+      searchText:
+        "xinren zhang rlc 2026 reinforcement learning conference learning multi-agent communication protocol information entropy efficiency marl accepted paper",
+      searchTextZh:
+        "张馨仁 RLC 2026 强化学习会议 多智能体 通信协议 信息熵 效率 MARL 论文 接收"
+    },
+    {
       id: "news-publication-icc-2026-travel-grant",
       type: "news",
       category: "publication",
@@ -9,9 +44,9 @@
       title: "Ms. Jianing Zheng Receives ICC 2026 Student Travel Grant",
       titleZh: "郑佳宁同学获 ICC 2026 Student Travel Grant",
       bodyHtml:
-        "<strong>Ms. Jianing Zheng</strong> received the <em>ICC 2026 Student Travel Grant</em>. Her paper, <em>Maximizing Personalized Energy-efficiency for Swarm Learning in 6G Networks</em>, will be presented on 25 May 2026 in Glasgow, Scotland, UK.",
+        "<strong>Ms. Jianing Zheng</strong> received the ICC 2026 Student Travel Grant. Her paper, Maximizing Personalized Energy-efficiency for Swarm Learning in 6G Networks, will be presented on 25 May 2026 in Glasgow, Scotland, UK.",
       bodyHtmlZh:
-        "<strong>郑佳宁同学</strong>获得了 <em>ICC 2026 Student Travel Grant</em>。她的论文 <em>Maximizing Personalized Energy-efficiency for Swarm Learning in 6G Networks</em> 将于 <strong>2026 年 5 月 25 日</strong> 在英国苏格兰格拉斯哥宣讲。",
+        "<strong>郑佳宁同学</strong>获得了 ICC 2026 Student Travel Grant。她的论文 Maximizing Personalized Energy-efficiency for Swarm Learning in 6G Networks 将于 <strong>2026 年 5 月 25 日</strong> 在英国苏格兰格拉斯哥宣讲。",
       summaryHtml:
         "<strong>Ms. Jianing Zheng</strong> received the ICC 2026 Student Travel Grant for her work on personalized energy efficiency in swarm learning for 6G networks.",
       summaryHtmlZh:
@@ -44,9 +79,9 @@
       title: "Paper Accepted by IEEE Transactions on Intelligent Transportation Systems",
       titleZh: "论文被 IEEE Transactions on Intelligent Transportation Systems 接收",
       bodyHtml:
-        "<strong>Mr. Hao Xiong</strong> reports that <em>Latency-Freshness-Aware Vehicular Edge Computing for Digital Twin-Enabled Intelligent Transportation</em> has been accepted by <em>IEEE Transactions on Intelligent Transportation Systems</em>.",
+        "<strong>Mr. Hao Xiong</strong> reports that Latency-Freshness-Aware Vehicular Edge Computing for Digital Twin-Enabled Intelligent Transportation has been accepted by IEEE Transactions on Intelligent Transportation Systems.",
       bodyHtmlZh:
-        "<strong>熊浩同学</strong>的论文 <em>Latency-Freshness-Aware Vehicular Edge Computing for Digital Twin-Enabled Intelligent Transportation</em> 已被 <em>IEEE Transactions on Intelligent Transportation Systems</em> 接收。",
+        "<strong>熊浩同学</strong>的论文 Latency-Freshness-Aware Vehicular Edge Computing for Digital Twin-Enabled Intelligent Transportation 已被 IEEE Transactions on Intelligent Transportation Systems 接收。",
       summaryHtml:
         "<strong>Mr. Hao Xiong</strong> reports a new acceptance for digital twin-enabled vehicular edge computing.",
       summaryHtmlZh:
@@ -79,9 +114,9 @@
       title: "Major Revision for Multi-Agent Communication Learning Paper",
       titleZh: "多智能体通信学习论文获得大修",
       bodyHtml:
-        "<strong>Ms. Xinren Zhang</strong> received a major revision decision for <em>Learning Efficient Communication Protocols for Multi-Agent Reinforcement Learning</em> from <em>IEEE Transactions on Machine Learning in Communications and Networking</em>.",
+        "<strong>Ms. Xinren Zhang</strong> received a major revision decision for Learning Efficient Communication Protocols for Multi-Agent Reinforcement Learning from IEEE Transactions on Machine Learning in Communications and Networking.",
       bodyHtmlZh:
-        "<strong>张馨仁同学</strong>的论文 <em>Learning Efficient Communication Protocols for Multi-Agent Reinforcement Learning</em> 在 <em>IEEE Transactions on Machine Learning in Communications and Networking</em> 获得大修意见。",
+        "<strong>张馨仁同学</strong>的论文 Learning Efficient Communication Protocols for Multi-Agent Reinforcement Learning 在 IEEE Transactions on Machine Learning in Communications and Networking 获得大修意见。",
       summaryHtml:
         "<strong>Ms. Xinren Zhang</strong> received a major revision for a paper on efficient communication protocols in multi-agent reinforcement learning.",
       summaryHtmlZh:
@@ -108,9 +143,9 @@
       title: "Paper Accepted by IEEE Transactions on Mobile Computing",
       titleZh: "论文被 IEEE Transactions on Mobile Computing 接收",
       bodyHtml:
-        "<strong>Ms. Jianing Zheng</strong> reports that <em>Scheduling and Fusion for Multimodal Federated Learning in Energy-constrained Wireless Networks</em> has been accepted by <em>IEEE Transactions on Mobile Computing</em>.",
+        "<strong>Ms. Jianing Zheng</strong> reports that Scheduling and Fusion for Multimodal Federated Learning in Energy-constrained Wireless Networks has been accepted by IEEE Transactions on Mobile Computing.",
       bodyHtmlZh:
-        "<strong>郑佳宁同学</strong>的论文 <em>Scheduling and Fusion for Multimodal Federated Learning in Energy-constrained Wireless Networks</em> 已被 <em>IEEE Transactions on Mobile Computing</em> 接收。",
+        "<strong>郑佳宁同学</strong>的论文 Scheduling and Fusion for Multimodal Federated Learning in Energy-constrained Wireless Networks 已被 IEEE Transactions on Mobile Computing 接收。",
       summaryHtml:
         "<strong>Ms. Jianing Zheng</strong> reports an acceptance on multimodal federated learning in energy-constrained wireless networks.",
       summaryHtmlZh:
