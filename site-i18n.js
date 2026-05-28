@@ -398,15 +398,64 @@
               multiText: ["项目", "资助方", "经费", "开始时间", "结束时间"]
             },
             {
-              selector: ".project-toggle-title",
-              multiText: [
-                "面向情境感知的多智能体系统：感知、通信与计算",
-                "基于生成模型数据增强的工业图像与 CAD 识别算法预研",
-                "面向建筑场景的人机协作中平滑且安全的鲁棒辅助行为生成",
-                "智能区块链计算资源分配研究",
-                "面向智能工厂信息物理系统的同步与安全算法研究",
-                "智能反射表面辅助边缘计算"
-              ]
+              selector: ".project-title-vr",
+              text: "面向虚拟现实用户体验提升的移动边缘智能资源分配理论与方法研究"
+            },
+            {
+              selector: ".project-funder-vr",
+              text: "广东省基础与应用基础研究基金区域联合基金青年基金"
+            },
+            {
+              selector: ".project-funding-vr",
+              text: "CNY 100k"
+            },
+            {
+              selector: ".project-title-hrc",
+              text: "面向建筑场景的人机协作中平滑且安全的鲁棒辅助行为生成"
+            },
+            {
+              selector: ".project-funder-hrc",
+              text: "粤港高校“1+1+1”联合资助计划"
+            },
+            {
+              selector: ".project-title-quanzhun",
+              text: "基于生成模型数据增强的工业图像与 CAD 识别算法预研"
+            },
+            {
+              selector: ".project-funder-quanzhun",
+              text: "广东泉准智能科技有限公司"
+            },
+            {
+              selector: ".project-title-diandong",
+              text: "智能区块链计算资源分配研究"
+            },
+            {
+              selector: ".project-funder-diandong",
+              text: "点动科技"
+            },
+            {
+              selector: ".project-title-municipal",
+              text: "面向智能工厂信息物理系统的同步与安全算法研究"
+            },
+            {
+              selector: ".project-funder-municipal",
+              text: "广州市校联合项目"
+            },
+            {
+              selector: ".project-title-bristol",
+              text: "面向情境感知的多智能体系统：感知、通信与计算"
+            },
+            {
+              selector: ".project-funder-bristol",
+              text: "布里斯托大学全球定位基金"
+            },
+            {
+              selector: ".project-title-irs",
+              text: "智能反射面辅助的边缘计算研究"
+            },
+            {
+              selector: ".project-funder-postdoc",
+              text: "广州市及南沙区博士后资助"
             },
             {
               selector: "#project-detail-1 .project-detail-panel",
@@ -434,9 +483,14 @@
                 "<div class=\"project-detail-grid single-column\"><div><h3>项目简介</h3><p>开发用于智能工厂环境中可靠信息物理运行的同步与安全算法。</p></div></div>"
             },
             {
+              selector: "#project-detail-7 .project-detail-panel",
+              html:
+                "<div class=\"project-detail-grid single-column\"><div><h3>项目简介</h3><p>本项目研究面向虚拟现实用户体验提升的移动边缘智能资源分配理论与方法。</p></div></div>"
+            },
+            {
               selector: "#project-detail-6 .project-detail-panel",
               html:
-                "<div class=\"project-detail-grid single-column\"><div><h3>项目简介</h3><p>研究智能反射表面辅助移动边缘计算系统中的学习驱动优化方法。</p></div></div>"
+                "<div class=\"project-detail-grid single-column\"><div><h3>项目简介</h3><p>研究智能反射面辅助移动边缘计算系统中的学习驱动优化方法。</p></div></div>"
             }
           ]
         },
@@ -764,6 +818,54 @@
     document.body.setAttribute("data-language", lang);
   }
 
+  function applyProjectTableTranslations(lang) {
+    if (getPageKey() !== "projects" || lang !== "zh") return;
+
+    const projectRows = {
+      "project-detail-7": {
+        title: "面向虚拟现实用户体验提升的移动边缘智能资源分配理论与方法研究",
+        funder: "广东省基础与应用基础研究基金区域联合基金青年基金",
+        funding: "CNY 100k"
+      },
+      "project-detail-3": {
+        title: "面向建筑场景的人机协作中平滑且安全的鲁棒辅助行为生成",
+        funder: "粤港高校“1+1+1”联合资助计划"
+      },
+      "project-detail-2": {
+        title: "基于生成模型数据增强的工业图像与 CAD 识别算法预研",
+        funder: "广东泉准智能科技有限公司"
+      },
+      "project-detail-4": {
+        title: "智能区块链计算资源分配研究",
+        funder: "点动科技"
+      },
+      "project-detail-5": {
+        title: "面向智能工厂信息物理系统的同步与安全算法研究",
+        funder: "广州市校联合项目"
+      },
+      "project-detail-1": {
+        title: "面向情境感知的多智能体系统：感知、通信与计算",
+        funder: "布里斯托大学全球定位基金"
+      },
+      "project-detail-6": {
+        title: "智能反射面辅助的边缘计算研究",
+        funder: "广州市及南沙区博士后资助"
+      }
+    };
+
+    document.querySelectorAll(".project-summary-row").forEach((row) => {
+      const toggle = row.querySelector(".project-toggle");
+      const rowSpec = projectRows[toggle && toggle.getAttribute("aria-controls")];
+      if (!rowSpec) return;
+
+      const title = row.querySelector(".project-toggle-title");
+      const cells = row.querySelectorAll("td");
+      if (title) title.textContent = rowSpec.title;
+      if (cells[1]) cells[1].textContent = rowSpec.funder;
+      if (rowSpec.funding && cells[2]) cells[2].textContent = rowSpec.funding;
+    });
+  }
+
   function restorePageState(pageKey) {
     document.title = originalState.title;
 
@@ -802,6 +904,7 @@
     }
 
     pageSpec.updates.forEach((update) => applyUpdate(update));
+    applyProjectTableTranslations(lang);
   }
 
   function updateLanguageSwitcher() {

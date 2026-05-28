@@ -257,6 +257,79 @@
 
   const EVENT_ITEMS = [
     {
+      id: "event-icc-2026-glasgow",
+      type: "event",
+      category: "recent-activity",
+      categoryLabel: "Recent Activity",
+      categoryLabelZh: "近期活动",
+      title: "EXTEND Lab at IEEE ICC 2026 in Glasgow",
+      titleZh: "EXTEND Lab 参加 IEEE ICC 2026 格拉斯哥会议",
+      bodyHtml:
+        "EXTEND Lab members participated in IEEE ICC 2026 in Glasgow, UK. Ms. Jianing Zheng presented Maximizing Personalized Energy-efficiency for Swarm Learning in 6G Networks on 25 May 2026. Dr. Jiadong Yu chaired the GCSN-03 session, Energy-aware UAV communications and networking (Oral Presentation), on 26 May 2026. Dr. Yu and Dr. Xiaolan Liu (University of Bristol) also joined the second UK Working Committee meeting of the China Institute of Communications on 24th May. Dr. Yu and Dr. Liu attended the ICC 2026 banquet on 26 May.",
+      bodyHtmlZh:
+        "EXTEND Lab 成员参加了在英国格拉斯哥举行的 IEEE ICC 2026。郑佳宁于 2026 年 5 月 25 日宣讲论文 Maximizing Personalized Energy-efficiency for Swarm Learning in 6G Networks。于佳冬博士于 2026 年 5 月 26 日主持 GCSN-03 分会场 Energy-aware UAV communications and networking（Oral Presentation）。于佳冬博士和刘小兰博士（University of Bristol）于 5 月 24 日参加了中国通信学会第二届英国工作委员会会议。于佳冬博士和刘小兰博士于 5 月 26 日参加 ICC 2026 晚宴。",
+      summaryHtml:
+        "EXTEND Lab joined IEEE ICC 2026 in Glasgow, with Jianing Zheng presenting on 25 May and Jiadong Yu chairing GCSN-03 on 26 May.",
+      summaryHtmlZh:
+        "EXTEND Lab 参加 IEEE ICC 2026 格拉斯哥会议；郑佳宁于 5 月 25 日作报告，于佳冬博士于 5 月 26 日主持 GCSN-03 分会场。",
+      displayDate: "24-26 May 2026",
+      displayDateZh: "2026年5月24-26日",
+      sortDate: "2026-05-26",
+      galleryPreview: {
+        modalId: "icc2026GalleryModal",
+        hint: "Open photo gallery",
+        hintZh: "打开照片墙"
+      },
+      images: [
+        {
+          src: "./assets/events/icc2026/jianing-presentation-icc2026.jpg",
+          alt: "Jianing Zheng presenting at IEEE ICC 2026 in Glasgow",
+          altZh: "郑佳宁在 IEEE ICC 2026 格拉斯哥会议作报告",
+          caption: "Jianing Zheng presenting at IEEE ICC 2026 on 25 May 2026.",
+          captionZh: "郑佳宁于 2026 年 5 月 25 日在 IEEE ICC 2026 作报告。"
+        },
+        {
+          src: "./assets/events/icc2026/jianing-closeup-icc2026.jpg",
+          alt: "Jianing Zheng at the IEEE ICC 2026 podium",
+          altZh: "郑佳宁在 IEEE ICC 2026 讲台前",
+          caption: "Presentation session at IEEE ICC 2026, Glasgow.",
+          captionZh: "IEEE ICC 2026 格拉斯哥会议报告现场。"
+        },
+        {
+          src: "./assets/events/icc2026/hao-jianing-xinren-glasgow.jpg",
+          alt: "Hao Xiong, Jianing Zheng, and Xinren Zhang in Glasgow",
+          altZh: "熊浩、郑佳宁、张馨仁在格拉斯哥",
+          caption: "Hao Xiong, Jianing Zheng, and Xinren Zhang in Glasgow.",
+          captionZh: "熊浩、郑佳宁、张馨仁在格拉斯哥。"
+        },
+        {
+          src: "./assets/events/icc2026/jianing-hao-xinren-edinburgh.jpg",
+          alt: "Jianing Zheng, Hao Xiong, and Xinren Zhang in Edinburgh",
+          altZh: "郑佳宁、熊浩、张馨仁在爱丁堡",
+          caption: "Jianing Zheng, Hao Xiong, and Xinren Zhang in Edinburgh.",
+          captionZh: "郑佳宁、熊浩、张馨仁在爱丁堡。"
+        },
+        {
+          src: "./assets/events/icc2026/chinacom-uk-committee.jpg",
+          alt: "Second UK Working Committee meeting of the China Institute of Communications",
+          altZh: "中国通信学会第二届英国工作委员会会议合影",
+          caption: "Dr. Jiadong Yu and Dr. Xiaolan Liu at the second UK Working Committee meeting of the China Institute of Communications.",
+          captionZh: "于佳冬博士与刘小兰博士参加中国通信学会第二届英国工作委员会会议。"
+        },
+        {
+          src: "./assets/events/icc2026/jiadong-xiaolan-icc2026.jpg",
+          alt: "Dr. Jiadong Yu and Dr. Xiaolan Liu in Glasgow during ICC 2026",
+          altZh: "于佳冬博士和刘小兰博士在 ICC 2026 期间于格拉斯哥合影",
+          caption: "Dr. Jiadong Yu and Dr. Xiaolan Liu during ICC 2026 in Glasgow.",
+          captionZh: "于佳冬博士和刘小兰博士在 ICC 2026 期间于格拉斯哥合影。"
+        }
+      ],
+      searchText:
+        "extend lab ieee icc 2026 glasgow jianing zheng presentation may 25 2026 jiadong yu chair gcsn-03 energy-aware uav communications networking xiaolan liu banquet china institute of communications uk working committee hao xiong xinren zhang edinburgh",
+      searchTextZh:
+        "EXTEND Lab IEEE ICC 2026 格拉斯哥 郑佳宁 报告 2026年5月25日 于佳冬 主持 GCSN-03 Energy-aware UAV communications networking 刘小兰 晚宴 中国通信学会 英国工作委员会 熊浩 张馨仁 爱丁堡"
+    },
+    {
       id: "event-tei-seminar-bristol",
       type: "event",
       category: "recent-activity",
@@ -265,9 +338,9 @@
       title: "Co-organize Seminar in University of Bristol.",
       titleZh: "在布里斯托大学联合组织研讨会",
       bodyHtml:
-        "<strong>EXTEND Lab</strong> and <strong>Dr. Xiaolan Liu</strong> from the <em>Smart Internet Lab</em> and <em>Bristol Digital Futures Institute</em>, University of Bristol, are co-organizing the <em>1st Seminar of Towards Edge Intelligence</em>. The seminar theme is <strong>Towards Edge Intelligence</strong>: context-aware and multi-agent approaches for sensing, computation and communication. The hybrid seminar brings together invited keynote speakers, PhD poster presentations, and networking around edge intelligence, networked AI, and multi-agent systems. For more information, visit <a href=\"https://extend-lab.github.io/TEI/\" target=\"_blank\" rel=\"noopener\">the seminar website</a>.",
+        "EXTEND Lab and Dr. Xiaolan Liu (University of Bristol), from the Smart Internet Lab and Bristol Digital Futures Institute, are co-organizing the 1st Seminar of Towards Edge Intelligence. The seminar theme is Towards Edge Intelligence: context-aware and multi-agent approaches for sensing, computation and communication. The hybrid seminar brings together invited keynote speakers, PhD poster presentations, and networking around edge intelligence, networked AI, and multi-agent systems. For more information, visit <a href=\"https://extend-lab.github.io/TEI/\" target=\"_blank\" rel=\"noopener\">the seminar website</a>.",
       bodyHtmlZh:
-        "<strong>EXTEND Lab</strong> 与布里斯托大学 <em>Smart Internet Lab</em> 和 <em>Bristol Digital Futures Institute</em> 的 <strong>刘小兰博士</strong> 共同组织 <em>首届 Towards Edge Intelligence Seminar</em>。研讨会主题为 <strong>Towards Edge Intelligence</strong>：面向感知、计算与通信的情境感知和多智能体方法。本次混合研讨会将围绕边缘智能、网络化 AI 与多智能体系统，组织特邀报告、博士生海报展示与学术交流。更多信息请访问 <a href=\"https://extend-lab.github.io/TEI/\" target=\"_blank\" rel=\"noopener\">活动网站</a>。",
+        "EXTEND Lab 与刘小兰博士（University of Bristol，Smart Internet Lab 和 Bristol Digital Futures Institute）共同组织首届 Towards Edge Intelligence Seminar。研讨会主题为 Towards Edge Intelligence：面向感知、计算与通信的情境感知和多智能体方法。本次混合研讨会将围绕边缘智能、网络化 AI 与多智能体系统，组织特邀报告、博士生海报展示与学术交流。更多信息请访问 <a href=\"https://extend-lab.github.io/TEI/\" target=\"_blank\" rel=\"noopener\">活动网站</a>。",
       summaryHtml:
         "EXTEND Lab and Dr. Xiaolan Liu from the University of Bristol are co-organizing a hybrid seminar on Towards Edge Intelligence.",
       summaryHtmlZh:
@@ -301,9 +374,9 @@
       title: "Visit to Guangdong Quanzhun Intelligent Technology Co., Ltd.",
       titleZh: "走访广东泉准智能科技有限公司",
       bodyHtml:
-        "On <strong>11 March 2026</strong>, <strong>Dr. Jiadong Yu</strong>, <strong>Mr. Ziru Zhang</strong>, and <strong>Ms. Xuling Zhang</strong> visited <em>Guangdong Quanzhun Intelligent Technology Co., Ltd.</em>. During the visit, the team toured the company's production line and discussed potential collaboration opportunities and a shared long-term vision.",
+        "On 11 March 2026, Dr. Jiadong Yu, Mr. Ziru Zhang, and Ms. Xuling Zhang visited Guangdong Quanzhun Intelligent Technology Co., Ltd. During the visit, the team toured the company's production line and discussed potential collaboration opportunities and a shared long-term vision.",
       bodyHtmlZh:
-        "在 <strong>2026 年 3 月 11 日</strong>，<strong>于佳冬博士</strong>、<strong>张子儒</strong>和 <strong>张栩棱</strong>走访了 <em>广东泉准智能科技有限公司</em>。团队参观了企业生产线，并围绕潜在合作机会与长期共同愿景进行了交流。",
+        "在 2026 年 3 月 11 日，于佳冬博士、张子儒和张栩棱走访了广东泉准智能科技有限公司。团队参观了企业生产线，并围绕潜在合作机会与长期共同愿景进行了交流。",
       summaryHtml:
         "The team visited Guangdong Quanzhun Intelligent Technology Co., Ltd., toured its production line, and discussed future collaboration opportunities.",
       summaryHtmlZh:
@@ -408,8 +481,8 @@
       url: "projects/",
       category: "Projects",
       categoryZh: "项目",
-      text: "funded projects grants sponsored collaborations bristol guangdong diandong blockchain smart factories",
-      textZh: "资助项目 合作 布里斯托 广东 点动 区块链 智能工厂"
+      text: "funded projects grants sponsored collaborations bristol guangdong diandong blockchain smart factories virtual reality mobile edge intelligence resource allocation",
+      textZh: "资助项目 合作 布里斯托 广东 点动 区块链 智能工厂 虚拟现实 移动边缘智能 资源分配"
     },
     {
       title: "People",
@@ -686,10 +759,40 @@
     const displayDate = getLocalizedValue(item, "displayDate");
     const title = getLocalizedValue(item, "title");
     const bodyHtml = getLocalizedValue(item, "bodyHtml");
+    const galleryPreview = item.galleryPreview && images.length ? item.galleryPreview : null;
     const posterPreview = item.posterPreview && images[0] ? item.posterPreview : null;
     const mediaClass =
-      images.length > 1 ? "event-feature-media" : "event-feature-media event-feature-media-single";
-    const mediaMarkup = posterPreview
+      galleryPreview
+        ? "event-feature-media event-gallery-preview"
+        : images.length > 1
+        ? "event-feature-media"
+        : "event-feature-media event-feature-media-single";
+    const cardClass = galleryPreview ? "event-feature-card event-gallery-card" : "event-feature-card";
+    const cardAttrs = galleryPreview
+      ? ` role="button" tabindex="0" data-gallery-target="#${galleryPreview.modalId}" aria-label="${escapeHtml(
+          getLanguage() === "zh" ? "打开 IEEE ICC 2026 照片墙" : "Open IEEE ICC 2026 photo gallery"
+        )}"`
+      : "";
+    const mediaMarkup = galleryPreview
+      ? `
+        <div class="event-gallery-preview-grid">
+          ${images
+            .slice(0, 4)
+            .map(
+              (image, index) => `
+                <figure class="event-gallery-preview-tile">
+                  <img src="${image.src}" alt="${escapeHtml(getLocalizedImageAlt(image))}" class="event-feature-image event-gallery-preview-image">
+                  ${index === 3 && images.length > 4 ? `<span class="event-gallery-more">+${images.length - 4}</span>` : ""}
+                </figure>
+              `
+            )
+            .join("")}
+        </div>
+        <span class="research-poster-hint event-gallery-hint">${escapeHtml(
+          getLanguage() === "zh" && galleryPreview.hintZh ? galleryPreview.hintZh : galleryPreview.hint
+        )}</span>
+      `
+      : posterPreview
       ? `
         <button type="button" class="research-poster-trigger event-poster-trigger" data-bs-toggle="modal" data-bs-target="#${posterPreview.modalId}" aria-label="${escapeHtml(
           getLanguage() === "zh" ? "打开活动海报" : "Open the event poster"
@@ -707,12 +810,15 @@
           )
           .join("");
     return `
-      <article class="event-feature-card" id="${item.id}"${hiddenAttrs}>
+      <article class="${cardClass}" id="${item.id}"${hiddenAttrs}${cardAttrs}>
         <div class="${mediaClass}">${mediaMarkup}</div>
         <div class="event-feature-body">
           <p class="event-feature-date">${displayDate}</p>
           <h3 class="event-feature-title">${title}</h3>
           <p class="event-feature-text">${bodyHtml}</p>
+          ${galleryPreview ? `<span class="event-gallery-cta">${escapeHtml(
+            getLanguage() === "zh" ? "查看照片墙" : "View photo gallery"
+          )}</span>` : ""}
         </div>
       </article>
     `;
@@ -754,16 +860,75 @@
     `;
   }
 
+  function renderGalleryModal(item) {
+    const modalId = item.galleryPreview.modalId;
+    const title = getLocalizedValue(item, "title");
+    const displayDate = getLocalizedValue(item, "displayDate");
+    const images = item.images || [];
+
+    return `
+      <div class="modal fade event-gallery-modal" id="${modalId}" tabindex="-1" aria-label="${escapeHtml(
+        title
+      )}" aria-hidden="true" data-event-gallery-modal="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content event-gallery-modal-content">
+            <div class="modal-header event-gallery-header">
+              <div>
+                <p class="event-gallery-eyebrow">${displayDate}</p>
+                <h2 class="event-gallery-title">${title}</h2>
+              </div>
+              <button type="button" class="event-gallery-close" data-bs-dismiss="modal" aria-label="${escapeHtml(
+                getLanguage() === "zh" ? "关闭照片墙" : "Close photo gallery"
+              )}"><i class="bi bi-x-lg" aria-hidden="true"></i></button>
+            </div>
+            <div class="modal-body event-gallery-modal-body">
+              <div class="event-gallery-controls" aria-label="${escapeHtml(
+                getLanguage() === "zh" ? "照片墙导航" : "Photo gallery navigation"
+              )}">
+                <button type="button" class="event-gallery-control" data-gallery-action="prev" aria-label="${escapeHtml(
+                  getLanguage() === "zh" ? "上一张照片" : "Previous photo"
+                )}"><i class="bi bi-chevron-left" aria-hidden="true"></i></button>
+                <button type="button" class="event-gallery-control" data-gallery-action="next" aria-label="${escapeHtml(
+                  getLanguage() === "zh" ? "下一张照片" : "Next photo"
+                )}"><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+              </div>
+              <div class="event-gallery-wall" data-role="gallery-wall">
+                ${images
+                  .map(
+                    (image, index) => `
+                      <figure class="event-gallery-slide" data-gallery-index="${index}">
+                        <img src="${image.src}" alt="${escapeHtml(getLocalizedImageAlt(image))}" class="event-gallery-image">
+                        <figcaption class="event-gallery-caption">${escapeHtml(
+                          getLocalizedValue(image, "caption") || getLocalizedImageAlt(image)
+                        )}</figcaption>
+                      </figure>
+                    `
+                  )
+                  .join("")}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
   function syncEventPosterModals() {
     const hasEventSections = document.querySelector("[data-render='events-section']");
     document.querySelectorAll("[data-event-poster-modal='true']").forEach((modal) => modal.remove());
+    document.querySelectorAll("[data-event-gallery-modal='true']").forEach((modal) => modal.remove());
 
     if (!hasEventSections) return;
 
-    const modalMarkup = getEventItems()
+    const posterModalMarkup = getEventItems()
       .filter((item) => item.posterPreview && item.images && item.images[0])
       .map((item) => renderPosterModal(item.posterPreview.modalId, item.images[0]))
       .join("");
+    const galleryModalMarkup = getEventItems()
+      .filter((item) => item.galleryPreview && item.images && item.images.length)
+      .map(renderGalleryModal)
+      .join("");
+    const modalMarkup = `${posterModalMarkup}${galleryModalMarkup}`;
 
     if (!modalMarkup) return;
 
@@ -1132,6 +1297,75 @@
     });
   }
 
+  function initEventGalleryCards() {
+    document.querySelectorAll("[data-gallery-target]").forEach((card) => {
+      if (card.dataset.galleryCardReady === "true") return;
+
+      const openGallery = () => {
+        const target = card.getAttribute("data-gallery-target");
+        const modal = target ? document.querySelector(target) : null;
+        if (!modal || !window.bootstrap || !window.bootstrap.Modal) return;
+        window.bootstrap.Modal.getOrCreateInstance(modal).show();
+      };
+
+      card.addEventListener("click", openGallery);
+      card.addEventListener("keydown", (event) => {
+        if (event.key !== "Enter" && event.key !== " ") return;
+        event.preventDefault();
+        openGallery();
+      });
+
+      card.dataset.galleryCardReady = "true";
+    });
+  }
+
+  function initEventGalleryModals() {
+    document.querySelectorAll(".event-gallery-modal").forEach((modal) => {
+      if (modal.dataset.galleryReady === "true") return;
+
+      const wall = modal.querySelector("[data-role='gallery-wall']");
+      const slides = Array.from(modal.querySelectorAll(".event-gallery-slide"));
+      const prevButton = modal.querySelector("[data-gallery-action='prev']");
+      const nextButton = modal.querySelector("[data-gallery-action='next']");
+
+      if (!wall || !slides.length || !prevButton || !nextButton) return;
+
+      const clamp = (value, min, max) => Math.min(max, Math.max(min, value));
+      const getStep = () => {
+        if (slides.length < 2) return slides[0].offsetWidth || wall.clientWidth;
+        return slides[1].offsetLeft - slides[0].offsetLeft;
+      };
+      const getCurrentIndex = () => {
+        const step = getStep();
+        return step ? clamp(Math.round(wall.scrollLeft / step), 0, slides.length - 1) : 0;
+      };
+      const scrollToIndex = (index, behavior = "smooth") => {
+        const safeIndex = clamp(index, 0, slides.length - 1);
+        wall.scrollTo({
+          left: slides[safeIndex].offsetLeft - wall.offsetLeft,
+          behavior
+        });
+      };
+      const updateControls = () => {
+        const currentIndex = getCurrentIndex();
+        prevButton.disabled = currentIndex <= 0;
+        nextButton.disabled = currentIndex >= slides.length - 1;
+      };
+
+      prevButton.addEventListener("click", () => scrollToIndex(getCurrentIndex() - 1));
+      nextButton.addEventListener("click", () => scrollToIndex(getCurrentIndex() + 1));
+      wall.addEventListener("scroll", updateControls, { passive: true });
+      modal.addEventListener("shown.bs.modal", () => {
+        scrollToIndex(0, "auto");
+        updateControls();
+      });
+      window.addEventListener("resize", updateControls);
+
+      modal.dataset.galleryReady = "true";
+      updateControls();
+    });
+  }
+
   function revealHashTarget() {
     const hash = window.location.hash ? window.location.hash.slice(1) : "";
     if (!hash) return;
@@ -1169,6 +1403,8 @@
     renderNewsPage();
     renderEventsPage();
     initPosterModals();
+    initEventGalleryCards();
+    initEventGalleryModals();
     revealHashTarget();
     window.addEventListener("hashchange", revealHashTarget);
     window.addEventListener("extend:languagechange", () => {
@@ -1177,6 +1413,8 @@
       renderNewsPage();
       renderEventsPage();
       initPosterModals();
+      initEventGalleryCards();
+      initEventGalleryModals();
       revealHashTarget();
     });
   });
