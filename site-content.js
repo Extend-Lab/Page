@@ -164,6 +164,36 @@
         "郑佳宁 TMC 接收 多模态 联邦学习 能量受限 无线网络"
     },
     {
+      id: "news-media-tei-seminar-coverage",
+      type: "news",
+      category: "media",
+      categoryLabel: "Media",
+      categoryLabelZh: "媒体报道",
+      title: "Towards Edge Intelligence Seminar Successfully Held",
+      titleZh: "学术交流 | Towards Edge Intelligence 研讨会圆满举办",
+      bodyHtml:
+        "A featured report from <strong>HKUST(GZ) IoT Thrust</strong> covered the 1st <strong>Towards Edge Intelligence Seminar</strong>, jointly advanced by the University of Bristol and HKUST(GZ), highlighting academic exchange around edge intelligence, multi-agent systems, and intelligent infrastructure.",
+      bodyHtmlZh:
+        "<strong>港科大广州物联网学域</strong>报道了首届 <strong>Towards Edge Intelligence Seminar</strong>。活动由布里斯托大学与港科大（广州）联合推进，聚焦边缘智能、多智能体系统与智能基础设施的学术交流。",
+      summaryHtml:
+        "HKUST(GZ) IoT Thrust reported on the University of Bristol and HKUST(GZ)'s joint Towards Edge Intelligence seminar.",
+      summaryHtmlZh:
+        "港科大广州物联网学域报道了布里斯托大学与港科大（广州）联合推进的 Towards Edge Intelligence 学术交流活动。",
+      displayDate: "2 Jun 2026",
+      displayDateZh: "2026年6月2日",
+      sortDate: "2026-06-02",
+      link: "https://mp.weixin.qq.com/s/4ZTzrjNKdZJ7XHfzzcpTqA",
+      image: {
+        src: "./assets/news/tei-seminar-media.jpg",
+        alt: "Media coverage of the Towards Edge Intelligence Seminar",
+        altZh: "Towards Edge Intelligence 研讨会媒体报道封面"
+      },
+      searchText:
+        "towards edge intelligence seminar successfully held hkust gz iot thrust university of bristol academic exchange edge intelligence multi-agent systems intelligent infrastructure media coverage",
+      searchTextZh:
+        "Towards Edge Intelligence 研讨会 圆满举办 港科大广州 物联网学域 布里斯托大学 学术交流 边缘智能 多智能体系统 智能基础设施 媒体报道"
+    },
+    {
       id: "news-media-guangdong-iot-association-visit",
       type: "news",
       category: "media",
@@ -348,6 +378,11 @@
       displayDate: "29 May 2026",
       displayDateZh: "2026年5月29日",
       sortDate: "2026-05-29",
+      galleryPreview: {
+        modalId: "teiSeminarGalleryModal",
+        hint: "Open photo gallery",
+        hintZh: "打开照片墙"
+      },
       posterPreview: {
         modalId: "teiSeminarPosterModal",
         hint: "Click poster to enlarge",
@@ -355,9 +390,81 @@
       },
       images: [
         {
-          src: "./assets/events/tei.jpg",
+          src: "./assets/events/tei-seminar/tei-seminar-poster.png",
           alt: "Poster for the 1st Seminar of Towards Edge Intelligence",
           altZh: "首届 Towards Edge Intelligence Seminar 海报"
+        }
+      ],
+      galleryImages: [
+        {
+          src: "./assets/events/tei-seminar/tei-seminar-photo-01.jpg",
+          alt: "Photo from the 1st Seminar of Towards Edge Intelligence",
+          altZh: "首届 Towards Edge Intelligence Seminar 现场照片",
+          caption: "Photo from the 1st Seminar of Towards Edge Intelligence at the University of Bristol.",
+          captionZh: "首届 Towards Edge Intelligence Seminar 布里斯托大学现场照片。"
+        },
+        {
+          src: "./assets/events/tei-seminar/tei-seminar-photo-02.jpg",
+          alt: "Photo from the 1st Seminar of Towards Edge Intelligence",
+          altZh: "首届 Towards Edge Intelligence Seminar 现场照片",
+          caption: "Photo wall from the 1st Seminar of Towards Edge Intelligence.",
+          captionZh: "首届 Towards Edge Intelligence Seminar 照片墙。"
+        },
+        {
+          src: "./assets/events/tei-seminar/tei-seminar-photo-03.jpg",
+          alt: "Photo from the 1st Seminar of Towards Edge Intelligence",
+          altZh: "首届 Towards Edge Intelligence Seminar 现场照片",
+          caption: "Seminar exchange and networking at the University of Bristol.",
+          captionZh: "布里斯托大学研讨会交流现场。"
+        },
+        {
+          src: "./assets/events/tei-seminar/tei-seminar-photo-04.jpg",
+          alt: "Photo from the 1st Seminar of Towards Edge Intelligence",
+          altZh: "首届 Towards Edge Intelligence Seminar 现场照片",
+          caption: "Participants at the 1st Seminar of Towards Edge Intelligence.",
+          captionZh: "首届 Towards Edge Intelligence Seminar 参会现场。"
+        },
+        {
+          src: "./assets/events/tei-seminar/tei-seminar-photo-05.jpg",
+          alt: "Photo from the 1st Seminar of Towards Edge Intelligence",
+          altZh: "首届 Towards Edge Intelligence Seminar 现场照片",
+          caption: "Academic exchange around edge intelligence and multi-agent systems.",
+          captionZh: "围绕边缘智能与多智能体系统的学术交流。"
+        },
+        {
+          src: "./assets/events/tei-seminar/tei-seminar-photo-06.jpg",
+          alt: "Photo from the 1st Seminar of Towards Edge Intelligence",
+          altZh: "首届 Towards Edge Intelligence Seminar 现场照片",
+          caption: "Photo from the Towards Edge Intelligence seminar.",
+          captionZh: "Towards Edge Intelligence 研讨会现场照片。"
+        },
+        {
+          src: "./assets/events/tei-seminar/tei-seminar-photo-07.jpg",
+          alt: "Photo from the 1st Seminar of Towards Edge Intelligence",
+          altZh: "首届 Towards Edge Intelligence Seminar 现场照片",
+          caption: "Photo from the Towards Edge Intelligence seminar.",
+          captionZh: "Towards Edge Intelligence 研讨会现场照片。"
+        },
+        {
+          src: "./assets/events/tei-seminar/tei-seminar-photo-08.jpg",
+          alt: "Photo from the 1st Seminar of Towards Edge Intelligence",
+          altZh: "首届 Towards Edge Intelligence Seminar 现场照片",
+          caption: "Photo from the Towards Edge Intelligence seminar.",
+          captionZh: "Towards Edge Intelligence 研讨会现场照片。"
+        },
+        {
+          src: "./assets/events/tei-seminar/tei-seminar-photo-09.jpg",
+          alt: "Photo from the 1st Seminar of Towards Edge Intelligence",
+          altZh: "首届 Towards Edge Intelligence Seminar 现场照片",
+          caption: "Photo from the Towards Edge Intelligence seminar.",
+          captionZh: "Towards Edge Intelligence 研讨会现场照片。"
+        },
+        {
+          src: "./assets/events/tei-seminar/tei-seminar-photo-10.jpg",
+          alt: "Photo from the 1st Seminar of Towards Edge Intelligence",
+          altZh: "首届 Towards Edge Intelligence Seminar 现场照片",
+          caption: "Photo from the Towards Edge Intelligence seminar.",
+          captionZh: "Towards Edge Intelligence 研讨会现场照片。"
         }
       ],
       searchText:
@@ -670,7 +777,7 @@
 
     return `
       <a href="${getItemUrl(item)}" class="homepage-update-link">
-        <article class="news-card homepage-update-card">
+        <article class="news-card homepage-update-card homepage-update-card-${item.type}-${item.category}">
           ${renderHomepageVisual(item)}
           <div class="news-card-body">
             <p class="homepage-update-label">${label}</p>
@@ -753,44 +860,75 @@
     `;
   }
 
+  function getEventGalleryImages(item) {
+    return item.galleryImages || item.images || [];
+  }
+
+  function renderGalleryPreviewMarkup(images, galleryPreview) {
+    return `
+      <div class="event-gallery-preview-grid">
+        ${images
+          .slice(0, 4)
+          .map(
+            (image, index) => `
+              <figure class="event-gallery-preview-tile">
+                <img src="${image.src}" alt="${escapeHtml(getLocalizedImageAlt(image))}" class="event-feature-image event-gallery-preview-image">
+                ${index === 3 && images.length > 4 ? `<span class="event-gallery-more">+${images.length - 4}</span>` : ""}
+              </figure>
+            `
+          )
+          .join("")}
+      </div>
+      <span class="research-poster-hint event-gallery-hint">${escapeHtml(
+        getLanguage() === "zh" && galleryPreview.hintZh ? galleryPreview.hintZh : galleryPreview.hint
+      )}</span>
+    `;
+  }
+
   function renderEventCard(item, hidden) {
     const hiddenAttrs = hidden ? ' hidden data-archive-hidden="true"' : ' data-archive-hidden="false"';
     const images = item.images || [];
+    const galleryImages = getEventGalleryImages(item);
     const displayDate = getLocalizedValue(item, "displayDate");
     const title = getLocalizedValue(item, "title");
     const bodyHtml = getLocalizedValue(item, "bodyHtml");
-    const galleryPreview = item.galleryPreview && images.length ? item.galleryPreview : null;
+    const galleryPreview = item.galleryPreview && galleryImages.length ? item.galleryPreview : null;
     const posterPreview = item.posterPreview && images[0] ? item.posterPreview : null;
+    const hasPosterAndGallery = posterPreview && galleryPreview;
+    const galleryAriaLabel = escapeHtml(
+      getLanguage() === "zh" ? `打开${title}照片墙` : `Open photo gallery for ${title}`
+    );
     const mediaClass =
-      galleryPreview
+      hasPosterAndGallery
+        ? "event-feature-media event-seminar-media"
+        : galleryPreview
         ? "event-feature-media event-gallery-preview"
         : images.length > 1
         ? "event-feature-media"
         : "event-feature-media event-feature-media-single";
-    const cardClass = galleryPreview ? "event-feature-card event-gallery-card" : "event-feature-card";
-    const cardAttrs = galleryPreview
-      ? ` role="button" tabindex="0" data-gallery-target="#${galleryPreview.modalId}" aria-label="${escapeHtml(
-          getLanguage() === "zh" ? "打开 IEEE ICC 2026 照片墙" : "Open IEEE ICC 2026 photo gallery"
-        )}"`
+    const cardClass =
+      galleryPreview && !hasPosterAndGallery ? "event-feature-card event-gallery-card" : "event-feature-card";
+    const cardAttrs =
+      galleryPreview && !hasPosterAndGallery
+        ? ` role="button" tabindex="0" data-gallery-target="#${galleryPreview.modalId}" aria-label="${galleryAriaLabel}"`
       : "";
-    const mediaMarkup = galleryPreview
+    const mediaMarkup = hasPosterAndGallery
       ? `
-        <div class="event-gallery-preview-grid">
-          ${images
-            .slice(0, 4)
-            .map(
-              (image, index) => `
-                <figure class="event-gallery-preview-tile">
-                  <img src="${image.src}" alt="${escapeHtml(getLocalizedImageAlt(image))}" class="event-feature-image event-gallery-preview-image">
-                  ${index === 3 && images.length > 4 ? `<span class="event-gallery-more">+${images.length - 4}</span>` : ""}
-                </figure>
-              `
-            )
-            .join("")}
-        </div>
-        <span class="research-poster-hint event-gallery-hint">${escapeHtml(
-          getLanguage() === "zh" && galleryPreview.hintZh ? galleryPreview.hintZh : galleryPreview.hint
-        )}</span>
+        <button type="button" class="research-poster-trigger event-poster-trigger event-seminar-poster-trigger" data-bs-toggle="modal" data-bs-target="#${posterPreview.modalId}" aria-label="${escapeHtml(
+          getLanguage() === "zh" ? "打开活动海报" : "Open the event poster"
+        )}">
+          <img src="${images[0].src}" alt="${escapeHtml(getLocalizedImageAlt(images[0]))}" class="event-feature-image research-cfp-image">
+          <span class="research-poster-hint">${escapeHtml(
+            getLanguage() === "zh" && posterPreview.hintZh ? posterPreview.hintZh : posterPreview.hint
+          )}</span>
+        </button>
+        <button type="button" class="event-gallery-preview event-seminar-gallery-trigger" data-gallery-target="#${galleryPreview.modalId}" aria-label="${galleryAriaLabel}">
+          ${renderGalleryPreviewMarkup(galleryImages, galleryPreview)}
+        </button>
+      `
+      : galleryPreview
+      ? `
+        ${renderGalleryPreviewMarkup(galleryImages, galleryPreview)}
       `
       : posterPreview
       ? `
@@ -816,7 +954,7 @@
           <p class="event-feature-date">${displayDate}</p>
           <h3 class="event-feature-title">${title}</h3>
           <p class="event-feature-text">${bodyHtml}</p>
-          ${galleryPreview ? `<span class="event-gallery-cta">${escapeHtml(
+          ${galleryPreview && !hasPosterAndGallery ? `<span class="event-gallery-cta">${escapeHtml(
             getLanguage() === "zh" ? "查看照片墙" : "View photo gallery"
           )}</span>` : ""}
         </div>
@@ -864,7 +1002,7 @@
     const modalId = item.galleryPreview.modalId;
     const title = getLocalizedValue(item, "title");
     const displayDate = getLocalizedValue(item, "displayDate");
-    const images = item.images || [];
+    const images = getEventGalleryImages(item);
 
     return `
       <div class="modal fade event-gallery-modal" id="${modalId}" tabindex="-1" aria-label="${escapeHtml(
@@ -925,7 +1063,7 @@
       .map((item) => renderPosterModal(item.posterPreview.modalId, item.images[0]))
       .join("");
     const galleryModalMarkup = getEventItems()
-      .filter((item) => item.galleryPreview && item.images && item.images.length)
+      .filter((item) => item.galleryPreview && getEventGalleryImages(item).length)
       .map(renderGalleryModal)
       .join("");
     const modalMarkup = `${posterModalMarkup}${galleryModalMarkup}`;

@@ -966,6 +966,12 @@ p {
   border-bottom: 1px solid rgba(207, 218, 228, 0.95);
 }
 
+.news-card-section[data-category="media"] .news-card-image,
+.homepage-update-card-news-media .news-card-image {
+  object-fit: contain;
+  background: #f6f9fc;
+}
+
 .news-card-body {
   display: flex;
   flex-direction: column;
@@ -1340,6 +1346,36 @@ p {
   display: flex;
   flex-direction: column;
   gap: 0.55rem;
+}
+
+.event-seminar-media {
+  grid-template-columns: minmax(120px, 0.82fr) minmax(0, 1fr);
+  align-items: start;
+}
+
+.event-seminar-poster-trigger .research-cfp-image {
+  max-height: 19rem;
+}
+
+.event-seminar-gallery-trigger {
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.event-seminar-gallery-trigger:focus-visible {
+  outline: 2px solid rgba(63, 129, 196, 0.45);
+  outline-offset: 6px;
+}
+
+.event-seminar-gallery-trigger:hover .event-gallery-preview-image,
+.event-seminar-gallery-trigger:focus-visible .event-gallery-preview-image {
+  border-color: rgba(84, 137, 185, 0.62);
+  box-shadow: 0 12px 26px rgba(16, 44, 79, 0.13);
 }
 
 .event-gallery-preview-grid {
