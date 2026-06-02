@@ -459,7 +459,7 @@
       category: "recent-activity",
       categoryLabel: "Recent Activity",
       categoryLabelZh: "近期活动",
-      title: "Co-organize Seminar in University of Bristol.",
+      title: "Co-organize Seminar in University of Bristol",
       titleZh: "在布里斯托大学联合组织研讨会",
       bodyHtml:
         "EXTEND Lab and Dr. Xiaolan Liu (University of Bristol), from the Smart Internet Lab and Bristol Digital Futures Institute, are co-organizing the 1st Seminar of Towards Edge Intelligence. The seminar theme is Towards Edge Intelligence: context-aware and multi-agent approaches for sensing, computation and communication. The hybrid seminar brings together invited keynote speakers, PhD poster presentations, and networking around edge intelligence, networked AI, and multi-agent systems. For more information, visit <a href=\"https://extend-lab.github.io/TEI/\" target=\"_blank\" rel=\"noopener\">the seminar website</a>.",
