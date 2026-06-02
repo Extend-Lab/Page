@@ -967,7 +967,9 @@ p {
 }
 
 .news-card-section[data-category="media"] .news-card-image,
-.homepage-update-card-news-media .news-card-image {
+.homepage-update-card.homepage-update-card-news-media .news-card-image {
+  height: auto;
+  aspect-ratio: auto;
   object-fit: contain;
   background: #f6f9fc;
 }
