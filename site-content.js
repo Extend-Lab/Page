@@ -287,6 +287,100 @@
 
   const EVENT_ITEMS = [
     {
+      id: "event-cambridge-visit",
+      type: "event",
+      category: "recent-activity",
+      categoryLabel: "Recent Activity",
+      categoryLabelZh: "近期活动",
+      title: "EXTEND Lab Visits the University of Cambridge",
+      titleZh: "EXTEND Lab 拜访剑桥大学",
+      bodyHtml:
+        "On 30-31 May 2026, EXTEND Lab visited the University of Cambridge, hosted by Dr. Guangming Wang from the University of Cambridge. Dr. Wang first guided the team through the Civil Engineering Building in West Cambridge and introduced the building robotic arm inside. The team then visited Trinity College before having dinner at The Eagle Pub, the historic pub where the discovery of the DNA helical structure was announced. On the second day, EXTEND Lab attended a formal dinner at Queens' College.",
+      bodyHtmlZh:
+        "2026 年 5 月 30 日至 31 日，EXTEND Lab 拜访剑桥大学，并由剑桥大学 Dr. Guangming Wang 接待。Dr. Wang 首先带领团队参观了位于 West Cambridge 的 Civil Engineering Building，并介绍了楼内的建筑机械臂。随后，团队参观了 Trinity College，并在 The Eagle Pub 用晚餐；这里也是宣布发现 DNA 螺旋结构的历史性酒吧。第二天，EXTEND Lab 参加了 Queens' College 的 formal dinner。",
+      summaryHtml:
+        "EXTEND Lab visited the University of Cambridge, toured the Civil Engineering Building and Trinity College with Dr. Guangming Wang, and joined dinners at The Eagle Pub and Queens' College.",
+      summaryHtmlZh:
+        "EXTEND Lab 拜访剑桥大学，在 Dr. Guangming Wang 接待下参观 Civil Engineering Building 与 Trinity College，并前往 The Eagle Pub 和 Queens' College 晚宴。",
+      displayDate: "30-31 May 2026",
+      displayDateZh: "2026年5月30-31日",
+      sortDate: "2026-05-31",
+      galleryPreview: {
+        modalId: "cambridgeVisitGalleryModal",
+        hint: "Open photo gallery",
+        hintZh: "打开照片墙"
+      },
+      images: [
+        {
+          src: "./assets/events/cambridge/EXTEND_at_Queen's_College.jpg",
+          alt: "EXTEND Lab at Queens' College, University of Cambridge",
+          altZh: "EXTEND Lab 在剑桥大学 Queens' College"
+        }
+      ],
+      galleryImages: [
+        {
+          src: "./assets/events/cambridge/EXTEND_at_Queen's_College.jpg",
+          alt: "EXTEND Lab at Queens' College, University of Cambridge",
+          altZh: "EXTEND Lab 在剑桥大学 Queens' College",
+          caption: "EXTEND Lab at Queens' College, University of Cambridge.",
+          captionZh: "EXTEND Lab 在剑桥大学 Queens' College。"
+        },
+        {
+          src: "./assets/events/cambridge/EXTEND_at_Civil_engineer_buiding_in_west_Cambridge.jpg",
+          alt: "EXTEND Lab at the Civil Engineering Building in West Cambridge",
+          altZh: "EXTEND Lab 在 West Cambridge 的 Civil Engineering Building",
+          caption: "Visit to the Civil Engineering Building in West Cambridge.",
+          captionZh: "团队参观 West Cambridge 的 Civil Engineering Building。"
+        },
+        {
+          src: "./assets/events/cambridge/With_DrGuangmingWang_in_Trinity.jpg",
+          alt: "EXTEND Lab with Dr. Guangming Wang at Trinity College",
+          altZh: "EXTEND Lab 与 Dr. Guangming Wang 在 Trinity College",
+          caption: "EXTEND Lab with Dr. Guangming Wang at Trinity College.",
+          captionZh: "EXTEND Lab 与 Dr. Guangming Wang 在 Trinity College。"
+        },
+        {
+          src: "./assets/events/cambridge/trinity.jpg",
+          alt: "Trinity College, University of Cambridge",
+          altZh: "剑桥大学 Trinity College",
+          caption: "Visit to Trinity College, University of Cambridge.",
+          captionZh: "团队参观剑桥大学 Trinity College。"
+        },
+        {
+          src: "./assets/events/cambridge/trinity_chaple.jpg",
+          alt: "Trinity College Chapel",
+          altZh: "Trinity College Chapel",
+          caption: "Trinity College Chapel.",
+          captionZh: "Trinity College Chapel。"
+        },
+        {
+          src: "./assets/events/cambridge/Newton_in_Trinity.jpg",
+          alt: "Newton's statue at Trinity College",
+          altZh: "Trinity College 内的 Newton 雕像",
+          caption: "Newton's statue at Trinity College.",
+          captionZh: "Trinity College 内的 Newton 雕像。"
+        },
+        {
+          src: "./assets/events/cambridge/EXTEND_at_the_Eagle.jpg",
+          alt: "EXTEND Lab at The Eagle Pub in Cambridge",
+          altZh: "EXTEND Lab 在剑桥 The Eagle Pub",
+          caption: "Dinner at The Eagle Pub in Cambridge.",
+          captionZh: "团队在剑桥 The Eagle Pub 用晚餐。"
+        },
+        {
+          src: "./assets/events/cambridge/EXTEND_at_Queen's_College_Formal_dinner.jpg",
+          alt: "EXTEND Lab at the Queens' College formal dinner",
+          altZh: "EXTEND Lab 参加 Queens' College formal dinner",
+          caption: "EXTEND Lab at the Queens' College formal dinner.",
+          captionZh: "EXTEND Lab 参加 Queens' College formal dinner。"
+        }
+      ],
+      searchText:
+        "extend lab university of cambridge visit guangming wang civil engineering building west cambridge building robotic arm trinity college the eagle pub dna helical structure queens college formal dinner may 30 31 2026",
+      searchTextZh:
+        "EXTEND Lab 剑桥大学 拜访 Guangming Wang Civil Engineering Building West Cambridge 建筑机械臂 Trinity College The Eagle Pub DNA 螺旋结构 Queens College formal dinner 2026年5月30日 5月31日"
+    },
+    {
       id: "event-icc-2026-glasgow",
       type: "event",
       category: "recent-activity",
