@@ -559,12 +559,40 @@
           altZh: "首届 Towards Edge Intelligence Seminar 现场照片",
           caption: "Photo from the Towards Edge Intelligence seminar.",
           captionZh: "Towards Edge Intelligence 研讨会现场照片。"
+        },
+        {
+          src: "./assets/events/tei-seminar/tei-seminar-photo-11.jpg",
+          alt: "Prof. Dimitra Simeonidou presenting at the Towards Edge Intelligence Seminar",
+          altZh: "Dimitra Simeonidou 教授在 Towards Edge Intelligence Seminar 做报告",
+          caption: "Prof. Dimitra Simeonidou presenting at the Towards Edge Intelligence Seminar.",
+          captionZh: "Dimitra Simeonidou 教授在 Towards Edge Intelligence Seminar 做报告。"
+        },
+        {
+          src: "./assets/events/tei-seminar/tei-seminar-photo-12.jpg",
+          alt: "Prof. Kin K. Leung presenting at the Towards Edge Intelligence Seminar",
+          altZh: "Kin K. Leung 教授在 Towards Edge Intelligence Seminar 做报告",
+          caption: "Prof. Kin K. Leung presenting at the Towards Edge Intelligence Seminar.",
+          captionZh: "Kin K. Leung 教授在 Towards Edge Intelligence Seminar 做报告。"
+        },
+        {
+          src: "./assets/events/tei-seminar/tei-seminar-photo-13.jpg",
+          alt: "Dr. Zheng Chen presenting at the Towards Edge Intelligence Seminar",
+          altZh: "Zheng Chen 博士在 Towards Edge Intelligence Seminar 做报告",
+          caption: "Dr. Zheng Chen presenting at the Towards Edge Intelligence Seminar.",
+          captionZh: "Zheng Chen 博士在 Towards Edge Intelligence Seminar 做报告。"
+        },
+        {
+          src: "./assets/events/tei-seminar/tei-seminar-photo-14.jpg",
+          alt: "Poster interaction at the Towards Edge Intelligence Seminar",
+          altZh: "Towards Edge Intelligence Seminar 海报交流现场",
+          caption: "Poster interaction at the Towards Edge Intelligence Seminar.",
+          captionZh: "Towards Edge Intelligence Seminar 海报交流现场。"
         }
       ],
       searchText:
-        "co-organize seminar university of bristol towards edge intelligence seminar xiaolan liu smart internet lab bristol digital futures institute bdfi hkust gz edge intelligence networked ai multi-agent systems may 29 2026",
+        "co-organize seminar university of bristol towards edge intelligence seminar xiaolan liu smart internet lab bristol digital futures institute bdfi hkust gz edge intelligence networked ai multi-agent systems may 29 2026 dimitra simeonidou kin k leung zheng chen poster interaction presentations",
       searchTextZh:
-        "在布里斯托大学联合组织研讨会 Towards Edge Intelligence 研讨会 布里斯托大学 刘小兰 Smart Internet Lab BDFI 香港科技大学广州 边缘智能 网络化AI 多智能体系统 2026年5月29日"
+        "在布里斯托大学联合组织研讨会 Towards Edge Intelligence 研讨会 布里斯托大学 刘小兰 Smart Internet Lab BDFI 香港科技大学广州 边缘智能 网络化AI 多智能体系统 2026年5月29日 Dimitra Simeonidou Kin K Leung Zheng Chen 海报交流 报告"
     },
     {
       id: "event-quanzhun-visit",
