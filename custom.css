@@ -1426,6 +1426,10 @@ p {
   font-weight: 700;
 }
 
+.event-gallery-cta[role="button"] {
+  cursor: pointer;
+}
+
 .event-gallery-cta::after {
   content: "\F285";
   font-family: "bootstrap-icons";

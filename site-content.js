@@ -287,6 +287,79 @@
 
   const EVENT_ITEMS = [
     {
+      id: "event-vtc-2026-spring-hao-xiong",
+      type: "event",
+      category: "recent-activity",
+      categoryLabel: "Recent Activity",
+      categoryLabelZh: "近期活动",
+      title: "Mr. Hao Xiong Presented at VTC 2026 Spring in Nice, France",
+      titleZh: "熊浩在法国尼斯 VTC 2026 Spring 作论文报告",
+      bodyHtml:
+        "On 9 June 2026, Mr. Hao Xiong presented the paper <em>Joint Optimization of Latency and Freshness for Digital Twin-Empowered Vehicular Edge Services</em> at VTC 2026 Spring in Nice, France. The paper studies how digital twin-enabled vehicular edge services can jointly balance end-to-end latency and digital twin freshness under constrained edge resources, and proposes a multi-agent hierarchical reinforcement learning framework for decentralized resource allocation.",
+      bodyHtmlZh:
+        "2026 年 6 月 9 日，熊浩在法国尼斯 VTC 2026 Spring 宣讲论文 <em>Joint Optimization of Latency and Freshness for Digital Twin-Empowered Vehicular Edge Services</em>。该论文研究数字孪生赋能的车联网边缘服务如何在受限边缘资源下联合平衡端到端时延与数字孪生新鲜度，并提出一种用于去中心化资源分配的多智能体层次强化学习框架。",
+      summaryHtml:
+        "Mr. Hao Xiong presented his paper on digital twin-empowered vehicular edge services at VTC 2026 Spring in Nice, France.",
+      summaryHtmlZh:
+        "熊浩在法国尼斯 VTC 2026 Spring 宣讲关于数字孪生赋能车联网边缘服务的论文。",
+      displayDate: "9 Jun 2026",
+      displayDateZh: "2026年6月9日",
+      sortDate: "2026-06-09",
+      galleryPreview: {
+        modalId: "vtc2026SpringHaoGalleryModal",
+        hint: "Open photo gallery",
+        hintZh: "打开照片墙"
+      },
+      images: [
+        {
+          src: "./assets/events/vtc2026spring/hao-presenting-01.jpg",
+          alt: "Hao Xiong presenting at VTC 2026 Spring in Nice, France",
+          altZh: "熊浩在法国尼斯 VTC 2026 Spring 作报告"
+        }
+      ],
+      galleryImages: [
+        {
+          src: "./assets/events/vtc2026spring/hao-presenting-01.jpg",
+          alt: "Hao Xiong presenting at VTC 2026 Spring in Nice, France",
+          altZh: "熊浩在法国尼斯 VTC 2026 Spring 作报告",
+          caption: "Hao Xiong presenting at VTC 2026 Spring in Nice, France.",
+          captionZh: "熊浩在法国尼斯 VTC 2026 Spring 作报告。"
+        },
+        {
+          src: "./assets/events/vtc2026spring/hao-presenting-03.jpg",
+          alt: "Hao Xiong presenting his paper at VTC 2026 Spring",
+          altZh: "熊浩在 VTC 2026 Spring 宣讲论文",
+          caption: "Presentation of Joint Optimization of Latency and Freshness for Digital Twin-Empowered Vehicular Edge Services.",
+          captionZh: "宣讲论文 Joint Optimization of Latency and Freshness for Digital Twin-Empowered Vehicular Edge Services。"
+        },
+        {
+          src: "./assets/events/vtc2026spring/hao-answering-questions.jpg",
+          alt: "Hao Xiong answering questions after his VTC 2026 Spring presentation",
+          altZh: "熊浩在 VTC 2026 Spring 报告后回答问题",
+          caption: "Hao Xiong answering questions after the presentation.",
+          captionZh: "熊浩在报告后回答问题。"
+        },
+        {
+          src: "./assets/events/vtc2026spring/hao-interactive-with-chair.jpg",
+          alt: "Hao Xiong interacting with the session chair at VTC 2026 Spring",
+          altZh: "熊浩在 VTC 2026 Spring 与分会主席交流",
+          caption: "Hao Xiong interacting with the session chair.",
+          captionZh: "熊浩与分会主席交流。"
+        },
+        {
+          src: "./assets/events/vtc2026spring/hao-vtc-photo-02.jpg",
+          alt: "Hao Xiong at VTC 2026 Spring in Nice, France",
+          altZh: "熊浩参加法国尼斯 VTC 2026 Spring",
+          caption: "Hao Xiong at VTC 2026 Spring in Nice, France.",
+          captionZh: "熊浩参加法国尼斯 VTC 2026 Spring。"
+        }
+      ],
+      searchText:
+        "hao xiong vtc 2026 spring nice france presentation june 9 2026 joint optimization latency freshness digital twin empowered vehicular edge services vehicular edge computing multi-agent hierarchical reinforcement learning decentralized resource allocation",
+      searchTextZh:
+        "熊浩 VTC 2026 Spring 法国 尼斯 报告 2026年6月9日 Joint Optimization of Latency and Freshness for Digital Twin-Empowered Vehicular Edge Services 数字孪生 车联网 边缘服务 多智能体 层次强化学习 去中心化 资源分配"
+    },
+    {
       id: "event-cambridge-visit",
       type: "event",
       category: "recent-activity",
@@ -1076,9 +1149,13 @@
           <p class="event-feature-date">${displayDate}</p>
           <h3 class="event-feature-title">${title}</h3>
           <p class="event-feature-text">${bodyHtml}</p>
-          ${galleryPreview && !hasPosterAndGallery ? `<span class="event-gallery-cta">${escapeHtml(
-            getLanguage() === "zh" ? "查看照片墙" : "View photo gallery"
-          )}</span>` : ""}
+          ${galleryPreview ? hasPosterAndGallery
+            ? `<span class="event-gallery-cta" role="button" tabindex="0" data-gallery-target="#${galleryPreview.modalId}" aria-label="${galleryAriaLabel}">${escapeHtml(
+                getLanguage() === "zh" ? "查看照片墙" : "View photo gallery"
+              )}</span>`
+            : `<span class="event-gallery-cta">${escapeHtml(
+                getLanguage() === "zh" ? "查看照片墙" : "View photo gallery"
+              )}</span>` : ""}
         </div>
       </article>
     `;
