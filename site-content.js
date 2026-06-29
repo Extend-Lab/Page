@@ -71,41 +71,6 @@
         "郑佳宁 ICC 2026 学生差旅资助 6G 群体学习 个性化 能效 格拉斯哥 2026年5月25日"
     },
     {
-      id: "news-publication-tits",
-      type: "news",
-      category: "publication",
-      categoryLabel: "Publication",
-      categoryLabelZh: "论文动态",
-      title: "Paper Accepted by IEEE Transactions on Intelligent Transportation Systems",
-      titleZh: "论文被 IEEE Transactions on Intelligent Transportation Systems 接收",
-      bodyHtml:
-        "<strong>Mr. Hao Xiong</strong> reports that Latency-Freshness-Aware Vehicular Edge Computing for Digital Twin-Enabled Intelligent Transportation has been accepted by IEEE Transactions on Intelligent Transportation Systems.",
-      bodyHtmlZh:
-        "<strong>熊浩</strong>的论文 Latency-Freshness-Aware Vehicular Edge Computing for Digital Twin-Enabled Intelligent Transportation 已被 IEEE Transactions on Intelligent Transportation Systems 接收。",
-      summaryHtml:
-        "<strong>Mr. Hao Xiong</strong> reports a new acceptance for digital twin-enabled vehicular edge computing.",
-      summaryHtmlZh:
-        "<strong>熊浩</strong>在数字孪生赋能车联网边缘计算方向获得新的论文接收。",
-      displayDate: "Mar 2026",
-      displayDateZh: "2026年3月",
-      sortDate: "2026-03-20",
-      homepageVisual: {
-        type: "art-image",
-        src: "./assets/news/TITS.jpg",
-        alt: "IEEE Transactions on Intelligent Transportation Systems homepage screenshot",
-        altZh: "IEEE Transactions on Intelligent Transportation Systems 页面截图"
-      },
-      image: {
-        src: "./assets/news/TITS.jpg",
-        alt: "IEEE Transactions on Intelligent Transportation Systems homepage screenshot",
-        altZh: "IEEE Transactions on Intelligent Transportation Systems 页面截图"
-      },
-      searchText:
-        "hao xiong ieee transactions on intelligent transportation systems latency freshness vehicular edge computing digital twin accepted paper",
-      searchTextZh:
-        "熊浩 TITS 接收 车联网 边缘计算 数字孪生 智能交通"
-    },
-    {
       id: "news-publication-tmlcn",
       type: "news",
       category: "publication",

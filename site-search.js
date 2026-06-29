@@ -9,15 +9,6 @@ const FALLBACK_SEARCH_INDEX = [
     textZh: "使命 价值观 打破边界 无限可能 强化学习 多智能体系统 机器人 具身智能"
   },
   {
-    title: "News: IEEE T-ITS Paper Accepted",
-    titleZh: "动态：IEEE T-ITS 论文接收",
-    url: "news/#news-publication-tits",
-    category: "News",
-    categoryZh: "动态",
-    text: "hao xiong ieee transactions on intelligent transportation systems latency freshness vehicular edge computing digital twin accepted paper",
-    textZh: "熊浩 TITS 接收 车联网 边缘计算 数字孪生 智能交通"
-  },
-  {
     title: "News: Multi-Agent Communication Paper Revision",
     titleZh: "动态：多智能体通信论文大修",
     url: "news/#news-publication-tmlcn",
