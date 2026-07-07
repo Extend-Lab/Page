@@ -233,17 +233,13 @@
               text: "教师、学生与合作成员。"
             },
             {
-              selector: ".section-kicker",
-              multiText: ["实验室负责人", "核心团队", "研究生团队", "合作交流", "过往成员"]
-            },
-            {
               selector: ".section-heading",
-              multiText: ["主任", "博士生", "硕士研究生", "访问学生", "校友"]
+              multiText: ["研究团队", "合作成员", "校友"]
             },
             {
               selector: ".person-body",
               multiHtml: [
-                "<h3>于佳冬</h3><p>香港科技大学（广州）助理教授</p>",
+                "<h3>于佳冬</h3><p><span class=\"person-role-line\">助理教授</span><span class=\"person-role-line\">物联网和人工智能学域</span></p>",
                 "<h3>张育龙</h3><p><span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2023年至今</span></p>",
                 "<h3>熊浩</h3><p><span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2023年至今</span></p>",
                 "<h3>张子儒</h3><p><span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2024年至今</span></p>",
@@ -252,13 +248,13 @@
                 "<h3>张馨仁</h3><p><span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2025年至今</span></p>",
                 "<h3>李佳乐</h3><p><span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2025年至今</span></p>",
                 "<h3>朱光智</h3><p>硕士研究生</p>",
-                "<h3>王年福</h3><p>哈尔滨工业大学（深圳）与鹏城实验室博士生</p>",
-                "<h3>张耀尹</h3><p>复旦大学本科生</p>"
+                "<h3>王年福</h3><p>来自哈尔滨工业大学（深圳）与鹏城实验室的访问博士生</p>",
+                "<h3>张耀尹</h3><p>来自复旦大学的访问本科生</p>"
               ]
             },
             {
               selector: ".table thead th",
-              multiText: ["姓名", "当前去向"]
+              multiText: ["姓名", "之前团队角色", "去向"]
             },
             {
               selector: ".table tbody tr td:nth-child(1)",
@@ -266,6 +262,10 @@
             },
             {
               selector: ".table tbody tr td:nth-child(2)",
+              multiText: ["2024年-2025年研究助理", "2025年研究助理"]
+            },
+            {
+              selector: ".table tbody tr td:nth-child(3)",
               multiText: ["悉尼科技大学博士生", "新加坡科技设计大学博士生"]
             }
           ]

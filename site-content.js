@@ -1,6 +1,35 @@
 (function () {
   const NEWS_ITEMS = [
     {
+      id: "news-publication-tmc-chen-shang-v2x",
+      type: "news",
+      category: "publication",
+      categoryLabel: "Publication",
+      categoryLabelZh: "论文动态",
+      title: "Paper Accepted by IEEE Transactions on Mobile Computing",
+      titleZh: "论文被 IEEE Transactions on Mobile Computing 接收",
+      bodyHtml:
+        "<strong>Mr. Chen Shang</strong>, an EXTEND Lab alumnus and currently a PhD student at the University of Technology Sydney, has had his collaborative work, <em>Multi-Modal Beamforming with Model Compression and Modality Generation for V2X Networks</em>, accepted by IEEE Transactions on Mobile Computing. This is the latest work he completed within the Lab.",
+      bodyHtmlZh:
+        "<strong>商晨</strong>，EXTEND Lab 校友、现为 University of Technology Sydney 博士生，其合作研究 <em>Multi-Modal Beamforming with Model Compression and Modality Generation for V2X Networks</em> 已被 IEEE Transactions on Mobile Computing 接收。这是他在实验室完成的最新工作。",
+      summaryHtml:
+        "<strong>Mr. Chen Shang</strong>'s collaborative work on multi-modal beamforming for V2X networks has been accepted by IEEE Transactions on Mobile Computing.",
+      summaryHtmlZh:
+        "<strong>商晨</strong>关于 V2X 网络多模态波束赋形的合作研究被 IEEE Transactions on Mobile Computing 接收。",
+      displayDate: "7 Jul 2026",
+      displayDateZh: "2026年7月7日",
+      sortDate: "2026-07-07",
+      image: {
+        src: "./assets/news/TMC.jpg",
+        alt: "IEEE Transactions on Mobile Computing journal graphic",
+        altZh: "IEEE Transactions on Mobile Computing 期刊图示"
+      },
+      searchText:
+        "chen shang ieee transactions on mobile computing multi-modal beamforming model compression modality generation v2x networks accepted paper university of technology sydney alumnus",
+      searchTextZh:
+        "商晨 TMC 接收 多模态 波束赋形 模型压缩 模态生成 V2X 网络 University of Technology Sydney 校友"
+    },
+    {
       id: "news-publication-rlc-2026",
       type: "news",
       category: "publication",
