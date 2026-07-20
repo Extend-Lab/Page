@@ -247,6 +247,7 @@
                 "<h3>张栩棱</h3><p><span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2024年至今</span></p>",
                 "<h3>张馨仁</h3><p><span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2025年至今</span></p>",
                 "<h3>李佳乐</h3><p><span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2025年至今</span></p>",
+                "<h3>宋光辉</h3><p><span class=\"person-role-line\">博士生</span><span class=\"person-role-line\">2026年至今</span></p>",
                 "<h3>朱光智</h3><p>硕士研究生</p>",
                 "<h3>王年福</h3><p>来自哈尔滨工业大学（深圳）与鹏城实验室的访问博士生</p>",
                 "<h3>张耀尹</h3><p>来自复旦大学的访问本科生</p>"

@@ -1,6 +1,41 @@
 (function () {
   const NEWS_ITEMS = [
     {
+      id: "news-publication-pimrc-2026-inductor-defect-recognition",
+      type: "news",
+      category: "publication",
+      categoryLabel: "Publication",
+      categoryLabelZh: "论文动态",
+      title: "Paper Accepted by IEEE PIMRC 2026",
+      titleZh: "工业物联网电感缺陷识别论文被 IEEE PIMRC 2026 接收",
+      bodyHtml:
+        "The paper <em>A Heterogeneous Multi-Agent Vision-Language Framework for Inductor Defect Recognition in Industrial IoT</em>, authored by <strong>Yaoyin Zhang, Ziru Zhang, Xuling Zhang</strong>, and an industry collaborator from Quanzhun, was accepted by <strong>IEEE PIMRC 2026</strong> on <strong>9 July 2026</strong>. The conference will be held in Singapore.",
+      bodyHtmlZh:
+        "由<strong>张耀尹、张子儒、张栩棱</strong>与全准公司合作伙伴共同完成的论文 <em>A Heterogeneous Multi-Agent Vision-Language Framework for Inductor Defect Recognition in Industrial IoT</em> 于 <strong>2026年7月9日</strong> 被 <strong>IEEE PIMRC 2026</strong> 接收。会议将在新加坡举行。",
+      summaryHtml:
+        "A collaborative paper on heterogeneous multi-agent vision-language learning for industrial inductor defect recognition was accepted by IEEE PIMRC 2026.",
+      summaryHtmlZh:
+        "团队关于异构多智能体视觉语言学习与工业电感缺陷识别的合作论文被 IEEE PIMRC 2026 接收。",
+      displayDate: "9 Jul 2026",
+      displayDateZh: "2026年7月9日",
+      sortDate: "2026-07-09",
+      homepageVisual: {
+        type: "art-image",
+        src: "./assets/news/PIMRC2026.jpg",
+        alt: "IEEE PIMRC 2026 conference banner",
+        altZh: "IEEE PIMRC 2026 会议横幅"
+      },
+      image: {
+        src: "./assets/news/PIMRC2026.jpg",
+        alt: "IEEE PIMRC 2026 conference banner",
+        altZh: "IEEE PIMRC 2026 会议横幅"
+      },
+      searchText:
+        "yaoyin zhang ziru zhang xuling zhang quanzhun pimrc 2026 heterogeneous multi-agent vision-language framework inductor defect recognition industrial iot accepted paper singapore",
+      searchTextZh:
+        "张耀尹 张子儒 张栩棱 全准 PIMRC 2026 异构 多智能体 视觉语言 电感 缺陷识别 工业物联网 论文 接收 新加坡"
+    },
+    {
       id: "news-publication-tmc-chen-shang-v2x",
       type: "news",
       category: "publication",
@@ -9,9 +44,9 @@
       title: "Paper Accepted by IEEE Transactions on Mobile Computing",
       titleZh: "论文被 IEEE Transactions on Mobile Computing 接收",
       bodyHtml:
-        "<strong>Mr. Chen Shang</strong>, an EXTEND Lab alumnus and currently a PhD student at the University of Technology Sydney, has had his collaborative work, <em>Multi-Modal Beamforming with Model Compression and Modality Generation for V2X Networks</em>, accepted by IEEE Transactions on Mobile Computing. This is the latest work he completed within the Lab.",
+        "<strong>Mr. Chen Shang</strong>, an EXTEND Lab alumnus and currently a PhD student at the University of Technology Sydney, has had his collaborative work, <em>Multi-Modal Beamforming with Model Compression and Modality Generation for V2X Networks</em>, accepted by IEEE Transactions on Mobile Computing on <strong>7 July 2026</strong>. This is the latest work he completed within the Lab.",
       bodyHtmlZh:
-        "<strong>商晨</strong>，EXTEND Lab 校友、现为 University of Technology Sydney 博士生，其合作研究 <em>Multi-Modal Beamforming with Model Compression and Modality Generation for V2X Networks</em> 已被 IEEE Transactions on Mobile Computing 接收。这是他在实验室完成的最新工作。",
+        "<strong>商晨</strong>，EXTEND Lab 校友、现为 University of Technology Sydney 博士生，其合作研究 <em>Multi-Modal Beamforming with Model Compression and Modality Generation for V2X Networks</em> 已于 <strong>2026年7月7日</strong> 被 IEEE Transactions on Mobile Computing 接收。这是他在实验室完成的最新工作。",
       summaryHtml:
         "<strong>Mr. Chen Shang</strong>'s collaborative work on multi-modal beamforming for V2X networks has been accepted by IEEE Transactions on Mobile Computing.",
       summaryHtmlZh:
@@ -280,6 +315,58 @@
   ];
 
   const EVENT_ITEMS = [
+    {
+      id: "event-diandong-midstage-deliverable-2026",
+      type: "event",
+      category: "recent-activity",
+      categoryLabel: "Recent Activity",
+      categoryLabelZh: "近期活动",
+      title: "EXTEND Lab Presents Mid-Stage Deliverables at Diandong Intelligent Technology",
+      titleZh: "EXTEND Lab 赴点动智能科技开展中期成果汇报",
+      bodyHtml:
+        "On 9 July 2026, Dr. Jiadong Yu, Mr. Guangzhi Zhu, Dr. Xuechao Wang, and Mr. Hongxu Su visited Diandong Intelligent Technology Co., Ltd. The team presented its mid-stage project deliverables and discussed the arrangements and priorities for the next stage of collaboration.",
+      bodyHtmlZh:
+        "2026 年 7 月 9 日，于佳冬博士、朱光智、王雪超博士与苏宏旭前往点动智能科技有限公司。团队汇报了项目中期成果，并就下一阶段的合作安排与重点工作进行了交流。",
+      summaryHtml:
+        "The team presented mid-stage project deliverables at Diandong Intelligent Technology and discussed the next phase of collaboration.",
+      summaryHtmlZh:
+        "团队在点动智能科技汇报项目中期成果，并讨论下一阶段合作安排。",
+      displayDate: "9 Jul 2026",
+      displayDateZh: "2026年7月9日",
+      sortDate: "2026-07-09",
+      galleryPreview: {
+        modalId: "diandongMidstageGalleryModal",
+        hint: "Open photo gallery",
+        hintZh: "打开照片墙"
+      },
+      images: [
+        {
+          src: "./assets/events/diandong-midstage/cover-photo.jpg",
+          alt: "Awards and joint laboratory display at Diandong Intelligent Technology",
+          altZh: "点动智能科技荣誉与联合实验室展示墙"
+        }
+      ],
+      galleryImages: [
+        {
+          src: "./assets/events/diandong-midstage/cover-photo.jpg",
+          alt: "Awards and joint laboratory display at Diandong Intelligent Technology",
+          altZh: "点动智能科技荣誉与联合实验室展示墙",
+          caption: "Awards and joint laboratory display at Diandong Intelligent Technology.",
+          captionZh: "点动智能科技荣誉与联合实验室展示墙。"
+        },
+        {
+          src: "./assets/events/diandong-midstage/gpu-resources.jpg",
+          alt: "GPU resource management platform at Diandong Intelligent Technology",
+          altZh: "点动智能科技 GPU 资源管理平台",
+          caption: "GPU resource management platform demonstrated during the visit.",
+          captionZh: "访问期间展示的 GPU 资源管理平台。"
+        }
+      ],
+      searchText:
+        "jiadong yu guangzhi zhu xuechao wang hongxu su diandong intelligent technology mid-stage deliverable report next stage collaboration july 9 2026 gpu resources",
+      searchTextZh:
+        "于佳冬 朱光智 王雪超 苏宏旭 点动 智能科技 中期成果 汇报 下一阶段 合作 2026年7月9日 GPU 资源"
+    },
     {
       id: "event-vtc-2026-spring-hao-xiong",
       type: "event",
@@ -786,8 +873,8 @@
       url: "people/",
       category: "People",
       categoryZh: "成员",
-      text: "jiadong yu hao xiong xinren zhang jianing zheng yulong zhang guangzhi zhu nianfu wang phd mphil visiting students",
-      textZh: "于佳冬 熊浩 张馨仁 郑佳宁 张育龙 张子儒 张栩棱 李佳乐 朱光智 王年福 博士生 硕士 访问学生"
+      text: "jiadong yu hao xiong xinren zhang jianing zheng yulong zhang guanghui song guangzhi zhu nianfu wang phd mphil visiting students",
+      textZh: "于佳冬 熊浩 张馨仁 郑佳宁 张育龙 张子儒 张栩棱 李佳乐 宋光辉 朱光智 王年福 博士生 硕士 访问学生"
     },
     {
       title: "Publications",
