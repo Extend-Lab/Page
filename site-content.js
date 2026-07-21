@@ -346,6 +346,38 @@
 
   const EVENT_ITEMS = [
     {
+      id: "event-plus-seminar-agents-in-collaboration-2026",
+      type: "event",
+      category: "recent-activity",
+      categoryLabel: "Recent Activity",
+      categoryLabelZh: "近期活动",
+      title: "EXTEND Lab Co-organizes Joint Seminar with HKUST and the University of Cambridge",
+      titleZh: "EXTEND Lab 协同港科大与剑桥大学联合举办研讨会",
+      bodyHtml:
+        "On <strong>1 August 2026</strong>, EXTEND Lab will co-organize the seminar <em>Agents in Collaboration: Physical AI and the Future of Multi-Robot Systems</em> with <strong>HKUST</strong> and the <strong>University of Cambridge</strong>. The seminar will bring together researchers to explore how robots, infrastructure systems, and intelligent agents can perceive, model, and act together in real-world environments.",
+      bodyHtmlZh:
+        "<strong>2026 年 8 月 1 日</strong>，EXTEND Lab 将协同<strong>香港科技大学</strong>与<strong>剑桥大学</strong>联合举办研讨会 <em>Agents in Collaboration: Physical AI and the Future of Multi-Robot Systems</em>。活动将汇聚相关领域研究人员，共同探讨机器人、基础设施系统与智能体如何在真实环境中实现感知、建模与协同行动。",
+      summaryHtml:
+        "EXTEND Lab will co-organize a seminar on physical AI and collaborative multi-robot systems with HKUST and the University of Cambridge.",
+      summaryHtmlZh:
+        "EXTEND Lab 将协同香港科技大学与剑桥大学联合举办物理人工智能与多机器人协作研讨会。",
+      displayDate: "1 Aug 2026",
+      displayDateZh: "2026年8月1日",
+      sortDate: "2026-08-01",
+      link: "https://extend-lab.github.io/plus_seminar/",
+      images: [
+        {
+          src: "./assets/events/plus-seminar-2026/hero.png",
+          alt: "Hero image for Agents in Collaboration: Physical AI and the Future of Multi-Robot Systems",
+          altZh: "Agents in Collaboration：Physical AI and the Future of Multi-Robot Systems 活动主视觉图"
+        }
+      ],
+      searchText:
+        "extend lab hkust university of cambridge plus seminar agents in collaboration physical ai future multi-robot systems august 1 2026",
+      searchTextZh:
+        "EXTEND Lab 香港科技大学 剑桥大学 联合 研讨会 智能体 协作 物理人工智能 多机器人系统 2026年8月1日"
+    },
+    {
       id: "event-diandong-midstage-deliverable-2026",
       type: "event",
       category: "recent-activity",
@@ -1204,6 +1236,11 @@
     const displayDate = getLocalizedValue(item, "displayDate");
     const title = getLocalizedValue(item, "title");
     const bodyHtml = getLocalizedValue(item, "bodyHtml");
+    const eventWebsiteCta = item.link
+      ? `<a href="${item.link}" target="_blank" rel="noopener" class="event-gallery-cta">${escapeHtml(
+          getLanguage() === "zh" ? "访问活动主页" : "Visit event website"
+        )}</a>`
+      : "";
     const galleryPreview = item.galleryPreview && galleryImages.length ? item.galleryPreview : null;
     const posterPreview = item.posterPreview && images[0] ? item.posterPreview : null;
     const hasPosterAndGallery = posterPreview && galleryPreview;
@@ -1266,6 +1303,7 @@
           <p class="event-feature-date">${displayDate}</p>
           <h3 class="event-feature-title">${title}</h3>
           <p class="event-feature-text">${bodyHtml}</p>
+          ${eventWebsiteCta}
           ${galleryPreview ? hasPosterAndGallery
             ? `<span class="event-gallery-cta" role="button" tabindex="0" data-gallery-target="#${galleryPreview.modalId}" aria-label="${galleryAriaLabel}">${escapeHtml(
                 getLanguage() === "zh" ? "查看照片墙" : "View photo gallery"
