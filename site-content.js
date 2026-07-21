@@ -193,6 +193,36 @@
         "郑佳宁 TMC 接收 多模态 联邦学习 能量受限 无线网络"
     },
     {
+      id: "news-media-jiadong-yu-infh-merit-teaching-award-2026",
+      type: "news",
+      category: "media",
+      categoryLabel: "Media",
+      categoryLabelZh: "媒体报道",
+      title: "Dr. Jiadong Yu Receives the 2026 INFH Merit Teaching Award",
+      titleZh: "于佳冬博士获 2026 年信息枢纽卓越教学奖 Merit Award",
+      bodyHtml:
+        "<strong>Dr. Jiadong Yu</strong> received the <strong>Merit Award</strong> in the 2026 Information Hub Excellent Teaching Award at HKUST(GZ), recognizing her outstanding teaching practice and dedication to student learning.",
+      bodyHtmlZh:
+        "<strong>于佳冬博士</strong>获香港科技大学（广州）信息枢纽 2026 年<strong>卓越教学奖 Merit Award</strong>，以表彰她在教学实践与学生培养方面的突出表现。",
+      summaryHtml:
+        "Dr. Jiadong Yu received the Merit Award in the 2026 Information Hub Excellent Teaching Award at HKUST(GZ).",
+      summaryHtmlZh:
+        "于佳冬博士获香港科技大学（广州）信息枢纽 2026 年卓越教学奖 Merit Award。",
+      displayDate: "20 Jul 2026",
+      displayDateZh: "2026年7月20日",
+      sortDate: "2026-07-20",
+      link: "https://mp.weixin.qq.com/s/ilLtAQgeVLj0LnZM5YZ0Pg",
+      image: {
+        src: "./assets/news/infh-merit-teaching-award-2026.png",
+        alt: "2026 Information Hub Excellent Teaching Award recipients, including Merit Award recipient Prof. Jiadong Yu",
+        altZh: "2026 年信息枢纽卓越教学奖获奖名单，包括 Merit Award 获奖者于佳冬教授"
+      },
+      searchText:
+        "dr jiadong yu 2026 information hub excellent teaching award merit award hkust gz iot ai media coverage",
+      searchTextZh:
+        "于佳冬 2026 信息枢纽 卓越教学奖 Merit Award 港科大广州 物联网 人工智能 媒体报道"
+    },
+    {
       id: "news-media-tei-seminar-coverage",
       type: "news",
       category: "media",

@@ -124,7 +124,7 @@
                 "</ul>" +
                 "<p>我们欢迎对未知保持热情的合作伙伴加入。无论你是研究者、学生，还是产业伙伴，只要你同样被好奇心与韧性驱动，都欢迎与我们一起拓展智能的边界。</p>" +
                 "<p>让我们一起打破边界。</p>" +
-                "<p>联系：于佳冬博士：<a href=\"mailto:jiadongyu@hkust-gz.edu.cn\" class=\"email\">jiadongyu@hkust-gz.edu.cn</a></p>"
+                "<p>联系：<a href=\"mailto:extend-lab@hkust-gz.edu.cn\" class=\"email\">extend-lab@hkust-gz.edu.cn</a></p>"
             }
           ]
         },
@@ -304,7 +304,7 @@
                 "<h3>本科生</h3><p>欢迎来自 HKUST(GZ) 与 HKUST 清水湾校区的优秀本科生参与我们的研究项目。</p><ul class=\"support-list\"><li>UG Research Program 是积累实践科研经验的重要入口。</li><li>也欢迎对智能算法与自主系统感兴趣的同学通过 Directed Study Projects 加入。</li></ul>",
                 "<h3>访问博士生与访问学者</h3><p>我们欢迎来自世界各地、研究兴趣与实验室方向契合的访问博士生和访问学者。</p><ul class=\"support-list\"><li>优先方向包括 RL、MARL、MAS、边缘智能与机器人。</li><li>对于与团队当前研究紧密相关的来访计划，我们可以提供支持。</li></ul>",
                 "<h3>所需材料</h3><ul class=\"support-list\"><li>个人简历</li><li>动机信 / Cover letter</li><li>围绕 RL、MARL、MAS、边缘智能或机器人的研究计划</li><li>如适用，语言能力证明</li><li>如方便，可提供一封推荐信</li></ul>",
-                "<h3>我们可提供的支持</h3><p>对于研究兴趣高度契合的申请者，我们可提供有条件邀请函，以支持奖学金或资助申请。</p><p class=\"support-note\">如有需要，我们也可以分享一份非正式流程说明，帮助访问学者了解 HKUST(GZ) 的行政办理流程。</p><p class=\"support-note\">联系：<a href=\"mailto:jiadongyu@hkust-gz.edu.cn\" class=\"email\">jiadongyu@hkust-gz.edu.cn</a></p>"
+                "<h3>我们可提供的支持</h3><p>对于研究兴趣高度契合的申请者，我们可提供有条件邀请函，以支持奖学金或资助申请。</p><p class=\"support-note\">如有需要，我们也可以分享一份非正式流程说明，帮助访问学者了解 HKUST(GZ) 的行政办理流程。</p><p class=\"support-note\">联系：<a href=\"mailto:extend-lab@hkust-gz.edu.cn\" class=\"email\">extend-lab@hkust-gz.edu.cn</a></p>"
               ]
             }
           ]
