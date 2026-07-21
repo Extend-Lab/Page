@@ -981,6 +981,10 @@
     return (html || "").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
   }
 
+  function stripStrongTags(html) {
+    return (html || "").replace(/<\/?strong>/gi, "");
+  }
+
   function escapeHtml(text) {
     return String(text || "")
       .replace(/&/g, "&amp;")
@@ -1074,7 +1078,9 @@
 
   function renderHomepageCard(item) {
     const title = getLocalizedValue(item, "title");
-    const summaryHtml = getLocalizedValue(item, "summaryHtml") || getLocalizedValue(item, "bodyHtml");
+    const summaryHtml = stripStrongTags(
+      getLocalizedValue(item, "summaryHtml") || getLocalizedValue(item, "bodyHtml")
+    );
     const displayDate = getLocalizedValue(item, "displayDate");
     const label =
       item.type === "event"
