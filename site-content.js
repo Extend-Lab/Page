@@ -935,8 +935,8 @@
       url: "people/",
       category: "People",
       categoryZh: "成员",
-      text: "jiadong yu hao xiong xinren zhang jianing zheng yulong zhang guanghui song guangzhi zhu nianfu wang phd mphil visiting students",
-      textZh: "于佳冬 熊浩 张馨仁 郑佳宁 张育龙 张子儒 张栩棱 李佳乐 宋光辉 朱光智 王年福 博士生 硕士 访问学生"
+      text: "jiadong yu hao xiong xinren zhang jianing zheng yulong zhang guanghui song guangzhi zhu nianfu wang rongqi lu phd mphil msc visiting students xidian university huawei",
+      textZh: "于佳冬 熊浩 张馨仁 郑佳宁 张育龙 张子儒 张栩棱 李佳乐 宋光辉 朱光智 王年福 陆荣琦 博士生 硕士 访问学生 西安电子科技大学 华为"
     },
     {
       title: "Publications",
