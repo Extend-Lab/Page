@@ -1,6 +1,41 @@
 (function () {
   const NEWS_ITEMS = [
     {
+      id: "news-publication-tmlcn-xinren-accepted-2026",
+      type: "news",
+      category: "publication",
+      categoryLabel: "Publication",
+      categoryLabelZh: "论文动态",
+      title: "Paper Accepted by IEEE Transactions on Machine Learning in Communications and Networking",
+      titleZh: "张馨仁的多智能体通信学习论文被 IEEE TMLCN 接收",
+      bodyHtml:
+        "<strong>Ms. Xinren Zhang</strong>'s paper, Learning Efficient Communication Protocols for Multi-Agent Reinforcement Learning, was accepted by IEEE Transactions on Machine Learning in Communications and Networking on <strong>29 July 2026</strong>. The work investigates how agents can learn efficient communication protocols to support effective coordination in multi-agent reinforcement learning.",
+      bodyHtmlZh:
+        "<strong>张馨仁</strong>的论文 Learning Efficient Communication Protocols for Multi-Agent Reinforcement Learning 于 <strong>2026 年 7 月 29 日</strong>被 IEEE Transactions on Machine Learning in Communications and Networking 接收。该研究探索多智能体强化学习中智能体如何学习高效通信协议，以支持更有效的协作。",
+      summaryHtml:
+        "<strong>Ms. Xinren Zhang</strong>'s work on learning efficient communication protocols for multi-agent reinforcement learning was accepted by IEEE TMLCN.",
+      summaryHtmlZh:
+        "<strong>张馨仁</strong>关于多智能体强化学习高效通信协议学习的研究被 IEEE TMLCN 接收。",
+      displayDate: "29 Jul 2026",
+      displayDateZh: "2026年7月29日",
+      sortDate: "2026-07-29",
+      homepageVisual: {
+        type: "art-image",
+        src: "./assets/news/tmlcn-xinren-accepted-2026.jpg",
+        alt: "IEEE Transactions on Machine Learning in Communications and Networking journal graphic",
+        altZh: "IEEE Transactions on Machine Learning in Communications and Networking 期刊图示"
+      },
+      image: {
+        src: "./assets/news/tmlcn-xinren-accepted-2026.jpg",
+        alt: "IEEE Transactions on Machine Learning in Communications and Networking journal graphic",
+        altZh: "IEEE Transactions on Machine Learning in Communications and Networking 期刊图示"
+      },
+      searchText:
+        "xinren zhang ieee transactions on machine learning in communications and networking tmlcn learning efficient communication protocols multi-agent reinforcement learning accepted july 29 2026",
+      searchTextZh:
+        "张馨仁 IEEE TMLCN 接收 高效通信协议 多智能体强化学习 2026年7月29日"
+    },
+    {
       id: "news-publication-pimrc-2026-inductor-defect-recognition",
       type: "news",
       category: "publication",
@@ -9,9 +44,9 @@
       title: "Paper Accepted by IEEE PIMRC 2026",
       titleZh: "工业物联网电感缺陷识别论文被 IEEE PIMRC 2026 接收",
       bodyHtml:
-        "The paper <em>A Heterogeneous Multi-Agent Vision-Language Framework for Inductor Defect Recognition in Industrial IoT</em>, authored by <strong>Yaoyin Zhang, Ziru Zhang, Xuling Zhang</strong>, and an industry collaborator from Quanzhun, was accepted by <strong>IEEE PIMRC 2026</strong> on <strong>9 July 2026</strong>. The conference will be held in Singapore.",
+        "The paper A Heterogeneous Multi-Agent Vision-Language Framework for Inductor Defect Recognition in Industrial IoT, authored by <strong>Yaoyin Zhang, Ziru Zhang, Xuling Zhang</strong>, and an industry collaborator from Quanzhun, was accepted by IEEE PIMRC 2026 on <strong>9 July 2026</strong>. The conference will be held in Singapore.",
       bodyHtmlZh:
-        "由<strong>张耀尹、张子儒、张栩棱</strong>与全准公司合作伙伴共同完成的论文 <em>A Heterogeneous Multi-Agent Vision-Language Framework for Inductor Defect Recognition in Industrial IoT</em> 于 <strong>2026年7月9日</strong> 被 <strong>IEEE PIMRC 2026</strong> 接收。会议将在新加坡举行。",
+        "由<strong>张耀尹、张子儒、张栩棱</strong>与全准公司合作伙伴共同完成的论文 A Heterogeneous Multi-Agent Vision-Language Framework for Inductor Defect Recognition in Industrial IoT 于 <strong>2026年7月9日</strong> 被 IEEE PIMRC 2026 接收。会议将在新加坡举行。",
       summaryHtml:
         "A collaborative paper on heterogeneous multi-agent vision-language learning for industrial inductor defect recognition was accepted by IEEE PIMRC 2026.",
       summaryHtmlZh:
@@ -44,9 +79,9 @@
       title: "Paper Accepted by IEEE Transactions on Mobile Computing",
       titleZh: "论文被 IEEE Transactions on Mobile Computing 接收",
       bodyHtml:
-        "<strong>Mr. Chen Shang</strong>, an EXTEND Lab alumnus and currently a PhD student at the University of Technology Sydney, has had his collaborative work, <em>Multi-Modal Beamforming with Model Compression and Modality Generation for V2X Networks</em>, accepted by IEEE Transactions on Mobile Computing on <strong>7 July 2026</strong>. This is the latest work he completed within the Lab.",
+        "<strong>Mr. Chen Shang</strong>, an EXTEND Lab alumnus and currently a PhD student at the University of Technology Sydney, has had his collaborative work, Multi-Modal Beamforming with Model Compression and Modality Generation for V2X Networks, accepted by IEEE Transactions on Mobile Computing on <strong>7 July 2026</strong>. This is the latest work he completed within the Lab.",
       bodyHtmlZh:
-        "<strong>商晨</strong>，EXTEND Lab 校友、现为 University of Technology Sydney 博士生，其合作研究 <em>Multi-Modal Beamforming with Model Compression and Modality Generation for V2X Networks</em> 已于 <strong>2026年7月7日</strong> 被 IEEE Transactions on Mobile Computing 接收。这是他在实验室完成的最新工作。",
+        "<strong>商晨</strong>，EXTEND Lab 校友、现为 University of Technology Sydney 博士生，其合作研究 Multi-Modal Beamforming with Model Compression and Modality Generation for V2X Networks 已于 <strong>2026年7月7日</strong> 被 IEEE Transactions on Mobile Computing 接收。这是他在实验室完成的最新工作。",
       summaryHtml:
         "<strong>Mr. Chen Shang</strong>'s collaborative work on multi-modal beamforming for V2X networks has been accepted by IEEE Transactions on Mobile Computing.",
       summaryHtmlZh:
@@ -108,7 +143,7 @@
       title: "Ms. Jianing Zheng Receives ICC 2026 Student Travel Grant",
       titleZh: "郑佳宁获 ICC 2026 Student Travel Grant",
       bodyHtml:
-        "<strong>Ms. Jianing Zheng</strong> received the ICC 2026 Student Travel Grant. Her paper, Maximizing Personalized Energy-efficiency for Swarm Learning in 6G Networks, will be presented on 25 May 2026 in Glasgow, Scotland, UK.",
+        "<strong>Ms. Jianing Zheng</strong> received the ICC 2026 Student Travel Grant. Her paper, Maximizing Personalized Energy-efficiency for Swarm Learning in 6G Networks, will be presented on <strong>25 May 2026</strong> in Glasgow, Scotland, UK.",
       bodyHtmlZh:
         "<strong>郑佳宁</strong>获得了 ICC 2026 Student Travel Grant。她的论文 Maximizing Personalized Energy-efficiency for Swarm Learning in 6G Networks 将于 <strong>2026 年 5 月 25 日</strong> 在英国苏格兰格拉斯哥宣讲。",
       summaryHtml:
@@ -191,6 +226,36 @@
         "jianing zheng ieee transactions on mobile computing multimodal federated learning energy constrained wireless networks accepted paper",
       searchTextZh:
         "郑佳宁 TMC 接收 多模态 联邦学习 能量受限 无线网络"
+    },
+    {
+      id: "news-media-plus-seminar-2026-coverage",
+      type: "news",
+      category: "media",
+      categoryLabel: "Media",
+      categoryLabelZh: "媒体报道",
+      title: "PLUS Seminar 2026 Explores Collaborative Agents and the Future of Physical AI at HKUST(GZ)",
+      titleZh: "学术交流 | 智聚港科大（广州）：PLUS Seminar 2026 共探协同智能体与物理 AI 未来",
+      bodyHtml:
+        "A featured report from <strong>HKUST(GZ) IoT Thrust</strong> covered <strong>PLUS Seminar 2026</strong>, held at HKUST(GZ) on 1 August. Researchers from HKUST(GZ), HKUST, the University of Cambridge, and industry explored physical AI, world models, digital twins, embodied intelligence, and collaborative multi-robot systems.",
+      bodyHtmlZh:
+        "<strong>港科大广州物联网学域</strong>专题报道了于 8 月 1 日在香港科技大学（广州）举行的 <strong>PLUS Seminar 2026</strong>。来自港科大（广州）、香港科技大学、剑桥大学及产业界的嘉宾围绕物理人工智能、世界模型、数字孪生、具身智能与多机器人协作展开交流。",
+      summaryHtml:
+        "HKUST(GZ) IoT Thrust reported on PLUS Seminar 2026 and its exchange on physical AI and collaborative multi-robot systems.",
+      summaryHtmlZh:
+        "港科大广州物联网学域报道了 PLUS Seminar 2026 及其围绕物理人工智能与多机器人协作展开的交流。",
+      displayDate: "4 Aug 2026",
+      displayDateZh: "2026年8月4日",
+      sortDate: "2026-08-04",
+      link: "https://mp.weixin.qq.com/s/ptT5iNDciMIyUL8Zts_ShQ",
+      image: {
+        src: "./assets/news/plus-seminar-2026-media-cover.jpg",
+        alt: "Official WeChat cover for the PLUS Seminar 2026 media report",
+        altZh: "PLUS Seminar 2026 微信公众号报道官方封面"
+      },
+      searchText:
+        "plus seminar 2026 hkust gz iot thrust collaborative agents physical ai future multi-robot systems hkust university of cambridge world models digital twins embodied intelligence media coverage",
+      searchTextZh:
+        "PLUS Seminar 2026 港科大广州 物联网学域 协同智能体 物理AI 多机器人 香港科技大学 剑桥大学 世界模型 数字孪生 具身智能 媒体报道"
     },
     {
       id: "news-media-jiadong-yu-infh-merit-teaching-award-2026",
@@ -354,22 +419,186 @@
       title: "EXTEND Lab Co-organizes Joint Seminar with HKUST and the University of Cambridge",
       titleZh: "EXTEND Lab 协同港科大与剑桥大学联合举办研讨会",
       bodyHtml:
-        "On <strong>1 August 2026</strong>, EXTEND Lab will co-organize the seminar <em>Agents in Collaboration: Physical AI and the Future of Multi-Robot Systems</em> with <strong>HKUST</strong> and the <strong>University of Cambridge</strong>. The seminar will bring together researchers to explore how robots, infrastructure systems, and intelligent agents can perceive, model, and act together in real-world environments.",
+        "On 1 August 2026, EXTEND Lab co-organized the seminar <em>Agents in Collaboration: Physical AI and the Future of Multi-Robot Systems</em> with HKUST and the University of Cambridge. The seminar brought together researchers to explore how robots, infrastructure systems, and intelligent agents can perceive, model, and act together in real-world environments. For more information, visit <a href=\"https://extend-lab.github.io/plus_seminar/\" target=\"_blank\" rel=\"noopener\">the seminar website</a>.",
       bodyHtmlZh:
-        "<strong>2026 年 8 月 1 日</strong>，EXTEND Lab 将协同<strong>香港科技大学</strong>与<strong>剑桥大学</strong>联合举办研讨会 <em>Agents in Collaboration: Physical AI and the Future of Multi-Robot Systems</em>。活动将汇聚相关领域研究人员，共同探讨机器人、基础设施系统与智能体如何在真实环境中实现感知、建模与协同行动。",
+        "2026 年 8 月 1 日，EXTEND Lab 协同香港科技大学与剑桥大学联合举办研讨会 <em>Agents in Collaboration: Physical AI and the Future of Multi-Robot Systems</em>。活动汇聚相关领域研究人员，共同探讨机器人、基础设施系统与智能体如何在真实环境中实现感知、建模与协同行动。更多信息请访问 <a href=\"https://extend-lab.github.io/plus_seminar/\" target=\"_blank\" rel=\"noopener\">活动网站</a>。",
       summaryHtml:
-        "EXTEND Lab will co-organize a seminar on physical AI and collaborative multi-robot systems with HKUST and the University of Cambridge.",
+        "EXTEND Lab co-organized a seminar on physical AI and collaborative multi-robot systems with HKUST and the University of Cambridge.",
       summaryHtmlZh:
-        "EXTEND Lab 将协同香港科技大学与剑桥大学联合举办物理人工智能与多机器人协作研讨会。",
+        "EXTEND Lab 协同香港科技大学与剑桥大学联合举办物理人工智能与多机器人协作研讨会。",
       displayDate: "1 Aug 2026",
       displayDateZh: "2026年8月1日",
       sortDate: "2026-08-01",
-      link: "https://extend-lab.github.io/plus_seminar/",
+      homepageVisual: {
+        type: "art-image",
+        src: "./assets/events/plus-seminar-2026/hero.png",
+        alt: "Agents in Collaboration: Physical AI and the Future of Multi-Robot Systems",
+        altZh: "Agents in Collaboration：Physical AI and the Future of Multi-Robot Systems 活动主视觉图"
+      },
+      galleryPreview: {
+        modalId: "plusSeminar2026GalleryModal",
+        hint: "Open photo gallery",
+        hintZh: "打开照片墙"
+      },
+      posterPreview: {
+        modalId: "plusSeminar2026PosterModal",
+        hint: "Click poster to enlarge",
+        hintZh: "点击海报查看大图"
+      },
       images: [
         {
-          src: "./assets/events/plus-seminar-2026/hero.png",
-          alt: "Hero image for Agents in Collaboration: Physical AI and the Future of Multi-Robot Systems",
-          altZh: "Agents in Collaboration：Physical AI and the Future of Multi-Robot Systems 活动主视觉图"
+          src: "./assets/events/plus-seminar-2026/poster-vertical.png",
+          alt: "Poster for PLUS Seminar 2026: Agents in Collaboration",
+          altZh: "PLUS Seminar 2026：Agents in Collaboration 活动海报"
+        }
+      ],
+      galleryImages: [
+        {
+          src: "./assets/events/plus-seminar-2026/photo-01.jpg",
+          alt: "Morning exchange session at PLUS Seminar 2026",
+          altZh: "PLUS Seminar 2026 上午场交流现场",
+          caption: "Morning exchange session at PLUS Seminar 2026.",
+          captionZh: "PLUS Seminar 2026 上午场交流现场。"
+        },
+        {
+          src: "./assets/events/plus-seminar-2026/photo-02.jpg",
+          alt: "Afternoon group photo at PLUS Seminar 2026",
+          altZh: "PLUS Seminar 2026 下午场合影与交流",
+          caption: "Speakers and attendees during the afternoon session.",
+          captionZh: "下午场演讲嘉宾与参会者合影交流。"
+        },
+        {
+          src: "./assets/events/plus-seminar-2026/photo-03.jpg",
+          alt: "Prof. Brian Sheil presenting at PLUS Seminar 2026",
+          altZh: "Brian Sheil 教授在 PLUS Seminar 2026 作主题报告",
+          caption: "Prof. Brian Sheil delivering a keynote presentation.",
+          captionZh: "Brian Sheil 教授作主题报告。"
+        },
+        {
+          src: "./assets/events/plus-seminar-2026/photo-04.jpg",
+          alt: "Prof. Junwei Liang presenting at PLUS Seminar 2026",
+          altZh: "Junwei Liang 助理教授在 PLUS Seminar 2026 作主题报告",
+          caption: "Prof. Junwei Liang delivering a keynote presentation.",
+          captionZh: "Junwei Liang 助理教授作主题报告。"
+        },
+        {
+          src: "./assets/events/plus-seminar-2026/photo-05.jpg",
+          alt: "Dr. Guangming Wang presenting at PLUS Seminar 2026",
+          altZh: "Guangming Wang 博士在 PLUS Seminar 2026 作主题报告",
+          caption: "Dr. Guangming Wang delivering a keynote presentation.",
+          captionZh: "Guangming Wang 博士作主题报告。"
+        },
+        {
+          src: "./assets/events/plus-seminar-2026/photo-06.jpg",
+          alt: "Prof. Yantao Yu presenting at PLUS Seminar 2026",
+          altZh: "Yantao Yu 副教授在 PLUS Seminar 2026 作主题报告",
+          caption: "Prof. Yantao Yu delivering a keynote presentation.",
+          captionZh: "Yantao Yu 副教授作主题报告。"
+        },
+        {
+          src: "./assets/events/plus-seminar-2026/photo-07.jpg",
+          alt: "Haibing Wu presenting at PLUS Seminar 2026",
+          altZh: "Haibing Wu 在 PLUS Seminar 2026 作主题报告",
+          caption: "Haibing Wu delivering a keynote presentation.",
+          captionZh: "Haibing Wu 作主题报告。"
+        },
+        {
+          src: "./assets/events/plus-seminar-2026/photo-08.jpg",
+          alt: "Prof. Xinhu Zheng presenting at PLUS Seminar 2026",
+          altZh: "Xinhu Zheng 助理教授在 PLUS Seminar 2026 作主题报告",
+          caption: "Prof. Xinhu Zheng delivering a keynote presentation.",
+          captionZh: "Xinhu Zheng 助理教授作主题报告。"
+        },
+        {
+          src: "./assets/events/plus-seminar-2026/photo-09.jpg",
+          alt: "Prof. Olaf Wysocki presenting at PLUS Seminar 2026",
+          altZh: "Olaf Wysocki 助理研究教授在 PLUS Seminar 2026 作主题报告",
+          caption: "Prof. Olaf Wysocki delivering a keynote presentation.",
+          captionZh: "Olaf Wysocki 助理研究教授作主题报告。"
+        },
+        {
+          src: "./assets/events/plus-seminar-2026/photo-10.jpg",
+          alt: "Prof. Rushi Dai presenting at PLUS Seminar 2026",
+          altZh: "Rushi Dai 助理教授在 PLUS Seminar 2026 作主题报告",
+          caption: "Prof. Rushi Dai delivering a keynote presentation.",
+          captionZh: "Rushi Dai 助理教授作主题报告。"
+        },
+        {
+          src: "./assets/events/plus-seminar-2026/photo-11-jiadong-yu.jpg",
+          alt: "Dr. Jiadong Yu presenting at PLUS Seminar 2026",
+          altZh: "于佳冬博士在 PLUS Seminar 2026 作主题报告",
+          caption: "Dr. Jiadong Yu delivering a keynote presentation.",
+          captionZh: "于佳冬博士作主题报告。"
+        },
+        {
+          src: "./assets/events/plus-seminar-2026/photo-11.jpg",
+          alt: "Yee Locke sharing industry perspectives at PLUS Seminar 2026",
+          altZh: "Yee Locke 在 PLUS Seminar 2026 作产业分享",
+          caption: "Yee Locke sharing industry perspectives.",
+          captionZh: "骆艺（Yee Locke）作产业分享。"
+        },
+        {
+          src: "./assets/events/plus-seminar-2026/photo-12-fixed.jpg",
+          alt: "Headset and robotic arm demonstration at PLUS Seminar 2026",
+          altZh: "PLUS Seminar 2026 头显与机械臂互动体验",
+          caption: "Interactive demonstration with a headset and robotic arm.",
+          captionZh: "头显与机械臂互动体验。"
+        },
+        {
+          src: "./assets/events/plus-seminar-2026/photo-13-fixed.jpg",
+          alt: "Attendees observing an interactive demonstration at PLUS Seminar 2026",
+          altZh: "PLUS Seminar 2026 互动体验现场观摩",
+          caption: "Attendees observing an interactive demonstration.",
+          captionZh: "参会者现场观摩互动体验。"
+        },
+        {
+          src: "./assets/events/plus-seminar-2026/photo-14.jpg",
+          alt: "Panoramic view of the poster display area at PLUS Seminar 2026",
+          altZh: "PLUS Seminar 2026 海报展示区全景",
+          caption: "Panoramic view of the poster display area.",
+          captionZh: "海报展示区全景。"
+        },
+        {
+          src: "./assets/events/plus-seminar-2026/photo-15.jpg",
+          alt: "Attendees browsing research posters at PLUS Seminar 2026",
+          altZh: "PLUS Seminar 2026 参会者浏览研究成果",
+          caption: "Attendees browsing research posters.",
+          captionZh: "参会者浏览海报研究成果。"
+        },
+        {
+          src: "./assets/events/plus-seminar-2026/photo-16.jpg",
+          alt: "Guests discussing research at the PLUS Seminar 2026 poster session",
+          altZh: "PLUS Seminar 2026 海报交流嘉宾讨论",
+          caption: "Guests discussing research during the poster session.",
+          captionZh: "嘉宾在海报交流环节讨论研究成果。"
+        },
+        {
+          src: "./assets/events/plus-seminar-2026/photo-17.jpg",
+          alt: "Poster author explaining research at PLUS Seminar 2026",
+          altZh: "PLUS Seminar 2026 海报作者讲解研究成果",
+          caption: "A poster author explaining research to attendees.",
+          captionZh: "海报作者向参会者讲解研究成果。"
+        },
+        {
+          src: "./assets/events/plus-seminar-2026/photo-18.jpg",
+          alt: "Audience listening attentively at PLUS Seminar 2026",
+          altZh: "PLUS Seminar 2026 与会者认真聆听",
+          caption: "Audience members listening attentively during the seminar.",
+          captionZh: "与会者在研讨会现场认真聆听。"
+        },
+        {
+          src: "./assets/events/plus-seminar-2026/photo-19.jpg",
+          alt: "Audience discussion and interaction at PLUS Seminar 2026",
+          altZh: "PLUS Seminar 2026 会场互动交流",
+          caption: "Discussion and interaction during the seminar.",
+          captionZh: "研讨会现场互动交流。"
+        },
+        {
+          src: "./assets/events/plus-seminar-2026/photo-20.jpg",
+          alt: "Full view of a keynote presentation at PLUS Seminar 2026",
+          altZh: "PLUS Seminar 2026 主题报告全景",
+          caption: "Full view of a keynote presentation.",
+          captionZh: "主题报告现场全景。"
         }
       ],
       searchText:

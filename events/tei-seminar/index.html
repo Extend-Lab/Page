@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<base href="../../">
+<title>TEI 2026 | Towards Edge Intelligence Seminar</title>
+<meta name="description" content="The 1st Seminar of Towards Edge Intelligence, hosted by University of Bristol and HKUST(GZ).">
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<style>
+  :root {
+    --ink: #10283f;
+    --muted: #547086;
+    --blue: #0057a7;
+    --deep: #072e5f;
+    --aqua: #31a9c3;
+    --gold: #f2b84b;
+    --coral: #d75c4a;
+    --paper: #f8fbfe;
+    --line: rgba(13, 80, 139, 0.16);
+    --shadow: 0 24px 60px rgba(8, 36, 66, 0.16);
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    color: var(--ink);
+    background:
+      linear-gradient(90deg, rgba(0, 87, 167, 0.06) 0, rgba(0, 87, 167, 0.06) 1px, transparent 1px, transparent 88px),
+      linear-gradient(rgba(0, 87, 167, 0.05) 0, rgba(0, 87, 167, 0.05) 1px, transparent 1px, transparent 88px),
+      #edf5f9;
+    font-family: "Avenir Next", "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .tei-topbar {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(7, 46, 95, 0.94);
+    box-shadow: 0 12px 28px rgba(5, 23, 44, 0.18);
+    backdrop-filter: blur(14px);
+  }
+
+  .tei-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.2rem;
+    width: min(1180px, calc(100% - 2rem));
+    margin: 0 auto;
+    min-height: 4.35rem;
+  }
+
+  .tei-wordmark {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: 0;
+  }
+
+  .tei-wordmark strong {
+    font-size: 1.35rem;
+  }
+
+  .tei-wordmark span {
+    color: rgba(255, 255, 255, 0.74);
+    font-size: 0.78rem;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  .tei-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0.72rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .tei-menu a {
+    display: inline-flex;
+    padding: 0.42rem 0.14rem;
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 0.86rem;
+    font-weight: 750;
+  }
+
+  .tei-menu a:hover {
+    color: #fff;
+  }
+
+  .tei-hero {
+    position: relative;
+    overflow: hidden;
+    min-height: 500px;
+    padding: 4.65rem 1rem 2.25rem;
+    background:
+      radial-gradient(circle at 88% 22%, rgba(49, 169, 195, 0.28), transparent 24rem),
+      radial-gradient(circle at 92% 66%, rgba(0, 87, 167, 0.2), transparent 19rem),
+      linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(232, 245, 251, 0.78));
+  }
+
+  .tei-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(120deg, transparent 0 24%, rgba(0, 87, 167, 0.16) 24% 24.4%, transparent 24.4% 52%, rgba(49, 169, 195, 0.22) 52% 52.4%, transparent 52.4%),
+      linear-gradient(30deg, transparent 0 34%, rgba(7, 46, 95, 0.12) 34% 34.5%, transparent 34.5% 66%, rgba(215, 92, 74, 0.12) 66% 66.5%, transparent 66.5%),
+      radial-gradient(circle at 74% 18%, rgba(0, 87, 167, 0.32) 0 3px, transparent 4px),
+      radial-gradient(circle at 86% 31%, rgba(49, 169, 195, 0.34) 0 3px, transparent 4px),
+      radial-gradient(circle at 79% 49%, rgba(0, 87, 167, 0.28) 0 3px, transparent 4px),
+      radial-gradient(circle at 93% 54%, rgba(49, 169, 195, 0.32) 0 3px, transparent 4px),
+      radial-gradient(circle at 70% 70%, rgba(0, 87, 167, 0.24) 0 3px, transparent 4px);
+    opacity: 0.72;
+  }
+
+  .tei-hero::after {
+    content: "";
+    position: absolute;
+    right: -5rem;
+    top: 2.5rem;
+    width: 35rem;
+    height: 35rem;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 87, 167, 0.16);
+    background:
+      linear-gradient(35deg, transparent 0 47%, rgba(0, 87, 167, 0.18) 47% 47.5%, transparent 47.5%),
+      linear-gradient(110deg, transparent 0 42%, rgba(49, 169, 195, 0.18) 42% 42.5%, transparent 42.5%),
+      radial-gradient(circle, rgba(255, 255, 255, 0.24), rgba(0, 87, 167, 0.08) 62%, transparent 63%);
+    pointer-events: none;
+  }
+
+  .tei-hero-inner,
+  .tei-section-inner {
+    position: relative;
+    z-index: 1;
+    width: min(1180px, calc(100% - 2rem));
+    margin: 0 auto;
+  }
+
+  .tei-logo-strip {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .tei-logo-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 13.5rem;
+    height: 5.2rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid rgba(9, 62, 111, 0.12);
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.88);
+    box-shadow: 0 14px 30px rgba(8, 36, 66, 0.08);
+  }
+
+  .tei-logo-card img {
+    max-width: 12rem;
+    max-height: 3.9rem;
+    object-fit: contain;
+  }
+
+  .tei-hero-logos {
+    position: absolute;
+    top: 1.25rem;
+    right: 2rem;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+    max-width: min(38rem, calc(100% - 4rem));
+  }
+
+  .tei-hero-logo-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+  }
+
+  .tei-hero-logo-card img {
+    display: block;
+    object-fit: contain;
+    filter: drop-shadow(0 10px 18px rgba(8, 36, 66, 0.16));
+  }
+
+  .tei-hero-logo-card.uob img {
+    width: clamp(7.6rem, 10vw, 9rem);
+  }
+
+  .tei-hero-logo-card.hkust img {
+    width: clamp(11.2rem, 15vw, 14rem);
+  }
+
+  .tei-hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(20rem, 0.46fr);
+    gap: 2.2rem;
+    align-items: end;
+  }
+
+  .tei-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.48rem;
+    margin: 0 0 1rem;
+    padding: 0.52rem 0.72rem;
+    background: var(--deep);
+    color: #fff;
+    border-radius: 3px;
+    font-size: 0.78rem;
+    font-weight: 850;
+    text-transform: uppercase;
+  }
+
+  .tei-hero h1 {
+    max-width: 50rem;
+    margin: 0;
+    color: #072a55;
+    font-size: clamp(2.45rem, 6vw, 5.2rem);
+    line-height: 0.98;
+    letter-spacing: 0;
+  }
+
+  .tei-hero-subtitle {
+    max-width: 44rem;
+    margin: 1.2rem 0 0;
+    color: #355872;
+    font-size: 1.15rem;
+    line-height: 1.6;
+  }
+
+  .tei-fact-panel {
+    display: grid;
+    gap: 0.78rem;
+    padding: 1.1rem;
+    border: 1px solid rgba(0, 87, 167, 0.16);
+    border-top: 5px solid var(--blue);
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: var(--shadow);
+  }
+
+  .tei-fact {
+    display: grid;
+    grid-template-columns: 1.4rem 1fr;
+    gap: 0.62rem;
+    align-items: start;
+    color: var(--muted);
+    font-size: 0.94rem;
+    line-height: 1.42;
+  }
+
+  .tei-fact i {
+    color: var(--blue);
+    font-size: 1.08rem;
+  }
+
+  .tei-fact strong {
+    display: block;
+    color: var(--ink);
+  }
+
+  .tei-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 1.6rem;
+  }
+
+  .tei-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-height: 2.72rem;
+    padding: 0.72rem 1rem;
+    border: 1px solid rgba(0, 87, 167, 0.18);
+    border-radius: 999px;
+    background: #fff;
+    color: #0d3f73;
+    font-size: 0.9rem;
+    font-weight: 820;
+    box-shadow: 0 12px 24px rgba(8, 36, 66, 0.1);
+  }
+
+  .tei-button.primary {
+    background: var(--blue);
+    color: #fff;
+  }
+
+  .tei-section {
+    padding: 4.25rem 1rem;
+    background: #fff;
+  }
+
+  .tei-section:nth-of-type(even) {
+    background: #f4f9fc;
+  }
+
+  .tei-section-heading {
+    display: block;
+    max-width: 46rem;
+    margin-bottom: 1.8rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--line);
+    text-align: left;
+  }
+
+  .tei-label {
+    margin: 0 0 0.6rem;
+    color: var(--coral);
+    font-size: 0.78rem;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  .tei-section-heading h2 {
+    margin: 0;
+    color: #0a315e;
+    font-size: clamp(1.75rem, 3vw, 2.65rem);
+    line-height: 1.04;
+    letter-spacing: 0;
+  }
+
+  .tei-section-heading p {
+    margin: 0.65rem 0 0;
+    color: var(--muted);
+    font-size: 1rem;
+    line-height: 1.62;
+    text-align: left;
+  }
+
+  .tei-about-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 0.86fr) minmax(20rem, 0.66fr);
+    gap: 0.9rem;
+    align-items: start;
+    max-width: 58rem;
+  }
+
+  .tei-copy {
+    margin: 0;
+    color: #355872;
+    font-size: 1.02rem;
+    line-height: 1.75;
+  }
+
+  .tei-stat-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.62rem;
+  }
+
+  .tei-stat {
+    min-height: 6.4rem;
+    padding: 0.78rem;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    background: var(--paper);
+  }
+
+  .tei-stat strong {
+    display: block;
+    color: var(--blue);
+    font-size: 1.72rem;
+    line-height: 1;
+  }
+
+  .tei-stat span {
+    display: block;
+    margin-top: 0.5rem;
+    color: var(--muted);
+    font-size: 0.76rem;
+    line-height: 1.34;
+  }
+
+  .tei-card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .tei-card {
+    min-height: 100%;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0 14px 32px rgba(8, 36, 66, 0.08);
+    overflow: hidden;
+  }
+
+  .tei-speaker-photo {
+    display: block;
+    width: min(58%, 10.5rem);
+    aspect-ratio: 3 / 4;
+    margin: 1.15rem auto 0;
+    object-fit: cover;
+    border: 5px solid #fff;
+    border-radius: 999px;
+    background: #dceaf3;
+    box-shadow: 0 0 0 2px rgba(0, 87, 167, 0.24), 0 18px 28px rgba(8, 36, 66, 0.14);
+  }
+
+  .tei-card-body {
+    padding: 1rem;
+  }
+
+  .tei-card h3 {
+    margin: 0;
+    color: #0d355f;
+    font-size: 1.05rem;
+    line-height: 1.22;
+    letter-spacing: 0;
+  }
+
+  .tei-affiliation {
+    margin: 0.28rem 0 0.72rem;
+    color: var(--blue);
+    font-size: 0.84rem;
+    font-weight: 820;
+  }
+
+  .tei-card p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.88rem;
+    line-height: 1.58;
+  }
+
+  .tei-card details {
+    display: block;
+  }
+
+  .tei-card summary {
+    display: block;
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .tei-card summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .tei-card summary .tei-card-body {
+    padding-bottom: 0.9rem;
+  }
+
+  .tei-expand-hint {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    margin-top: 0.8rem;
+    color: var(--blue);
+    font-size: 0.78rem;
+    font-weight: 850;
+  }
+
+  .tei-card details[open] .tei-expand-hint i {
+    transform: rotate(180deg);
+  }
+
+  .tei-expanded {
+    padding: 0 1rem 1.1rem;
+    border-top: 1px solid var(--line);
+    background: linear-gradient(180deg, #f8fbfe, #fff);
+  }
+
+  .tei-expanded h4 {
+    margin: 1rem 0 0.38rem;
+    color: #0d355f;
+    font-size: 0.94rem;
+    letter-spacing: 0;
+  }
+
+  .tei-expanded p {
+    font-size: 0.84rem;
+    line-height: 1.62;
+  }
+
+  .tei-agenda,
+  .tei-session-agenda {
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+  }
+
+  .tei-program-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(18rem, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+    align-items: start;
+  }
+
+  .tei-program-grid .tei-session-agenda {
+    box-shadow: none;
+  }
+
+  .tei-program-grid .tei-host-card {
+    align-self: start;
+  }
+
+  .tei-session-title {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.8rem;
+    padding: 0.78rem 1rem;
+    background: var(--deep);
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  .tei-session-title.pre {
+    background: #e7f4fa;
+    color: #0d355f;
+  }
+
+  .tei-session-title.pre span {
+    color: #557186;
+  }
+
+  .tei-session-title span {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.76rem;
+  }
+
+  .tei-agenda-row {
+    display: grid;
+    grid-template-columns: 7rem minmax(0, 1fr) minmax(13rem, 0.52fr);
+    gap: 1rem;
+    padding: 0.95rem 1rem;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .tei-agenda-row:last-child {
+    border-bottom: 0;
+  }
+
+  .tei-time {
+    color: var(--blue);
+    font-weight: 900;
+  }
+
+  .tei-topic {
+    color: #163f63;
+    font-weight: 850;
+  }
+
+  .tei-who {
+    color: var(--muted);
+    line-height: 1.4;
+  }
+
+  .tei-host-session {
+    display: inline-flex;
+    margin-bottom: 0.38rem;
+    padding: 0.28rem 0.48rem;
+    background: #e7f4fa;
+    color: #0d5798;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  .tei-call-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 1rem;
+  }
+
+  .tei-call-panel {
+    padding: 1.25rem;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0 14px 32px rgba(8, 36, 66, 0.08);
+  }
+
+  .tei-call-panel h3 {
+    margin: 0 0 0.72rem;
+    color: #0d355f;
+    font-size: 1.2rem;
+    letter-spacing: 0;
+  }
+
+  .tei-call-panel p {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.65;
+  }
+
+  .tei-icon-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.85rem;
+  }
+
+  .tei-icon-item {
+    display: grid;
+    grid-template-columns: 2.35rem 1fr;
+    gap: 0.65rem;
+    align-items: start;
+    padding: 0.85rem;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    background: var(--paper);
+  }
+
+  .tei-icon-item i {
+    display: grid;
+    place-items: center;
+    width: 2.35rem;
+    height: 2.35rem;
+    border-radius: 50%;
+    background: #e7f4fa;
+    color: var(--blue);
+    font-size: 1.16rem;
+  }
+
+  .tei-icon-item strong {
+    display: block;
+    color: #0d355f;
+    font-size: 0.92rem;
+    line-height: 1.26;
+  }
+
+  .tei-icon-item span {
+    display: block;
+    margin-top: 0.24rem;
+    color: var(--muted);
+    font-size: 0.82rem;
+    line-height: 1.38;
+  }
+
+  .tei-venue-grid,
+  .tei-host-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .tei-host-card {
+    display: grid;
+    grid-template-columns: 4.25rem 1fr;
+    gap: 0.78rem;
+    align-items: center;
+    padding: 0.78rem;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0 14px 32px rgba(8, 36, 66, 0.08);
+  }
+
+  .tei-host-card img {
+    width: 4rem;
+    height: 5.3rem;
+    object-fit: cover;
+    border-radius: 999px;
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 2px rgba(0, 87, 167, 0.24);
+  }
+
+  .tei-host-card h3 {
+    margin: 0 0 0.3rem;
+    color: #0d355f;
+    font-size: 1rem;
+    line-height: 1.18;
+    letter-spacing: 0;
+  }
+
+  .tei-host-card p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.86rem;
+    line-height: 1.42;
+  }
+
+  .tei-footer {
+    padding: 2.2rem 1rem;
+    border-top: 1px solid var(--line);
+    background: #f8fbfe;
+    color: var(--muted);
+    text-align: center;
+    font-size: 0.86rem;
+  }
+
+  .tei-footer strong {
+    color: #0d355f;
+  }
+
+  @media (max-width: 920px) {
+    .tei-nav {
+      align-items: flex-start;
+      flex-direction: column;
+      padding: 0.9rem 0;
+    }
+
+    .tei-menu {
+      justify-content: flex-start;
+    }
+
+    .tei-hero {
+      min-height: auto;
+      padding-top: 7rem;
+    }
+
+    .tei-hero-grid,
+    .tei-about-grid,
+    .tei-call-grid,
+    .tei-program-grid,
+    .tei-venue-grid,
+    .tei-host-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .tei-hero-logos {
+      left: 1rem;
+      right: 1rem;
+      top: 1rem;
+      bottom: auto;
+      max-width: none;
+      justify-content: center;
+    }
+
+    .tei-card-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 640px) {
+    html {
+      font-size: 17.5px;
+    }
+
+    .tei-logo-strip,
+    .tei-hero-actions {
+      align-items: stretch;
+      flex-direction: column;
+    }
+
+    .tei-logo-card {
+      min-width: 0;
+      width: 100%;
+    }
+
+    .tei-hero {
+      padding-top: 10.4rem;
+    }
+
+    .tei-hero-logos {
+      align-items: center;
+      flex-direction: column;
+      gap: 0.55rem;
+    }
+
+    .tei-hero-logo-card.uob img {
+      width: min(58vw, 9.25rem);
+    }
+
+    .tei-hero-logo-card.hkust img {
+      width: min(78vw, 14.25rem);
+    }
+
+    .tei-kicker {
+      font-size: 0.82rem;
+      line-height: 1.35;
+    }
+
+    .tei-hero-subtitle {
+      font-size: 1.2rem;
+    }
+
+    .tei-button {
+      min-height: 3rem;
+      padding: 0.78rem 1.05rem;
+      font-size: 0.98rem;
+    }
+
+    .tei-section-heading p,
+    .tei-copy {
+      font-size: 1.06rem;
+    }
+
+    .tei-stat strong {
+      font-size: 1.95rem;
+    }
+
+    .tei-stat span {
+      font-size: 0.84rem;
+    }
+
+    .tei-speaker-photo {
+      width: min(70%, 12.5rem);
+    }
+
+    .tei-card h3 {
+      font-size: 1.14rem;
+    }
+
+    .tei-affiliation {
+      font-size: 0.92rem;
+    }
+
+    .tei-card p,
+    .tei-expanded p {
+      font-size: 0.96rem;
+    }
+
+    .tei-expand-hint {
+      font-size: 0.86rem;
+    }
+
+    .tei-session-title {
+      font-size: 0.96rem;
+    }
+
+    .tei-session-title span {
+      font-size: 0.82rem;
+    }
+
+    .tei-call-panel h3 {
+      font-size: 1.28rem;
+    }
+
+    .tei-icon-item {
+      grid-template-columns: 2.65rem 1fr;
+    }
+
+    .tei-icon-item i {
+      width: 2.65rem;
+      height: 2.65rem;
+      font-size: 1.32rem;
+    }
+
+    .tei-icon-item strong {
+      font-size: 0.98rem;
+    }
+
+    .tei-icon-item span {
+      font-size: 0.9rem;
+    }
+
+    .tei-stat-grid,
+    .tei-card-grid,
+    .tei-icon-list {
+      grid-template-columns: 1fr;
+    }
+
+    .tei-agenda-row {
+      grid-template-columns: 1fr;
+      gap: 0.34rem;
+    }
+
+    .tei-host-card {
+      grid-template-columns: 5rem 1fr;
+    }
+
+    .tei-host-card img {
+      width: 4.75rem;
+      height: 6.15rem;
+    }
+
+    .tei-host-card h3 {
+      font-size: 1.08rem;
+    }
+
+    .tei-host-card p {
+      font-size: 0.94rem;
+    }
+  }
+
+  @media print {
+    .tei-topbar,
+    .tei-hero-actions {
+      display: none;
+    }
+
+    body {
+      background: #fff;
+    }
+
+    .tei-section {
+      break-inside: avoid;
+    }
+  }
+</style>
+</head>
+<body>
+  <header class="tei-topbar">
+    <nav class="tei-nav" aria-label="TEI navigation">
+      <a class="tei-wordmark" href="events/tei-seminar/"><strong>TEI 2026</strong><span>Towards Edge Intelligence</span></a>
+      <ul class="tei-menu">
+        <li><a href="events/tei-seminar/#about">About</a></li>
+        <li><a href="events/tei-seminar/#speakers">Speakers</a></li>
+        <li><a href="events/tei-seminar/#agenda">Agenda</a></li>
+        <li><a href="events/tei-seminar/#posters">Poster Call</a></li>
+        <li><a href="events/tei-seminar/#venue">Venue</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="tei-hero">
+      <div class="tei-hero-inner">
+        <div class="tei-hero-grid">
+          <div>
+            <p class="tei-kicker"><i class="bi bi-cpu"></i> The 1st Seminar of Towards Edge Intelligence</p>
+            <h1>Towards Edge Intelligence</h1>
+            <p class="tei-hero-subtitle">Context-aware and multi-agent approaches for sensing, computation and communication.</p>
+            <div class="tei-hero-actions">
+              <a class="tei-button primary" href="events/tei-seminar/#posters"><i class="bi bi-easel2"></i> PhD Poster Call</a>
+              <a class="tei-button" href="events/tei-seminar/#agenda"><i class="bi bi-calendar3"></i> View Agenda</a>
+              <button class="tei-button" type="button" onclick="window.print()"><i class="bi bi-printer"></i> Print</button>
+            </div>
+          </div>
+
+          <aside class="tei-fact-panel" aria-label="Event facts">
+            <div class="tei-fact"><i class="bi bi-calendar-event"></i><span><strong>29 May 2026</strong>Friday</span></div>
+            <div class="tei-fact"><i class="bi bi-geo-alt-fill"></i><span><strong>BDFI, University of Bristol</strong>65 Avon St, Bristol, UK BS2 0PZ</span></div>
+            <div class="tei-fact"><i class="bi bi-display"></i><span><strong>Hybrid format</strong>In person at Bristol and online via Zoom</span></div>
+            <div class="tei-fact"><i class="bi bi-people-fill"></i><span><strong>6 keynotes + 15 posters</strong>Talks, poster sessions and networking</span></div>
+          </aside>
+        </div>
+      </div>
+        <div class="tei-hero-logos" aria-label="Host institutions">
+          <div class="tei-hero-logo-card uob"><img src="assets/events/tei-seminar/university-of-bristol-logo-cropped.png" alt="University of Bristol"></div>
+        <div class="tei-hero-logo-card hkust"><img src="assets/events/tei-seminar/hkustgz-logo-final.png" alt="The Hong Kong University of Science and Technology (Guangzhou)"></div>
+      </div>
+    </section>
+
+    <section class="tei-section" id="about">
+      <div class="tei-section-inner">
+        <div class="tei-section-heading">
+          <p class="tei-label">About</p>
+          <div>
+            <h2>A seminar on edge intelligence, networked AI and multi-agent systems.</h2>
+            <p>TEI brings together researchers working across sensing, computation, communication, wireless systems, distributed AI and edge intelligence.</p>
+          </div>
+        </div>
+        <div class="tei-about-grid">
+          <p class="tei-copy">The 1st Seminar of Towards Edge Intelligence is jointly hosted by the University of Bristol and HKUST(GZ). The program features six invited keynote speakers, poster presentations by PhD students, and dedicated networking sessions for researchers working on context-aware and multi-agent approaches for intelligent systems.</p>
+          <div class="tei-stat-grid">
+            <div class="tei-stat"><strong>6</strong><span>Invited keynote speakers from leading universities and industry labs.</span></div>
+            <div class="tei-stat"><strong>15</strong><span>Poster slots for PhD students working on related topics.</span></div>
+            <div class="tei-stat"><strong>1</strong><span>Hybrid seminar day at Bristol and online via Zoom.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tei-section" id="speakers">
+      <div class="tei-section-inner">
+        <div class="tei-section-heading">
+          <p class="tei-label">Speakers</p>
+          <div>
+            <h2>Invited Keynote Speakers</h2>
+            <p>Six keynote talks spanning programmable networks, wireless AI, distributed optimization, sustainable mobile systems and edge intelligence.</p>
+          </div>
+        </div>
+        <div class="tei-card-grid">
+          <article class="tei-card">
+            <img class="tei-speaker-photo" src="assets/events/tei-seminar/dimitra-simeonidou.jpg" alt="Prof. Dimitra Simeonidou">
+            <div class="tei-card-body">
+              <h3>Prof. Dimitra Simeonidou</h3>
+              <p class="tei-affiliation">University of Bristol</p>
+              <p>Professor and Director of the Smart Internet Lab, with expertise in high-performance networks, programmable networks, future Internet, 5G/6G and smart city infrastructures.</p>
+            </div>
+          </article>
+          <article class="tei-card">
+            <details>
+              <summary>
+                <img class="tei-speaker-photo" src="assets/events/tei-seminar/walid-saad.jpg" alt="Prof. Walid Saad">
+                <div class="tei-card-body">
+                  <h3>Prof. Walid Saad</h3>
+                  <p class="tei-affiliation">Virginia Tech</p>
+                  <p>Rolls Royce Commonwealth Professor in Digital Twin Technology and IEEE Fellow working on wireless networks, machine learning, game theory, semantic communications and cyber-physical systems.</p>
+                  <span class="tei-expand-hint"><i class="bi bi-chevron-down"></i> View title, abstract and bio</span>
+                </div>
+              </summary>
+              <div class="tei-expanded">
+                <h4>Title</h4>
+                <p>Why AI Still Can't Handle the Physical World: AGI-Native Wireless Systems for Physical AI</p>
+                <h4>Abstract</h4>
+                <p>Artificial intelligence has transformed many sectors, yet today's AI tools, including deep learning and generative AI, still struggle when embedded into physical systems such as robots, drones and vehicles operating under real-world physical laws. This talk addresses three intertwined challenges: limited ability to handle unseen and out-of-domain scenarios, lack of first-principle solutions for physical agents navigating the real world, and the need for pervasive connectivity to support physical AI tasks at scale.</p>
+                <p>The talk introduces artificial general intelligence (AGI)-native wireless systems, a wireless architecture and framework for supporting the intelligence and communications needs of physical AI systems. It explores a fusion of wireless systems, digital twins, neuroscience and AI through an AGI architecture based on perception, world model and action-planning, with cognitive capabilities such as reasoning, planning, imagination and deep thinking. The talk discusses semantic communication for physical AI, a world model architecture inspired by thinking fast and slow, and test-time scaling laws that help physical AI agents handle unforeseen real-world scenarios.</p>
+                <h4>Bio</h4>
+                <p>Walid Saad received his PhD degree from the University of Oslo in 2010. He is currently the Rolls Royce Commonwealth Professor in Digital Twin Technology, a Professor in the Department of Electrical and Computer Engineering, and a founding faculty member of the Institute for Advanced Computing at Virginia Tech, where he leads the Network intelligEnce, Wireless, and Security laboratory. His research interests include wireless networks, machine learning, game theory, quantum communications and learning, security, UAVs, semantic communications, cyber-physical systems and network science. Dr. Saad is a Fellow of the IEEE and Editor-in-Chief of the IEEE Transactions on Machine Learning in Communications and Networking.</p>
+              </div>
+            </details>
+          </article>
+          <article class="tei-card">
+            <img class="tei-speaker-photo" src="assets/events/tei-seminar/kin-k-leung.jpg" alt="Prof. Kin K. Leung">
+            <div class="tei-card-body">
+              <h3>Prof. Kin K. Leung</h3>
+              <p class="tei-affiliation">Imperial College London</p>
+              <p>Tanaka Chair in Internet Technology, with research interests in distributed optimization, machine learning, communication networks, mobile computing and stochastic network models.</p>
+            </div>
+          </article>
+          <article class="tei-card">
+            <img class="tei-speaker-photo" src="assets/events/tei-seminar/marco-miozzo.png" alt="Dr. Marco Miozzo">
+            <div class="tei-card-body">
+              <h3>Dr. Marco Miozzo</h3>
+              <p class="tei-affiliation">CTTC, Spain</p>
+              <p>Researcher in sustainable mobile networks, green wireless networking, energy harvesting, multi-agent systems, machine learning, green AI and explainable AI.</p>
+            </div>
+          </article>
+          <article class="tei-card">
+            <img class="tei-speaker-photo" src="assets/events/tei-seminar/zheng-chen.jpg" alt="Dr. Zheng Chen">
+            <div class="tei-card-body">
+              <h3>Dr. Zheng Chen</h3>
+              <p class="tei-affiliation">Link&ouml;ping University</p>
+              <p>Associate Professor and Docent working on stochastic modeling, optimization, wireless edge caching, federated learning, function computation and resilient distributed machine learning.</p>
+            </div>
+          </article>
+          <article class="tei-card">
+            <img class="tei-speaker-photo" src="assets/events/tei-seminar/juan-marcelo-parra-ullauri.jpeg" alt="Dr. Juan Marcelo Parra Ullauri">
+            <div class="tei-card-body">
+              <h3>Dr. Juan Marcelo Parra Ullauri</h3>
+              <p class="tei-affiliation">BT Group / University of Bristol</p>
+              <p>Senior researcher working on cloud and edge AI, federated learning, network intelligence, IoT systems and explainable AI.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="tei-section" id="agenda">
+      <div class="tei-section-inner">
+        <div class="tei-section-heading">
+          <p class="tei-label">Program</p>
+          <div>
+            <h2>Seminar Agenda</h2>
+            <p>A full-day hybrid program with keynote sessions, poster presentation windows, breaks and networking.</p>
+          </div>
+        </div>
+        <div class="tei-program-grid">
+          <div class="tei-session-agenda">
+            <div class="tei-session-title pre">Arrival and Welcome <span>Seminar Hosts</span></div>
+            <div class="tei-agenda-row"><div class="tei-time">08:45</div><div class="tei-topic">Registration and refreshments</div><div class="tei-who">Organizing team</div></div>
+            <div class="tei-agenda-row"><div class="tei-time">09:20</div><div class="tei-topic">Welcome remarks</div><div class="tei-who">Seminar Hosts</div></div>
+          </div>
+          <div></div>
+
+          <div class="tei-session-agenda">
+            <div class="tei-session-title">Morning Session <span>Host: Dr. Xiaolan Liu</span></div>
+            <div class="tei-agenda-row"><div class="tei-time">09:30</div><div class="tei-topic">Morning keynote session: Keynote 1</div><div class="tei-who">Prof. Dimitra Simeonidou, University of Bristol</div></div>
+            <div class="tei-agenda-row"><div class="tei-time">10:15</div><div class="tei-topic">Morning keynote session: Keynote 2</div><div class="tei-who">Prof. Walid Saad, Virginia Tech</div></div>
+            <div class="tei-agenda-row"><div class="tei-time">11:00</div><div class="tei-topic">Morning coffee break, poster session and networking</div><div class="tei-who">All participants</div></div>
+            <div class="tei-agenda-row"><div class="tei-time">11:30</div><div class="tei-topic">Morning keynote session: Keynote 3</div><div class="tei-who">Prof. Kin K. Leung, Imperial College London</div></div>
+            <div class="tei-agenda-row"><div class="tei-time">12:15</div><div class="tei-topic">Lunch break, poster session and networking</div><div class="tei-who">All participants</div></div>
+          </div>
+          <div class="tei-host-card">
+            <img src="assets/events/tei-seminar/xiaolan-liu.jpg" alt="Dr. Xiaolan Liu">
+            <div><span class="tei-host-session">Morning Host</span><h3>Dr. Xiaolan Liu</h3><p>Smart Internet Lab, University of Bristol</p></div>
+          </div>
+
+          <div class="tei-session-agenda">
+            <div class="tei-session-title">Afternoon Session <span>Host: Dr. Jiadong Yu</span></div>
+            <div class="tei-agenda-row"><div class="tei-time">14:00</div><div class="tei-topic">Afternoon keynote session: Keynote 4</div><div class="tei-who">Dr. Marco Miozzo, CTTC, Spain</div></div>
+            <div class="tei-agenda-row"><div class="tei-time">14:45</div><div class="tei-topic">Afternoon keynote session: Keynote 5</div><div class="tei-who">Dr. Zheng Chen, Link&ouml;ping University, Sweden</div></div>
+            <div class="tei-agenda-row"><div class="tei-time">15:30</div><div class="tei-topic">Afternoon keynote session: Keynote 6</div><div class="tei-who">Dr. Juan Marcelo Parra Ullauri, BT Group, UK</div></div>
+            <div class="tei-agenda-row"><div class="tei-time">16:15</div><div class="tei-topic">Closing remarks and networking</div><div class="tei-who">Seminar Hosts</div></div>
+          </div>
+          <div class="tei-host-card">
+            <img src="assets/events/tei-seminar/jiadong-yu.png" alt="Dr. Jiadong Yu">
+            <div><span class="tei-host-session">Afternoon Host</span><h3>Dr. Jiadong Yu</h3><p>HKUST(GZ)</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tei-section" id="posters">
+      <div class="tei-section-inner">
+        <div class="tei-section-heading">
+          <p class="tei-label">PhD Students</p>
+          <div>
+            <h2>Call for Posters</h2>
+            <p>TEI invites PhD students to share research in edge intelligence and adjacent areas during the seminar poster sessions.</p>
+          </div>
+        </div>
+        <div class="tei-call-grid">
+          <div class="tei-call-panel">
+            <h3>Poster Session</h3>
+            <p>The seminar program includes poster sessions and networking during the morning coffee break and lunch break. Up to 15 posters will be included in the program. Submissions related to edge intelligence, multi-agent systems, sensing, computation, communication, wireless AI, federated learning and network intelligence are welcome.</p>
+          </div>
+          <div class="tei-icon-list">
+            <div class="tei-icon-item"><i class="bi bi-easel2"></i><div><strong>Present research</strong><span>Share ongoing or completed PhD work with seminar participants.</span></div></div>
+            <div class="tei-icon-item"><i class="bi bi-diagram-3"></i><div><strong>Meet researchers</strong><span>Connect with invited speakers, hosts and peers across institutions.</span></div></div>
+            <div class="tei-icon-item"><i class="bi bi-lightbulb"></i><div><strong>Gain feedback</strong><span>Discuss methods, challenges and next steps in an informal setting.</span></div></div>
+            <div class="tei-icon-item"><i class="bi bi-calendar-check"></i><div><strong>Submission details</strong><span>Poster submission instructions will be announced by the TEI team.</span></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tei-section" id="venue">
+      <div class="tei-section-inner">
+        <div class="tei-section-heading">
+          <p class="tei-label">Venue</p>
+          <div>
+            <h2>BDFI, University of Bristol</h2>
+            <p>The in-person seminar will take place in Bristol, with a public online Zoom option for remote participants.</p>
+          </div>
+        </div>
+        <div class="tei-venue-grid">
+          <div class="tei-call-panel">
+            <h3>Location</h3>
+            <p>Bristol Digital Futures Institute, University of Bristol, 65 Avon St, Bristol, UK BS2 0PZ.</p>
+          </div>
+          <div class="tei-call-panel">
+            <h3>Travel Note</h3>
+            <p>The venue is reachable via Bristol Airport, or by train from London Paddington to Bristol in approximately 1.5 hours.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="tei-footer">
+    <strong>TEI 2026</strong> | The 1st Seminar of Towards Edge Intelligence
+  </footer>
+</body>
+</html>
