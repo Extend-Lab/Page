@@ -36,6 +36,15 @@ const FALLBACK_SEARCH_INDEX = [
     textZh: "于佳冬 点动 联合实验室 媒体报道 数据中心 异构计算"
   },
   {
+    title: "Events: The Evolution of Vision-Language-Action Models",
+    titleZh: "活动：视觉-语言-动作模型的演进",
+    url: "events/#event-guanghui-vla-evolution",
+    category: "Events",
+    categoryZh: "活动",
+    text: "extend sharing guanghui song vision language action models VLA action generation planning real-time control reinforcement learning human video memory world models 3D tactile",
+    textZh: "展开讲讲 宋光辉 视觉语言动作模型 VLA 动作生成 规划 实时控制 强化学习 人类视频 记忆 世界模型 3D 触觉"
+  },
+  {
     title: "Events: OpenClaw and AI Agent",
     titleZh: "活动：OpenClaw 与 AI Agent",
     url: "events/#event-openclaw-ai-agent",

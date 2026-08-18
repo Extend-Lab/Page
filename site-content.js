@@ -411,6 +411,58 @@
 
   const EVENT_ITEMS = [
     {
+      id: "event-guanghui-vla-evolution",
+      type: "event",
+      category: "extend-sharing",
+      categoryLabel: "EXTEND Sharing",
+      categoryLabelZh: "展开讲讲",
+      title:
+        "EXTEND Sharing: The Evolution of Vision-Language-Action Models From Action Generation to Generalist Robot Intelligence",
+      titleZh: "展开讲讲：视觉-语言-动作模型的演进——从动作生成到通用机器人智能",
+      bodyHtml:
+        "On 14 August 2026, PhD student Guanghui Song delivered an EXTEND Sharing talk titled <em>The Evolution of Vision-Language-Action Models From Action Generation to Generalist Robot Intelligence</em>. He introduced how robots transform multimodal observations, state information, and embodied data into actions. He then explained how VLA systems have evolved into more capable robot policies that can plan ahead, respond in real time, learn from experience, remember past events, and act when vision alone is insufficient. The session concluded with a discussion of what data to collect, how to use human-computer interaction data, how robots should act when vision is unreliable, and when vision, language, and action are each needed.",
+      bodyHtmlZh:
+        "2026 年 8 月 14 日，博士生宋光辉以 <em>The Evolution of Vision-Language-Action Models From Action Generation to Generalist Robot Intelligence</em> 为题开展了一场“展开讲讲”分享。他介绍了机器人如何将多模态观测、状态信息与具身数据转化为动作。他进一步说明，VLA 已逐渐发展为更通用的机器人策略，能够提前规划、实时响应、从经验中学习、记住过去的信息，并在视觉不足时继续完成任务。最后，大家围绕采集哪些数据、如何利用人机交互数据、视觉不可靠时机器人如何行动，以及视觉、语言和动作分别在何时必要展开讨论。",
+      summaryHtml:
+        "Guanghui Song explained how VLA models turn observations into robot actions and become more capable by planning ahead, learning from experience, remembering past events, and drawing on richer sensory information.",
+      summaryHtmlZh:
+        "宋光辉介绍了 VLA 如何将观测转化为机器人动作，并通过规划、经验学习、记忆与更丰富的感知信息不断提升能力。",
+      displayDate: "14 Aug 2026",
+      displayDateZh: "2026年8月14日",
+      sortDate: "2026-08-14",
+      galleryPreview: {
+        modalId: "guanghuiVlaGalleryModal",
+        hint: "Open photo gallery",
+        hintZh: "打开照片墙"
+      },
+      images: [
+        {
+          src: "./assets/events/guanghui-song-sharing.jpg",
+          alt: "Guanghui Song presenting during the EXTEND Sharing session",
+          altZh: "宋光辉在“展开讲讲”活动中分享"
+        },
+        {
+          src: "./assets/events/guanghui-vla-discussion-1.jpg",
+          alt: "EXTEND Lab members discussing vision-language-action models",
+          altZh: "EXTEND Lab 成员讨论视觉-语言-动作模型"
+        },
+        {
+          src: "./assets/events/guanghui-vla-discussion-2.jpg",
+          alt: "Participants at Guanghui Song's VLA sharing session",
+          altZh: "宋光辉 VLA 分享会现场参与者"
+        },
+        {
+          src: "./assets/events/guanghui-vla-session.jpg",
+          alt: "Group view of the EXTEND Sharing session on vision-language-action models",
+          altZh: "视觉-语言-动作模型“展开讲讲”活动全景"
+        }
+      ],
+      searchText:
+        "extend sharing guanghui song vision language action models VLA RT-1 ACT diffusion policy RT-2 autoregressive continuous action generation planning real-time action chunking reinforcement learning human videos embodied memory world models 3D tactile robot data UMI",
+      searchTextZh:
+        "展开讲讲 宋光辉 视觉语言动作模型 VLA RT-1 ACT 扩散策略 RT-2 自回归 连续动作生成 规划 实时动作分块 强化学习 人类视频 具身记忆 世界模型 3D 触觉 机器人数据 UMI"
+    },
+    {
       id: "event-plus-seminar-agents-in-collaboration-2026",
       type: "event",
       category: "recent-activity",
