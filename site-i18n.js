@@ -5,7 +5,7 @@
   const MESSAGES = {
     en: {
       common: {
-        nav: ["About", "News", "Events", "Research", "Projects", "People", "Publications", "Collaborate"],
+        nav: ["About", "News", "Events", "Research", "Projects", "People", "Insights", "Collaborate"],
         searchPlaceholder: "Search site",
         searchAriaLabel: "Search site",
         noResults: "No results found.",
@@ -31,7 +31,7 @@
     },
     zh: {
       common: {
-        nav: ["关于", "动态", "活动", "研究", "项目", "成员", "论文", "合作"],
+        nav: ["关于", "动态", "活动", "研究", "项目", "成员", "洞见", "合作"],
         searchPlaceholder: "搜索站内内容",
         searchAriaLabel: "搜索站内内容",
         noResults: "未找到相关结果。",
@@ -142,11 +142,11 @@
             },
             {
               selector: ".section-kicker",
-              multiText: ["研究方向", "征稿信息"]
+              multiText: ["研究方向", "征稿信息", "论文成果"]
             },
             {
               selector: ".section-heading",
-              multiText: ["我们探索的主题", "开放征集与征稿"]
+              multiText: ["我们探索的主题", "开放征集与征稿", "精选论文"]
             },
             {
               selector: ".card-grid .feature-card",
@@ -217,6 +217,58 @@
             {
               selector: ".research-poster-tool-reset",
               text: "重置"
+            },
+            {
+              selector: ".research-publications .publication-stat-label",
+              multiText: ["期刊论文", "会议论文"]
+            },
+            {
+              selector: ".publication-preview-heading h3",
+              multiText: ["最新期刊论文", "最新会议论文"]
+            },
+            {
+              selector: ".research-publications .archive-toggle-button",
+              text: "查看更多"
+            }
+          ]
+        },
+        blog: {
+          title: "EXTEND 博客 – EXTEND Lab",
+          metaDescription: "来自 EXTEND Lab 的技术文章、论文解读、教程与演示。",
+          updates: [
+            {
+              selector: ".quarto-title .title",
+              text: "EXTEND 博客"
+            },
+            {
+              selector: ".quarto-title .subtitle",
+              text: "来自 EXTEND Lab 的技术文章、论文解读、教程与演示。"
+            },
+            {
+              selector: ".blog-content .section-kicker",
+              text: "浏览洞见"
+            },
+            {
+              selector: ".blog-content .section-heading",
+              text: "按主题与形式探索"
+            },
+            {
+              selector: ".blog-tag",
+              multiText: ["全部", "技术文章", "论文解读", "教程", "演示"]
+            },
+            {
+              selector: ".blog-tag-list",
+              attrs: {
+                "aria-label": "博客内容类型"
+              }
+            },
+            {
+              selector: ".blog-empty-panel h3",
+              text: "实验室故事即将上线。"
+            },
+            {
+              selector: ".blog-empty-panel p",
+              text: "新的技术笔记、研究解读、实践教程与演示将在这里发布。"
             }
           ]
         },
@@ -500,6 +552,10 @@
           title: "论文 – EXTEND Lab",
           metaDescription: "EXTEND Lab 代表性论文。",
           updates: [
+            {
+              selector: ".archive-return-link",
+              text: "返回研究"
+            },
             {
               selector: ".quarto-title .title",
               text: "论文"
@@ -805,6 +861,11 @@
         element.textContent = navLabels[index];
       }
     });
+
+    const insightsLink = navItems[6] && navItems[6].closest("a");
+    if (insightsLink) {
+      insightsLink.setAttribute("href", "blog/");
+    }
 
     document.querySelectorAll(".site-search-input").forEach((input) => {
       input.placeholder = t("common.searchPlaceholder");

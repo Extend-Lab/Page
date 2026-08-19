@@ -1220,13 +1220,40 @@
       textZh: "于佳冬 熊浩 张馨仁 郑佳宁 张育龙 张子儒 张栩棱 李佳乐 宋光辉 朱光智 王年福 陆荣琦 博士生 硕士 访问学生 西安电子科技大学 华为"
     },
     {
-      title: "Publications",
-      titleZh: "论文",
-      url: "publications/",
-      category: "Publications",
-      categoryZh: "论文",
+      title: "Research Publications",
+      titleZh: "研究论文",
+      url: "research/#publications",
+      category: "Research",
+      categoryZh: "研究",
       text: "journal articles conference papers ieee twc tmc tits wireless communications internet of things",
       textZh: "期刊论文 会议论文 IEEE TWC TMC TITS 无线通信 物联网"
+    },
+    {
+      title: "EXTEND Insights",
+      titleZh: "EXTEND 洞见",
+      url: "blog/",
+      category: "Insights",
+      categoryZh: "洞见",
+      text: "technical articles paper explainers tutorials demos research insights",
+      textZh: "技术文章 论文解读 教程 演示 研究洞见"
+    },
+    {
+      title: "The Evolution of Vision-Language-Action Models",
+      titleZh: "视觉-语言-动作模型的演进",
+      url: "blog/evolution-of-vision-language-action-models/",
+      category: "Insights",
+      categoryZh: "洞见",
+      text: "vision language action VLA robotics embodied intelligence action generation planning real-time control reinforcement learning human video memory world models 3D tactile Guanghui Song Jiadong Yu",
+      textZh: "视觉语言动作模型 VLA 机器人 具身智能 动作生成 规划 实时控制 强化学习 人类视频 记忆 世界模型 3D 触觉 宋光辉 于佳冬"
+    },
+    {
+      title: "OpenClaw and the Anatomy of an AI Agent",
+      titleZh: "OpenClaw 与 AI Agent 的构造",
+      url: "blog/openclaw-from-language-models-to-action/",
+      category: "Insights",
+      categoryZh: "洞见",
+      text: "openclaw ai agent runtime prompts tools skills subagents memory heartbeat scheduling context engineering safety robotics multi-agent systems",
+      textZh: "OpenClaw AI智能体 运行时 提示词 工具 技能 子智能体 记忆 心跳 定时任务 上下文工程 安全 机器人 多智能体系统"
     },
     {
       title: "Collaborate",
