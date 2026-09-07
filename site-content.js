@@ -411,6 +411,322 @@
 
   const EVENT_ITEMS = [
     {
+      id: "event-nus-cognition-x-lab-visit-2026",
+      type: "event",
+      category: "recent-activity",
+      categoryLabel: "Recent Activity",
+      categoryLabelZh: "近期活动",
+      title: "EXTEND Lab Visits Cognition X Lab at the National University of Singapore",
+      titleZh: "EXTEND Lab 访问新加坡国立大学 Cognition X Lab",
+      bodyHtml:
+        "On 5 September 2026, Dr. Jiadong Yu, Mr. Ziru Zhang, Ms. Xuling Zhang, and Ms. Xinren Zhang visited Dr. Jinying Xu's Cognition X Lab at the National University of Singapore. Members of both labs shared their research and visions, explored complementary strengths, and discussed opportunities for future collaboration. Learn more about <a href=\"https://cognition-x-lab.github.io\" target=\"_blank\" rel=\"noopener\">Cognition X Lab</a>.",
+      bodyHtmlZh:
+        "2026 年 9 月 5 日，于佳冬博士、张子儒、张栩棱与张馨仁访问新加坡国立大学 Jinying Xu 博士的 Cognition X Lab。双方成员分享了各自的研究与实验室愿景，探讨优势互补与未来合作机会。了解更多，请访问 <a href=\"https://cognition-x-lab.github.io\" target=\"_blank\" rel=\"noopener\">Cognition X Lab 网站</a>。",
+      summaryHtml:
+        "EXTEND Lab visited Cognition X Lab at NUS to exchange research ideas, share lab visions, and explore future collaboration.",
+      summaryHtmlZh:
+        "EXTEND Lab 访问新加坡国立大学 Cognition X Lab，交流研究方向与实验室愿景，并探讨未来合作机会。",
+      displayDate: "5 Sep 2026",
+      displayDateZh: "2026年9月5日",
+      sortDate: "2026-09-05T12:00:00+08:00",
+      galleryPreview: {
+        modalId: "nusCognitionXVisit2026GalleryModal",
+        hint: "Open photo gallery",
+        hintZh: "打开照片墙"
+      },
+      images: [
+        {
+          src: "./assets/events/nus-cognition-x-visit-2026/group-photo.jpg",
+          alt: "EXTEND Lab and Cognition X Lab members at the National University of Singapore",
+          altZh: "EXTEND Lab 与 Cognition X Lab 成员在新加坡国立大学合影"
+        }
+      ],
+      galleryImages: [
+        {
+          src: "./assets/events/nus-cognition-x-visit-2026/group-photo.jpg",
+          alt: "EXTEND Lab and Cognition X Lab members at the National University of Singapore",
+          altZh: "EXTEND Lab 与 Cognition X Lab 成员在新加坡国立大学合影",
+          caption: "EXTEND Lab and Cognition X Lab members at the National University of Singapore.",
+          captionZh: "EXTEND Lab 与 Cognition X Lab 成员在新加坡国立大学合影。"
+        },
+        {
+          src: "./assets/events/nus-cognition-x-visit-2026/jinying-xu-sharing.jpg",
+          alt: "Dr. Jinying Xu sharing Cognition X Lab's research",
+          altZh: "Jinying Xu 博士介绍 Cognition X Lab 的研究",
+          caption: "Dr. Jinying Xu sharing Cognition X Lab's research and vision.",
+          captionZh: "Jinying Xu 博士介绍 Cognition X Lab 的研究与愿景。"
+        },
+        {
+          src: "./assets/events/nus-cognition-x-visit-2026/jiadong-sharing-01.jpg",
+          alt: "Dr. Jiadong Yu presenting EXTEND Lab's research at NUS",
+          altZh: "于佳冬博士在新加坡国立大学介绍 EXTEND Lab 的研究",
+          caption: "Dr. Jiadong Yu presenting EXTEND Lab's research.",
+          captionZh: "于佳冬博士介绍 EXTEND Lab 的研究。"
+        },
+        {
+          src: "./assets/events/nus-cognition-x-visit-2026/jiadong-sharing-02.jpg",
+          alt: "Dr. Jiadong Yu sharing EXTEND Lab's vision with Cognition X Lab",
+          altZh: "于佳冬博士向 Cognition X Lab 分享 EXTEND Lab 的愿景",
+          caption: "Dr. Jiadong Yu sharing EXTEND Lab's vision with Cognition X Lab.",
+          captionZh: "于佳冬博士向 Cognition X Lab 分享 EXTEND Lab 的愿景。"
+        },
+        {
+          src: "./assets/events/nus-cognition-x-visit-2026/christoph-sydora-sharing.jpg",
+          alt: "Dr. Christoph Sydora speaking during the NUS exchange",
+          altZh: "Christoph Sydora 博士在新加坡国立大学交流活动中分享",
+          caption: "Dr. Christoph Sydora speaking during the research exchange.",
+          captionZh: "Christoph Sydora 博士在研究交流中分享。"
+        },
+        {
+          src: "./assets/events/nus-cognition-x-visit-2026/xinren-sharing.jpg",
+          alt: "Xinren Zhang presenting during the Cognition X Lab visit",
+          altZh: "张馨仁在 Cognition X Lab 访问活动中分享",
+          caption: "Xinren Zhang presenting during the lab exchange.",
+          captionZh: "张馨仁在实验室交流中分享。"
+        },
+        {
+          src: "./assets/events/nus-cognition-x-visit-2026/xuling-sharing.jpg",
+          alt: "Xuling Zhang presenting during the Cognition X Lab visit",
+          altZh: "张栩棱在 Cognition X Lab 访问活动中分享",
+          caption: "Xuling Zhang presenting during the lab exchange.",
+          captionZh: "张栩棱在实验室交流中分享。"
+        },
+        {
+          src: "./assets/events/nus-cognition-x-visit-2026/ziru-sharing.jpg",
+          alt: "Ziru Zhang presenting during the Cognition X Lab visit",
+          altZh: "张子儒在 Cognition X Lab 访问活动中分享",
+          caption: "Ziru Zhang presenting during the lab exchange.",
+          captionZh: "张子儒在实验室交流中分享。"
+        },
+        {
+          src: "./assets/events/nus-cognition-x-visit-2026/xinren-xuling-ziru.jpg",
+          alt: "Xinren Zhang, Xuling Zhang, and Ziru Zhang at NUS",
+          altZh: "张馨仁、张栩棱与张子儒在新加坡国立大学",
+          caption: "Xinren Zhang, Xuling Zhang, and Ziru Zhang during the NUS visit.",
+          captionZh: "张馨仁、张栩棱与张子儒在新加坡国立大学访问期间。"
+        }
+      ],
+      searchText:
+        "extend lab visit national university of singapore NUS cognition x lab jinying xu jiadong yu ziru zhang xuling zhang xinren zhang research exchange collaboration september 5 2026",
+      searchTextZh:
+        "EXTEND Lab 新加坡国立大学 NUS Cognition X Lab Jinying Xu 于佳冬 张子儒 张栩棱 张馨仁 研究交流 合作 2026年9月5日"
+    },
+    {
+      id: "event-pimrc-2026-ziru-paper-presentation",
+      type: "event",
+      category: "recent-activity",
+      categoryLabel: "Recent Activity",
+      categoryLabelZh: "近期活动",
+      title: "Mr. Ziru Zhang Presents at IEEE PIMRC 2026",
+      titleZh: "张子儒在 IEEE PIMRC 2026 作论文报告",
+      bodyHtml:
+        "On 4 September 2026, Mr. Ziru Zhang presented the paper <em>A Heterogeneous Multi-Agent Vision-Language Framework for Inductor Defect Recognition in Industrial IoT</em> at WS15: Workshop on Agentic AI and Distributed Intelligence for Context-Aware Integrated Networks, held as part of IEEE PIMRC 2026.",
+      bodyHtmlZh:
+        "2026 年 9 月 4 日，张子儒在 IEEE PIMRC 2026 的 WS15 专题研讨会 <em>Workshop on Agentic AI and Distributed Intelligence for Context-Aware Integrated Networks</em> 上宣讲论文 <em>A Heterogeneous Multi-Agent Vision-Language Framework for Inductor Defect Recognition in Industrial IoT</em>。",
+      summaryHtml:
+        "Ziru Zhang presented EXTEND Lab's multi-agent vision-language framework for industrial inductor defect recognition at IEEE PIMRC 2026.",
+      summaryHtmlZh:
+        "张子儒在 IEEE PIMRC 2026 宣讲 EXTEND Lab 面向工业电感缺陷识别的多智能体视觉语言框架。",
+      displayDate: "4 Sep 2026",
+      displayDateZh: "2026年9月4日",
+      sortDate: "2026-09-04T15:00:00+08:00",
+      galleryPreview: {
+        modalId: "pimrc2026ZiruGalleryModal",
+        hint: "Open photo gallery",
+        hintZh: "打开照片墙"
+      },
+      images: [
+        {
+          src: "./assets/events/pimrc-2026/ziru-presenting.jpg",
+          alt: "Ziru Zhang presenting EXTEND Lab's paper at PIMRC 2026",
+          altZh: "张子儒在 PIMRC 2026 宣讲 EXTEND Lab 论文"
+        }
+      ],
+      galleryImages: [
+        {
+          src: "./assets/events/pimrc-2026/ziru-presenting.jpg",
+          alt: "Ziru Zhang presenting EXTEND Lab's paper at PIMRC 2026",
+          altZh: "张子儒在 PIMRC 2026 宣讲 EXTEND Lab 论文",
+          caption: "Ziru Zhang presenting the paper at the PIMRC 2026 workshop.",
+          captionZh: "张子儒在 PIMRC 2026 专题研讨会上宣讲论文。"
+        },
+        {
+          src: "./assets/events/pimrc-2026/group-photo.jpg",
+          alt: "Jiadong Yu, Ziru Zhang, and Xuling Zhang at PIMRC 2026",
+          altZh: "于佳冬、张子儒与张栩棱参加 PIMRC 2026",
+          caption: "Jiadong Yu, Ziru Zhang, and Xuling Zhang at PIMRC 2026.",
+          captionZh: "于佳冬、张子儒与张栩棱参加 PIMRC 2026。"
+        }
+      ],
+      searchText:
+        "ziru zhang PIMRC 2026 WS15 workshop agentic AI distributed intelligence context-aware integrated networks heterogeneous multi-agent vision-language framework inductor defect recognition industrial IoT september 4 2026",
+      searchTextZh:
+        "张子儒 PIMRC 2026 WS15 智能体AI 分布式智能 上下文感知 集成网络 多智能体 视觉语言框架 电感 缺陷识别 工业物联网 2026年9月4日"
+    },
+    {
+      id: "event-sutd-lab-visit-2026",
+      type: "event",
+      category: "recent-activity",
+      categoryLabel: "Recent Activity",
+      categoryLabelZh: "近期活动",
+      title: "EXTEND Lab Visits SUTD",
+      titleZh: "EXTEND Lab 访问新加坡科技设计大学",
+      bodyHtml:
+        "On 4 September 2026, EXTEND Lab and Dr. Hongyu Li visited Prof. Jihong Park and his lab at the Singapore University of Technology and Design (SUTD). The group reunited with EXTEND alumna Ms. Sixi Cheng, now a PhD student with Prof. Park, and met Dr. Zhouyou Gu. Prof. Park introduced projects spanning AI-RAN, large language model deployment, and world models. The discussion explored research directions combining AI agents and multi-agent reinforcement learning.",
+      bodyHtmlZh:
+        "2026 年 9 月 4 日，EXTEND Lab 与 Hongyu Li 博士访问新加坡科技设计大学（SUTD）Jihong Park 教授的实验室。团队与正在 Park 教授课题组攻读博士学位的 EXTEND 校友 Sixi Cheng 重聚，并与 Zhouyou Gu 博士交流。Park 教授介绍了涵盖 AI-RAN、大语言模型部署与世界模型的多项研究，双方还探讨了结合 AI Agent 与多智能体强化学习的研究方向。",
+      summaryHtml:
+        "EXTEND Lab visited Prof. Jihong Park's group at SUTD to discuss AI-RAN, LLM deployment, world models, AI agents, and multi-agent reinforcement learning.",
+      summaryHtmlZh:
+        "EXTEND Lab 访问 SUTD Jihong Park 教授团队，交流 AI-RAN、大语言模型部署、世界模型、AI Agent 与多智能体强化学习。",
+      displayDate: "4 Sep 2026",
+      displayDateZh: "2026年9月4日",
+      sortDate: "2026-09-04T10:00:00+08:00",
+      galleryPreview: {
+        modalId: "sutdLabVisit2026GalleryModal",
+        hint: "Open photo gallery",
+        hintZh: "打开照片墙"
+      },
+      images: [
+        {
+          src: "./assets/events/sutd-visit-2026/group-photo.jpg",
+          alt: "Sixi Cheng, Zhouyou Gu, Jihong Park, Jiadong Yu, Hongyu Li, Ziru Zhang, Xuling Zhang, and Xinren Zhang at SUTD",
+          altZh: "Sixi Cheng、Zhouyou Gu、Jihong Park、于佳冬、Hongyu Li、张子儒、张栩棱与张馨仁在 SUTD 合影"
+        }
+      ],
+      galleryImages: [
+        {
+          src: "./assets/events/sutd-visit-2026/group-photo.jpg",
+          alt: "Sixi Cheng, Zhouyou Gu, Jihong Park, Jiadong Yu, Hongyu Li, Ziru Zhang, Xuling Zhang, and Xinren Zhang at SUTD",
+          altZh: "Sixi Cheng、Zhouyou Gu、Jihong Park、于佳冬、Hongyu Li、张子儒、张栩棱与张馨仁在 SUTD 合影",
+          caption: "From left to right: Ms. Sixi Cheng, Dr. Zhouyou Gu, Prof. Jihong Park, Dr. Jiadong Yu, Dr. Hongyu Li, Mr. Ziru Zhang, Ms. Xuling Zhang, and Ms. Xinren Zhang.",
+          captionZh: "从左至右：Sixi Cheng、Zhouyou Gu 博士、Jihong Park 教授、于佳冬博士、Hongyu Li 博士、张子儒、张栩棱与张馨仁。"
+        },
+        {
+          src: "./assets/events/sutd-visit-2026/discussion.jpg",
+          alt: "Research discussion during EXTEND Lab's visit to SUTD",
+          altZh: "EXTEND Lab 访问 SUTD 期间的研究讨论",
+          caption: "Research discussion on AI agents and multi-agent reinforcement learning.",
+          captionZh: "围绕 AI Agent 与多智能体强化学习开展研究讨论。"
+        },
+        {
+          src: "./assets/events/sutd-visit-2026/lab-visit-01.jpg",
+          alt: "EXTEND Lab touring Prof. Jihong Park's laboratory at SUTD",
+          altZh: "EXTEND Lab 参观 SUTD Jihong Park 教授实验室",
+          caption: "Touring Prof. Jihong Park's laboratory at SUTD.",
+          captionZh: "参观 SUTD Jihong Park 教授实验室。"
+        },
+        {
+          src: "./assets/events/sutd-visit-2026/lab-visit-02.jpg",
+          alt: "Laboratory visit and technical exchange at SUTD",
+          altZh: "在 SUTD 参观实验室并开展技术交流",
+          caption: "Laboratory visit and technical exchange at SUTD.",
+          captionZh: "在 SUTD 参观实验室并开展技术交流。"
+        },
+        {
+          src: "./assets/events/sutd-visit-2026/alumni-reunion.jpg",
+          alt: "EXTEND Lab members reuniting with alumna Sixi Cheng at SUTD",
+          altZh: "EXTEND Lab 成员在 SUTD 与校友 Sixi Cheng 重聚",
+          caption: "EXTEND Lab members reuniting with alumna Sixi Cheng at SUTD.",
+          captionZh: "EXTEND Lab 成员在 SUTD 与校友 Sixi Cheng 重聚。"
+        }
+      ],
+      searchText:
+        "extend lab visit SUTD singapore university of technology and design jihong park hongyu li sixi cheng zhouyou gu AI-RAN LLM deployment world model AI agents multi-agent reinforcement learning september 4 2026",
+      searchTextZh:
+        "EXTEND Lab 新加坡科技设计大学 SUTD Jihong Park Hongyu Li Sixi Cheng Zhouyou Gu AI-RAN 大语言模型 部署 世界模型 AI Agent 多智能体强化学习 2026年9月4日"
+    },
+    {
+      id: "event-tencent-singapore-visit-2026",
+      type: "event",
+      category: "recent-activity",
+      categoryLabel: "Recent Activity",
+      categoryLabelZh: "近期活动",
+      title: "EXTEND Lab Visits Tencent in Singapore",
+      titleZh: "EXTEND Lab 访问腾讯新加坡",
+      bodyHtml:
+        "On 3 September 2026, EXTEND Lab visited Tencent in Singapore, hosted by Dr. Ran Zhang. Dr. Zhang shared state-of-the-art research and deployment work on vision-language models at LIGHTSPEED STUDIOS. Over lunch, the team discussed industry-academia collaboration models in Singapore and exchanged perspectives with Tencent colleagues working in computer graphics and related areas.",
+      bodyHtmlZh:
+        "2026 年 9 月 3 日，EXTEND Lab 访问腾讯新加坡，并由 Ran Zhang 博士接待。Zhang 博士介绍了 LIGHTSPEED STUDIOS 在视觉语言模型方面的前沿研究与落地实践。午餐交流期间，团队讨论了新加坡产学合作模式，并与从事计算机图形学等方向的腾讯同事交换观点。",
+      summaryHtml:
+        "EXTEND Lab visited Tencent in Singapore to discuss vision-language model deployment and industry-academia collaboration.",
+      summaryHtmlZh:
+        "EXTEND Lab 访问腾讯新加坡，交流视觉语言模型落地与产学合作模式。",
+      displayDate: "3 Sep 2026",
+      displayDateZh: "2026年9月3日",
+      sortDate: "2026-09-03T12:00:00+08:00",
+      galleryPreview: {
+        modalId: "tencentSingaporeVisit2026GalleryModal",
+        hint: "Open photo gallery",
+        hintZh: "打开照片墙"
+      },
+      images: [
+        {
+          src: "./assets/events/tencent-singapore-visit-2026/at-tencent.jpg",
+          alt: "EXTEND Lab members at Tencent in Singapore",
+          altZh: "EXTEND Lab 成员在腾讯新加坡合影"
+        }
+      ],
+      galleryImages: [
+        {
+          src: "./assets/events/tencent-singapore-visit-2026/at-tencent.jpg",
+          alt: "EXTEND Lab members at Tencent in Singapore",
+          altZh: "EXTEND Lab 成员在腾讯新加坡合影",
+          caption: "EXTEND Lab members at Tencent in Singapore.",
+          captionZh: "EXTEND Lab 成员在腾讯新加坡合影。"
+        },
+        {
+          src: "./assets/events/tencent-singapore-visit-2026/with-ran-zhang.jpg",
+          alt: "Research exchange with Dr. Ran Zhang at Tencent in Singapore",
+          altZh: "在腾讯新加坡与 Ran Zhang 博士开展研究交流",
+          caption: "Research exchange with Dr. Ran Zhang at Tencent in Singapore.",
+          captionZh: "在腾讯新加坡与 Ran Zhang 博士开展研究交流。"
+        },
+        {
+          src: "./assets/events/tencent-singapore-visit-2026/gathering-with-friends.jpg",
+          alt: "EXTEND Lab members gathering with colleagues at Tencent in Singapore",
+          altZh: "EXTEND Lab 成员与腾讯新加坡同事交流合影",
+          caption: "Gathering with colleagues at Tencent in Singapore.",
+          captionZh: "与腾讯新加坡同事交流合影。"
+        }
+      ],
+      searchText:
+        "extend lab visit tencent singapore ran zhang lightspeed studios vision-language models VLM deployment industry academia collaboration computer graphics september 3 2026",
+      searchTextZh:
+        "EXTEND Lab 腾讯 新加坡 Ran Zhang LIGHTSPEED STUDIOS 视觉语言模型 VLM 落地 产学合作 计算机图形学 2026年9月3日"
+    },
+    {
+      id: "event-poco-huizhou-visit-2026",
+      type: "event",
+      category: "recent-activity",
+      categoryLabel: "Recent Activity",
+      categoryLabelZh: "近期活动",
+      title: "EXTEND Lab Visits POCO in Huizhou",
+      titleZh: "EXTEND Lab 走访惠州 POCO",
+      bodyHtml:
+        "On 27 August 2026, Dr. Jiadong Yu, Mr. Ziru Zhang, Ms. Xuling Zhang, and Ms. Jinglian Ouyang visited POCO in Huizhou. Mr. Wenbo Cai from industry partner Guangdong Quanzhun Intelligent Technology Co., Ltd. led a site tour, during which the group examined the company's quality inspection equipment. The visit concluded with a discussion of potential research directions for EXTEND Lab.",
+      bodyHtmlZh:
+        "2026 年 8 月 27 日，于佳冬博士、张子儒、张栩棱与 Jinglian Ouyang 走访惠州 POCO。产业合作伙伴广东泉准智能科技有限公司的 Wenbo Cai 带领团队参观现场，并重点了解企业的质量检测设备。访问最后，双方讨论了 EXTEND Lab 可进一步探索的潜在研究方向。",
+      summaryHtml:
+        "EXTEND Lab visited POCO in Huizhou, examined quality inspection equipment, and discussed potential research directions with industry partner Guangdong Quanzhun Intelligent Technology Co., Ltd.",
+      summaryHtmlZh:
+        "EXTEND Lab 走访惠州 POCO，了解质量检测设备，并与产业合作伙伴广东泉准智能科技有限公司讨论潜在研究方向。",
+      displayDate: "27 Aug 2026",
+      displayDateZh: "2026年8月27日",
+      sortDate: "2026-08-27T12:00:00+08:00",
+      images: [
+        {
+          src: "./assets/events/poco-visit-2026/group-photo.jpg",
+          alt: "EXTEND Lab and Guangdong Quanzhun representatives visiting POCO in Huizhou",
+          altZh: "EXTEND Lab 与广东泉准代表走访惠州 POCO"
+        }
+      ],
+      searchText:
+        "extend lab visit POCO Huizhou jiadong yu ziru zhang xuling zhang jinglian ouyang wenbo cai Guangdong Quanzhun Intelligent Technology quality inspection equipment research directions august 27 2026",
+      searchTextZh:
+        "EXTEND Lab 惠州 POCO 于佳冬 张子儒 张栩棱 Jinglian Ouyang Wenbo Cai 广东泉准智能科技有限公司 质量检测设备 研究方向 2026年8月27日"
+    },
+    {
       id: "event-guanghui-vla-evolution",
       type: "event",
       category: "extend-sharing",
