@@ -126,6 +126,15 @@ const FALLBACK_SEARCH_INDEX = [
     textZh: "技术文章 论文解读 教程 演示 研究洞见"
   },
   {
+    title: "Learning Communication-Efficient Protocols in Multi-Agent Reinforcement Learning",
+    titleZh: "多智能体强化学习中的高效通信协议",
+    url: "blog/learning-communication-efficient-protocols-in-marl/",
+    category: "Insights",
+    categoryZh: "洞见",
+    text: "multi-agent reinforcement learning MARL communication efficiency protocols partial observability CTDE IEI SEI TEI traffic junction Xinren Zhang Jiadong Yu",
+    textZh: "多智能体强化学习 MARL 通信效率 通信协议 部分可观测 集中训练分散执行 IEI SEI TEI 交通路口 张馨仁 于佳冬"
+  },
+  {
     title: "The Evolution of Vision-Language-Action Models",
     titleZh: "视觉-语言-动作模型的演进",
     url: "blog/evolution-of-vision-language-action-models/",
