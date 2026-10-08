@@ -1,6 +1,41 @@
 (function () {
   const NEWS_ITEMS = [
     {
+      id: "news-publication-globecom-sixi-accepted-2026",
+      type: "news",
+      category: "publication",
+      categoryLabel: "Publication",
+      categoryLabelZh: "论文动态",
+      title: "Paper Accepted by IEEE GLOBECOM 2026",
+      titleZh: "Sixi Cheng 的多智能体协作通信论文被 IEEE GLOBECOM 2026 接收",
+      bodyHtml:
+        "<strong>Ms. Sixi Cheng</strong>, an EXTEND Lab alumna and currently a PhD student at the Singapore University of Technology and Design (SUTD), Singapore, co-authored the paper <em>Learn DAG-Based Coordination for Task-Oriented Communications in Multi-Agent Reinforcement Learning</em>, which was accepted by IEEE GLOBECOM 2026 on <strong>3 October 2026</strong>. This paper is the conference version of her research conducted at EXTEND Lab.",
+      bodyHtmlZh:
+        "<strong>Sixi Cheng</strong>，EXTEND Lab 校友、现为新加坡科技设计大学（SUTD）博士生，其合作论文 <em>Learn DAG-Based Coordination for Task-Oriented Communications in Multi-Agent Reinforcement Learning</em> 于 <strong>2026 年 10 月 3 日</strong>被 IEEE GLOBECOM 2026 接收。该论文是她在 EXTEND Lab 开展的研究工作的会议版本。",
+      summaryHtml:
+        "<strong>Ms. Sixi Cheng</strong>'s collaborative paper on DAG-based coordination for task-oriented communications was accepted by IEEE GLOBECOM 2026. It is the conference version of her research at EXTEND Lab.",
+      summaryHtmlZh:
+        "<strong>Sixi Cheng</strong>关于面向任务通信的 DAG 协作学习的合作论文被 IEEE GLOBECOM 2026 接收，是她在 EXTEND Lab 研究工作的会议版本。",
+      displayDate: "3 Oct 2026",
+      displayDateZh: "2026年10月3日",
+      sortDate: "2026-10-03",
+      homepageVisual: {
+        type: "art-image",
+        src: "./assets/news/IEEEGLOBECOM2026.jpg",
+        alt: "IEEE GLOBECOM 2026 conference banner",
+        altZh: "IEEE GLOBECOM 2026 会议横幅"
+      },
+      image: {
+        src: "./assets/news/IEEEGLOBECOM2026.jpg",
+        alt: "IEEE GLOBECOM 2026 conference banner",
+        altZh: "IEEE GLOBECOM 2026 会议横幅"
+      },
+      searchText:
+        "sixi cheng ieee globecom 2026 learn dag-based coordination for task-oriented communications in multi-agent reinforcement learning accepted october 3 2026 extend lab alumna alumnus phd singapore university of technology and design sutd conference version",
+      searchTextZh:
+        "Sixi Cheng IEEE GLOBECOM 2026 DAG 协作 面向任务通信 多智能体强化学习 论文 接收 2026年10月3日 EXTEND Lab 校友 新加坡科技设计大学 SUTD 博士 会议版本"
+    },
+    {
       id: "news-publication-tmlcn-xinren-accepted-2026",
       type: "news",
       category: "publication",
