@@ -1,0 +1,6 @@
+/* Keep site text upright while preserving publication and reference list typography. */
+:not(.publication-list, .publication-list *, .article-references, .article-references *),
+:not(.publication-list, .publication-list *, .article-references, .article-references *)::before,
+:not(.publication-list, .publication-list *, .article-references, .article-references *)::after {
+  font-style: normal !important;
+}

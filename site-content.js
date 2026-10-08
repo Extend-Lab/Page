@@ -9,9 +9,9 @@
       title: "Paper Accepted by IEEE GLOBECOM 2026",
       titleZh: "Sixi Cheng 的多智能体协作通信论文被 IEEE GLOBECOM 2026 接收",
       bodyHtml:
-        "<strong>Ms. Sixi Cheng</strong>, an EXTEND Lab alumna and currently a PhD student at the Singapore University of Technology and Design (SUTD), Singapore, co-authored the paper <em>Learn DAG-Based Coordination for Task-Oriented Communications in Multi-Agent Reinforcement Learning</em>, which was accepted by IEEE GLOBECOM 2026 on <strong>3 October 2026</strong>. This paper is the conference version of her research conducted at EXTEND Lab.",
+        "<strong>Ms. Sixi Cheng</strong>, an EXTEND Lab alumna and currently a PhD student at the Singapore University of Technology and Design (SUTD), Singapore, co-authored the paper Learn DAG-Based Coordination for Task-Oriented Communications in Multi-Agent Reinforcement Learning, which was accepted by IEEE GLOBECOM 2026 on <strong>3 October 2026</strong>. This paper is the conference version of her research conducted at EXTEND Lab.",
       bodyHtmlZh:
-        "<strong>Sixi Cheng</strong>，EXTEND Lab 校友、现为新加坡科技设计大学（SUTD）博士生，其合作论文 <em>Learn DAG-Based Coordination for Task-Oriented Communications in Multi-Agent Reinforcement Learning</em> 于 <strong>2026 年 10 月 3 日</strong>被 IEEE GLOBECOM 2026 接收。该论文是她在 EXTEND Lab 开展的研究工作的会议版本。",
+        "<strong>Sixi Cheng</strong>，EXTEND Lab 校友、现为新加坡科技设计大学（SUTD）博士生，其合作论文 Learn DAG-Based Coordination for Task-Oriented Communications in Multi-Agent Reinforcement Learning 于 <strong>2026 年 10 月 3 日</strong>被 IEEE GLOBECOM 2026 接收。该论文是她在 EXTEND Lab 开展的研究工作的会议版本。",
       summaryHtml:
         "<strong>Ms. Sixi Cheng</strong>'s collaborative paper on DAG-based coordination for task-oriented communications was accepted by IEEE GLOBECOM 2026. It is the conference version of her research at EXTEND Lab.",
       summaryHtmlZh:
@@ -391,9 +391,9 @@
       title: "Dr. Jiadong Yu Shared What She Looks for in Prospective Students in a Jituo Forum Interview",
       titleZh: "于佳冬博士在寄托天下论坛采访中分享对未来学生的期待",
       bodyHtml:
-        "<strong>Dr. Jiadong Yu</strong> was interviewed by <em>Jituo Forum</em> and asked what qualities she hopes to see in prospective students. She highlighted <strong>curiosity</strong>, <strong>execution</strong>, and <strong>resilience</strong> as the traits she values most.",
+        "<strong>Dr. Jiadong Yu</strong> was interviewed by Jituo Forum and asked what qualities she hopes to see in prospective students. She highlighted <strong>curiosity</strong>, <strong>execution</strong>, and <strong>resilience</strong> as the traits she values most.",
       bodyHtmlZh:
-        "<strong>于佳冬博士</strong>接受了 <em>寄托天下论坛</em> 采访，分享她最看重未来学生的哪些特质。她特别强调了 <strong>好奇心</strong>、<strong>执行力</strong> 与 <strong>韧性</strong>。",
+        "<strong>于佳冬博士</strong>接受了 寄托天下论坛 采访，分享她最看重未来学生的哪些特质。她特别强调了 <strong>好奇心</strong>、<strong>执行力</strong> 与 <strong>韧性</strong>。",
       summaryHtml:
         "In a Jituo Forum interview, Dr. Jiadong Yu shared that she values curiosity, execution, and resilience in prospective students.",
       summaryHtmlZh:
@@ -555,9 +555,9 @@
       title: "Mr. Ziru Zhang Presents at IEEE PIMRC 2026",
       titleZh: "张子儒在 IEEE PIMRC 2026 作论文报告",
       bodyHtml:
-        "On 4 September 2026, Mr. Ziru Zhang presented the paper <em>A Heterogeneous Multi-Agent Vision-Language Framework for Inductor Defect Recognition in Industrial IoT</em> at WS15: Workshop on Agentic AI and Distributed Intelligence for Context-Aware Integrated Networks, held as part of IEEE PIMRC 2026.",
+        "On 4 September 2026, Mr. Ziru Zhang presented the paper A Heterogeneous Multi-Agent Vision-Language Framework for Inductor Defect Recognition in Industrial IoT at WS15: Workshop on Agentic AI and Distributed Intelligence for Context-Aware Integrated Networks, held as part of IEEE PIMRC 2026.",
       bodyHtmlZh:
-        "2026 年 9 月 4 日，张子儒在 IEEE PIMRC 2026 的 WS15 专题研讨会 <em>Workshop on Agentic AI and Distributed Intelligence for Context-Aware Integrated Networks</em> 上宣讲论文 <em>A Heterogeneous Multi-Agent Vision-Language Framework for Inductor Defect Recognition in Industrial IoT</em>。",
+        "2026 年 9 月 4 日，张子儒在 IEEE PIMRC 2026 的 WS15 专题研讨会 Workshop on Agentic AI and Distributed Intelligence for Context-Aware Integrated Networks 上宣讲论文 A Heterogeneous Multi-Agent Vision-Language Framework for Inductor Defect Recognition in Industrial IoT。",
       summaryHtml:
         "Ziru Zhang presented EXTEND Lab's multi-agent vision-language framework for industrial inductor defect recognition at IEEE PIMRC 2026.",
       summaryHtmlZh:
@@ -771,9 +771,9 @@
         "EXTEND Sharing: The Evolution of Vision-Language-Action Models From Action Generation to Generalist Robot Intelligence",
       titleZh: "展开讲讲：视觉-语言-动作模型的演进——从动作生成到通用机器人智能",
       bodyHtml:
-        "On 14 August 2026, PhD student Guanghui Song delivered an EXTEND Sharing talk titled <em>The Evolution of Vision-Language-Action Models From Action Generation to Generalist Robot Intelligence</em>. He introduced how robots transform multimodal observations, state information, and embodied data into actions. He then explained how VLA systems have evolved into more capable robot policies that can plan ahead, respond in real time, learn from experience, remember past events, and act when vision alone is insufficient. The session concluded with a discussion of what data to collect, how to use human-computer interaction data, how robots should act when vision is unreliable, and when vision, language, and action are each needed.",
+        "On 14 August 2026, PhD student Guanghui Song delivered an EXTEND Sharing talk titled The Evolution of Vision-Language-Action Models From Action Generation to Generalist Robot Intelligence. He introduced how robots transform multimodal observations, state information, and embodied data into actions. He then explained how VLA systems have evolved into more capable robot policies that can plan ahead, respond in real time, learn from experience, remember past events, and act when vision alone is insufficient. The session concluded with a discussion of what data to collect, how to use human-computer interaction data, how robots should act when vision is unreliable, and when vision, language, and action are each needed.",
       bodyHtmlZh:
-        "2026 年 8 月 14 日，博士生宋光辉以 <em>The Evolution of Vision-Language-Action Models From Action Generation to Generalist Robot Intelligence</em> 为题开展了一场“展开讲讲”分享。他介绍了机器人如何将多模态观测、状态信息与具身数据转化为动作。他进一步说明，VLA 已逐渐发展为更通用的机器人策略，能够提前规划、实时响应、从经验中学习、记住过去的信息，并在视觉不足时继续完成任务。最后，大家围绕采集哪些数据、如何利用人机交互数据、视觉不可靠时机器人如何行动，以及视觉、语言和动作分别在何时必要展开讨论。",
+        "2026 年 8 月 14 日，博士生宋光辉以 The Evolution of Vision-Language-Action Models From Action Generation to Generalist Robot Intelligence 为题开展了一场“展开讲讲”分享。他介绍了机器人如何将多模态观测、状态信息与具身数据转化为动作。他进一步说明，VLA 已逐渐发展为更通用的机器人策略，能够提前规划、实时响应、从经验中学习、记住过去的信息，并在视觉不足时继续完成任务。最后，大家围绕采集哪些数据、如何利用人机交互数据、视觉不可靠时机器人如何行动，以及视觉、语言和动作分别在何时必要展开讨论。",
       summaryHtml:
         "Guanghui Song explained how VLA models turn observations into robot actions and become more capable by planning ahead, learning from experience, remembering past events, and drawing on richer sensory information.",
       summaryHtmlZh:
@@ -822,9 +822,9 @@
       title: "EXTEND Lab Co-organizes Joint Seminar with HKUST and the University of Cambridge",
       titleZh: "EXTEND Lab 协同港科大与剑桥大学联合举办研讨会",
       bodyHtml:
-        "On 1 August 2026, EXTEND Lab co-organized the seminar <em>Agents in Collaboration: Physical AI and the Future of Multi-Robot Systems</em> with HKUST and the University of Cambridge. The seminar brought together researchers to explore how robots, infrastructure systems, and intelligent agents can perceive, model, and act together in real-world environments. For more information, visit <a href=\"https://extend-lab.github.io/plus_seminar/\" target=\"_blank\" rel=\"noopener\">the seminar website</a>.",
+        "On 1 August 2026, EXTEND Lab co-organized the seminar Agents in Collaboration: Physical AI and the Future of Multi-Robot Systems with HKUST and the University of Cambridge. The seminar brought together researchers to explore how robots, infrastructure systems, and intelligent agents can perceive, model, and act together in real-world environments. For more information, visit <a href=\"https://extend-lab.github.io/plus_seminar/\" target=\"_blank\" rel=\"noopener\">the seminar website</a>.",
       bodyHtmlZh:
-        "2026 年 8 月 1 日，EXTEND Lab 协同香港科技大学与剑桥大学联合举办研讨会 <em>Agents in Collaboration: Physical AI and the Future of Multi-Robot Systems</em>。活动汇聚相关领域研究人员，共同探讨机器人、基础设施系统与智能体如何在真实环境中实现感知、建模与协同行动。更多信息请访问 <a href=\"https://extend-lab.github.io/plus_seminar/\" target=\"_blank\" rel=\"noopener\">活动网站</a>。",
+        "2026 年 8 月 1 日，EXTEND Lab 协同香港科技大学与剑桥大学联合举办研讨会 Agents in Collaboration: Physical AI and the Future of Multi-Robot Systems。活动汇聚相关领域研究人员，共同探讨机器人、基础设施系统与智能体如何在真实环境中实现感知、建模与协同行动。更多信息请访问 <a href=\"https://extend-lab.github.io/plus_seminar/\" target=\"_blank\" rel=\"noopener\">活动网站</a>。",
       summaryHtml:
         "EXTEND Lab co-organized a seminar on physical AI and collaborative multi-robot systems with HKUST and the University of Cambridge.",
       summaryHtmlZh:
@@ -1070,9 +1070,9 @@
       title: "Mr. Hao Xiong Presented at VTC 2026 Spring in Nice, France",
       titleZh: "熊浩在法国尼斯 VTC 2026 Spring 作论文报告",
       bodyHtml:
-        "On 9 June 2026, Mr. Hao Xiong presented the paper <em>Joint Optimization of Latency and Freshness for Digital Twin-Empowered Vehicular Edge Services</em> at VTC 2026 Spring in Nice, France. The paper studies how digital twin-enabled vehicular edge services can jointly balance end-to-end latency and digital twin freshness under constrained edge resources, and proposes a multi-agent hierarchical reinforcement learning framework for decentralized resource allocation.",
+        "On 9 June 2026, Mr. Hao Xiong presented the paper Joint Optimization of Latency and Freshness for Digital Twin-Empowered Vehicular Edge Services at VTC 2026 Spring in Nice, France. The paper studies how digital twin-enabled vehicular edge services can jointly balance end-to-end latency and digital twin freshness under constrained edge resources, and proposes a multi-agent hierarchical reinforcement learning framework for decentralized resource allocation.",
       bodyHtmlZh:
-        "2026 年 6 月 9 日，熊浩在法国尼斯 VTC 2026 Spring 宣讲论文 <em>Joint Optimization of Latency and Freshness for Digital Twin-Empowered Vehicular Edge Services</em>。该论文研究数字孪生赋能的车联网边缘服务如何在受限边缘资源下联合平衡端到端时延与数字孪生新鲜度，并提出一种用于去中心化资源分配的多智能体层次强化学习框架。",
+        "2026 年 6 月 9 日，熊浩在法国尼斯 VTC 2026 Spring 宣讲论文 Joint Optimization of Latency and Freshness for Digital Twin-Empowered Vehicular Edge Services。该论文研究数字孪生赋能的车联网边缘服务如何在受限边缘资源下联合平衡端到端时延与数字孪生新鲜度，并提出一种用于去中心化资源分配的多智能体层次强化学习框架。",
       summaryHtml:
         "Mr. Hao Xiong presented his paper on digital twin-empowered vehicular edge services at VTC 2026 Spring in Nice, France.",
       summaryHtmlZh:
